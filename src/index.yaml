@@ -1,0 +1,18 @@
+ProjectTitle: CoSo Insights
+
+PageList:
+- file: index.html
+  titleName: Login
+  ready: 01
+- file: dashboard.html
+  titleName: Dashboard
+  ready: 0
+- file: dashboard-reports.html
+  titleName: Dashboard Reports
+  ready: 0
+- file: dashboard-new-ticket.html
+  titleName: Dashboard New Ticket
+  ready: 0
+- file: dashboard-ticket-system.html
+  titleName: Dashboard Ticket System
+  ready: 0
