@@ -1,0 +1,144 @@
+// SECTION login :: START
+
+.login {
+  position: relative;
+  width: 100%;
+  padding: 50px 15px;
+
+  &__box {
+    min-height: calc(100vh - 100px);
+    text-align: center;
+
+    &:after {
+      content: '';
+      display: inline-block;
+      vertical-align: middle;
+      min-height: calc(100vh - 100px);
+      margin-right: -4px;
+    }
+
+    &-wrapper {
+      display: inline-block;
+      text-align: left;
+      vertical-align: middle;
+      width: 100%;
+      max-width: 1087px;
+    }
+  }
+
+  &__body {
+    display: flex;
+    align-items: center;
+    position: relative;
+    height: 811px;
+
+    &:before {
+      content: '';
+      z-index: 0;
+      position: absolute;
+      top: 60px;
+      left: 0;
+      width: 100%;
+      height: calc(100% - 120px);
+      background-color: #4e4e4e;
+    }
+
+    &-left ,
+    &-right {
+      z-index: 2;
+      position: relative;
+      height: 100%;
+
+      p,
+      h1 {
+        margin: 0;
+      }
+    }
+
+    &-left {
+      padding-top: 60px;
+      padding-bottom: 90px;
+      padding-left: 103px;
+      width: 509px;
+    }
+
+    &-right {
+      width: 100%;
+      max-width: calc(100% - 509px);
+    }
+  }
+
+  &__title {
+    padding-top: 119px;
+    padding-bottom: 47px;
+    color: #fff;
+    line-height: line-height-convert(53,48);
+    font-size: 48px;
+  }
+
+  &__text {
+    padding-bottom: 55px;
+    color: #00a6d9;
+    line-height: line-height-convert(30, 24);
+    font-size: 24px;
+  }
+
+  .logo {
+    margin-bottom: 118px;
+  }
+
+  &__site {
+    color: #ffffff;
+    font-size: 24px;
+    @include transition(color);
+
+    &:hover {
+      color: #00a6d9;
+      text-decoration: none;
+      @include transition(color);
+    }
+  }
+
+  &__block {
+    width: 100%;
+    max-width: 476px;
+    height: 811px;
+    background-color: #fff;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.15);
+
+    &-head {
+      height: calc(100% - 96px);
+      padding: 144px 55px 0;
+    }
+
+    &-footer {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 96px;
+      padding: 0 55px 0;
+      background-color: #ececec;
+    }
+
+    &-title {
+      padding-bottom: 143px;
+      color: #00a6d9;
+      text-align: center;
+      font-size: 30px;
+    }
+
+    &-link {
+      color: #00a6d9;
+      font-size: 24px;
+      @include transition(color);
+
+      &:hover {
+        color: #4e4e4e;
+        text-decoration: none;
+        @include transition(color);
+      }
+    }
+  }
+}
+
+// SECTION login :: END

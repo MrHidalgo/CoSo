@@ -2,6 +2,7 @@
 title: CoSo Insights Portal
 
 pageClassName: p-home
+pageUniq: p-login
 ---
 extends shared/_layout
 
@@ -9,5 +10,7 @@ block header
 
 block content
   div.body(class!= pageClassName)
+
+    include ./components/homepage/_login
 
 block footer

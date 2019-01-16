@@ -28,6 +28,16 @@ body {
   font-family: "Roboto", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  @include adaptive(1199) {
+    cursor: pointer;
+  }
+
+  &.p-login {
+    background-color: #00a6d9;
+    background-image: url('../img/img-login-starburst.png');
+    background-repeat: no-repeat;
+    background-position: center right;
+  }
 }
 
 body {

@@ -24,10 +24,10 @@ $(document).ready((ev) => {
    * @description
    */
 	const initBodyClick = () => {
-    $('body').on('click', function (e) {
+    $('body').on('click', function (ev) {
       const className = ".sidebar, .header__collapse, .header__wrapper-left";
 
-      if (!$(e.target).closest(className).length) {
+      if (!$(ev.target).closest(className).length) {
         $('body').removeClass('is-collapsed');
       }
     });

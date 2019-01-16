@@ -1,0 +1,36 @@
+// SECTION login :: START
+
+section#login.login
+  .login__box
+    .login__box-wrapper
+
+      .login__body
+        .login__body-left
+
+          h1.login__title!= "Welcome to<br>CoSo Insights"
+
+          p.login__text!= "Enter your username and<br>password to login"
+
+          +logotype('login', '#', 'img-logotype-white', 'png')
+
+          a.login__site(href="#" class="" title="")!= "cosocloud.com"
+
+        .login__body-right
+
+          .login__block
+            .login__block-head
+              p.login__block-title!= "Log In"
+
+              form
+                fieldset(class="uk-fieldset")
+                  div
+                    input(class="uk-input" type="text" placeholder="Username")
+                  div
+                    input(class="uk-input" type="password" placeholder="Password")
+                  div
+                    button(type="submit" class="uk-button uk-button-primary")!= "Login"
+
+            .login__block-footer
+              a.login__block-link(href="#" class="" title="")!= "Forgot Password?"
+
+// SECTION login :: END
