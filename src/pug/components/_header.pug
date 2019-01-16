@@ -1,7 +1,24 @@
 // HEADER :: START
 
 header#header.header
-  .c-grid
-    .header__wrapper
+  .header__wrapper
+    .header__wrapper-left
+
+      +logotype('header', '', 'img-logotype', 'png')
+
+      a(href="#" class="" title="" btn-collapseHide-js)!= "<"
+
+    .header__wrapper-middle
+      div
+        a.header__collapse(href="#" class="" title="" btn-collapse-js)
+          div
+            i
+            i
+            i
+          span!= "Collapse"
+
+      div
+
+    .header__wrapper-right
 
 // HEADER :: END

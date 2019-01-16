@@ -13,7 +13,8 @@ const initWebFontLoader = () => {
 	WebFont.load({
     google: {
       families: [
-        'Roboto:100,300,400,500,700,900'
+        'Roboto:100,300,400,500,700,900',
+        'Open+Sans:300,400,600,700,800'
       ]
     }
   });
