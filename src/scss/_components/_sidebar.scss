@@ -34,6 +34,230 @@
       @include transition(transform);
     }
   }
+
+  // wrapper
+  &__wrapper {
+    position: relative;
+    overflow-y: auto;
+    height: calc(100vh - 125px);
+    @include adaptive(767) {
+      height: calc(100vh - 65px);
+    }
+  }
+  // wrapper :: end
+
+  // profile
+  &__profile {
+    display: flex;
+    align-items: center;
+    height: 215px;
+    border-bottom: 1px solid rgba(#b1b0b0, 0.3);
+
+    &-left {
+      width: 155px;
+      padding-left: 35px;
+    }
+
+    &-right {
+      width: 100%;
+      max-width: calc(100% - 155px);
+    }
+
+    &-img {
+      overflow: hidden;
+      position: relative;
+      width: 95px;
+      height: 95px;
+      border-radius: 100%;
+      border: 1px solid #fff;
+
+      img {
+        @extend %imageResCoverAbs;
+      }
+    }
+
+    &-name {
+      margin: 0;
+      color: #f7a209;
+      font-size: 24px;
+      @extend %fontFamilyOpenSans;
+    }
+  }
+  // profile :: end
+
+  // navigation
+  &__navigation {
+    display: flex;
+    flex-direction: column;
+
+    ul {
+      margin: 0;
+
+      li {
+        margin: 0 !important;
+        background-color: transparent;
+        @include transition(padding-bottom, border-bottom, background-color);
+
+        &.uk-open {
+          padding-bottom: 34px;
+          border-bottom: 1px solid rgba(#b1b0b0, 0.3);
+          background-color: #3f3f3f;
+          @include transition(padding-bottom, border-bottom, background-color);
+
+          > .sidebar__navigation-btn {
+            border-bottom: 0;
+            @include transition(border-bottom);
+
+            div {
+              span,
+              p {
+                color: #00a6d9;
+                @include transition(color);
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .uk-accordion-title {
+      &:before {
+        display: none;
+      }
+    }
+
+    .uk-accordion-content {
+      display: flex;
+      flex-direction: column;
+      margin-top: 0;
+
+      .sidebar__navigation-btn {
+        min-height: 0;
+        padding-top: 17px;
+        padding-bottom: 17px;
+        border-bottom: 0;
+
+        &:hover {
+          text-decoration: none;
+
+          > div {
+            span,
+            p {
+              color: #6cd7f7;
+              @include transition(color);
+            }
+          }
+        }
+
+        > div {
+          &:nth-of-type(1) {
+            display: flex;
+            justify-content: center;
+            width: 100px;
+          }
+
+          &:nth-of-type(2) {
+            width:  100%;
+            max-width:  calc(100% - 100px);
+          }
+        }
+      }
+    }
+
+    .uk-accordion-title,
+    &-btn {
+      display: flex;
+      align-items: center;
+      min-height: 84px;
+      border-bottom: 1px solid rgba(#b1b0b0, 0.3);
+      @include transition(border-bottom, background-color);
+
+      &:hover {
+        text-decoration: none;
+        background-color: #3f3f3f;
+        @include transition(background-color);
+
+        > div {
+          span,
+          p {
+            color: #00a6d9;
+            @include transition(color);
+          }
+        }
+      }
+
+      p {
+        white-space: nowrap;
+        margin: 0;
+        color: #b1b0b0;
+        font-size: 24px;
+        @include transition(color);
+      }
+
+      span {
+        color: #ffffff;
+        @include transition(color);
+        &[uk-icon="thumbnails"] {
+          svg {
+            width: 25px;
+            height: 25px;
+          }
+        }
+        &[uk-icon="users"] {
+          svg {
+            width: 30px;
+            height: 28px;
+          }
+        }
+        &[uk-icon="receiver"] {
+          svg {
+            width: 25px;
+          }
+        }
+        &[uk-icon="cog"] {
+          svg {
+            width: 27px;
+            height: 27px;
+          }
+        }
+        &[uk-icon="sign-out"] {
+          svg {
+            width: 23px;
+            height: 25px;
+          }
+        }
+        &[uk-icon="search"] {
+          svg {
+            width: 29px;
+            height: 29px;
+          }
+        }
+        &[uk-icon="file-text"] {
+          svg {
+            width: 26px;
+          }
+        }
+      }
+
+      > div {
+        &:nth-of-type(1) {
+          display: flex;
+          justify-content: center;
+          width: 100px;
+        }
+
+        &:nth-of-type(2) {
+          width:  100%;
+          max-width:  calc(100% - (100px + 66px));
+        }
+
+        &:nth-of-type(3) {
+          width: 66px;
+        }
+      }
+    }
+  }
+  // navigation :: end
 }
 
 // HEADER :: END

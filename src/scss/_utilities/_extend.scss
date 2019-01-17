@@ -1,3 +1,32 @@
 ////
 /// @group  Extend
 ////
+
+// FONTS
+%fontFamilyRoboto {
+  font-family: 'Roboto', sans-serif;
+}
+%fontFamilyOpenSans {
+  font-family: 'Open Sans', sans-serif;
+}
+// FONTS :: end
+
+
+// IMAGE
+%imageResMaxWidth {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+%imageResCoverAbs {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+// IMAGE :: end

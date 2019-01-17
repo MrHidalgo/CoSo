@@ -3,4 +3,103 @@
 section#sidebar.sidebar
   .sidebar__wrapper
 
+    .sidebar__profile
+      .sidebar__profile-left
+        .sidebar__profile-img
+          img(src="./img/img-user.jpg" srcset="./img/img-user@2x.jpg 2x" alt="" title="")
+
+      .sidebar__profile-right
+        p.sidebar__profile-name!= "Randah McKinnie"
+
+    .sidebar__navigation
+      a.sidebar__navigation-btn(href="#" class="" title="")
+        div
+          span(uk-icon="thumbnails")
+        div
+          p!= "Dashboard"
+        div
+      a.sidebar__navigation-btn(href="#" class="" title="")
+        div
+          span(uk-icon="users")
+        div
+          p!= "Account"
+        div
+      a.sidebar__navigation-btn(href="#" class="" title="")
+        div
+          span(uk-icon="receiver")
+        div
+          p!= "Tech Support"
+        div
+
+      ul(uk-accordion="multiple: true")
+        li.uk-open
+          a(href="#" title="" class="uk-accordion-title sidebar__navigation-btn" )
+            div
+              span(uk-icon="search")
+            div
+              p!= "Monitors"
+            div
+          div(class="uk-accordion-content")
+            a(href="#" title="" class="uk-accordion-title sidebar__navigation-btn" )
+              div
+              div
+                p!= "Meeting Activity"
+            a(href="#" title="" class="uk-accordion-title sidebar__navigation-btn" )
+              div
+              div
+                p!= "Virtual Class Activity"
+            a(href="#" title="" class="uk-accordion-title sidebar__navigation-btn" )
+              div
+              div
+                p!= "Content Launch Activity"
+            a(href="#" title="" class="uk-accordion-title sidebar__navigation-btn" )
+              div
+              div
+                p!= "Training Launch Activity"
+            a(href="#" title="" class="uk-accordion-title sidebar__navigation-btn" )
+              div
+              div
+                p!= "On-Demand Activity"
+        li
+          a(href="#" title="" class="uk-accordion-title sidebar__navigation-btn" )
+            div
+              span(uk-icon="file-text")
+            div
+              p!= "Reports"
+            div
+          div(class="uk-accordion-content")
+            a(href="#" title="" class="uk-accordion-title sidebar__navigation-btn" )
+              div
+              div
+                p!= "Meeting Activity"
+            a(href="#" title="" class="uk-accordion-title sidebar__navigation-btn" )
+              div
+              div
+                p!= "Virtual Class Activity"
+            a(href="#" title="" class="uk-accordion-title sidebar__navigation-btn" )
+              div
+              div
+                p!= "Content Launch Activity"
+            a(href="#" title="" class="uk-accordion-title sidebar__navigation-btn" )
+              div
+              div
+                p!= "Training Launch Activity"
+            a(href="#" title="" class="uk-accordion-title sidebar__navigation-btn" )
+              div
+              div
+                p!= "On-Demand Activity"
+
+      a.sidebar__navigation-btn(href="#" class="" title="")
+        div
+          span(uk-icon="cog")
+        div
+          p!= "Settings"
+        div
+      a.sidebar__navigation-btn(href="#" class="" title="")
+        div
+          span(uk-icon="sign-out")
+        div
+          p!= "Logout"
+        div
+
 // SECTION sidebar :: END
