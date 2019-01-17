@@ -211,6 +211,9 @@
               width: 11px;
             }
           }
+          .is-collapsed-hover & {
+            width: 11px;
+          }
         }
 
         &:nth-of-type(1) {
@@ -253,46 +256,29 @@
       width: 100%;
       height: 40px;
 
-      label {
-        cursor: pointer;
-        display: flex;
-        align-items: center;
-        position: absolute;
-        top: 0;
-        left: 0;
+      span.uk-search-icon {
         width: 58px;
-        height: 100%;
         @include adaptive(1199) {
           width: 44px;
         }
 
-        span {
-          svg {
-            width: 29px;
-            height: 29px;
-          }
+        svg {
+          width: 29px;
+          height: 29px;
         }
       }
 
-      input {
-        outline: none;
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        padding-left: 58px;
+      input.uk-search-input {
+        height: 40px;
+        padding-left: 58px !important;
         padding-right: 15px;
-        border: none;
-        box-shadow: none;
-        background-color: transparent;
         @include fluid(font-size, 320px, 767px, 20px, 24px);
         @include inputPlaceholder {
           color: #4e4e4e;
           @include fluid(font-size, 320px, 767px, 20px, 24px);
         }
         @include adaptive(1199) {
-          padding-left: 44px;
+          padding-left: 44px !important;
         }
         @include adaptive(767) {
           padding-right: 0;

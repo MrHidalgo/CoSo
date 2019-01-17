@@ -1,5 +1,32 @@
 // SECTION sidebar :: START
 
+mixin sidebarNavBtn(classMod, iconName, btnName)
+  a.sidebar__navigation-btn(
+    href="#"
+    class="sidebar__navigation-btn--" + classMod
+    title=""
+  )
+    div
+      span(uk-icon= iconName)
+    div
+      p!= btnName
+    if(classMod !== 'internal')
+      div
+
+mixin sidebarNavAccordionBtn(classMod, iconName, btnName)
+  a.uk-accordion-title.sidebar__navigation-btn(
+    href="#"
+    class="sidebar__navigation-btn--" + classMod
+    title=""
+  )
+    div
+      span(uk-icon= iconName)
+    div
+      p!= btnName
+    div
+      span(uk-icon='chevron-down')
+
+
 section#sidebar.sidebar
   .sidebar__wrapper
 
@@ -12,96 +39,29 @@ section#sidebar.sidebar
         p.sidebar__profile-name!= "Randah McKinnie"
 
     .sidebar__navigation
-      a.sidebar__navigation-btn(href="#" class="" title="")
-        div
-          span(uk-icon="thumbnails")
-        div
-          p!= "Dashboard"
-        div
-      a.sidebar__navigation-btn(href="#" class="" title="")
-        div
-          span(uk-icon="users")
-        div
-          p!= "Account"
-        div
-      a.sidebar__navigation-btn(href="#" class="" title="")
-        div
-          span(uk-icon="receiver")
-        div
-          p!= "Tech Support"
-        div
+      +sidebarNavBtn('external', 'thumbnails', 'Dashboard')
+      +sidebarNavBtn('external', 'users', 'Account')
+      +sidebarNavBtn('external', 'receiver', 'Tech Support')
 
       ul(uk-accordion="multiple: true")
         li
-          a(href="#" title="" class="uk-accordion-title sidebar__navigation-btn" )
-            div
-              span(uk-icon="world")
-            div
-              p!= "Monitors"
-            div
-              span(uk-icon='chevron-down')
-          div(class="uk-accordion-content")
-            a(href="#" title="" class="uk-accordion-title sidebar__navigation-btn" )
-              div
-              div
-                p!= "Meeting Activity"
-            a(href="#" title="" class="uk-accordion-title sidebar__navigation-btn" )
-              div
-              div
-                p!= "Virtual Class Activity"
-            a(href="#" title="" class="uk-accordion-title sidebar__navigation-btn" )
-              div
-              div
-                p!= "Content Launch Activity"
-            a(href="#" title="" class="uk-accordion-title sidebar__navigation-btn" )
-              div
-              div
-                p!= "Training Launch Activity"
-            a(href="#" title="" class="uk-accordion-title sidebar__navigation-btn" )
-              div
-              div
-                p!= "On-Demand Activity"
+          +sidebarNavAccordionBtn('external', 'world', 'Monitors')
+          .uk-accordion-content
+            +sidebarNavBtn('internal', '', 'Meeting Activity')
+            +sidebarNavBtn('internal', '', 'Virtual Class Activity')
+            +sidebarNavBtn('internal', '', 'Content Launch Activity')
+            +sidebarNavBtn('internal', '', 'Training Launch Activity')
+            +sidebarNavBtn('internal', '', 'On-Demand Activity')
         li
-          a(href="#" title="" class="uk-accordion-title sidebar__navigation-btn" )
-            div
-              span(uk-icon="file-text")
-            div
-              p!= "Reports"
-            div
-              span(uk-icon='chevron-down')
-          div(class="uk-accordion-content")
-            a(href="#" title="" class="uk-accordion-title sidebar__navigation-btn" )
-              div
-              div
-                p!= "Meeting Activity"
-            a(href="#" title="" class="uk-accordion-title sidebar__navigation-btn" )
-              div
-              div
-                p!= "Virtual Class Activity"
-            a(href="#" title="" class="uk-accordion-title sidebar__navigation-btn" )
-              div
-              div
-                p!= "Content Launch Activity"
-            a(href="#" title="" class="uk-accordion-title sidebar__navigation-btn" )
-              div
-              div
-                p!= "Training Launch Activity"
-            a(href="#" title="" class="uk-accordion-title sidebar__navigation-btn" )
-              div
-              div
-                p!= "On-Demand Activity"
+          +sidebarNavAccordionBtn('external', 'file-text', 'Reports')
+          .uk-accordion-content
+            +sidebarNavBtn('internal', '', 'Meeting Activity')
+            +sidebarNavBtn('internal', '', 'Virtual Class Activity')
+            +sidebarNavBtn('internal', '', 'Content Launch Activity')
+            +sidebarNavBtn('internal', '', 'Training Launch Activity')
+            +sidebarNavBtn('internal', '', 'On-Demand Activity')
 
-      a.sidebar__navigation-btn(href="#" class="" title="")
-        div
-          span(uk-icon="cog")
-        div
-          p!= "Settings"
-        div
-      a.sidebar__navigation-btn(href="#" class="" title="")
-        div
-          span(uk-icon="sign-out")
-        div
-          p!= "Logout"
-        div
+      +sidebarNavBtn('external', 'cog', 'Settings')
+      +sidebarNavBtn('external', 'sign-out', 'Logout')
 
 // SECTION sidebar :: END

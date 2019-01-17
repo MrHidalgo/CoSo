@@ -42,15 +42,44 @@ $(document).ready((ev) => {
    * @description
    */
 	const initCollapseSibedar = () => {
+    const _body = $('body');
+
 	  $('[btn-collapse-js]').on('click', (ev) => {
 	    const _btn = $(ev.currentTarget);
 
-	    $('body').toggleClass('is-collapsed');
+      if(_body.hasClass('is-collapsed')) {
+        _body.removeClass('is-collapsed');
+      } else {
+        _body.addClass('is-collapsed');
+      }
     });
 
     $('[btn-collapseHide-js]').on('click', (ev) => {
-      $('body').removeClass('is-collapsed');
+      _body.removeClass('is-collapsed');
     });
+
+    /**
+     *
+     * @param classListMod
+     */
+    const hoverCallback = (classListMod) => {
+      if($(window).width() > 767) {
+        if($(window).width() > 1439 && _body.hasClass('is-collapsed')) {
+          _body[classListMod]('is-collapsed-hover');
+        } else {
+          _body[classListMod]('is-collapsed-hover');
+        }
+      }
+    };
+
+    $('#sidebar').hover(
+      function(ev) {
+        hoverCallback('addClass');
+      },
+      function(ev) {
+        hoverCallback('removeClass');
+      }
+    );
   };
 
 	/*

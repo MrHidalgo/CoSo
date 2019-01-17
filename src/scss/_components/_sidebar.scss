@@ -41,12 +41,25 @@
     }
   }
 
+  .is-collapsed-hover & {
+    width: 378px;
+    @include adaptive(1439) {
+      width: (125px + 200px);
+    }
+    @include adaptive(1365) {
+      width: 300px;
+    }
+    @include adaptive(767) {
+      width: 250px;
+    }
+  }
+
   // wrapper
   &__wrapper {
     position: relative;
     overflow-y: auto;
     height: calc(100vh - 125px);
-    @include adaptive(767) {
+    @include adaptive(1439) {
       height: calc(100vh - 65px);
     }
   }
@@ -58,6 +71,14 @@
     align-items: center;
     height: 215px;
     border-bottom: 1px solid rgba(#b1b0b0, 0.3);
+    @include adaptive(1365) {
+      flex-direction: column;
+      justify-content: center;
+      height: auto;
+      min-height: 190px;
+      padding-top: 30px;
+      padding-bottom: 30px;
+    }
 
     &-left {
       width: 155px;
@@ -65,12 +86,30 @@
       @include transition(padding-left);
       @include adaptive(1439) {
         width: 115px;
-        padding-left: 15px;
+        padding-left: 20px;
+      }
+      @include adaptive(1365) {
+        width: 100%;
+        padding-left: 0;
       }
 
       .is-collapsed & {
         padding-left: 15px;
         @include transition(padding-left);
+        @include adaptive(1365) {
+          padding-left: 0;
+        }
+      }
+
+      .is-collapsed-hover & {
+        padding-left: 35px;
+        @include adaptive(1439) {
+          padding-left: 15px;
+        }
+        @include adaptive(1365) {
+          width: 100%;
+          padding-left: 0;
+        }
       }
     }
 
@@ -79,6 +118,10 @@
       max-width: calc(100% - 155px);
       @include adaptive(1439) {
         max-width: calc(100% - 115px);
+      }
+      @include adaptive(1365) {
+        max-width: 100%;
+        text-align: center;
       }
     }
 
@@ -89,9 +132,37 @@
       height: 95px;
       border-radius: 100%;
       border: 1px solid #fff;
+      @include transition(width, height);
       @include adaptive(1439) {
         width: 85px;
         height: 85px;
+        margin-top: 5px;
+      }
+      @include adaptive(1365) {
+        width: 45px;
+        height: 45px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      @include adaptive(767) {
+        width: 85px;
+        height: 85px;
+      }
+
+      .is-collapsed & {
+        @include adaptive(1365) {
+          width: 85px;
+          height: 85px;
+          @include transition(width, height);
+        }
+      }
+
+      .is-collapsed-hover & {
+        @include adaptive(1365) {
+          width: 85px;
+          height: 85px;
+          @include transition(width, height);
+        }
       }
 
       img {
@@ -106,6 +177,12 @@
       @include fluid(font-size, 320px, 1600px, 20px, 24px);
       @extend %fontFamilyOpenSans;
       @include transition(opacity);
+      @include adaptive(1439) {
+        opacity: 0;
+      }
+      @include adaptive(767) {
+        opacity: 1;
+      }
 
       .is-collapsed & {
         opacity: 0;
@@ -113,6 +190,10 @@
         @include adaptive(1439) {
           opacity: 1;
         }
+      }
+
+      .is-collapsed-hover & {
+        opacity: 1;
       }
     }
   }
@@ -172,12 +253,111 @@
       display: flex;
       flex-direction: column;
       margin-top: 0;
+    }
 
-      .sidebar__navigation-btn {
-        min-height: 0;
+    .uk-accordion-title,
+    &-btn {
+      display: flex;
+      align-items: center;
+      @include transition(border-color, background-color);
+
+      > div {
+        &:nth-of-type(1) {
+          display: flex;
+          justify-content: center;
+          width: 100px;
+          @include transition(width);
+          @include adaptive(1439) {
+            width: 125px;
+          }
+
+          .is-collapsed & {
+            width: 125px;
+            @include transition(width);
+            @include adaptive(1439) {
+              width: 100px;
+            }
+          }
+
+          .is-collapsed-hover & {
+            width: 100px;
+          }
+        }
+
+        &:nth-of-type(2) {
+          width:  100%;
+        }
+
+        &:nth-of-type(3) {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 66px;
+          @include transition(opacity, width);
+          @include adaptive(1439) {
+            opacity: 0;
+            width: 0;
+          }
+
+          .is-collapsed & {
+            opacity: 0;
+            width: 0;
+            @include transition(opacity, width);
+            @include adaptive(1439) {
+              opacity: 1;
+              width: 66px;
+            }
+          }
+
+          .is-collapsed-hover & {
+            opacity: 1;
+            width: 66px;
+          }
+
+          span {
+            svg {
+              fill: #b1b0b0;
+              @include transition(transform);
+            }
+          }
+        }
+      }
+
+      &--external {
+        min-height: 84px;
+        border-bottom: 1px solid rgba(#b1b0b0, 0.3);
+
+        &:hover {
+          text-decoration: none;
+          background-color: #3f3f3f;
+          @include transition(background-color);
+
+          > div {
+            span,
+            p {
+              color: #00a6d9;
+              @include transition(color);
+            }
+          }
+        }
+
+        > div {
+          &:nth-of-type(1) {
+            .is-collapsed & {
+              @include adaptive(1439) {
+                width: 100px;
+              }
+            }
+          }
+          &:nth-of-type(2) {
+            max-width: calc(100% - (100px + 66px));
+          }
+        }
+      }
+
+      &--internal {
         padding-top: 17px;
         padding-bottom: 17px;
-        border-bottom: 0;
 
         &:hover {
           text-decoration: none;
@@ -193,47 +373,42 @@
 
         > div {
           &:nth-of-type(1) {
-            display: flex;
-            justify-content: center;
-            width: 100px;
-          }
+            .is-collapsed & {
+              @include adaptive(1439) {
+                width: 40px;
+              }
+            }
 
+            .is-collapsed-hover & {
+              @include adaptive(1439) {
+                width: 40px;
+              }
+            }
+          }
           &:nth-of-type(2) {
-            width:  100%;
-            max-width:  calc(100% - 100px);
+            max-width: calc(100% - 100px);
+            @include adaptive(1439) {
+              max-width: calc(100% - 40px);
+            }
           }
         }
-      }
-    }
 
-    .uk-accordion-title,
-    &-btn {
-      display: flex;
-      align-items: center;
-      min-height: 84px;
-      border-bottom: 1px solid rgba(#b1b0b0, 0.3);
-      @include transition(border-color, background-color);
-
-      &:hover {
-        text-decoration: none;
-        background-color: #3f3f3f;
-        @include transition(background-color);
-
-        > div {
-          span,
-          p {
-            color: #00a6d9;
-            @include transition(color);
-          }
+        p {
+          overflow: hidden;
+          text-overflow: ellipsis;
         }
       }
 
       p {
         white-space: nowrap;
         margin: 0;
+        padding-right: 15px;
         color: #b1b0b0;
-        @include fluid(font-size, 320px, 1600px, 20px, 24px);
+        @include fluid(font-size, 320px, 1600px, 18px, 24px);
         @include transition(color, opacity);
+        @include adaptive(1439) {
+          opacity: 0;
+        }
 
         .is-collapsed & {
           opacity: 0;
@@ -241,6 +416,10 @@
           @include adaptive(1439) {
             opacity: 1;
           }
+        }
+
+        .is-collapsed-hover & {
+          opacity: 1;
         }
       }
 
@@ -285,54 +464,6 @@
         &[uk-icon="file-text"] {
           svg {
             width: 26px;
-          }
-        }
-      }
-
-      > div {
-        &:nth-of-type(1) {
-          display: flex;
-          justify-content: center;
-          width: 100px;
-          @include transition(width);
-
-          .is-collapsed & {
-            width: 125px;
-            @include transition(width);
-            @include adaptive(1439) {
-              width: 100px;
-            }
-          }
-        }
-
-        &:nth-of-type(2) {
-          width:  100%;
-          max-width:  calc(100% - (100px + 66px));
-        }
-
-        &:nth-of-type(3) {
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          width: 66px;
-          @include transition(opacity, width);
-
-          .is-collapsed & {
-            opacity: 0;
-            width: 0;
-            @include transition(opacity, width);
-            @include adaptive(1439) {
-              opacity: 1;
-              width: 66px;
-            }
-          }
-
-
-          span {
-            svg {
-              fill: #b1b0b0;
-              @include transition(transform);
-            }
           }
         }
       }

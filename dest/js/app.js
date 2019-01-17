@@ -112,14 +112,40 @@ $(document).ready(function (ev) {
    * @description
    */
   var initCollapseSibedar = function initCollapseSibedar() {
+    var _body = $('body');
+
     $('[btn-collapse-js]').on('click', function (ev) {
       var _btn = $(ev.currentTarget);
 
-      $('body').toggleClass('is-collapsed');
+      if (_body.hasClass('is-collapsed')) {
+        _body.removeClass('is-collapsed');
+      } else {
+        _body.addClass('is-collapsed');
+      }
     });
 
     $('[btn-collapseHide-js]').on('click', function (ev) {
-      $('body').removeClass('is-collapsed');
+      _body.removeClass('is-collapsed');
+    });
+
+    /**
+     *
+     * @param classListMod
+     */
+    var hoverCallback = function hoverCallback(classListMod) {
+      if ($(window).width() > 767) {
+        if ($(window).width() > 1439 && _body.hasClass('is-collapsed')) {
+          _body[classListMod]('is-collapsed-hover');
+        } else {
+          _body[classListMod]('is-collapsed-hover');
+        }
+      }
+    };
+
+    $('#sidebar').hover(function (ev) {
+      hoverCallback('addClass');
+    }, function (ev) {
+      hoverCallback('removeClass');
     });
   };
 

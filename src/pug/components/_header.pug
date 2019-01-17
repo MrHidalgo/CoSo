@@ -19,11 +19,9 @@ header#header.header
 
       div
         .header__search
-          form(action="" autocomplete='off')
-            label(for='search')
-              span(uk-icon="search")
-            input(type='text' id='search' name='search' placeholder='Search ...')
-
+          form(action="" autocomplete='off' class="uk-search uk-search-large")
+            span(uk-search-icon)
+            input(class="uk-search-input" type="search" placeholder="Search...")
 
         .header__date
           p!= "<span>12:00</span> PM"

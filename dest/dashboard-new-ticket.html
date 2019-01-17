@@ -44,9 +44,8 @@
               <div><i></i><i></i><i></i></div><span>Collapse</span></a></div>
           <div>
             <div class="header__search">
-              <form action="" autocomplete="off">
-                <label for="search"><span uk-icon="search"></span></label>
-                <input type="text" id="search" name="search" placeholder="Search ...">
+              <form class="uk-search uk-search-large" action="" autocomplete="off"><span uk-search-icon></span>
+                <input class="uk-search-input" type="search" placeholder="Search...">
               </form>
             </div>
             <div class="header__date">
@@ -75,90 +74,92 @@
             <p class="sidebar__profile-name">Randah McKinnie</p>
           </div>
         </div>
-        <div class="sidebar__navigation"><a class="sidebar__navigation-btn" href="#" title="">
-            <div><span uk-icon="thumbnails"></span></div>
-            <div>
-              <p>Dashboard</p>
-            </div>
-            <div></div></a><a class="sidebar__navigation-btn" href="#" title="">
-            <div><span uk-icon="users"></span></div>
-            <div>
-              <p>Account</p>
-            </div>
-            <div></div></a><a class="sidebar__navigation-btn" href="#" title="">
-            <div><span uk-icon="receiver"></span></div>
-            <div>
-              <p>Tech Support</p>
-            </div>
-            <div></div></a>
+        <div class="sidebar__navigation"><a class="sidebar__navigation-btn sidebar__navigation-btn--external" href="#" title="">
+                <div><span uk-icon="thumbnails"></span></div>
+                <div>
+                  <p>Dashboard</p>
+                </div>
+                <div></div></a><a class="sidebar__navigation-btn sidebar__navigation-btn--external" href="#" title="">
+                <div><span uk-icon="users"></span></div>
+                <div>
+                  <p>Account</p>
+                </div>
+                <div></div></a><a class="sidebar__navigation-btn sidebar__navigation-btn--external" href="#" title="">
+                <div><span uk-icon="receiver"></span></div>
+                <div>
+                  <p>Tech Support</p>
+                </div>
+                <div></div></a>
           <ul uk-accordion="multiple: true">
-            <li><a class="uk-accordion-title sidebar__navigation-btn" href="#" title="">
-                <div><span uk-icon="world"></span></div>
-                <div>
-                  <p>Monitors</p>
-                </div>
-                <div><span uk-icon="chevron-down"></span></div></a>
-              <div class="uk-accordion-content"><a class="uk-accordion-title sidebar__navigation-btn" href="#" title="">
-                  <div></div>
-                  <div>
-                    <p>Meeting Activity</p>
-                  </div></a><a class="uk-accordion-title sidebar__navigation-btn" href="#" title="">
-                  <div></div>
-                  <div>
-                    <p>Virtual Class Activity</p>
-                  </div></a><a class="uk-accordion-title sidebar__navigation-btn" href="#" title="">
-                  <div></div>
-                  <div>
-                    <p>Content Launch Activity</p>
-                  </div></a><a class="uk-accordion-title sidebar__navigation-btn" href="#" title="">
-                  <div></div>
-                  <div>
-                    <p>Training Launch Activity</p>
-                  </div></a><a class="uk-accordion-title sidebar__navigation-btn" href="#" title="">
-                  <div></div>
-                  <div>
-                    <p>On-Demand Activity</p>
-                  </div></a></div>
+            <li><a class="uk-accordion-title sidebar__navigation-btn sidebar__navigation-btn--external" href="#" title="">
+                    <div><span uk-icon="world"></span></div>
+                    <div>
+                      <p>Monitors</p>
+                    </div>
+                    <div><span uk-icon="chevron-down"></span></div></a>
+              <div class="uk-accordion-content"><a class="sidebar__navigation-btn sidebar__navigation-btn--internal" href="#" title="">
+                      <div><span uk-icon=""></span></div>
+                      <div>
+                        <p>Meeting Activity</p>
+                      </div></a><a class="sidebar__navigation-btn sidebar__navigation-btn--internal" href="#" title="">
+                      <div><span uk-icon=""></span></div>
+                      <div>
+                        <p>Virtual Class Activity</p>
+                      </div></a><a class="sidebar__navigation-btn sidebar__navigation-btn--internal" href="#" title="">
+                      <div><span uk-icon=""></span></div>
+                      <div>
+                        <p>Content Launch Activity</p>
+                      </div></a><a class="sidebar__navigation-btn sidebar__navigation-btn--internal" href="#" title="">
+                      <div><span uk-icon=""></span></div>
+                      <div>
+                        <p>Training Launch Activity</p>
+                      </div></a><a class="sidebar__navigation-btn sidebar__navigation-btn--internal" href="#" title="">
+                      <div><span uk-icon=""></span></div>
+                      <div>
+                        <p>On-Demand Activity</p>
+                      </div></a>
+              </div>
             </li>
-            <li><a class="uk-accordion-title sidebar__navigation-btn" href="#" title="">
-                <div><span uk-icon="file-text"></span></div>
-                <div>
-                  <p>Reports</p>
-                </div>
-                <div><span uk-icon="chevron-down"></span></div></a>
-              <div class="uk-accordion-content"><a class="uk-accordion-title sidebar__navigation-btn" href="#" title="">
-                  <div></div>
-                  <div>
-                    <p>Meeting Activity</p>
-                  </div></a><a class="uk-accordion-title sidebar__navigation-btn" href="#" title="">
-                  <div></div>
-                  <div>
-                    <p>Virtual Class Activity</p>
-                  </div></a><a class="uk-accordion-title sidebar__navigation-btn" href="#" title="">
-                  <div></div>
-                  <div>
-                    <p>Content Launch Activity</p>
-                  </div></a><a class="uk-accordion-title sidebar__navigation-btn" href="#" title="">
-                  <div></div>
-                  <div>
-                    <p>Training Launch Activity</p>
-                  </div></a><a class="uk-accordion-title sidebar__navigation-btn" href="#" title="">
-                  <div></div>
-                  <div>
-                    <p>On-Demand Activity</p>
-                  </div></a></div>
+            <li><a class="uk-accordion-title sidebar__navigation-btn sidebar__navigation-btn--external" href="#" title="">
+                    <div><span uk-icon="file-text"></span></div>
+                    <div>
+                      <p>Reports</p>
+                    </div>
+                    <div><span uk-icon="chevron-down"></span></div></a>
+              <div class="uk-accordion-content"><a class="sidebar__navigation-btn sidebar__navigation-btn--internal" href="#" title="">
+                      <div><span uk-icon=""></span></div>
+                      <div>
+                        <p>Meeting Activity</p>
+                      </div></a><a class="sidebar__navigation-btn sidebar__navigation-btn--internal" href="#" title="">
+                      <div><span uk-icon=""></span></div>
+                      <div>
+                        <p>Virtual Class Activity</p>
+                      </div></a><a class="sidebar__navigation-btn sidebar__navigation-btn--internal" href="#" title="">
+                      <div><span uk-icon=""></span></div>
+                      <div>
+                        <p>Content Launch Activity</p>
+                      </div></a><a class="sidebar__navigation-btn sidebar__navigation-btn--internal" href="#" title="">
+                      <div><span uk-icon=""></span></div>
+                      <div>
+                        <p>Training Launch Activity</p>
+                      </div></a><a class="sidebar__navigation-btn sidebar__navigation-btn--internal" href="#" title="">
+                      <div><span uk-icon=""></span></div>
+                      <div>
+                        <p>On-Demand Activity</p>
+                      </div></a>
+              </div>
             </li>
-          </ul><a class="sidebar__navigation-btn" href="#" title="">
-            <div><span uk-icon="cog"></span></div>
-            <div>
-              <p>Settings</p>
-            </div>
-            <div></div></a><a class="sidebar__navigation-btn" href="#" title="">
-            <div><span uk-icon="sign-out"></span></div>
-            <div>
-              <p>Logout</p>
-            </div>
-            <div></div></a>
+          </ul><a class="sidebar__navigation-btn sidebar__navigation-btn--external" href="#" title="">
+                <div><span uk-icon="cog"></span></div>
+                <div>
+                  <p>Settings</p>
+                </div>
+                <div></div></a><a class="sidebar__navigation-btn sidebar__navigation-btn--external" href="#" title="">
+                <div><span uk-icon="sign-out"></span></div>
+                <div>
+                  <p>Logout</p>
+                </div>
+                <div></div></a>
         </div>
       </div>
     </section>
