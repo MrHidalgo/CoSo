@@ -101,20 +101,29 @@
       @include adaptive(1439) {
         max-width: calc(100% - (125px + 353px));
       }
+      @include adaptive(1365) {
+        max-width: calc(100% - (62px + 353px));
+      }
+      @include adaptive(1199) {
+        max-width: calc(100% - (62px + 280px));
+      }
       @include adaptive(767) {
-        max-width: calc(100% - 62px);
+        max-width: 100%;
+        border: none
       }
 
       .is-collapsed & {
-        max-width: calc(100% - (125px + 353px));
-        @include transition(max-width);
+        @include respond(wide-medium) {
+          max-width: calc(100% - (125px + 353px));
+          @include transition(max-width);
+        }
       }
 
       > div {
         &:nth-of-type(1) {
           width: 200px;
           border-right: 1px solid #e6e1e1;
-          @include adaptive(767) {
+          @include adaptive(1365) {
             width: 62px;
           }
         }
@@ -127,8 +136,12 @@
           max-width: calc(100% - 200px);
           padding-left: 25px;
           padding-right: 25px;
-          @include adaptive(767) {
-            display: none;
+          @include adaptive(1365) {
+            max-width: calc(100% - 62px);
+          }
+          @include adaptive(1199) {
+            padding-left: 15px;
+            padding-right: 15px;
           }
         }
       }
@@ -140,6 +153,10 @@
       width: 353px;
       padding-left: 25px;
       padding-right: 15px;
+      @include adaptive(1199) {
+        width: 280px;
+        padding-left: 15px;
+      }
       @include adaptive(767) {
         display: none;
       }
@@ -215,7 +232,7 @@
       padding-left: 18px;
       color: #4e4e4e;
       font-size: 24px;
-      @include adaptive(767) {
+      @include adaptive(1365) {
         display: none;
       }
     }
@@ -225,6 +242,9 @@
     display: flex;
     width: 100%;
     max-width: calc(100% - 240px);
+    @include adaptive(1199) {
+      max-width: 100%;
+    }
 
     form {
       display: flex;
@@ -242,6 +262,9 @@
         left: 0;
         width: 58px;
         height: 100%;
+        @include adaptive(1199) {
+          width: 44px;
+        }
 
         span {
           svg {
@@ -263,9 +286,16 @@
         border: none;
         box-shadow: none;
         background-color: transparent;
-        font-size: 24px;
+        @include fluid(font-size, 320px, 767px, 20px, 24px);
         @include inputPlaceholder {
           color: #4e4e4e;
+          @include fluid(font-size, 320px, 767px, 20px, 24px);
+        }
+        @include adaptive(1199) {
+          padding-left: 44px;
+        }
+        @include adaptive(767) {
+          padding-right: 0;
         }
       }
     }
@@ -276,6 +306,9 @@
     align-items: center;
     justify-content: flex-end;
     width: 240px;
+    @include adaptive(1199) {
+      display: none;
+    }
 
     p {
       font-size: 18px;
@@ -287,6 +320,10 @@
       margin-left: 22px;
       margin-right: 22px;
       background-color: #e6e1e1;
+      @include adaptive(1199) {
+        margin-left: 15px;
+        margin-right: 15px;
+      }
     }
   }
 

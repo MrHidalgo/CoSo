@@ -32,7 +32,7 @@
       width: (125px + 200px);
     }
     @include adaptive(1365) {
-      width: (65px + 200px);
+      width: 300px;
     }
     @include adaptive(767) {
       width: 250px;
@@ -111,14 +111,23 @@
           @include transition(padding-bottom, border-bottom, background-color);
 
           > .sidebar__navigation-btn {
-            border-bottom: 0;
-            @include transition(border-bottom);
+            border-color: transparent;
+            @include transition(border-color);
 
             div {
               span,
               p {
                 color: #00a6d9;
                 @include transition(color);
+              }
+
+              &:nth-of-type(3) {
+                span {
+                  svg {
+                    transform: rotate(-180deg);
+                    @include transition(transform);
+                  }
+                }
               }
             }
           }
@@ -176,7 +185,7 @@
       align-items: center;
       min-height: 84px;
       border-bottom: 1px solid rgba(#b1b0b0, 0.3);
-      @include transition(border-bottom, background-color);
+      @include transition(border-color, background-color);
 
       &:hover {
         text-decoration: none;
@@ -258,7 +267,17 @@
         }
 
         &:nth-of-type(3) {
+          display: flex;
+          align-items: center;
+          justify-content: center;
           width: 66px;
+
+          span {
+            svg {
+              fill: #b1b0b0;
+              @include transition(transform);
+            }
+          }
         }
       }
     }
