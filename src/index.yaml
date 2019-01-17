@@ -3,7 +3,7 @@ ProjectTitle: CoSo Insights
 PageList:
 - file: index.html
   titleName: Login
-  ready: 01
+  ready: 75
 - file: dashboard.html
   titleName: Dashboard
   ready: 01

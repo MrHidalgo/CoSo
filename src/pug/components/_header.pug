@@ -18,7 +18,23 @@ header#header.header
           span!= "Collapse"
 
       div
+        .header__date
+          p!= "<span>12:00</span> PM"
+          span
+          p!= "Dec 10, 2018"
 
     .header__wrapper-right
+
+      .header__dCenter
+        p!= "Data Centers:"
+        div
+          a(href="#" class="" title="")
+            i.icon-png.i-data-center-gb
+          a(href="#" class="" title="")
+            i.icon-png.i-data-center-us
+          a(href="#" class="" title="")
+            i.icon-png.i-data-center-es
+          a(href="#" class="" title="")
+            i.icon-png.i-data-center-ch
 
 // HEADER :: END
