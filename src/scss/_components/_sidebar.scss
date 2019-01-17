@@ -62,11 +62,24 @@
     &-left {
       width: 155px;
       padding-left: 35px;
+      @include transition(padding-left);
+      @include adaptive(1439) {
+        width: 115px;
+        padding-left: 15px;
+      }
+
+      .is-collapsed & {
+        padding-left: 15px;
+        @include transition(padding-left);
+      }
     }
 
     &-right {
       width: 100%;
       max-width: calc(100% - 155px);
+      @include adaptive(1439) {
+        max-width: calc(100% - 115px);
+      }
     }
 
     &-img {
@@ -76,6 +89,10 @@
       height: 95px;
       border-radius: 100%;
       border: 1px solid #fff;
+      @include adaptive(1439) {
+        width: 85px;
+        height: 85px;
+      }
 
       img {
         @extend %imageResCoverAbs;
@@ -83,10 +100,20 @@
     }
 
     &-name {
+      white-space: nowrap;
       margin: 0;
       color: #f7a209;
-      font-size: 24px;
+      @include fluid(font-size, 320px, 1600px, 20px, 24px);
       @extend %fontFamilyOpenSans;
+      @include transition(opacity);
+
+      .is-collapsed & {
+        opacity: 0;
+        @include transition(opacity);
+        @include adaptive(1439) {
+          opacity: 1;
+        }
+      }
     }
   }
   // profile :: end
@@ -205,8 +232,16 @@
         white-space: nowrap;
         margin: 0;
         color: #b1b0b0;
-        font-size: 24px;
-        @include transition(color);
+        @include fluid(font-size, 320px, 1600px, 20px, 24px);
+        @include transition(color, opacity);
+
+        .is-collapsed & {
+          opacity: 0;
+          @include transition(opacity);
+          @include adaptive(1439) {
+            opacity: 1;
+          }
+        }
       }
 
       span {
@@ -259,6 +294,15 @@
           display: flex;
           justify-content: center;
           width: 100px;
+          @include transition(width);
+
+          .is-collapsed & {
+            width: 125px;
+            @include transition(width);
+            @include adaptive(1439) {
+              width: 100px;
+            }
+          }
         }
 
         &:nth-of-type(2) {
@@ -271,6 +315,18 @@
           align-items: center;
           justify-content: center;
           width: 66px;
+          @include transition(opacity, width);
+
+          .is-collapsed & {
+            opacity: 0;
+            width: 0;
+            @include transition(opacity, width);
+            @include adaptive(1439) {
+              opacity: 1;
+              width: 66px;
+            }
+          }
+
 
           span {
             svg {

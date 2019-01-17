@@ -28,7 +28,9 @@ $(document).ready((ev) => {
       const className = ".sidebar, .header__collapse, .header__wrapper-left";
 
       if (!$(ev.target).closest(className).length) {
-        $('body').removeClass('is-collapsed');
+        if($(window).width() < 768) {
+          $('body').removeClass('is-collapsed');
+        }
       }
     });
   };
