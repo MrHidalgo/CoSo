@@ -28,7 +28,7 @@ body {
   font-family: "Roboto", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  @include adaptive(1199) {
+  @include adaptive(767) {
     cursor: pointer;
   }
 

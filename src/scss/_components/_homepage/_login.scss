@@ -8,13 +8,15 @@
   &__box {
     min-height: calc(100vh - 100px);
     text-align: center;
+    font-size: 0;
 
     &:after {
-      content: '';
-      display: inline-block;
-      vertical-align: middle;
-      min-height: calc(100vh - 100px);
-      margin-right: -4px;
+      @include respond(medium) {
+        content: '';
+        display: inline-block;
+        vertical-align: middle;
+        min-height: calc(100vh - 100px);
+      }
     }
 
     &-wrapper {
@@ -31,6 +33,11 @@
     align-items: center;
     position: relative;
     height: 811px;
+    @include adaptive(767) {
+      height: auto;
+      flex-wrap: wrap;
+      padding-bottom: 30px;
+    }
 
     &:before {
       content: '';
@@ -41,6 +48,10 @@
       width: 100%;
       height: calc(100% - 120px);
       background-color: #4e4e4e;
+      @include adaptive(767) {
+        top: 0;
+        height: 100%;
+      }
     }
 
     &-left ,
@@ -60,37 +71,77 @@
       padding-bottom: 90px;
       padding-left: 103px;
       width: 509px;
+      @include adaptive(991) {
+        padding-left: 30px;
+        width: 350px;
+      }
+      @include adaptive(767) {
+        width: 100%;
+        padding: 0 15px;
+
+        .logo,
+        .login__site {
+          display: none;
+        }
+      }
     }
 
     &-right {
       width: 100%;
       max-width: calc(100% - 509px);
+      @include adaptive(991) {
+        max-width: calc(100% - 350px);
+      }
+      @include adaptive(767) {
+        max-width: 100%;
+      }
+
+      .logo,
+      .login__site {
+        display: none;
+        @include adaptive(767) {
+          display: block;
+        }
+      }
+    }
+  }
+
+  &__title,
+  &__text,
+  &__site {
+    @include adaptive(767) {
+      text-align: center;
     }
   }
 
   &__title {
-    padding-top: 119px;
-    padding-bottom: 47px;
     color: #fff;
     line-height: line-height-convert(53,48);
-    font-size: 48px;
+    @include fluid(padding-top, 320px, 767px, 50px, 119px);
+    @include fluid(padding-bottom, 320px, 767px, 30px, 47px);
+    @include fluid(font-size, 320px, 767px, 38px, 48px);
   }
 
   &__text {
-    padding-bottom: 55px;
     color: #00a6d9;
     line-height: line-height-convert(30, 24);
-    font-size: 24px;
+    @include fluid(padding-bottom, 320px, 767px, 30px, 55px);
+    @include fluid(font-size, 320px, 767px, 20px, 24px);
   }
 
   .logo {
-    margin-bottom: 118px;
+    @include fluid(margin-bottom, 320px, 767px, 30px, 118px);
+    @include adaptive(767) {
+      &__link {
+        justify-content: center;
+      }
+    }
   }
 
   &__site {
     color: #ffffff;
-    font-size: 24px;
     @include transition(color);
+    @include fluid(font-size, 320px, 767px, 20px, 24px);
 
     &:hover {
       color: #00a6d9;
@@ -105,10 +156,24 @@
     height: 811px;
     background-color: #fff;
     box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.15);
+    @include adaptive(767) {
+      height: auto;
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 30px;
+    }
 
     &-head {
       height: calc(100% - 96px);
       padding: 144px 55px 0;
+      @include fluid(padding-top, 320px, 767px, 50px, 144px);
+      @include adaptive(767) {
+        padding-bottom: 50px;
+      }
+      @include adaptive(575) {
+        padding-left: 15px;
+        padding-right: 15px;
+      }
     }
 
     &-footer {
@@ -121,16 +186,16 @@
     }
 
     &-title {
-      padding-bottom: 143px;
       color: #00a6d9;
       text-align: center;
-      font-size: 30px;
+      @include fluid(padding-bottom, 320px, 767px, 50px, 143px);
+      @include fluid(font-size, 320px, 767px, 24px, 30px);
     }
 
     &-link {
       color: #00a6d9;
-      font-size: 24px;
       @include transition(color);
+      @include fluid(font-size, 320px, 767px, 20px, 24px);
 
       &:hover {
         color: #4e4e4e;

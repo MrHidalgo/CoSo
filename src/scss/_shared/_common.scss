@@ -3,7 +3,7 @@
 section {
   &.login {
     .uk-input {
-      margin-bottom: 42px;
+      @include fluid(margin-bottom, 320px, 767px, 30px, 42px);
     }
     .uk-button {
       width: 100%;
@@ -14,8 +14,9 @@ section {
       border-width: 1px;
       border-color: rgb(218, 216, 216);
       color: #ffffff;
-      font-size: 30px;
       text-transform: uppercase;
+      @include fluid(margin-top, 320px, 767px, 0, 27px);
+      @include fluid(font-size, 320px, 767px, 24px, 30px);
     }
   }
 
@@ -24,10 +25,10 @@ section {
     padding: 0 22px;
     border-radius: 10px;
     border: 2px solid rgb(218, 216, 216);
-    font-size: 24px;
+    @include fluid(font-size, 320px, 767px, 20px, 24px);
     @include inputPlaceholder {
       color: #a7a3a3;
-      font-size: 24px;
+      @include fluid(font-size, 320px, 767px, 20px, 24px);
     }
   }
 
