@@ -44,20 +44,6 @@ $(document).ready((ev) => {
 	const initCollapseSibedar = () => {
     const _body = $('body');
 
-	  $('[btn-collapse-js]').on('click', (ev) => {
-	    const _btn = $(ev.currentTarget);
-
-      if(_body.hasClass('is-collapsed')) {
-        _body.removeClass('is-collapsed');
-      } else {
-        _body.addClass('is-collapsed');
-      }
-    });
-
-    $('[btn-collapseHide-js]').on('click', (ev) => {
-      _body.removeClass('is-collapsed');
-    });
-
     /**
      *
      * @param classListMod
@@ -66,18 +52,49 @@ $(document).ready((ev) => {
       if($(window).width() > 767) {
         if($(window).width() > 1439 && _body.hasClass('is-collapsed')) {
           _body[classListMod]('is-collapsed-hover');
-        } else {
+        } else if ($(window).width() < 1440 && !_body.hasClass('is-collapsed')) {
           _body[classListMod]('is-collapsed-hover');
         }
       }
     };
 
+    /**
+     *
+     */
+    const hideAccordionCallback = () => {
+      let _accordion = UIkit.accordion('[uk-accordion]');
+
+      for(let idx = 0; idx < _accordion.items.length; idx++) {
+        if($( _accordion.items[idx]).hasClass('uk-open')) {
+          _accordion.toggle(idx, true);
+        }
+      }
+    };
+
+	  $('[btn-collapse-js]').on('click', (ev) => {
+	    const _btn = $(ev.currentTarget);
+
+      if(_body.hasClass('is-collapsed')) {
+        _body.removeClass('is-collapsed');
+      } else {
+        _body.addClass('is-collapsed');
+      }
+
+      hideAccordionCallback();
+    });
+
+    $('[btn-collapseHide-js]').on('click', (ev) => {
+      _body.removeClass('is-collapsed');
+    });
+
     $('#sidebar').hover(
       function(ev) {
         hoverCallback('addClass');
+        hideAccordionCallback();
       },
       function(ev) {
         hoverCallback('removeClass');
+        hideAccordionCallback();
       }
     );
   };

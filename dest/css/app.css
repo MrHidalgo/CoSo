@@ -1344,7 +1344,7 @@ section .uk-button {
 
 /* line 44, src/scss/_components/_sidebar.scss */
 .is-collapsed-hover .sidebar {
-  width: 378px;
+  width: 379px;
 }
 
 @media screen and (max-width: 1439px) {

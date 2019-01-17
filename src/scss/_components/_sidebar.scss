@@ -42,7 +42,7 @@
   }
 
   .is-collapsed-hover & {
-    width: 378px;
+    width: 379px;
     @include adaptive(1439) {
       width: (125px + 200px);
     }
