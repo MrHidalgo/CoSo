@@ -18,6 +18,13 @@ header#header.header
           span!= "Collapse"
 
       div
+        .header__search
+          form(action="" autocomplete='off')
+            label(for='search')
+              span(uk-icon="search")
+            input(type='text' id='search' name='search' placeholder='Search ...')
+
+
         .header__date
           p!= "<span>12:00</span> PM"
           span
