@@ -1,0 +1,25 @@
+// SECTION report virtual class activity :: START
+
+#r-virtualClass.r-virtualClass
+
+  .uk-section.uk-padding-remove-top.uk-padding-remove-bottom
+    .uk-card.uk-card-default.uk-box-shadow-small
+      .uk-card-header.uk-flex.uk-flex-middle.uk-flex-between
+        .uk-width-1-2.uk-flex.uk-flex-middle
+          h2.uk-margin-remove-bottom.uk-card-title.uk-text-bold!= "Available Hourly Peak Concurrency Reports"
+
+        .uk-width-1-2.uk-flex.uk-flex-right.uk-flex-middle
+          a.uk-button.uk-button-link(href="#" class="" title="")
+            span.uk-text-muted(uk-icon='minus')
+          a.uk-button.uk-button-link.uk-margin-small-left(href="#" class="" title="")
+            span.uk-text-muted(uk-icon='close')
+
+      .uk-card-body
+        div(uk-grid)
+          each val, idx in [1,2,3,4]
+            .uk-width-1-4
+              a(href='#' uk-tooltip="title: Report Details; pos: top").uk-card.uk-flex.uk-flex-between.uk-padding-small.uk-background-primary
+                p.uk-margin-remove.uk-text-uppercase.uk-text-bold!= "REPORT NAME HERE"
+                span(uk-icon="move")
+
+// SECTION report virtual class activity :: END

@@ -5,7 +5,7 @@
   div.uk-child-width-expand.uk-margin-medium-top.uk-margin-medium-bottom(uk-tab uk-switcher="animation: uk-animation-fade")
     li
       a.uk-text-capitalize(href="#" class="" title="")!= "Meeting Activity"
-    li
+    li.uk-active
       a.uk-text-capitalize(href="#" class="" title="")!= "Virtual Class Activity"
     li
       a.uk-text-capitalize(href="#" class="" title="")!= "Content Launch Activity"
@@ -18,7 +18,7 @@
     li
       span!= "Meeting Activity - CONTENT"
     li
-      span!= "Virtual Class Activity - CONTENT"
+      include ./_report-virtual-class
     li
       span!= "Content Launch Activity - CONTENT"
     li

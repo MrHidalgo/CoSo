@@ -2702,23 +2702,54 @@ section .uk-button {
   font-size: 24px;
 }
 
-/* line 5, src/scss/_components/_dashboard/_report-tabs.scss */
+/* line 6, src/scss/_components/_dashboard/_report-tabs.scss */
 .r-tabs [uk-tab]:before {
   border-width: 2px;
   border-color: #e6e1e1;
 }
 
-/* line 12, src/scss/_components/_dashboard/_report-tabs.scss */
+/* line 13, src/scss/_components/_dashboard/_report-tabs.scss */
 .r-tabs [uk-tab] li.uk-active a {
   border-width: 7px;
   border-color: #00a6d9;
 }
 
-/* line 19, src/scss/_components/_dashboard/_report-tabs.scss */
+/* line 20, src/scss/_components/_dashboard/_report-tabs.scss */
 .r-tabs [uk-tab] a {
   font-size: 24px;
   padding: 0;
   padding-bottom: 40px;
+}
+
+/* line 32, src/scss/_components/_dashboard/_report-tabs.scss */
+.r-virtualClass .uk-card {
+  border-left: 6px solid #6d6a67;
+}
+
+/* line 35, src/scss/_components/_dashboard/_report-tabs.scss */
+.r-virtualClass .uk-card:hover {
+  text-decoration: none;
+}
+
+/* line 39, src/scss/_components/_dashboard/_report-tabs.scss */
+.r-virtualClass .uk-card p {
+  color: #ffffff;
+  font-size: 18px;
+}
+
+/* line 44, src/scss/_components/_dashboard/_report-tabs.scss */
+.r-virtualClass .uk-card svg {
+  fill: #fff;
+}
+
+/* line 47, src/scss/_components/_dashboard/_report-tabs.scss */
+.r-virtualClass .uk-card svg rect {
+  stroke: #fff !important;
+}
+
+/* line 53, src/scss/_components/_dashboard/_report-tabs.scss */
+.r-virtualClass .uk-background-primary {
+  background-color: #00a6d9;
 }
 
 /*# sourceMappingURL=maps/app.css.map */

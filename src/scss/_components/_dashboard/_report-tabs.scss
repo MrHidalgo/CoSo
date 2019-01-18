@@ -1,5 +1,6 @@
 // SECTION report tabs :: START
 
+// main tabs
 .r-tabs {
   [uk-tab] {
     &:before {
@@ -23,5 +24,37 @@
     }
   }
 }
+// main tabs :: end
+
+// virtual class activity
+.r-virtualClass {
+  .uk {
+    &-card {
+      border-left: 6px solid #6d6a67;
+
+      &:hover {
+        text-decoration: none;
+      }
+
+      p {
+        color: #ffffff;
+        font-size: 18px;
+      }
+
+      svg {
+        fill: #fff;
+
+        rect {
+          stroke: #fff !important;
+        }
+      }
+    }
+
+    &-background-primary {
+      background-color: #00a6d9;
+    }
+  }
+}
+// virtual class activity :: end
 
 // SECTION report tabs :: END

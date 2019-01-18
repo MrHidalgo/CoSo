@@ -195,14 +195,41 @@
       <div class="r-tabs" id="r-tabs">
         <div class="uk-child-width-expand uk-margin-medium-top uk-margin-medium-bottom" uk-tab uk-switcher="animation: uk-animation-fade">
           <li><a class="uk-text-capitalize" href="#" title="">Meeting Activity</a></li>
-          <li><a class="uk-text-capitalize" href="#" title="">Virtual Class Activity</a></li>
+          <li class="uk-active"><a class="uk-text-capitalize" href="#" title="">Virtual Class Activity</a></li>
           <li><a class="uk-text-capitalize" href="#" title="">Content Launch Activity</a></li>
           <li><a class="uk-text-capitalize" href="#" title="">Training Launch Activity</a></li>
           <li><a class="uk-text-capitalize" href="#" title="">On-Demand Activity</a></li>
         </div>
         <div class="uk-switcher uk-margin">
           <li><span>Meeting Activity - CONTENT</span></li>
-          <li><span>Virtual Class Activity - CONTENT</span></li>
+          <li>
+            <!-- SECTION report virtual class activity :: START-->
+            <div class="r-virtualClass" id="r-virtualClass">
+              <div class="uk-section uk-padding-remove-top uk-padding-remove-bottom">
+                <div class="uk-card uk-card-default uk-box-shadow-small">
+                  <div class="uk-card-header uk-flex uk-flex-middle uk-flex-between">
+                    <div class="uk-width-1-2 uk-flex uk-flex-middle">
+                      <h2 class="uk-margin-remove-bottom uk-card-title uk-text-bold">Available Hourly Peak Concurrency Reports</h2>
+                    </div>
+                    <div class="uk-width-1-2 uk-flex uk-flex-right uk-flex-middle"><a class="uk-button uk-button-link" href="#" title=""><span class="uk-text-muted" uk-icon="minus"></span></a><a class="uk-button uk-button-link uk-margin-small-left" href="#" title=""><span class="uk-text-muted" uk-icon="close"></span></a></div>
+                  </div>
+                  <div class="uk-card-body">
+                    <div uk-grid>
+                      <div class="uk-width-1-4"><a class="uk-card uk-flex uk-flex-between uk-padding-small uk-background-primary" href="#" uk-tooltip="title: Report Details; pos: top">
+                          <p class="uk-margin-remove uk-text-uppercase uk-text-bold">REPORT NAME HERE</p><span uk-icon="move"></span></a></div>
+                      <div class="uk-width-1-4"><a class="uk-card uk-flex uk-flex-between uk-padding-small uk-background-primary" href="#" uk-tooltip="title: Report Details; pos: top">
+                          <p class="uk-margin-remove uk-text-uppercase uk-text-bold">REPORT NAME HERE</p><span uk-icon="move"></span></a></div>
+                      <div class="uk-width-1-4"><a class="uk-card uk-flex uk-flex-between uk-padding-small uk-background-primary" href="#" uk-tooltip="title: Report Details; pos: top">
+                          <p class="uk-margin-remove uk-text-uppercase uk-text-bold">REPORT NAME HERE</p><span uk-icon="move"></span></a></div>
+                      <div class="uk-width-1-4"><a class="uk-card uk-flex uk-flex-between uk-padding-small uk-background-primary" href="#" uk-tooltip="title: Report Details; pos: top">
+                          <p class="uk-margin-remove uk-text-uppercase uk-text-bold">REPORT NAME HERE</p><span uk-icon="move"></span></a></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- SECTION report virtual class activity :: END-->
+          </li>
           <li><span>Content Launch Activity - CONTENT</span></li>
           <li><span>Training Launch Activity - CONTENT</span></li>
           <li><span>On-Demand Activity - CONTENT</span></li>
