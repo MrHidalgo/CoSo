@@ -1,6 +1,7 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900");
 /* line 9, src/scss/_utilities/_extend.scss */
-.sidebar__profile-name {
+.sidebar__profile-name, .t-activity [uk-grid] .uk-width-1-4 p:nth-of-type(1) {
   font-family: 'Open Sans', sans-serif;
 }
 
@@ -89,6 +90,44 @@
   }
 }
 
+@font-face {
+  font-family: "iconFont";
+  src: url("../fonts/iconFont.eot");
+  src: url("../fonts/iconFont.eot?#iefix") format("eot"), url("../fonts/iconFont.woff2") format("woff2"), url("../fonts/iconFont.woff") format("woff"), url("../fonts/iconFont.ttf") format("truetype"), url("../fonts/iconFont.svg#iconFont") format("svg");
+}
+
+/* line 23, src/scss/_generated/_spriteFont.scss */
+.icon-a-ticket-awaiting:before, .icon-a-ticket-closed:before, .icon-a-ticket-hold:before, .icon-a-ticket-open:before {
+  font-family: "iconFont", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  text-decoration: none;
+  text-transform: none;
+}
+
+/* line 47, src/scss/_generated/_spriteFont.scss */
+.icon-a-ticket-awaiting:before {
+  content: "";
+}
+
+/* line 47, src/scss/_generated/_spriteFont.scss */
+.icon-a-ticket-closed:before {
+  content: "";
+}
+
+/* line 47, src/scss/_generated/_spriteFont.scss */
+.icon-a-ticket-hold:before {
+  content: "";
+}
+
+/* line 47, src/scss/_generated/_spriteFont.scss */
+.icon-a-ticket-open:before {
+  content: "";
+}
+
 /* line 1, src/scss/_shared/_main-setting-reset.scss */
 html,
 body {
@@ -153,7 +192,29 @@ body {
   min-height: 100vh;
 }
 
-/* line 49, src/scss/_shared/_main-setting-reset.scss */
+/* line 50, src/scss/_shared/_main-setting-reset.scss */
+body.is-collapsed > .body {
+  padding-left: 164px;
+  -webkit-transition: padding-left 0.3s ease-in-out, padding-top 0.3s ease-in-out;
+  -o-transition: padding-left 0.3s ease-in-out, padding-top 0.3s ease-in-out;
+  transition: padding-left 0.3s ease-in-out, padding-top 0.3s ease-in-out;
+}
+
+@media screen and (max-width: 1439px) {
+  /* line 50, src/scss/_shared/_main-setting-reset.scss */
+  body.is-collapsed > .body {
+    padding-left: 364px;
+  }
+}
+
+@media screen and (max-width: 1365px) {
+  /* line 50, src/scss/_shared/_main-setting-reset.scss */
+  body.is-collapsed > .body {
+    padding-left: 339px;
+  }
+}
+
+/* line 62, src/scss/_shared/_main-setting-reset.scss */
 body > .body {
   display: -webkit-box;
   display: -webkit-flex;
@@ -172,9 +233,45 @@ body > .body {
   -webkit-flex: 1 0 auto;
       -ms-flex: 1 0 auto;
           flex: 1 0 auto;
+  padding-right: 70px;
+  padding-top: 125px;
+  padding-left: 418px;
+  -webkit-transition: padding-left 0.3s ease-in-out, padding-top 0.3s ease-in-out;
+  -o-transition: padding-left 0.3s ease-in-out, padding-top 0.3s ease-in-out;
+  transition: padding-left 0.3s ease-in-out, padding-top 0.3s ease-in-out;
 }
 
-/* line 55, src/scss/_shared/_main-setting-reset.scss */
+@media screen and (max-width: 1919px) {
+  /* line 62, src/scss/_shared/_main-setting-reset.scss */
+  body > .body {
+    padding-right: 39px;
+  }
+}
+
+@media screen and (max-width: 1439px) {
+  /* line 62, src/scss/_shared/_main-setting-reset.scss */
+  body > .body {
+    padding-left: 164px;
+    padding-top: 65px;
+  }
+}
+
+@media screen and (max-width: 1365px) {
+  /* line 62, src/scss/_shared/_main-setting-reset.scss */
+  body > .body {
+    padding-left: 104px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  /* line 62, src/scss/_shared/_main-setting-reset.scss */
+  body > .body {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
+/* line 86, src/scss/_shared/_main-setting-reset.scss */
 body > .body--start {
   -webkit-box-pack: start;
   -webkit-justify-content: flex-start;
@@ -182,19 +279,26 @@ body > .body--start {
           justify-content: flex-start;
 }
 
-/* line 62, src/scss/_shared/_main-setting-reset.scss */
+/* line 90, src/scss/_shared/_main-setting-reset.scss */
+body > .body--login {
+  padding-left: 0;
+  padding-right: 0;
+  padding-top: 0;
+}
+
+/* line 99, src/scss/_shared/_main-setting-reset.scss */
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
 
-/* line 65, src/scss/_shared/_main-setting-reset.scss */
+/* line 102, src/scss/_shared/_main-setting-reset.scss */
 *:before, *:after {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
 
-/* line 72, src/scss/_shared/_main-setting-reset.scss */
+/* line 109, src/scss/_shared/_main-setting-reset.scss */
 button,
 input,
 optgroup,
@@ -204,36 +308,36 @@ textarea {
   margin: 0;
 }
 
-/* line 82, src/scss/_shared/_main-setting-reset.scss */
+/* line 119, src/scss/_shared/_main-setting-reset.scss */
 button,
 input {
   overflow: visible;
 }
 
-/* line 88, src/scss/_shared/_main-setting-reset.scss */
+/* line 125, src/scss/_shared/_main-setting-reset.scss */
 button[disabled] {
   opacity: 0.55;
   cursor: not-allowed;
 }
 
-/* line 94, src/scss/_shared/_main-setting-reset.scss */
+/* line 131, src/scss/_shared/_main-setting-reset.scss */
 [type="search"] {
   -webkit-appearance: textfield;
   outline-offset: -2px;
 }
 
-/* line 100, src/scss/_shared/_main-setting-reset.scss */
+/* line 137, src/scss/_shared/_main-setting-reset.scss */
 [type="search"]::-webkit-search-cancel-button,
 [type="search"]::-webkit-search-decoration {
   -webkit-appearance: none;
 }
 
-/* line 106, src/scss/_shared/_main-setting-reset.scss */
+/* line 143, src/scss/_shared/_main-setting-reset.scss */
 textarea {
   overflow: auto;
 }
 
-/* line 111, src/scss/_shared/_main-setting-reset.scss */
+/* line 148, src/scss/_shared/_main-setting-reset.scss */
 p,
 h1, h2, h3, h4, h5, h6,
 hr {
@@ -241,36 +345,36 @@ hr {
   padding: 0;
 }
 
-/* line 119, src/scss/_shared/_main-setting-reset.scss */
+/* line 156, src/scss/_shared/_main-setting-reset.scss */
 ul {
   margin: 0;
   padding: 0;
 }
 
-/* line 124, src/scss/_shared/_main-setting-reset.scss */
+/* line 161, src/scss/_shared/_main-setting-reset.scss */
 ul li {
   list-style: none;
 }
 
-/* line 130, src/scss/_shared/_main-setting-reset.scss */
+/* line 167, src/scss/_shared/_main-setting-reset.scss */
 a {
   outline: none;
   text-decoration: none;
 }
 
-/* line 135, src/scss/_shared/_main-setting-reset.scss */
+/* line 172, src/scss/_shared/_main-setting-reset.scss */
 a:hover, a:focus {
   text-decoration: none;
 }
 
-/* line 142, src/scss/_shared/_main-setting-reset.scss */
+/* line 179, src/scss/_shared/_main-setting-reset.scss */
 input[type="text"] {
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
 }
 
-/* line 146, src/scss/_shared/_main-setting-reset.scss */
+/* line 183, src/scss/_shared/_main-setting-reset.scss */
 picture {
   display: -webkit-box;
   display: -webkit-flex;
@@ -498,6 +602,15 @@ section .uk-button {
 .icon-png:before {
   content: "";
   display: block;
+}
+
+/* line 1, src/scss/_shared/_iconFont.scss */
+.icon-font {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  line-height: 1;
 }
 
 /* line 4, src/scss/_macros/_logotype.scss */
@@ -2496,6 +2609,116 @@ section .uk-button {
   -webkit-transition: color 0.3s ease-in-out;
   -o-transition: color 0.3s ease-in-out;
   transition: color 0.3s ease-in-out;
+}
+
+/* line 4, src/scss/_components/_dashboard/_additional-information.scss */
+.a-info button {
+  height: 70px;
+  -webkit-border-bottom-left-radius: 5px;
+          border-bottom-left-radius: 5px;
+  -webkit-border-bottom-right-radius: 5px;
+          border-bottom-right-radius: 5px;
+  -webkit-box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.15);
+          box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.15);
+  font-size: 18px;
+}
+
+/* line 14, src/scss/_components/_dashboard/_ticket-activity.scss */
+.t-activity [uk-grid] .uk-width-1-4:nth-of-type(1) .uk-card {
+  background-color: #00a6d9;
+}
+
+/* line 18, src/scss/_components/_dashboard/_ticket-activity.scss */
+.t-activity [uk-grid] .uk-width-1-4:nth-of-type(1) .icon-font {
+  color: #ffffff;
+}
+
+/* line 21, src/scss/_components/_dashboard/_ticket-activity.scss */
+.t-activity [uk-grid] .uk-width-1-4:nth-of-type(1) .icon-font.icon-a-ticket-open {
+  font-size: 123px;
+}
+
+/* line 14, src/scss/_components/_dashboard/_ticket-activity.scss */
+.t-activity [uk-grid] .uk-width-1-4:nth-of-type(2) .uk-card {
+  background-color: #f7a209;
+}
+
+/* line 18, src/scss/_components/_dashboard/_ticket-activity.scss */
+.t-activity [uk-grid] .uk-width-1-4:nth-of-type(2) .icon-font {
+  color: #ffffff;
+}
+
+/* line 21, src/scss/_components/_dashboard/_ticket-activity.scss */
+.t-activity [uk-grid] .uk-width-1-4:nth-of-type(2) .icon-font.icon-a-ticket-awaiting {
+  font-size: 102px;
+}
+
+/* line 14, src/scss/_components/_dashboard/_ticket-activity.scss */
+.t-activity [uk-grid] .uk-width-1-4:nth-of-type(3) .uk-card {
+  background-color: #f76808;
+}
+
+/* line 18, src/scss/_components/_dashboard/_ticket-activity.scss */
+.t-activity [uk-grid] .uk-width-1-4:nth-of-type(3) .icon-font {
+  color: #ffffff;
+}
+
+/* line 21, src/scss/_components/_dashboard/_ticket-activity.scss */
+.t-activity [uk-grid] .uk-width-1-4:nth-of-type(3) .icon-font.icon-a-ticket-hold {
+  font-size: 85px;
+}
+
+/* line 14, src/scss/_components/_dashboard/_ticket-activity.scss */
+.t-activity [uk-grid] .uk-width-1-4:nth-of-type(4) .uk-card {
+  background-color: #6d6a67;
+}
+
+/* line 18, src/scss/_components/_dashboard/_ticket-activity.scss */
+.t-activity [uk-grid] .uk-width-1-4:nth-of-type(4) .icon-font {
+  color: #ffffff;
+}
+
+/* line 21, src/scss/_components/_dashboard/_ticket-activity.scss */
+.t-activity [uk-grid] .uk-width-1-4:nth-of-type(4) .icon-font.icon-a-ticket-closed {
+  font-size: 123px;
+}
+
+/* line 28, src/scss/_components/_dashboard/_ticket-activity.scss */
+.t-activity [uk-grid] .uk-width-1-4 p {
+  color: #ffffff;
+}
+
+/* line 31, src/scss/_components/_dashboard/_ticket-activity.scss */
+.t-activity [uk-grid] .uk-width-1-4 p:nth-of-type(1) {
+  padding-top: 20px;
+  padding-bottom: 15px;
+  line-height: 0.76364;
+  font-size: 55px;
+}
+
+/* line 38, src/scss/_components/_dashboard/_ticket-activity.scss */
+.t-activity [uk-grid] .uk-width-1-4 p:nth-of-type(2) {
+  line-height: 1.25;
+  font-size: 24px;
+}
+
+/* line 5, src/scss/_components/_dashboard/_report-tabs.scss */
+.r-tabs [uk-tab]:before {
+  border-width: 2px;
+  border-color: #e6e1e1;
+}
+
+/* line 12, src/scss/_components/_dashboard/_report-tabs.scss */
+.r-tabs [uk-tab] li.uk-active a {
+  border-width: 7px;
+  border-color: #00a6d9;
+}
+
+/* line 19, src/scss/_components/_dashboard/_report-tabs.scss */
+.r-tabs [uk-tab] a {
+  font-size: 24px;
+  padding: 0;
+  padding-bottom: 40px;
 }
 
 /*# sourceMappingURL=maps/app.css.map */

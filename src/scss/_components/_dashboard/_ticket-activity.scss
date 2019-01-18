@@ -1,0 +1,47 @@
+// SECTION ticket activity :: START
+
+.t-activity {
+  [uk-grid] {
+    .uk-width-1-4 {
+
+      @each $nthNum, $bgColor, $iconName, $iconSize in
+        (1, #00a6d9, 'a-ticket-open', 123px),
+        (2, #f7a209, 'a-ticket-awaiting', 102px),
+        (3, #f76808, 'a-ticket-hold', 85px),
+        (4, #6d6a67, 'a-ticket-closed', 123px)
+      {
+        &:nth-of-type(#{$nthNum}) {
+          .uk-card {
+            background-color: $bgColor;
+          }
+
+          .icon-font {
+            color: #ffffff;
+
+            &.icon-#{$iconName} {
+              font-size: $iconSize;
+            }
+          }
+        }
+      }
+
+      p {
+        color: #ffffff;
+
+        &:nth-of-type(1) {
+          padding-top: 20px;
+          padding-bottom: 15px;
+          line-height: line-height-convert(42, 55);
+          font-size: 55px;
+          @extend %fontFamilyOpenSans;
+        }
+        &:nth-of-type(2) {
+          line-height: line-height-convert(30, 24);
+          font-size: 24px;
+        }
+      }
+    }
+  }
+}
+
+// SECTION ticket activity :: END

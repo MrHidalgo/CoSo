@@ -1,0 +1,53 @@
+// SECTION ticket activity :: START
+
+-
+  var ticketArr = [
+    {
+      iconName: 'a-ticket-open',
+      ticketCount: '8',
+      ticketSense: 'OPEN'
+    },
+    {
+      iconName: 'a-ticket-awaiting',
+      ticketCount: '8',
+      ticketSense: 'AWAITING RESPONSE'
+    },
+    {
+      iconName: 'a-ticket-hold',
+      ticketCount: '2',
+      ticketSense: 'ON HOLD'
+    },
+    {
+      iconName: 'a-ticket-closed',
+      ticketCount: '3',
+      ticketSense: 'closed'
+    }
+  ];
+
+#t-activity.t-activity
+
+  .uk-section.uk-padding-remove-top.uk-padding-remove-bottom
+    .uk-card.uk-card-default.uk-box-shadow-small
+      .uk-card-header.uk-flex.uk-flex-middle.uk-flex-between
+        .uk-width-1-2.uk-flex.uk-flex-middle
+          h2.uk-margin-remove-bottom.uk-card-title.uk-text-bold!= "Ticket Activity"
+          span.uk-margin-medium-left.uk-text-muted.uk-text-bold!= "December 2018"
+
+        .uk-width-1-2.uk-flex.uk-flex-right.uk-flex-middle
+          a.uk-button.uk-button-link(href="#" class="" title="")
+            span.uk-text-muted(uk-icon='minus')
+          a.uk-button.uk-button-link.uk-margin-small-left(href="#" class="" title="")
+            span.uk-text-muted(uk-icon='close')
+
+      .uk-card-body.uk-padding-medium
+        div(uk-grid)
+          each val, idx in ticketArr
+            .uk-width-1-4.uk-padding-small
+              .uk-card.uk-flex.uk-flex-top
+                .uk-width-1-2.uk-height-small.uk-flex.uk-flex-center.uk-flex-middle
+                  i.icon-font(class!= "icon-" + ticketArr[idx].iconName)
+                .uk-width-1-2.uk-height-small.uk-text-center
+                  p.uk-margin-remove.uk-text-bold.uk-text-uppercase!= ticketArr[idx].ticketCount
+                  p.uk-margin-remove.uk-text-bold.uk-text-uppercase!= ticketArr[idx].ticketSense
+
+// SECTION ticket activity :: END

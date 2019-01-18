@@ -46,14 +46,51 @@ body {
   flex-direction: column;
   min-height: 100vh;
 
+  &.is-collapsed {
+    > .body {
+      padding-left: (125px + 39px);
+      @include transition(padding-left, padding-top);
+      @include adaptive(1439) {
+        padding-left: (325px + 39px);
+      }
+      @include adaptive(1365) {
+        padding-left: (300px + 39px);
+      }
+    }
+  }
+
   > .body {
     display: flex;
     flex-direction: column;
     justify-content: center;
     flex: 1 0 auto;
+    padding-right: 70px;
+    padding-top: 125px;
+    padding-left: (379px + 39px);
+    @include transition(padding-left, padding-top);
+    @include adaptive(1919) {
+      padding-right: 39px;
+    }
+    @include adaptive(1439) {
+      padding-left: (125px + 39px);
+      padding-top: 65px;
+    }
+    @include adaptive(1365) {
+      padding-left: (65px + 39px);
+    }
+    @include adaptive(767) {
+      padding-left: 15px;
+      padding-right: 15px;
+    }
 
     &--start {
       justify-content: flex-start;
+    }
+
+    &--login {
+      padding-left: 0;
+      padding-right: 0;
+      padding-top: 0;
     }
   }
 }

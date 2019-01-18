@@ -15,7 +15,7 @@
 /// ===============
 @import "_generated/spritePNG";
 //@import "_generated/spriteSVG";
-//@import "_generated/spriteFont";
+@import "_generated/spriteFont";
 ///
 /// SHARED
 /// ===============
@@ -29,7 +29,7 @@
 //@import "_shared/objectFitImages";
 @import "_shared/iconPNG";
 //@import "_shared/iconSVG";
-//@import "_shared/iconFont";
+@import "_shared/iconFont";
 ///
 /// MACROS
 /// ===============
@@ -48,3 +48,7 @@
 //@import "_components/footer";
 
 @import "./_components/_homepage/login";
+
+@import "./_components/_dashboard/additional-information";
+@import "./_components/_dashboard/ticket-activity";
+@import "./_components/_dashboard/_report-tabs";

@@ -1,0 +1,28 @@
+// SECTION additional information :: START
+
+#a-info.a-info
+
+  .uk-section.uk-padding-remove-top.uk-padding-remove-bottom.uk-flex.uk-flex-right.uk-margin-bottom
+
+    if(pageClassName !== "p-dashboard p-dashboard-newt")
+      .uk-inline.uk-margin-small-right
+        button(class="uk-button uk-button-default uk-background-default" type="button")
+          span.uk-margin-right!= "SELECT INSTALLS"
+          span(uk-icon='chevron-down')
+        div(uk-dropdown="mode: click")
+          ul(class="uk-nav uk-dropdown-nav")
+            each val, idx in [1,2,3]
+              li
+                a(href="#")!= "Item " + val
+
+    .uk-inline
+      button(class="uk-button uk-button-default uk-background-default" type="button")
+        span.uk-margin-right!= "HELP"
+        span(uk-icon='chevron-down')
+      div(uk-dropdown="mode: click")
+        ul(class="uk-nav uk-dropdown-nav")
+          each val, idx in [1,2,3]
+            li
+              a(href="#")!= "Item " + val
+
+// SECTION additional information :: END

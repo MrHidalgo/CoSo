@@ -164,7 +164,88 @@
       </div>
     </section>
     <!-- SECTION sidebar :: END-->
-    <div class="body p-dashboard"></div>
+    <div class="body body--start p-dashboard p-dashboard-systemt">
+      <!-- SECTION additional information :: START-->
+      <div class="a-info" id="a-info">
+        <div class="uk-section uk-padding-remove-top uk-padding-remove-bottom uk-flex uk-flex-right uk-margin-bottom">
+          <div class="uk-inline uk-margin-small-right">
+            <button class="uk-button uk-button-default uk-background-default" type="button"><span class="uk-margin-right">SELECT INSTALLS</span><span uk-icon="chevron-down"></span></button>
+            <div uk-dropdown="mode: click">
+              <ul class="uk-nav uk-dropdown-nav">
+                <li><a href="#">Item 1</a></li>
+                <li><a href="#">Item 2</a></li>
+                <li><a href="#">Item 3</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="uk-inline">
+            <button class="uk-button uk-button-default uk-background-default" type="button"><span class="uk-margin-right">HELP</span><span uk-icon="chevron-down"></span></button>
+            <div uk-dropdown="mode: click">
+              <ul class="uk-nav uk-dropdown-nav">
+                <li><a href="#">Item 1</a></li>
+                <li><a href="#">Item 2</a></li>
+                <li><a href="#">Item 3</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- SECTION additional information :: END-->
+      <!-- SECTION ticket activity :: START-->
+      <div class="t-activity" id="t-activity">
+        <div class="uk-section uk-padding-remove-top uk-padding-remove-bottom">
+          <div class="uk-card uk-card-default uk-box-shadow-small">
+            <div class="uk-card-header uk-flex uk-flex-middle uk-flex-between">
+              <div class="uk-width-1-2 uk-flex uk-flex-middle">
+                <h2 class="uk-margin-remove-bottom uk-card-title uk-text-bold">Ticket Activity</h2><span class="uk-margin-medium-left uk-text-muted uk-text-bold">December 2018</span>
+              </div>
+              <div class="uk-width-1-2 uk-flex uk-flex-right uk-flex-middle"><a class="uk-button uk-button-link" href="#" title=""><span class="uk-text-muted" uk-icon="minus"></span></a><a class="uk-button uk-button-link uk-margin-small-left" href="#" title=""><span class="uk-text-muted" uk-icon="close"></span></a></div>
+            </div>
+            <div class="uk-card-body uk-padding-medium">
+              <div uk-grid>
+                <div class="uk-width-1-4 uk-padding-small">
+                  <div class="uk-card uk-flex uk-flex-top">
+                    <div class="uk-width-1-2 uk-height-small uk-flex uk-flex-center uk-flex-middle"><i class="icon-font icon-a-ticket-open"></i></div>
+                    <div class="uk-width-1-2 uk-height-small uk-text-center">
+                      <p class="uk-margin-remove uk-text-bold uk-text-uppercase">8</p>
+                      <p class="uk-margin-remove uk-text-bold uk-text-uppercase">OPEN</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="uk-width-1-4 uk-padding-small">
+                  <div class="uk-card uk-flex uk-flex-top">
+                    <div class="uk-width-1-2 uk-height-small uk-flex uk-flex-center uk-flex-middle"><i class="icon-font icon-a-ticket-awaiting"></i></div>
+                    <div class="uk-width-1-2 uk-height-small uk-text-center">
+                      <p class="uk-margin-remove uk-text-bold uk-text-uppercase">8</p>
+                      <p class="uk-margin-remove uk-text-bold uk-text-uppercase">AWAITING RESPONSE</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="uk-width-1-4 uk-padding-small">
+                  <div class="uk-card uk-flex uk-flex-top">
+                    <div class="uk-width-1-2 uk-height-small uk-flex uk-flex-center uk-flex-middle"><i class="icon-font icon-a-ticket-hold"></i></div>
+                    <div class="uk-width-1-2 uk-height-small uk-text-center">
+                      <p class="uk-margin-remove uk-text-bold uk-text-uppercase">2</p>
+                      <p class="uk-margin-remove uk-text-bold uk-text-uppercase">ON HOLD</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="uk-width-1-4 uk-padding-small">
+                  <div class="uk-card uk-flex uk-flex-top">
+                    <div class="uk-width-1-2 uk-height-small uk-flex uk-flex-center uk-flex-middle"><i class="icon-font icon-a-ticket-closed"></i></div>
+                    <div class="uk-width-1-2 uk-height-small uk-text-center">
+                      <p class="uk-margin-remove uk-text-bold uk-text-uppercase">3</p>
+                      <p class="uk-margin-remove uk-text-bold uk-text-uppercase">closed</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- SECTION ticket activity :: END-->
+    </div>
     <!--include ../components/_footer-->
   </body>
   <!-- SCRIPT :: START-->

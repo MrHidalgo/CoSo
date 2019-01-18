@@ -1,7 +1,7 @@
 ---
 title: CoSo Insights Portal - Dashboard New Ticket
 
-pageClassName: p-dashboard
+pageClassName: p-dashboard p-dashboard-newt
 ---
 extends shared/_layout
 
@@ -9,4 +9,8 @@ block sidebar
   include ./components/_sidebar
 
 block content
-  div.body(class!= pageClassName)
+  div.body.body--start(class!= pageClassName)
+
+    include ./components/dashboard/_additional-info
+
+

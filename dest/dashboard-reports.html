@@ -164,7 +164,52 @@
       </div>
     </section>
     <!-- SECTION sidebar :: END-->
-    <div class="body p-dashboard"></div>
+    <div class="body body--start p-dashboard p-dashboard-report">
+      <!-- SECTION additional information :: START-->
+      <div class="a-info" id="a-info">
+        <div class="uk-section uk-padding-remove-top uk-padding-remove-bottom uk-flex uk-flex-right uk-margin-bottom">
+          <div class="uk-inline uk-margin-small-right">
+            <button class="uk-button uk-button-default uk-background-default" type="button"><span class="uk-margin-right">SELECT INSTALLS</span><span uk-icon="chevron-down"></span></button>
+            <div uk-dropdown="mode: click">
+              <ul class="uk-nav uk-dropdown-nav">
+                <li><a href="#">Item 1</a></li>
+                <li><a href="#">Item 2</a></li>
+                <li><a href="#">Item 3</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="uk-inline">
+            <button class="uk-button uk-button-default uk-background-default" type="button"><span class="uk-margin-right">HELP</span><span uk-icon="chevron-down"></span></button>
+            <div uk-dropdown="mode: click">
+              <ul class="uk-nav uk-dropdown-nav">
+                <li><a href="#">Item 1</a></li>
+                <li><a href="#">Item 2</a></li>
+                <li><a href="#">Item 3</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- SECTION additional information :: END-->
+      <!-- SECTION report tabs :: START-->
+      <div class="r-tabs" id="r-tabs">
+        <div class="uk-child-width-expand uk-margin-medium-top uk-margin-medium-bottom" uk-tab uk-switcher="animation: uk-animation-fade">
+          <li><a class="uk-text-capitalize" href="#" title="">Meeting Activity</a></li>
+          <li><a class="uk-text-capitalize" href="#" title="">Virtual Class Activity</a></li>
+          <li><a class="uk-text-capitalize" href="#" title="">Content Launch Activity</a></li>
+          <li><a class="uk-text-capitalize" href="#" title="">Training Launch Activity</a></li>
+          <li><a class="uk-text-capitalize" href="#" title="">On-Demand Activity</a></li>
+        </div>
+        <div class="uk-switcher uk-margin">
+          <li><span>Meeting Activity - CONTENT</span></li>
+          <li><span>Virtual Class Activity - CONTENT</span></li>
+          <li><span>Content Launch Activity - CONTENT</span></li>
+          <li><span>Training Launch Activity - CONTENT</span></li>
+          <li><span>On-Demand Activity - CONTENT</span></li>
+        </div>
+      </div>
+      <!-- SECTION report tabs :: END-->
+    </div>
     <!--include ../components/_footer-->
   </body>
   <!-- SCRIPT :: START-->
