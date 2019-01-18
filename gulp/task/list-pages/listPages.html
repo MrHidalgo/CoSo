@@ -568,7 +568,7 @@
 
     <p class="pagelist__filename">
       <span class="pagelist__filename--progress">
-        <% if(page.ready == 01) { %> - IN PROGRESS <% } %>
+        <% if(page.ready < 75) { %> - IN PROGRESS <% } %>
       </span>
       <span class="pagelist__filename--testing">
         <% if(page.ready >= 75 && page.ready <= 95) { %> - AWAITING TESTING - review <% } %>
