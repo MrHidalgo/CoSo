@@ -2,7 +2,7 @@
 
 .t-activity {
   [uk-grid] {
-    .uk-width-1-4 {
+    > div {
 
       @each $nthNum, $bgColor, $iconName, $iconSize in
         (1, #00a6d9, 'a-ticket-open', 123px),

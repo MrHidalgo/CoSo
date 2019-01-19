@@ -26,7 +26,7 @@
 
 #t-activity.t-activity
 
-  .uk-section.uk-padding-remove-top.uk-padding-remove-bottom
+  .uk-section.uk-padding-remove-top.uk-padding-remove-bottom.uk-margin-medium-bottom
     .uk-card.uk-card-default.uk-box-shadow-small
       .uk-card-header.uk-flex.uk-flex-middle.uk-flex-between
         .uk-width-1-2.uk-flex.uk-flex-middle
@@ -39,10 +39,10 @@
           a.uk-button.uk-button-link.uk-margin-small-left(href="#" class="" title="")
             span.uk-text-muted(uk-icon='close')
 
-      .uk-card-body.uk-padding-medium
-        div(uk-grid)
+      .uk-card-body
+        div.uk-grid-small.uk-child-width-expand(uk-grid)
           each val, idx in ticketArr
-            .uk-width-1-4.uk-padding-small
+            div
               .uk-card.uk-flex.uk-flex-top
                 .uk-width-1-2.uk-height-small.uk-flex.uk-flex-center.uk-flex-middle
                   i.icon-font(class!= "icon-" + ticketArr[idx].iconName)

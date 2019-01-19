@@ -1,7 +1,7 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900");
 /* line 9, src/scss/_utilities/_extend.scss */
-.sidebar__profile-name, .t-activity [uk-grid] .uk-width-1-4 p:nth-of-type(1) {
+.sidebar__profile-name, .t-activity [uk-grid] > div p:nth-of-type(1) {
   font-family: 'Open Sans', sans-serif;
 }
 
@@ -2624,72 +2624,72 @@ section .uk-button {
 }
 
 /* line 14, src/scss/_components/_dashboard/_ticket-activity.scss */
-.t-activity [uk-grid] .uk-width-1-4:nth-of-type(1) .uk-card {
+.t-activity [uk-grid] > div:nth-of-type(1) .uk-card {
   background-color: #00a6d9;
 }
 
 /* line 18, src/scss/_components/_dashboard/_ticket-activity.scss */
-.t-activity [uk-grid] .uk-width-1-4:nth-of-type(1) .icon-font {
+.t-activity [uk-grid] > div:nth-of-type(1) .icon-font {
   color: #ffffff;
 }
 
 /* line 21, src/scss/_components/_dashboard/_ticket-activity.scss */
-.t-activity [uk-grid] .uk-width-1-4:nth-of-type(1) .icon-font.icon-a-ticket-open {
+.t-activity [uk-grid] > div:nth-of-type(1) .icon-font.icon-a-ticket-open {
   font-size: 123px;
 }
 
 /* line 14, src/scss/_components/_dashboard/_ticket-activity.scss */
-.t-activity [uk-grid] .uk-width-1-4:nth-of-type(2) .uk-card {
+.t-activity [uk-grid] > div:nth-of-type(2) .uk-card {
   background-color: #f7a209;
 }
 
 /* line 18, src/scss/_components/_dashboard/_ticket-activity.scss */
-.t-activity [uk-grid] .uk-width-1-4:nth-of-type(2) .icon-font {
+.t-activity [uk-grid] > div:nth-of-type(2) .icon-font {
   color: #ffffff;
 }
 
 /* line 21, src/scss/_components/_dashboard/_ticket-activity.scss */
-.t-activity [uk-grid] .uk-width-1-4:nth-of-type(2) .icon-font.icon-a-ticket-awaiting {
+.t-activity [uk-grid] > div:nth-of-type(2) .icon-font.icon-a-ticket-awaiting {
   font-size: 102px;
 }
 
 /* line 14, src/scss/_components/_dashboard/_ticket-activity.scss */
-.t-activity [uk-grid] .uk-width-1-4:nth-of-type(3) .uk-card {
+.t-activity [uk-grid] > div:nth-of-type(3) .uk-card {
   background-color: #f76808;
 }
 
 /* line 18, src/scss/_components/_dashboard/_ticket-activity.scss */
-.t-activity [uk-grid] .uk-width-1-4:nth-of-type(3) .icon-font {
+.t-activity [uk-grid] > div:nth-of-type(3) .icon-font {
   color: #ffffff;
 }
 
 /* line 21, src/scss/_components/_dashboard/_ticket-activity.scss */
-.t-activity [uk-grid] .uk-width-1-4:nth-of-type(3) .icon-font.icon-a-ticket-hold {
+.t-activity [uk-grid] > div:nth-of-type(3) .icon-font.icon-a-ticket-hold {
   font-size: 85px;
 }
 
 /* line 14, src/scss/_components/_dashboard/_ticket-activity.scss */
-.t-activity [uk-grid] .uk-width-1-4:nth-of-type(4) .uk-card {
+.t-activity [uk-grid] > div:nth-of-type(4) .uk-card {
   background-color: #6d6a67;
 }
 
 /* line 18, src/scss/_components/_dashboard/_ticket-activity.scss */
-.t-activity [uk-grid] .uk-width-1-4:nth-of-type(4) .icon-font {
+.t-activity [uk-grid] > div:nth-of-type(4) .icon-font {
   color: #ffffff;
 }
 
 /* line 21, src/scss/_components/_dashboard/_ticket-activity.scss */
-.t-activity [uk-grid] .uk-width-1-4:nth-of-type(4) .icon-font.icon-a-ticket-closed {
+.t-activity [uk-grid] > div:nth-of-type(4) .icon-font.icon-a-ticket-closed {
   font-size: 123px;
 }
 
 /* line 28, src/scss/_components/_dashboard/_ticket-activity.scss */
-.t-activity [uk-grid] .uk-width-1-4 p {
+.t-activity [uk-grid] > div p {
   color: #ffffff;
 }
 
 /* line 31, src/scss/_components/_dashboard/_ticket-activity.scss */
-.t-activity [uk-grid] .uk-width-1-4 p:nth-of-type(1) {
+.t-activity [uk-grid] > div p:nth-of-type(1) {
   padding-top: 20px;
   padding-bottom: 15px;
   line-height: 0.76364;
@@ -2697,9 +2697,60 @@ section .uk-button {
 }
 
 /* line 38, src/scss/_components/_dashboard/_ticket-activity.scss */
-.t-activity [uk-grid] .uk-width-1-4 p:nth-of-type(2) {
+.t-activity [uk-grid] > div p:nth-of-type(2) {
   line-height: 1.25;
   font-size: 24px;
+}
+
+/* line 4, src/scss/_components/_dashboard/_all-tickets.scss */
+.all-tickets button {
+  width: 100%;
+  max-width: 187px;
+  height: 49px;
+  padding-left: 22px;
+  padding-right: 22px;
+  -webkit-border-radius: 5px;
+          border-radius: 5px;
+  background-color: #00a6d9;
+  font-size: 20px;
+}
+
+/* line 14, src/scss/_components/_dashboard/_all-tickets.scss */
+.all-tickets button span {
+  line-height: 1;
+}
+
+/* line 3, src/scss/_components/_dashboard/_tickets-find.scss */
+.tickets-find button {
+  width: 100%;
+  height: 49px;
+  padding: 0 20px;
+  -webkit-border-radius: 5px;
+          border-radius: 5px;
+  font-size: 20px;
+}
+
+/* line 13, src/scss/_components/_dashboard/_tickets-find.scss */
+.tickets-find .uk-search-large svg {
+  width: 29px;
+  height: 29px;
+}
+
+/* line 17, src/scss/_components/_dashboard/_tickets-find.scss */
+.tickets-find .uk-search-large input {
+  height: auto;
+  font-size: 18px;
+}
+
+/* line 24, src/scss/_components/_dashboard/_tickets-find.scss */
+.tickets-find .uk-form-controls > div {
+  width: 100%;
+}
+
+/* line 33, src/scss/_components/_dashboard/_tickets-find.scss */
+.tickets-find .uk-button-apply {
+  background-color: #9b9b9b;
+  color: #ffffff;
 }
 
 /* line 6, src/scss/_components/_dashboard/_report-tabs.scss */

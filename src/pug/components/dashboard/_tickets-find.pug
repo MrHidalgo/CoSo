@@ -1,0 +1,76 @@
+// SECTION find tickets :: START
+
+#tickets-find.tickets-find
+
+  .uk-section.uk-padding-remove-top.uk-padding-remove-bottom.uk-margin-medium-bottom
+    .uk-card.uk-card-default.uk-box-shadow-small
+      .uk-card-header.uk-flex.uk-flex-middle.uk-flex-between
+        .uk-width-1-2.uk-flex.uk-flex-middle
+          form(class="uk-search uk-search-large")
+            span(uk-search-icon)
+            input(class="uk-search-input" type="search" placeholder="Find Tickets...")
+
+        .uk-width-1-2.uk-flex.uk-flex-right.uk-flex-middle
+          a.uk-button.uk-button-link(href="#" class="" title="")
+            span.uk-text-muted(uk-icon='minus')
+          a.uk-button.uk-button-link.uk-margin-small-left(href="#" class="" title="")
+            span.uk-text-muted(uk-icon='close')
+
+      .uk-card-body
+        form
+          fieldset.uk-fieldset
+
+            div.uk-flex.uk-flex-bottom.uk-grid-small.uk-child-width-expand(uk-grid)
+
+              div
+                label.uk-text-muted.uk-margin-small-bottom.uk-flex(class="uk-form-label")!= "Ticket Status"
+                .uk-form-controls
+                  div(uk-form-custom="target: > * > span:first-child")
+                    select.uk-select
+                      option!= "All tickets"
+                      option!= "Option 01"
+                      option!= "Option 02"
+                    button.uk-text-capitalize(class="uk-button uk-button-default uk-flex uk-flex-middle uk-flex-between" type="button" tabindex="-1")
+                      span
+                      span(uk-icon="icon: chevron-down")
+
+              div
+                label.uk-text-muted.uk-margin-small-bottom.uk-flex(class="uk-form-label")!= "Priority"
+                .uk-form-controls
+                  div(uk-form-custom="target: > * > span:first-child")
+                    select.uk-select
+                      option!= "New"
+                      option!= "Option 01"
+                      option!= "Option 02"
+                    button.uk-text-capitalize(class="uk-button uk-button-default uk-flex uk-flex-middle uk-flex-between" type="button" tabindex="-1")
+                      span
+                      span(uk-icon="icon: chevron-down")
+
+              div
+                label.uk-text-muted.uk-margin-small-bottom.uk-flex(class="uk-form-label")!= "Reporters"
+                .uk-form-controls
+                  div(uk-form-custom="target: > * > span:first-child")
+                    select.uk-select
+                      option!= "All reporters"
+                      option!= "Option 01"
+                      option!= "Option 02"
+                    button.uk-text-capitalize(class="uk-button uk-button-default uk-flex uk-flex-middle uk-flex-between" type="button" tabindex="-1")
+                      span
+                      span(uk-icon="icon: chevron-down")
+
+              div
+                label.uk-text-muted.uk-margin-small-bottom.uk-flex(class="uk-form-label")!= "Sort by"
+                .uk-form-controls
+                  div(uk-form-custom="target: > * > span:first-child")
+                    select.uk-select
+                      option!= "Date Created"
+                      option!= "Option 01"
+                      option!= "Option 02"
+                    button.uk-text-capitalize(class="uk-button uk-button-default uk-flex uk-flex-middle uk-flex-between" type="button" tabindex="-1")
+                      span
+                      span(uk-icon="icon: chevron-down")
+
+              div
+                button(class="uk-button uk-button-apply uk-button-default uk-button-small uk-text-capitalize")!= "Apply filters"
+
+// SECTION find tickets :: END

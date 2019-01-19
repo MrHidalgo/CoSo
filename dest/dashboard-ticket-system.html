@@ -193,7 +193,7 @@
       <!-- SECTION additional information :: END-->
       <!-- SECTION ticket activity :: START-->
       <div class="t-activity" id="t-activity">
-        <div class="uk-section uk-padding-remove-top uk-padding-remove-bottom">
+        <div class="uk-section uk-padding-remove-top uk-padding-remove-bottom uk-margin-medium-bottom">
           <div class="uk-card uk-card-default uk-box-shadow-small">
             <div class="uk-card-header uk-flex uk-flex-middle uk-flex-between">
               <div class="uk-width-1-2 uk-flex uk-flex-middle">
@@ -201,9 +201,9 @@
               </div>
               <div class="uk-width-1-2 uk-flex uk-flex-right uk-flex-middle"><a class="uk-button uk-button-link" href="#" title=""><span class="uk-text-muted" uk-icon="minus"></span></a><a class="uk-button uk-button-link uk-margin-small-left" href="#" title=""><span class="uk-text-muted" uk-icon="close"></span></a></div>
             </div>
-            <div class="uk-card-body uk-padding-medium">
-              <div uk-grid>
-                <div class="uk-width-1-4 uk-padding-small">
+            <div class="uk-card-body">
+              <div class="uk-grid-small uk-child-width-expand" uk-grid>
+                <div>
                   <div class="uk-card uk-flex uk-flex-top">
                     <div class="uk-width-1-2 uk-height-small uk-flex uk-flex-center uk-flex-middle"><i class="icon-font icon-a-ticket-open"></i></div>
                     <div class="uk-width-1-2 uk-height-small uk-text-center">
@@ -212,7 +212,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="uk-width-1-4 uk-padding-small">
+                <div>
                   <div class="uk-card uk-flex uk-flex-top">
                     <div class="uk-width-1-2 uk-height-small uk-flex uk-flex-center uk-flex-middle"><i class="icon-font icon-a-ticket-awaiting"></i></div>
                     <div class="uk-width-1-2 uk-height-small uk-text-center">
@@ -221,7 +221,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="uk-width-1-4 uk-padding-small">
+                <div>
                   <div class="uk-card uk-flex uk-flex-top">
                     <div class="uk-width-1-2 uk-height-small uk-flex uk-flex-center uk-flex-middle"><i class="icon-font icon-a-ticket-hold"></i></div>
                     <div class="uk-width-1-2 uk-height-small uk-text-center">
@@ -230,7 +230,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="uk-width-1-4 uk-padding-small">
+                <div>
                   <div class="uk-card uk-flex uk-flex-top">
                     <div class="uk-width-1-2 uk-height-small uk-flex uk-flex-center uk-flex-middle"><i class="icon-font icon-a-ticket-closed"></i></div>
                     <div class="uk-width-1-2 uk-height-small uk-text-center">
@@ -245,6 +245,99 @@
         </div>
       </div>
       <!-- SECTION ticket activity :: END-->
+      <!-- SECTION all tickets :: START-->
+      <div class="all-tickets" id="all-tickets">
+        <div class="uk-section uk-padding-remove-top uk-padding-remove-bottom uk-margin-medium-bottom">
+          <div class="uk-card-header uk-flex uk-flex-middle uk-flex-between uk-padding-remove-right">
+            <div class="uk-width-1-2 uk-flex uk-flex-middle">
+              <h2 class="uk-margin-remove-bottom uk-card-title uk-text-bold uk-text-muted">All Tickets</h2>
+            </div>
+            <div class="uk-width-1-2 uk-flex uk-flex-right uk-flex-middle">
+              <button class="uk-flex uk-flex-middle uk-flex-between uk-button uk-button-primary uk-button-large"><span uk-icon="plus"></span><span class="uk-text-capitalize">New Ticket</span></button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- SECTION all tickets :: END-->
+      <!-- SECTION find tickets :: START-->
+      <div class="tickets-find" id="tickets-find">
+        <div class="uk-section uk-padding-remove-top uk-padding-remove-bottom uk-margin-medium-bottom">
+          <div class="uk-card uk-card-default uk-box-shadow-small">
+            <div class="uk-card-header uk-flex uk-flex-middle uk-flex-between">
+              <div class="uk-width-1-2 uk-flex uk-flex-middle">
+                <form class="uk-search uk-search-large"><span uk-search-icon></span>
+                  <input class="uk-search-input" type="search" placeholder="Find Tickets...">
+                </form>
+              </div>
+              <div class="uk-width-1-2 uk-flex uk-flex-right uk-flex-middle"><a class="uk-button uk-button-link" href="#" title=""><span class="uk-text-muted" uk-icon="minus"></span></a><a class="uk-button uk-button-link uk-margin-small-left" href="#" title=""><span class="uk-text-muted" uk-icon="close"></span></a></div>
+            </div>
+            <div class="uk-card-body">
+              <form>
+                <fieldset class="uk-fieldset">
+                  <div class="uk-flex uk-flex-bottom uk-grid-small uk-child-width-expand" uk-grid>
+                    <div>
+                      <label class="uk-text-muted uk-margin-small-bottom uk-flex uk-form-label">Ticket Status</label>
+                      <div class="uk-form-controls">
+                        <div uk-form-custom="target: &gt; * &gt; span:first-child">
+                          <select class="uk-select">
+                            <option>All tickets</option>
+                            <option>Option 01</option>
+                            <option>Option 02</option>
+                          </select>
+                          <button class="uk-text-capitalize uk-button uk-button-default uk-flex uk-flex-middle uk-flex-between" type="button" tabindex="-1"><span></span><span uk-icon="icon: chevron-down"></span></button>
+                        </div>
+                      </div>
+                    </div>
+                    <div>
+                      <label class="uk-text-muted uk-margin-small-bottom uk-flex uk-form-label">Priority</label>
+                      <div class="uk-form-controls">
+                        <div uk-form-custom="target: &gt; * &gt; span:first-child">
+                          <select class="uk-select">
+                            <option>New</option>
+                            <option>Option 01</option>
+                            <option>Option 02</option>
+                          </select>
+                          <button class="uk-text-capitalize uk-button uk-button-default uk-flex uk-flex-middle uk-flex-between" type="button" tabindex="-1"><span></span><span uk-icon="icon: chevron-down"></span></button>
+                        </div>
+                      </div>
+                    </div>
+                    <div>
+                      <label class="uk-text-muted uk-margin-small-bottom uk-flex uk-form-label">Reporters</label>
+                      <div class="uk-form-controls">
+                        <div uk-form-custom="target: &gt; * &gt; span:first-child">
+                          <select class="uk-select">
+                            <option>All reporters</option>
+                            <option>Option 01</option>
+                            <option>Option 02</option>
+                          </select>
+                          <button class="uk-text-capitalize uk-button uk-button-default uk-flex uk-flex-middle uk-flex-between" type="button" tabindex="-1"><span></span><span uk-icon="icon: chevron-down"></span></button>
+                        </div>
+                      </div>
+                    </div>
+                    <div>
+                      <label class="uk-text-muted uk-margin-small-bottom uk-flex uk-form-label">Sort by</label>
+                      <div class="uk-form-controls">
+                        <div uk-form-custom="target: &gt; * &gt; span:first-child">
+                          <select class="uk-select">
+                            <option>Date Created</option>
+                            <option>Option 01</option>
+                            <option>Option 02</option>
+                          </select>
+                          <button class="uk-text-capitalize uk-button uk-button-default uk-flex uk-flex-middle uk-flex-between" type="button" tabindex="-1"><span></span><span uk-icon="icon: chevron-down"></span></button>
+                        </div>
+                      </div>
+                    </div>
+                    <div>
+                      <button class="uk-button uk-button-apply uk-button-default uk-button-small uk-text-capitalize">Apply filters</button>
+                    </div>
+                  </div>
+                </fieldset>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- SECTION find tickets :: END-->
     </div>
     <!--include ../components/_footer-->
   </body>
