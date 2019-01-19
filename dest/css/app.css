@@ -671,7 +671,7 @@ section .uk-button {
   height: 125px;
 }
 
-@media screen and (max-width: 1439px) {
+@media screen and (max-width: 1599px) {
   /* line 17, src/scss/_components/_header.scss */
   .header__wrapper {
     height: 65px;
@@ -701,7 +701,7 @@ section .uk-button {
   transition: width 0.3s ease-in-out;
 }
 
-@media screen and (max-width: 1439px) {
+@media screen and (max-width: 1599px) {
   /* line 25, src/scss/_components/_header.scss */
   .header__wrapper-left {
     width: 125px;
@@ -842,7 +842,7 @@ section .uk-button {
   transition: max-width 0.3s ease-in-out;
 }
 
-@media screen and (max-width: 1439px) {
+@media screen and (max-width: 1599px) {
   /* line 93, src/scss/_components/_header.scss */
   .header__wrapper-middle {
     max-width: -webkit-calc(100% - (125px + 353px));
@@ -982,7 +982,7 @@ section .uk-button {
   height: 125px;
 }
 
-@media screen and (max-width: 1439px) {
+@media screen and (max-width: 1599px) {
   /* line 167, src/scss/_components/_header.scss */
   .header__collapse {
     height: 65px;
@@ -1027,7 +1027,7 @@ section .uk-button {
   transition: width 0.3s ease-in-out;
 }
 
-@media screen and (max-width: 1439px) {
+@media screen and (max-width: 1599px) {
   /* line 194, src/scss/_components/_header.scss */
   .header__collapse div i:before {
     width: 100%;
@@ -1042,7 +1042,7 @@ section .uk-button {
   transition: width 0.3s ease-in-out;
 }
 
-@media screen and (max-width: 1439px) {
+@media screen and (max-width: 1599px) {
   /* line 207, src/scss/_components/_header.scss */
   .is-collapsed .header__collapse div i:before {
     width: 11px;

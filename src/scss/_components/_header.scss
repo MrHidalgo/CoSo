@@ -18,7 +18,7 @@
     display: flex;
     align-items: center;
     height: 125px;
-    @include adaptive(1439) {
+    @include adaptive(1599) {
       height: 65px;
     }
 
@@ -31,7 +31,7 @@
       padding-left: 15px;
       padding-right: 15px;
       @include transition(width);
-      @include adaptive(1439) {
+      @include adaptive(1599) {
         width: 125px;
       }
       @include adaptive(1365) {
@@ -98,7 +98,7 @@
       border-left: 1px solid #e6e1e1;
       border-right: 1px solid #e6e1e1;
       @include transition(max-width);
-      @include adaptive(1439) {
+      @include adaptive(1599) {
         max-width: calc(100% - (125px + 353px));
       }
       @include adaptive(1365) {
@@ -169,7 +169,7 @@
     align-items: center;
     justify-content: center;
     height: 125px;
-    @include adaptive(1439) {
+    @include adaptive(1599) {
       height: 65px;
     }
 
@@ -200,14 +200,14 @@
           height: 100%;
           background-color: #4e4e4e;
           @include transition(width);
-          @include adaptive(1439) {
+          @include adaptive(1599) {
             width: 100%;
           }
 
           .is-collapsed & {
             width: 100%;
             @include transition(width);
-            @include adaptive(1439) {
+            @include adaptive(1599) {
               width: 11px;
             }
           }
