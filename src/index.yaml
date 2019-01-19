@@ -9,7 +9,7 @@ PageList:
   ready: 10
 - file: dashboard-reports.html
   titleName: Dashboard Reports
-  ready: 15
+  ready: 35
 - file: dashboard-new-ticket.html
   titleName: Dashboard New Ticket
   ready: 10

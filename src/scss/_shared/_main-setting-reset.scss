@@ -50,7 +50,7 @@ body {
     > .body {
       padding-left: (125px + 39px);
       @include transition(padding-left, padding-top);
-      @include adaptive(1439) {
+      @include adaptive(1599) {
         padding-left: (325px + 39px);
       }
       @include adaptive(1365) {
@@ -71,7 +71,7 @@ body {
     @include adaptive(1919) {
       padding-right: 39px;
     }
-    @include adaptive(1439) {
+    @include adaptive(1599) {
       padding-left: (125px + 39px);
       padding-top: 65px;
     }
