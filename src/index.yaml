@@ -6,7 +6,7 @@ PageList:
   ready: 75
 - file: dashboard.html
   titleName: Dashboard
-  ready: 10
+  ready: 15
 - file: dashboard-reports.html
   titleName: Dashboard Reports
   ready: 35

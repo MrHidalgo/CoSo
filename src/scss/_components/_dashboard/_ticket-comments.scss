@@ -1,0 +1,51 @@
+// SECTION ticket comments :: START
+
+.t-comments {
+  &__info {
+    span {
+      font-size: 16px;
+    }
+
+    p {
+      width: 100%;
+      max-width: 90%;
+      font-size: 18px;
+    }
+  }
+
+  &__wrapper {
+    border: 1px solid #cccccc;
+  }
+
+  &__top {
+    textarea {
+      resize: none;
+      border: none;
+      font-size: 20px;
+
+      @include inputPlaceholder {
+        font-size: 20px;
+      }
+    }
+  }
+
+  &__bottom {
+    padding: 10px;
+
+    button {
+      height: 32px;
+      border-radius: 10px;
+
+      &:nth-of-type(1) {
+        background-color: #3f3f3f;
+        color: #fff;
+      }
+      &:nth-of-type(2) {
+        background-color: #00a6d9;
+      }
+      &:nth-of-type(3) {}
+    }
+  }
+}
+
+// SECTION ticket comments :: END

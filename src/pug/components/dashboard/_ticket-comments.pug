@@ -1,0 +1,50 @@
+// SECTION ticket comments :: START
+
+#t-comments.t-comments
+
+  .uk-section.uk-padding-remove-top.uk-padding-remove-bottom.uk-margin-xlarge-bottom
+    .uk-card.uk-card-default.uk-box-shadow-small
+
+      .uk-card-body
+
+        .t-comments__info
+          div.uk-margin-medium-bottom
+            .uk-flex.uk-flex-between.uk-margin-small-bottom
+              span!= "Sean Kelly"
+              span.uk-text-muted!= "Nov 28, 2018"
+            div
+              p.uk-margin-remove-bottom!= "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+
+          div.uk-margin-large-bottom
+            .uk-flex.uk-flex-between.uk-margin-small-bottom
+              span!= "Evie Larson"
+              span.uk-text-muted!= "Nov 26, 2018"
+            div
+              p.uk-margin-remove-bottom!= "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+
+        form
+          fieldset.uk-fieldset
+
+            .t-comments__wrapper.uk-flex.uk-flex-column
+
+              .t-comments__top
+                textarea(class="uk-textarea" rows="8" placeholder="Write comment here...")
+
+              .t-comments__bottom.uk-flex.uk-flex-middle.uk-flex-right
+                button(class="uk-button uk-button-default uk-button-small")!= "Save Draft"
+                button.uk-margin-small-left(class="uk-button uk-button-primary uk-button-small")!= "Comment"
+                button.uk-margin-small-left(
+                  class="uk-button uk-button-small"
+                  uk-tooltip="title: More Actions"
+                )
+                  span(uk-icon="more")
+                div(uk-dropdown="mode: click")
+                  ul.uk-nav.uk-dropdown-nav
+                    li
+                      a(href="#" class="" title="")!= "Some action 1"
+                    li
+                      a(href="#" class="" title="")!= "Some action 2"
+                    li
+                      a(href="#" class="" title="")!= "Some action 3"
+
+// SECTION ticket comments :: END
