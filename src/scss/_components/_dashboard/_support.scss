@@ -1,0 +1,132 @@
+// SECTION support :: START
+
+.d-support {
+  .uk-table {
+    thead,
+    tbody {
+      tr {
+        th,
+        td {
+          &:nth-of-type(1) {
+            padding-left: 40px;
+          }
+        }
+      }
+    }
+
+    thead {
+      a,
+      p {
+        display: flex;
+        align-items: center;
+        color: #4e4e4e;
+        font-size: 20px;
+        font-weight: bold;
+      }
+    }
+
+    tbody {
+      tr {
+        &:hover {
+          background-color: rgba(#999, 0.1) !important;
+        }
+      }
+
+      span,
+      p {
+        font-size: 18px;
+        color: #a7a3a3;
+      }
+    }
+
+    &__priority {
+      &--normal {
+        color: #00a8da;
+      }
+      &--critical {
+        color: #f76808;
+      }
+    }
+
+    &__status {
+      width: auto;
+      padding: 5px 10px;
+      border-radius: 2em;
+
+      span {
+        width: 12px;
+        height: 12px;
+        background-color: #9ee3f3;
+      }
+
+      &--new {
+        span {
+          background-color: #9ee3f3;
+        }
+      }
+
+      &--awaiting {
+        span {
+          background-color: #f7a209;
+        }
+      }
+      &--progress {
+        span {
+          background-color: #00a6d9;
+        }
+      }
+      &--hold,
+      &--critical {
+        span {
+          background-color: #f76808;
+        }
+      }
+    }
+  }
+
+  &__header {
+    p {
+      font-size: 18px;
+
+      span {
+        background-color: #00a6d9;
+      }
+    }
+
+    button {
+      width: 100%;
+      max-width: 187px;
+      height: 49px;
+      padding-left: 22px;
+      padding-right: 22px;
+      border-radius: 5px;
+      background-color: #00a6d9;
+      font-size: 20px;
+
+      span {
+        line-height: 1;
+      }
+    }
+  }
+
+  &__footer {
+    padding: 15px 40px;
+    border-top: 1px solid #e5e5e5;
+
+    button {
+      border-color: transparent;
+      color: #00a6d9;
+      font-size: 19px;
+
+      &:hover {
+        border-color: transparent;
+      }
+
+      svg {
+        fill: #00a6d9;
+      }
+    }
+  }
+}
+
+// SECTION support :: END
