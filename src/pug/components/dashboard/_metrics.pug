@@ -1,0 +1,74 @@
+// SECTION daily metrics :: START
+
+-
+  var metricsBlockArr = [
+    {
+      name: 'SESSIONS RECORDED',
+      num: '156'
+    },
+    {
+      name: 'MINUTES PER SESSION',
+      num: '43'
+    },
+    {
+      name: 'ATTENDEES PER SESSION',
+      num: '2300'
+    },
+    {
+      name: 'HOURS SPENT IN MEETINGS',
+      num: '135'
+    },
+  ];
+
+#d-metrics.d-metrics
+
+  .uk-section.uk-padding-remove-top.uk-padding-remove-bottom.uk-margin-medium-bottom
+    .uk-card.uk-card-default.uk-box-shadow-small
+      .uk-card-header.uk-flex.uk-flex-middle.uk-flex-between
+        .uk-width-1-2.uk-flex.uk-flex-middle.uk-grid-divider(uk-grid)
+          h2.uk-margin-remove-bottom.uk-card-title.uk-text-bold!= "Daily Metrics"
+          h3.uk-margin-remove-bottom.uk-card-title.uk-text-bold.uk-text-muted!= "Current System Activity"
+
+        .uk-width-1-2.uk-flex.uk-flex-right.uk-flex-middle
+          a.uk-button.uk-button-link(href="#" class="" title="")
+            span.uk-text-muted(uk-icon='minus')
+          a.uk-button.uk-button-link.uk-margin-small-left(href="#" class="" title="")
+            span.uk-text-muted(uk-icon='close')
+
+      .uk-card-body
+
+        .d-metrics__badge.uk-margin-medium-bottom
+          p.uk-text-muted!= "Since Monday, November 19, 2018"
+
+          div(uk-grid)
+            each val, idx in metricsBlockArr
+              .uk-width-1-4
+                a(href='#').uk-card.uk-flex.uk-flex-between.uk-padding-small
+                  p.uk-margin-remove.uk-text-uppercase.uk-text-bold!= metricsBlockArr[idx].name
+                  span.uk-text-bold!= metricsBlockArr[idx].num
+
+        .d-metrics__block
+          div.uk-grid-small.uk-child-width-expand(uk-grid uk-height-match="target: > div > .uk-card")
+            div
+              .uk-card.uk-card-defult.uk-padding.uk-flex.uk-flex-top.uk-flex-between
+                div
+                  i.icon-font.icon-d-metrics-meetings
+                div
+                  p.uk-margin-small-bottom.uk-text-bold!= "62"
+                  span.uk-text-bold.uk-text-uppercase!= "MEETINGS"
+            div
+              .uk-card.uk-card-defult.uk-padding.uk-flex.uk-flex-top.uk-flex-between
+                div
+                  i.icon-font.icon-d-metrics-powerpoint
+                div
+                  p.uk-margin-small-bottom.uk-text-bold!= "9"
+                  span.uk-text-bold.uk-text-uppercase!= "PowerPoint Conversions"
+            div
+              .uk-card.uk-card-defult.uk-padding.uk-flex.uk-flex-top.uk-flex-between
+                div
+                  i.icon-font.icon-d-metrics-max
+                div
+                  p.uk-margin-small-bottom.uk-text-bold!= "55"
+                  span.uk-text-bold.uk-text-uppercase!= "Max attendees"
+
+// SECTION daily metrics :: END

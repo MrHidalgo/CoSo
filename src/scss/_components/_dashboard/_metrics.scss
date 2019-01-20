@@ -1,0 +1,96 @@
+// SECTION daily metrics :: START
+
+.d-metrics {
+  &__badge {
+    > p {
+      font-size: 16px;
+    }
+
+    [uk-grid] {
+      > div {
+        a {
+          background-color: #ececec;
+          border-left: 6px solid #00a6d9;
+        }
+      }
+
+      p,
+      span {
+        font-size: 18px;
+      }
+
+      p {
+        color: rgba(#4e4e4e, 0.5);
+      }
+
+      span {
+        color: #00a6d9;
+      }
+    }
+  }
+
+  &__block {
+    [uk-grid] {
+      > div {
+        &:nth-of-type(1) {
+          .uk-card {
+            background-color: #f7a209;
+          }
+        }
+        &:nth-of-type(2) {
+          .uk-card {
+            background-color: #00a6d9;
+          }
+        }
+        &:nth-of-type(3) {
+          .uk-card {
+            background-color: #6d6a67;
+          }
+        }
+      }
+    }
+
+    .uk-card {
+      > div {
+        &:nth-of-type(1) {
+          width: 40%;
+        }
+        &:nth-of-type(2) {
+          width: 60%;
+          text-align: center;
+        }
+      }
+    }
+
+    .icon-font {
+      color: #ffffff;
+
+      &.icon-d-metrics-meetings {
+        font-size: 129px;
+      }
+      &.icon-d-metrics-powerpoint {
+        font-size: 126px;
+      }
+      &.icon-d-metrics-max {
+        font-size: 116px;
+      }
+    }
+
+    p,
+    span {
+      color: #ffffff;
+    }
+
+    p {
+      line-height: 1;
+      font-size: 60px;
+    }
+
+    span {
+      line-height: 1.2;
+      font-size: 28px;
+    }
+  }
+}
+
+// SECTION daily metrics :: END

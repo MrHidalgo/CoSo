@@ -6,13 +6,13 @@ PageList:
   ready: 75
 - file: dashboard.html
   titleName: Dashboard
-  ready: 15
+  ready: 20
 - file: dashboard-reports.html
   titleName: Dashboard Reports
   ready: 35
 - file: dashboard-new-ticket.html
   titleName: Dashboard New Ticket
-  ready: 10
+  ready: 15
 - file: dashboard-ticket-system.html
   titleName: Dashboard Ticket System
   ready: 45

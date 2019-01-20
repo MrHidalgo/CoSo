@@ -97,7 +97,7 @@
 }
 
 /* line 23, src/scss/_generated/_spriteFont.scss */
-.icon-a-ticket-awaiting:before, .icon-a-ticket-closed:before, .icon-a-ticket-hold:before, .icon-a-ticket-open:before {
+.icon-a-ticket-awaiting:before, .icon-a-ticket-closed:before, .icon-a-ticket-hold:before, .icon-a-ticket-open:before, .icon-d-metrics-max:before, .icon-d-metrics-meetings:before, .icon-d-metrics-powerpoint:before {
   font-family: "iconFont", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -108,24 +108,39 @@
   text-transform: none;
 }
 
-/* line 47, src/scss/_generated/_spriteFont.scss */
+/* line 56, src/scss/_generated/_spriteFont.scss */
 .icon-a-ticket-awaiting:before {
   content: "";
 }
 
-/* line 47, src/scss/_generated/_spriteFont.scss */
+/* line 56, src/scss/_generated/_spriteFont.scss */
 .icon-a-ticket-closed:before {
   content: "";
 }
 
-/* line 47, src/scss/_generated/_spriteFont.scss */
+/* line 56, src/scss/_generated/_spriteFont.scss */
 .icon-a-ticket-hold:before {
   content: "";
 }
 
-/* line 47, src/scss/_generated/_spriteFont.scss */
+/* line 56, src/scss/_generated/_spriteFont.scss */
 .icon-a-ticket-open:before {
   content: "";
+}
+
+/* line 56, src/scss/_generated/_spriteFont.scss */
+.icon-d-metrics-max:before {
+  content: "";
+}
+
+/* line 56, src/scss/_generated/_spriteFont.scss */
+.icon-d-metrics-meetings:before {
+  content: "";
+}
+
+/* line 56, src/scss/_generated/_spriteFont.scss */
+.icon-d-metrics-powerpoint:before {
+  content: "";
 }
 
 /* line 1, src/scss/_shared/_main-setting-reset.scss */
@@ -3067,6 +3082,97 @@ section .uk-button {
 /* line 123, src/scss/_components/_dashboard/_report-tabs.scss */
 .r-virtualClass__wrapper-1 form [uk-grid] .uk-card > div:nth-of-type(2) {
   max-width: 176px;
+}
+
+/* line 5, src/scss/_components/_dashboard/_metrics.scss */
+.d-metrics__badge > p {
+  font-size: 16px;
+}
+
+/* line 11, src/scss/_components/_dashboard/_metrics.scss */
+.d-metrics__badge [uk-grid] > div a {
+  background-color: #ececec;
+  border-left: 6px solid #00a6d9;
+}
+
+/* line 17, src/scss/_components/_dashboard/_metrics.scss */
+.d-metrics__badge [uk-grid] p,
+.d-metrics__badge [uk-grid] span {
+  font-size: 18px;
+}
+
+/* line 22, src/scss/_components/_dashboard/_metrics.scss */
+.d-metrics__badge [uk-grid] p {
+  color: rgba(78, 78, 78, 0.5);
+}
+
+/* line 26, src/scss/_components/_dashboard/_metrics.scss */
+.d-metrics__badge [uk-grid] span {
+  color: #00a6d9;
+}
+
+/* line 36, src/scss/_components/_dashboard/_metrics.scss */
+.d-metrics__block [uk-grid] > div:nth-of-type(1) .uk-card {
+  background-color: #f7a209;
+}
+
+/* line 41, src/scss/_components/_dashboard/_metrics.scss */
+.d-metrics__block [uk-grid] > div:nth-of-type(2) .uk-card {
+  background-color: #00a6d9;
+}
+
+/* line 46, src/scss/_components/_dashboard/_metrics.scss */
+.d-metrics__block [uk-grid] > div:nth-of-type(3) .uk-card {
+  background-color: #6d6a67;
+}
+
+/* line 55, src/scss/_components/_dashboard/_metrics.scss */
+.d-metrics__block .uk-card > div:nth-of-type(1) {
+  width: 40%;
+}
+
+/* line 58, src/scss/_components/_dashboard/_metrics.scss */
+.d-metrics__block .uk-card > div:nth-of-type(2) {
+  width: 60%;
+  text-align: center;
+}
+
+/* line 65, src/scss/_components/_dashboard/_metrics.scss */
+.d-metrics__block .icon-font {
+  color: #ffffff;
+}
+
+/* line 68, src/scss/_components/_dashboard/_metrics.scss */
+.d-metrics__block .icon-font.icon-d-metrics-meetings {
+  font-size: 129px;
+}
+
+/* line 71, src/scss/_components/_dashboard/_metrics.scss */
+.d-metrics__block .icon-font.icon-d-metrics-powerpoint {
+  font-size: 126px;
+}
+
+/* line 74, src/scss/_components/_dashboard/_metrics.scss */
+.d-metrics__block .icon-font.icon-d-metrics-max {
+  font-size: 116px;
+}
+
+/* line 79, src/scss/_components/_dashboard/_metrics.scss */
+.d-metrics__block p,
+.d-metrics__block span {
+  color: #ffffff;
+}
+
+/* line 84, src/scss/_components/_dashboard/_metrics.scss */
+.d-metrics__block p {
+  line-height: 1;
+  font-size: 60px;
+}
+
+/* line 89, src/scss/_components/_dashboard/_metrics.scss */
+.d-metrics__block span {
+  line-height: 1.2;
+  font-size: 28px;
 }
 
 /* line 10, src/scss/_components/_dashboard/_support.scss */
