@@ -598,6 +598,12 @@ section .uk-button {
   background-color: #00a6d9;
 }
 
+/* line 41, src/scss/_shared/_common.scss */
+.uk-section > .uk-card {
+  -webkit-border-radius: 5px;
+          border-radius: 5px;
+}
+
 /* line 4, src/scss/_shared/_iconPNG.scss */
 .icon-png:before {
   content: "";
@@ -2751,6 +2757,130 @@ section .uk-button {
 .tickets-find .uk-button-apply {
   background-color: #9b9b9b;
   color: #ffffff;
+}
+
+/* line 10, src/scss/_components/_dashboard/_tickets-table.scss */
+.tickets-table .uk-table thead tr th:nth-of-type(1),
+.tickets-table .uk-table thead tr td:nth-of-type(1),
+.tickets-table .uk-table tbody tr th:nth-of-type(1),
+.tickets-table .uk-table tbody tr td:nth-of-type(1) {
+  padding-left: 40px;
+}
+
+/* line 18, src/scss/_components/_dashboard/_tickets-table.scss */
+.tickets-table .uk-table__priority--normal {
+  color: #00a8da;
+}
+
+/* line 21, src/scss/_components/_dashboard/_tickets-table.scss */
+.tickets-table .uk-table__priority--critical {
+  color: #f76808;
+}
+
+/* line 26, src/scss/_components/_dashboard/_tickets-table.scss */
+.tickets-table .uk-table__status {
+  width: auto;
+  padding: 5px 10px;
+  -webkit-border-radius: 2em;
+          border-radius: 2em;
+  border: 1px solid transparent;
+}
+
+/* line 32, src/scss/_components/_dashboard/_tickets-table.scss */
+.tickets-table .uk-table__status span {
+  width: 12px;
+  height: 12px;
+}
+
+/* line 37, src/scss/_components/_dashboard/_tickets-table.scss */
+.tickets-table .uk-table__status--new {
+  border-color: #e7e3e2;
+}
+
+/* line 40, src/scss/_components/_dashboard/_tickets-table.scss */
+.tickets-table .uk-table__status--new span {
+  background-color: #9ee3f3;
+}
+
+/* line 46, src/scss/_components/_dashboard/_tickets-table.scss */
+.tickets-table .uk-table__status--awaiting span {
+  background-color: #f7a209;
+}
+
+/* line 51, src/scss/_components/_dashboard/_tickets-table.scss */
+.tickets-table .uk-table__status--progress span {
+  background-color: #6fdb52;
+}
+
+/* line 57, src/scss/_components/_dashboard/_tickets-table.scss */
+.tickets-table .uk-table__status--hold span, .tickets-table .uk-table__status--critical span {
+  background-color: #f76808;
+}
+
+/* line 65, src/scss/_components/_dashboard/_tickets-table.scss */
+.tickets-table thead .uk-button {
+  line-height: 1;
+}
+
+/* line 69, src/scss/_components/_dashboard/_tickets-table.scss */
+.tickets-table thead a,
+.tickets-table thead p,
+.tickets-table thead label {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #4e4e4e;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+/* line 79, src/scss/_components/_dashboard/_tickets-table.scss */
+.tickets-table thead .uk-dropdown {
+  min-width: auto;
+}
+
+/* line 83, src/scss/_components/_dashboard/_tickets-table.scss */
+.tickets-table thead .uk-dropdown-nav li {
+  padding: 10px;
+}
+
+/* line 87, src/scss/_components/_dashboard/_tickets-table.scss */
+.tickets-table thead .uk-dropdown-nav span {
+  font-size: 16px;
+}
+
+/* line 96, src/scss/_components/_dashboard/_tickets-table.scss */
+.tickets-table tbody tr:hover {
+  background-color: rgba(153, 153, 153, 0.1) !important;
+}
+
+/* line 101, src/scss/_components/_dashboard/_tickets-table.scss */
+.tickets-table tbody span,
+.tickets-table tbody p {
+  font-size: 18px;
+  color: #a7a3a3;
+}
+
+/* line 109, src/scss/_components/_dashboard/_tickets-table.scss */
+.tickets-table .uk-pagination li {
+  border: 1px solid #e7e3e2;
+}
+
+/* line 114, src/scss/_components/_dashboard/_tickets-table.scss */
+.tickets-table .uk-pagination li.uk-active a {
+  color: #999;
+}
+
+/* line 119, src/scss/_components/_dashboard/_tickets-table.scss */
+.tickets-table .uk-pagination li a {
+  width: 32px;
+  height: 32px;
+  color: #00a6d9;
 }
 
 /* line 6, src/scss/_components/_dashboard/_report-tabs.scss */

@@ -37,4 +37,10 @@ section {
   }
 }
 
+.uk-section {
+  > .uk-card {
+    border-radius: 5px;
+  }
+}
+
 // COMMON :: END

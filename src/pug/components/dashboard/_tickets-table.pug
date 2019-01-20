@@ -1,0 +1,148 @@
+// SECTION tickets table :: START
+
+#tickets-table.tickets-table
+
+  .uk-section.uk-padding-remove-top.uk-padding-remove-bottom.uk-margin-xlarge-bottom
+    .uk-card.uk-card-default.uk-box-shadow-small
+
+      table(class="uk-table uk-table-responsive uk-table-divider uk-table-hover uk-table-middle")
+        thead
+          tr
+            th
+              a(href="#" class="" title="")
+                p.uk-text-capitalize.uk-margin-remove-bottom!= "Ticket ID"
+                span(uk-icon="triangle-up")
+            th
+              a(href="#" class="" title="")
+                p.uk-text-capitalize.uk-margin-remove-bottom!= "Status"
+                span(uk-icon="triangle-up")
+            th
+              a(href="#" class="" title="")
+                p.uk-text-capitalize.uk-margin-remove-bottom!= "Priority"
+                span(uk-icon="triangle-up")
+            th
+              a(href="#" class="" title="")
+                p.uk-text-capitalize.uk-margin-remove-bottom!= "Reporter"
+                span(uk-icon="triangle-up")
+            th
+              a(href="#" class="" title="")
+                p.uk-text-capitalize.uk-margin-remove-bottom!= "Subject"
+                span(uk-icon="triangle-up")
+            th
+              div.uk-flex.uk-flex-middle
+                p.uk-text-capitalize.uk-margin-remove-bottom!= "Date Updated"
+                .uk-inline.uk-margin-small-left
+                  label
+                    input(class="uk-checkbox" type="checkbox")
+                  div.uk-padding-remove(uk-dropdown="mode: click")
+                    ul(class="uk-nav uk-dropdown-nav")
+                      li
+                        label
+                          input(class="uk-radio" type="radio" name="radio2" checked)
+                          span.uk-flex.uk-text-capitalize.uk-margin-small-left!= "Date Created"
+                      li.uk-padding-remove.uk-margin-remove(class="uk-nav-divider")
+                      li
+                        label
+                          input(class="uk-radio" type="radio" name="radio2")
+                          span.uk-flex.uk-text-capitalize.uk-margin-small-left!= "Date Updated"
+
+            th
+        tbody
+          tr
+            td
+              span!= '3950-D'
+            td
+              div.uk-table__status.uk-table__status--new.uk-flex-inline.uk-flex-middle
+                span.uk-border-circle.uk-margin-small-right
+                p.uk-margin-remove!= "New"
+            td
+              span.uk-table__priority.uk-table__priority--normal!= "Normal"
+            td
+              span(uk-tooltip="title: skelly@aaski.com; pos:top;")!= "Randah McKinnie"
+            td
+              span!= "Problem with System functionality"
+            td
+              span!= "Nov 18, 2018"
+            td
+              a(href="#" class="uk-icon-link" uk-icon="move")
+          tr
+            td
+              span!= '3950-D'
+            td
+              div.uk-table__status.uk-table__status--hold.uk-flex-inline.uk-flex-middle
+                span.uk-border-circle.uk-margin-small-right
+                p.uk-margin-remove!= "On Hold"
+            td
+              span.uk-table__priority.uk-table__priority--normal!= "Normal"
+            td
+              span(uk-tooltip="title: skelly@aaski.com; pos:top;")!= "Randah McKinnie"
+            td
+              span!= "Problem with System functionality"
+            td
+              span!= "Nov 18, 2018"
+            td
+              a(href="#" class="uk-icon-link" uk-icon="expand")
+          tr
+            td
+              span!= '3950-D'
+            td
+              div.uk-table__status.uk-table__status--critical.uk-flex-inline.uk-flex-middle
+                span.uk-border-circle.uk-margin-small-right
+                p.uk-margin-remove!= "Escalated"
+            td
+              span.uk-table__priority.uk-table__priority--critical!= "Critical"
+            td
+              span(uk-tooltip="title: skelly@aaski.com; pos:top;")!= "Randah McKinnie"
+            td
+              span!= "Problem with System functionality"
+            td
+              span!= "Nov 18, 2018"
+            td
+
+          tr
+            td
+              span!= '3950-D'
+            td
+              div.uk-table__status.uk-table__status--awaiting.uk-flex-inline.uk-flex-middle
+                span.uk-border-circle.uk-margin-small-right
+                p.uk-margin-remove!= "Awaiting"
+            td
+              span.uk-table__priority.uk-table__priority--critical!= "Critical"
+            td
+              span(uk-tooltip="title: skelly@aaski.com; pos:top;")!= "Randah McKinnie"
+            td
+              span!= "Problem with System functionality"
+            td
+              span!= "Nov 18, 2018"
+            td
+
+          tr
+            td
+              span!= '3950-D'
+            td
+              div.uk-table__status.uk-table__status--progress.uk-flex-inline.uk-flex-middle
+                span.uk-border-circle.uk-margin-small-right
+                p.uk-margin-remove!= "In Progress"
+            td
+              span.uk-table__priority.uk-table__priority--normal!= "Normal"
+            td
+              span(uk-tooltip="title: skelly@aaski.com; pos:top;")!= "Randah McKinnie"
+            td
+              span!= "Problem with System functionality"
+            td
+              span!= "Nov 18, 2018"
+            td
+
+
+
+      ul.uk-padding-small(class="uk-pagination uk-flex-center" uk-margin)
+        li.uk-padding-remove.uk-margin-small-left.uk-margin-small-right.uk-border-circle.uk-active
+          a.uk-flex.uk-flex-middle.uk-flex-center(href="#" class="" title="")!= "1"
+        li.uk-padding-remove.uk-margin-small-left.uk-margin-small-right.uk-border-circle
+          a.uk-flex.uk-flex-middle.uk-flex-center(href="#" class="" title="")!= "2"
+        li.uk-padding-remove.uk-margin-small-left.uk-margin-small-right.uk-border-circle
+          a.uk-flex.uk-flex-middle.uk-flex-center(href="#" class="" title="")!= "3"
+        li.uk-padding-remove.uk-margin-small-left.uk-margin-small-right.uk-border-circle
+          a.uk-flex.uk-flex-middle.uk-flex-center(href="#" class="" title="")!= "4"
+
+// SECTION tickets table :: END

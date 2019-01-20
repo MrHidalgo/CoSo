@@ -1,0 +1,128 @@
+// SECTION tickets table :: START
+
+.tickets-table {
+  .uk-table {
+    thead,
+    tbody {
+      tr {
+        th,
+        td {
+          &:nth-of-type(1) {
+            padding-left: 40px;
+          }
+        }
+      }
+    }
+
+    &__priority {
+      &--normal {
+        color: #00a8da;
+      }
+      &--critical {
+        color: #f76808;
+      }
+    }
+
+    &__status {
+      width: auto;
+      padding: 5px 10px;
+      border-radius: 2em;
+      border: 1px solid transparent;
+
+      span {
+        width: 12px;
+        height: 12px;
+      }
+
+      &--new {
+        border-color: #e7e3e2;
+
+        span {
+          background-color: #9ee3f3;
+        }
+      }
+
+      &--awaiting {
+        span {
+          background-color: #f7a209;
+        }
+      }
+      &--progress {
+        span {
+          background-color: #6fdb52;
+        }
+      }
+      &--hold,
+      &--critical {
+        span {
+          background-color: #f76808;
+        }
+      }
+    }
+  }
+
+  thead {
+    .uk-button {
+      line-height: 1;
+    }
+
+    a,
+    p,
+    label {
+      display: flex;
+      align-items: center;
+      color: #4e4e4e;
+      font-size: 20px;
+      font-weight: bold;
+    }
+
+    .uk-dropdown {
+      min-width: auto;
+
+      &-nav {
+        li {
+          padding: 10px;
+        }
+
+        span {
+          font-size: 16px;
+        }
+      }
+    }
+  }
+
+  tbody {
+     tr {
+       &:hover {
+         background-color: rgba(#999, 0.1) !important;
+       }
+     }
+
+    span,
+    p {
+      font-size: 18px;
+      color: #a7a3a3;
+    }
+  }
+
+  .uk-pagination {
+    li {
+      border: 1px solid #e7e3e2;
+
+
+      &.uk-active {
+        a {
+          color: #999;
+        }
+      }
+
+      a {
+        width: 32px;
+        height: 32px;
+        color: #00a6d9;
+      }
+    }
+  }
+}
+
+// SECTION tickets table :: END
