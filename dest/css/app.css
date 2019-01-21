@@ -3453,4 +3453,30 @@ section .uk-button {
   font-size: 16px;
 }
 
+/* line 73, src/scss/_components/_dashboard/_case.scss */
+.d-case__attachments-block {
+  width: 100px;
+  height: 100px;
+  background-color: #00a6d9;
+  margin-right: 10px;
+}
+
+/* line 79, src/scss/_components/_dashboard/_case.scss */
+.d-case__attachments-block:last-of-type {
+  margin-right: 0;
+}
+
+/* line 83, src/scss/_components/_dashboard/_case.scss */
+.d-case__attachments-block svg {
+  opacity: 0.5;
+  fill: #fff;
+}
+
+/* line 87, src/scss/_components/_dashboard/_case.scss */
+.d-case__attachments-block svg rect,
+.d-case__attachments-block svg polyline,
+.d-case__attachments-block svg line {
+  stroke: #fff !important;
+}
+
 /*# sourceMappingURL=maps/app.css.map */
