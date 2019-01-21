@@ -1,0 +1,75 @@
+// SECTION new\edit case :: START
+
+.d-case {
+  .uk-card {
+    &.uk-card-default {
+      .uk-card {
+        &-header {
+          border-bottom: none;
+        }
+      }
+    }
+  }
+
+  &__subtitle {
+    min-height: 51px;
+    padding: 5px 35px;
+    background-color: #00a6d9;
+
+    p {
+      color: #ffffff;
+      font-size: 24px;
+    }
+  }
+
+  &__description {
+    width: 100%;
+    max-width: 652px;
+    margin-left: auto;
+    margin-right: auto;
+
+    .uk-form-controls {
+      > div {
+        width: 100%;
+
+        select {
+          height: 100% !important;
+          color: #4e4e4e;
+        }
+
+        button {
+          width: 100%;
+          height: 49px;
+          padding: 0 20px;
+          border-radius: 10px;
+          border: 1px solid rgb(201, 201, 201);
+          font-size: 20px;
+        }
+      }
+
+      textarea {
+        resize: none;
+        padding: 10px 20px;
+        border-radius: 10px;
+        border: 1px solid rgb(201, 201, 201);
+        color: #4e4e4e;
+        font-size: 20px;
+        @include inputPlaceholder {
+          color: #4e4e4e;
+        }
+      }
+    }
+  }
+
+  &__attachments {
+    .uk-button {
+      width: 100%;
+      max-width: 272px;
+      border-radius: 10px;
+      background-color: #00a6d9;
+      font-size: 16px;
+    }
+  }
+}
+
+// SECTION new\edit case :: END

@@ -1,0 +1,61 @@
+// SECTION new\edit case :: START
+
+#d-case.d-case
+
+  .uk-section.uk-padding-remove-top.uk-padding-remove-bottom.uk-margin-medium-bottom
+    .uk-card.uk-card-default.uk-box-shadow-small
+      .uk-card-header.uk-flex.uk-flex-top.uk-flex-between
+        .uk-width-1-2
+          h2.uk-margin-small-bottom.uk-card-title.uk-text-bold!= "New/Edit Cases"
+          p.uk-margin-remove.uk-text-muted!= "Lorem ipsum dolor sit amet, consectetur adipiscint"
+        .uk-width-1-2.uk-flex.uk-flex-right.uk-flex-middle
+          h2.uk-margin-remove-bottom.uk-card-title.uk-text-bold!= "Case# 00"
+
+      .uk-card-body.uk-padding-remove
+
+        .d-case__subtitle.uk-flex.uk-flex-middle
+          p.uk-margin-remove.uk-text-bold!= "Ticket Information"
+
+        .uk-card-body
+
+        .d-case__subtitle.uk-flex.uk-flex-middle
+          p.uk-margin-remove.uk-text-bold!= "Description"
+
+        .uk-card-body
+
+          .d-case__description
+            form
+              fieldset.uk-fieldset
+                .uk-form-controls.uk-margin-medium-bottom
+                  div(uk-form-custom="target: > * > span:first-child")
+                    select.uk-select
+                      option!= "Product"
+                      option!= "Option 01"
+                      option!= "Option 02"
+                    button.uk-text-capitalize(class="uk-button uk-button-default uk-flex uk-flex-middle uk-flex-between" type="button" tabindex="-1")
+                      span
+                      span(uk-icon="icon: chevron-down")
+                .uk-form-controls.uk-margin-medium-bottom
+                  div(uk-form-custom="target: > * > span:first-child")
+                    select.uk-select
+                      option!= "Subject"
+                      option!= "Option 01"
+                      option!= "Option 02"
+                    button.uk-text-capitalize(class="uk-button uk-button-default uk-flex uk-flex-middle uk-flex-between" type="button" tabindex="-1")
+                      span
+                      span(uk-icon="icon: chevron-down")
+
+                .uk-form-controls
+                  textarea(class="uk-textarea" rows="8" placeholder="Description...")
+
+        .d-case__subtitle.uk-flex.uk-flex-middle
+          p.uk-margin-remove.uk-text-bold!= "Attachments"
+
+        .uk-card-body
+
+          .d-case__attachments
+
+            div.uk-flex.uk-flex-center
+              button.uk-text-capitalize.uk-text-bold(class="uk-button uk-button-primary uk-button-small uk-margin-small-top")!= 'Create/Save Ticket'
+
+// SECTION new\edit case :: END
