@@ -18,6 +18,72 @@
 
         .uk-card-body
 
+          .d-case__information
+            div(uk-grid)
+              .uk-width-auto
+                .uk-card
+                  .uk-flex.uk-flex-middle
+                    div
+                      span(uk-icon="icon: user")
+                    div
+                      p.uk-margin-small-left.uk-margin-remove-bottom.uk-text-muted!= "Created By:"
+                      span.uk-margin-small-left!= "Randah McKinnie"
+
+              .uk-width-expand
+                .uk-card
+                  form
+                    fieldset.uk-fieldset
+                      .uk-form-controls.uk-margin-medium-bottom
+                        div(uk-grid)
+                          .uk-width-1-4
+                            .uk-form-controls
+                              div(uk-form-custom="target: > * > span:first-child")
+                                select.uk-select
+                                  option!= "Status"
+                                  option!= "Option 01"
+                                  option!= "Option 02"
+                                button.uk-text-capitalize(class="uk-button uk-button-default uk-flex uk-flex-middle uk-flex-between" type="button" tabindex="-1")
+                                  span
+                                  span(uk-icon="icon: chevron-down")
+                          .uk-width-1-4
+                            .uk-form-controls
+                              div(uk-form-custom="target: > * > span:first-child")
+                                select.uk-select
+                                  option!= "Priority"
+                                  option!= "Option 01"
+                                  option!= "Option 02"
+                                button.uk-text-capitalize(class="uk-button uk-button-default uk-flex uk-flex-middle uk-flex-between" type="button" tabindex="-1")
+                                  span
+                                  span(uk-icon="icon: chevron-down")
+                          .uk-width-1-4
+                            .uk-form-controls
+                              div(uk-form-custom="target: > * > span:first-child")
+                                select.uk-select
+                                  option!= "Type"
+                                  option!= "Option 01"
+                                  option!= "Option 02"
+                                button.uk-text-capitalize(class="uk-button uk-button-default uk-flex uk-flex-middle uk-flex-between" type="button" tabindex="-1")
+                                  span
+                                  span(uk-icon="icon: chevron-down")
+                          .uk-width-1-4
+                            .uk-form-controls
+                              div(uk-form-custom="target: > * > span:first-child")
+                                select.uk-select
+                                  option!= "Case Origin"
+                                  option!= "Option 01"
+                                  option!= "Option 02"
+                                button.uk-text-capitalize(class="uk-button uk-button-default uk-flex uk-flex-middle uk-flex-between" type="button" tabindex="-1")
+                                  span
+                                  span(uk-icon="icon: chevron-down")
+
+                      .uk-form-controls.uk-margin-medium-bottom
+                        input(class="uk-input" type="text" placeholder="Contact Name")
+                      .uk-form-controls.uk-margin-medium-bottom
+                        input(class="uk-input" type="text" placeholder="This fiield is locked" disabled='disabled')
+                      .uk-form-controls
+                        input(class="uk-input" type="text" placeholder="Account URL")
+
+
         .d-case__subtitle.uk-flex.uk-flex-middle
           p.uk-margin-remove.uk-text-bold!= "Description"
 
