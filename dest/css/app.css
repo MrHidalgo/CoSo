@@ -18,78 +18,6 @@
      object-position: center;
 }
 
-/* line 83, src/scss/_generated/_spritePNG.scss */
-.i-data-center-ch:before {
-  background-image: url("../img/sprite.png");
-  background-position: 0px 0px;
-  background-repeat: no-repeat;
-  width: 28px;
-  height: 35px;
-}
-
-@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
-  /* line 83, src/scss/_generated/_spritePNG.scss */
-  .i-data-center-ch:before {
-    -webkit-background-size: 92px 74px;
-            background-size: 92px 74px;
-    background-image: url("../img/sprite@2x.png");
-  }
-}
-
-/* line 86, src/scss/_generated/_spritePNG.scss */
-.i-data-center-es:before {
-  background-image: url("../img/sprite.png");
-  background-position: -33px 0px;
-  background-repeat: no-repeat;
-  width: 27px;
-  height: 35px;
-}
-
-@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
-  /* line 86, src/scss/_generated/_spritePNG.scss */
-  .i-data-center-es:before {
-    -webkit-background-size: 92px 74px;
-            background-size: 92px 74px;
-    background-image: url("../img/sprite@2x.png");
-  }
-}
-
-/* line 89, src/scss/_generated/_spritePNG.scss */
-.i-data-center-gb:before {
-  background-image: url("../img/sprite.png");
-  background-position: 0px -40px;
-  background-repeat: no-repeat;
-  width: 26px;
-  height: 34px;
-}
-
-@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
-  /* line 89, src/scss/_generated/_spritePNG.scss */
-  .i-data-center-gb:before {
-    -webkit-background-size: 92px 74px;
-            background-size: 92px 74px;
-    background-image: url("../img/sprite@2x.png");
-  }
-}
-
-/* line 92, src/scss/_generated/_spritePNG.scss */
-.i-data-center-us:before {
-  background-image: url("../img/sprite.png");
-  background-position: -65px 0px;
-  background-repeat: no-repeat;
-  width: 27px;
-  height: 34px;
-}
-
-@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
-  /* line 92, src/scss/_generated/_spritePNG.scss */
-  .i-data-center-us:before {
-    -webkit-background-size: 92px 74px;
-            background-size: 92px 74px;
-    background-image: url("../img/sprite@2x.png");
-  }
-}
-
 @font-face {
   font-family: "iconFont";
   src: url("../fonts/iconFont.eot");
@@ -3611,22 +3539,49 @@ section .uk-button {
           transform: scale(2);
 }
 
-/* line 58, src/scss/_components/_dashboard/_statistics.scss */
-.d-statistics .uk-card-body .uk-width-expand [uk-grid] > div:nth-of-type(1), .d-statistics .uk-card-body .uk-width-expand [uk-grid] > div:nth-of-type(3) {
+/* line 59, src/scss/_components/_dashboard/_statistics.scss */
+.d-statistics .uk-card-body .uk-width-expand [uk-grid] > div:nth-of-type(1) .uk-card {
+  background-image: url("../img/img-graph-0.png");
   background-repeat: no-repeat;
   background-position: bottom center;
   -webkit-background-size: contain;
           background-size: contain;
 }
 
-/* line 66, src/scss/_components/_dashboard/_statistics.scss */
-.d-statistics .uk-card-body .uk-width-expand [uk-grid] > div:nth-of-type(1) .uk-card {
-  background-image: url("../img/img-graph-0.png");
-}
-
-/* line 71, src/scss/_components/_dashboard/_statistics.scss */
+/* line 67, src/scss/_components/_dashboard/_statistics.scss */
 .d-statistics .uk-card-body .uk-width-expand [uk-grid] > div:nth-of-type(3) .uk-card {
   background-image: url("../img/img-graph-1.png");
+  background-repeat: no-repeat;
+  background-position: bottom center;
+  -webkit-background-size: contain;
+          background-size: contain;
+}
+
+/* line 6, src/scss/_components/_dashboard/_feed.scss */
+.d-feed [uk-grid] .uk-width-auto {
+  width: 415px;
+}
+
+/* line 9, src/scss/_components/_dashboard/_feed.scss */
+.d-feed [uk-grid] .uk-width-auto p {
+  font-size: 20px;
+}
+
+/* line 16, src/scss/_components/_dashboard/_feed.scss */
+.d-feed [uk-grid] .uk-width-auto .uk-card-body > [uk-grid]:nth-of-type(2) > div {
+  background-color: #eeeeee;
+  border-left: 3px solid #00a6d9;
+  border-top: 1px solid #e6e1e1;
+}
+
+/* line 21, src/scss/_components/_dashboard/_feed.scss */
+.d-feed [uk-grid] .uk-width-auto .uk-card-body > [uk-grid]:nth-of-type(2) > div:last-of-type {
+  border-bottom: 1px solid #e6e1e1;
+}
+
+/* line 27, src/scss/_components/_dashboard/_feed.scss */
+.d-feed [uk-grid] .uk-width-auto .uk-card-body > [uk-grid] [uk-icon='warning'] {
+  color: #f76808;
 }
 
 /*# sourceMappingURL=maps/app.css.map */

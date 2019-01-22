@@ -55,21 +55,20 @@
 
         [uk-grid] {
           > div {
-            &:nth-of-type(1),
-            &:nth-of-type(3) {
-              background-repeat: no-repeat;
-              background-position: bottom center;
-              background-size: contain;
-            }
-
             &:nth-of-type(1) {
               .uk-card {
                 background-image: url('../img/img-graph-0.png');
+                background-repeat: no-repeat;
+                background-position: bottom center;
+                background-size: contain;
               }
             }
             &:nth-of-type(3) {
               .uk-card {
                 background-image: url('../img/img-graph-1.png');
+                background-repeat: no-repeat;
+                background-position: bottom center;
+                background-size: contain;
               }
             }
           }
