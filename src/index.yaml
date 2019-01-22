@@ -12,7 +12,7 @@ PageList:
   ready: 35
 - file: dashboard-new-ticket.html
   titleName: Dashboard New Ticket
-  ready: 15
+  ready: 45
 - file: dashboard-ticket-system.html
   titleName: Dashboard Ticket System
   ready: 45
