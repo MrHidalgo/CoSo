@@ -17,7 +17,23 @@
               a.uk-button.uk-button-link.uk-margin-small-left(href="#" class="" title="")
                 span.uk-text-muted(uk-icon='close')
 
-          .uk-card-body
+          .uk-card-body.uk-padding-remove
+            ul(class="uk-subnav uk-subnav-pill" uk-switcher)
+              li
+                a.uk-text-bold.uk-text-uppercase(href="#" class="" title="")!= 'MEETINGS'
+              li
+                a.uk-text-bold.uk-text-uppercase(href="#" class="" title="")!= 'users'
+              li
+                a.uk-text-bold.uk-text-uppercase(href="#" class="" title="")!= 'Content'
+
+            ul.uk-padding-small(class="uk-switcher uk-margin")
+              li
+                span!= "MEETINGS content"
+              li
+                span!= "USERS content"
+              li
+                span!= "CONTENT content"
+
 
       .uk-width-auto
         .uk-card.uk-card-default.uk-box-shadow-small

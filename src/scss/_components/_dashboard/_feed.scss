@@ -32,6 +32,29 @@
       }
     }
   }
+
+  .uk-subnav {
+    margin-left: 0;
+    border-bottom: 1px solid #e6e1e1;
+
+    li {
+      padding-left: 0;
+
+      &.uk-active {
+        a {
+          background-color: transparent;
+          color: #00a6d9;
+        }
+      }
+
+      a {
+        padding-left: 40px;
+        padding-right: 40px;
+        border-right: 1px solid #e6e1e1;
+        font-size: 20px;
+      }
+    }
+  }
 }
 
 // SECTION live feed & check :: END
