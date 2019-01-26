@@ -36,6 +36,8 @@
     }
 
     .uk-width-auto {
+      width: 341px;
+
       p,
       span {
         font-size: 21px;
@@ -77,12 +79,30 @@
   }
 
   &__description {
-    width: 100%;
-    max-width: 652px;
-    margin-left: auto;
-    margin-right: auto;
+    [uk-grid] {
+      .uk-width-auto {
+        width: 341px;
+      }
+      .uk-width-expand {
+        form {
+          width: 100%;
+          max-width: 652px;
+        }
+      }
+    }
 
     .uk-form-controls {
+      &:last-of-type {
+        .uk-button {
+          width: 100%;
+          max-width: 211px;
+          height: 40px;
+          border-radius: 10px;
+          background: #00a6d9;
+          font-size: 20px;
+        }
+      }
+
       > div {
         width: 100%;
 

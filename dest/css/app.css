@@ -3418,37 +3418,42 @@ section .uk-button {
   color: #4e4e4e;
 }
 
-/* line 39, src/scss/_components/_dashboard/_case.scss */
+/* line 38, src/scss/_components/_dashboard/_case.scss */
+.d-case__information .uk-width-auto {
+  width: 341px;
+}
+
+/* line 41, src/scss/_components/_dashboard/_case.scss */
 .d-case__information .uk-width-auto p,
 .d-case__information .uk-width-auto span {
   font-size: 21px;
 }
 
-/* line 44, src/scss/_components/_dashboard/_case.scss */
+/* line 46, src/scss/_components/_dashboard/_case.scss */
 .d-case__information .uk-width-auto svg {
   -webkit-transform: scale(1.5);
       -ms-transform: scale(1.5);
           transform: scale(1.5);
 }
 
-/* line 51, src/scss/_components/_dashboard/_case.scss */
+/* line 53, src/scss/_components/_dashboard/_case.scss */
 .d-case__information .uk-width-expand .uk-form-controls:nth-of-type(n + 2) {
   width: 100%;
   max-width: 652px;
 }
 
-/* line 59, src/scss/_components/_dashboard/_case.scss */
+/* line 61, src/scss/_components/_dashboard/_case.scss */
 .d-case__information .uk-form-controls > div {
   width: 100%;
 }
 
-/* line 62, src/scss/_components/_dashboard/_case.scss */
+/* line 64, src/scss/_components/_dashboard/_case.scss */
 .d-case__information .uk-form-controls > div select {
   height: 100% !important;
   color: #4e4e4e;
 }
 
-/* line 67, src/scss/_components/_dashboard/_case.scss */
+/* line 69, src/scss/_components/_dashboard/_case.scss */
 .d-case__information .uk-form-controls > div button {
   width: 100%;
   height: 49px;
@@ -3459,26 +3464,40 @@ section .uk-button {
   font-size: 20px;
 }
 
-/* line 79, src/scss/_components/_dashboard/_case.scss */
-.d-case__description {
-  width: 100%;
-  max-width: 652px;
-  margin-left: auto;
-  margin-right: auto;
+/* line 83, src/scss/_components/_dashboard/_case.scss */
+.d-case__description [uk-grid] .uk-width-auto {
+  width: 341px;
 }
 
-/* line 86, src/scss/_components/_dashboard/_case.scss */
+/* line 87, src/scss/_components/_dashboard/_case.scss */
+.d-case__description [uk-grid] .uk-width-expand form {
+  width: 100%;
+  max-width: 652px;
+}
+
+/* line 96, src/scss/_components/_dashboard/_case.scss */
+.d-case__description .uk-form-controls:last-of-type .uk-button {
+  width: 100%;
+  max-width: 211px;
+  height: 40px;
+  -webkit-border-radius: 10px;
+          border-radius: 10px;
+  background: #00a6d9;
+  font-size: 20px;
+}
+
+/* line 106, src/scss/_components/_dashboard/_case.scss */
 .d-case__description .uk-form-controls > div {
   width: 100%;
 }
 
-/* line 89, src/scss/_components/_dashboard/_case.scss */
+/* line 109, src/scss/_components/_dashboard/_case.scss */
 .d-case__description .uk-form-controls > div select {
   height: 100% !important;
   color: #4e4e4e;
 }
 
-/* line 94, src/scss/_components/_dashboard/_case.scss */
+/* line 114, src/scss/_components/_dashboard/_case.scss */
 .d-case__description .uk-form-controls > div button {
   width: 100%;
   height: 49px;
@@ -3489,7 +3508,7 @@ section .uk-button {
   font-size: 20px;
 }
 
-/* line 104, src/scss/_components/_dashboard/_case.scss */
+/* line 124, src/scss/_components/_dashboard/_case.scss */
 .d-case__description .uk-form-controls textarea {
   resize: none;
   padding: 10px 20px;
@@ -3525,7 +3544,7 @@ section .uk-button {
   color: #4e4e4e;
 }
 
-/* line 119, src/scss/_components/_dashboard/_case.scss */
+/* line 139, src/scss/_components/_dashboard/_case.scss */
 .d-case__attachments .uk-button {
   width: 100%;
   max-width: 272px;
@@ -3535,7 +3554,7 @@ section .uk-button {
   font-size: 16px;
 }
 
-/* line 127, src/scss/_components/_dashboard/_case.scss */
+/* line 147, src/scss/_components/_dashboard/_case.scss */
 .d-case__attachments-block {
   width: 100px;
   height: 100px;
@@ -3543,18 +3562,18 @@ section .uk-button {
   margin-right: 10px;
 }
 
-/* line 133, src/scss/_components/_dashboard/_case.scss */
+/* line 153, src/scss/_components/_dashboard/_case.scss */
 .d-case__attachments-block:last-of-type {
   margin-right: 0;
 }
 
-/* line 137, src/scss/_components/_dashboard/_case.scss */
+/* line 157, src/scss/_components/_dashboard/_case.scss */
 .d-case__attachments-block svg {
   opacity: 0.5;
   fill: #fff;
 }
 
-/* line 141, src/scss/_components/_dashboard/_case.scss */
+/* line 161, src/scss/_components/_dashboard/_case.scss */
 .d-case__attachments-block svg rect,
 .d-case__attachments-block svg polyline,
 .d-case__attachments-block svg line {
