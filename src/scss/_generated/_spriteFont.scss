@@ -39,17 +39,32 @@
 	@if $filename == a-ticket-open {
 		$char: "\E004";
 	}
-	@if $filename == d-metrics-max {
+	@if $filename == account {
 		$char: "\E005";
 	}
-	@if $filename == d-metrics-meetings {
+	@if $filename == d-metrics-max {
 		$char: "\E006";
 	}
-	@if $filename == d-metrics-powerpoint {
+	@if $filename == d-metrics-meetings {
 		$char: "\E007";
 	}
-	@if $filename == warning {
+	@if $filename == d-metrics-powerpoint {
 		$char: "\E008";
+	}
+	@if $filename == monitors {
+		$char: "\E009";
+	}
+	@if $filename == reports {
+		$char: "\E00A";
+	}
+	@if $filename == support {
+		$char: "\E00B";
+	}
+	@if $filename == user {
+		$char: "\E00C";
+	}
+	@if $filename == warning {
+		$char: "\E00D";
 	}
 
 	@return $char;
@@ -82,6 +97,10 @@
 	@include icon(a-ticket-open);
 
 }
+.icon-account {
+	@include icon(account);
+
+}
 .icon-d-metrics-max {
 	@include icon(d-metrics-max);
 
@@ -92,6 +111,22 @@
 }
 .icon-d-metrics-powerpoint {
 	@include icon(d-metrics-powerpoint);
+
+}
+.icon-monitors {
+	@include icon(monitors);
+
+}
+.icon-reports {
+	@include icon(reports);
+
+}
+.icon-support {
+	@include icon(support);
+
+}
+.icon-user {
+	@include icon(user);
 
 }
 .icon-warning {

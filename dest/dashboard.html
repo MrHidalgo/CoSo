@@ -75,87 +75,105 @@
           </div>
         </div>
         <div class="sidebar__navigation"><a class="sidebar__navigation-btn sidebar__navigation-btn--external" href="#" title="">
-                <div><span uk-icon="thumbnails"></span></div>
+                <div><span uk-icon="thumbnails"></span>
+                </div>
                 <div>
                   <p>Dashboard</p>
                 </div>
-                <div></div></a><a class="sidebar__navigation-btn sidebar__navigation-btn--external" href="#" title="">
-                <div><span uk-icon="users"></span></div>
-                <div>
-                  <p>Account</p>
+                <div></div></a>
+          <ul uk-accordion="multiple: true">
+            <li><a class="uk-accordion-title sidebar__navigation-btn sidebar__navigation-btn--external" href="#" title="">
+                    <div><i class="icon-font icon-account"></i>
+                    </div>
+                    <div>
+                      <p>Account</p>
+                    </div>
+                    <div><span uk-icon="chevron-down"></span></div></a>
+              <div class="uk-accordion-content"><a class="sidebar__navigation-btn sidebar__navigation-btn--internal" href="#" title="">
+                      <div><i class="icon-font"></i>
+                      </div>
+                      <div>
+                        <p>Account action 1</p>
+                      </div></a><a class="sidebar__navigation-btn sidebar__navigation-btn--internal" href="#" title="">
+                      <div><i class="icon-font"></i>
+                      </div>
+                      <div>
+                        <p>Account action 2</p>
+                      </div></a><a class="sidebar__navigation-btn sidebar__navigation-btn--internal" href="#" title="">
+                      <div><i class="icon-font"></i>
+                      </div>
+                      <div>
+                        <p>Account action 3</p>
+                      </div></a>
+              </div>
+            </li>
+          </ul><a class="sidebar__navigation-btn sidebar__navigation-btn--external" href="#" title="">
+                <div><i class="icon-font icon-support"></i>
                 </div>
-                <div></div></a><a class="sidebar__navigation-btn sidebar__navigation-btn--external" href="#" title="">
-                <div><span uk-icon="receiver"></span></div>
                 <div>
                   <p>Tech Support</p>
                 </div>
                 <div></div></a>
           <ul uk-accordion="multiple: true">
             <li><a class="uk-accordion-title sidebar__navigation-btn sidebar__navigation-btn--external" href="#" title="">
-                    <div><span uk-icon="world"></span></div>
+                    <div><i class="icon-font icon-monitors"></i>
+                    </div>
                     <div>
                       <p>Monitors</p>
                     </div>
                     <div><span uk-icon="chevron-down"></span></div></a>
               <div class="uk-accordion-content"><a class="sidebar__navigation-btn sidebar__navigation-btn--internal" href="#" title="">
-                      <div><span uk-icon=""></span></div>
+                      <div><i class="icon-font"></i>
+                      </div>
                       <div>
-                        <p>Meeting Activity</p>
+                        <p>Monitors action 1</p>
                       </div></a><a class="sidebar__navigation-btn sidebar__navigation-btn--internal" href="#" title="">
-                      <div><span uk-icon=""></span></div>
+                      <div><i class="icon-font"></i>
+                      </div>
                       <div>
-                        <p>Virtual Class Activity</p>
+                        <p>Monitors action 2</p>
                       </div></a><a class="sidebar__navigation-btn sidebar__navigation-btn--internal" href="#" title="">
-                      <div><span uk-icon=""></span></div>
+                      <div><i class="icon-font"></i>
+                      </div>
                       <div>
-                        <p>Content Launch Activity</p>
-                      </div></a><a class="sidebar__navigation-btn sidebar__navigation-btn--internal" href="#" title="">
-                      <div><span uk-icon=""></span></div>
-                      <div>
-                        <p>Training Launch Activity</p>
-                      </div></a><a class="sidebar__navigation-btn sidebar__navigation-btn--internal" href="#" title="">
-                      <div><span uk-icon=""></span></div>
-                      <div>
-                        <p>On-Demand Activity</p>
+                        <p>Monitors action 3</p>
                       </div></a>
               </div>
             </li>
             <li><a class="uk-accordion-title sidebar__navigation-btn sidebar__navigation-btn--external" href="#" title="">
-                    <div><span uk-icon="file-text"></span></div>
+                    <div><i class="icon-font icon-reports"></i>
+                    </div>
                     <div>
                       <p>Reports</p>
                     </div>
                     <div><span uk-icon="chevron-down"></span></div></a>
               <div class="uk-accordion-content"><a class="sidebar__navigation-btn sidebar__navigation-btn--internal" href="#" title="">
-                      <div><span uk-icon=""></span></div>
+                      <div><i class="icon-font"></i>
+                      </div>
                       <div>
-                        <p>Meeting Activity</p>
+                        <p>Status</p>
                       </div></a><a class="sidebar__navigation-btn sidebar__navigation-btn--internal" href="#" title="">
-                      <div><span uk-icon=""></span></div>
+                      <div><i class="icon-font"></i>
+                      </div>
                       <div>
-                        <p>Virtual Class Activity</p>
+                        <p>Metrics</p>
                       </div></a><a class="sidebar__navigation-btn sidebar__navigation-btn--internal" href="#" title="">
-                      <div><span uk-icon=""></span></div>
+                      <div><i class="icon-font"></i>
+                      </div>
                       <div>
-                        <p>Content Launch Activity</p>
-                      </div></a><a class="sidebar__navigation-btn sidebar__navigation-btn--internal" href="#" title="">
-                      <div><span uk-icon=""></span></div>
-                      <div>
-                        <p>Training Launch Activity</p>
-                      </div></a><a class="sidebar__navigation-btn sidebar__navigation-btn--internal" href="#" title="">
-                      <div><span uk-icon=""></span></div>
-                      <div>
-                        <p>On-Demand Activity</p>
+                        <p>Activity</p>
                       </div></a>
               </div>
             </li>
           </ul><a class="sidebar__navigation-btn sidebar__navigation-btn--external" href="#" title="">
-                <div><span uk-icon="cog"></span></div>
+                <div><span uk-icon="cog"></span>
+                </div>
                 <div>
                   <p>Settings</p>
                 </div>
                 <div></div></a><a class="sidebar__navigation-btn sidebar__navigation-btn--external" href="#" title="">
-                <div><span uk-icon="sign-out"></span></div>
+                <div><span uk-icon="sign-out"></span>
+                </div>
                 <div>
                   <p>Logout</p>
                 </div>

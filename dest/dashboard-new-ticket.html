@@ -75,87 +75,105 @@
           </div>
         </div>
         <div class="sidebar__navigation"><a class="sidebar__navigation-btn sidebar__navigation-btn--external" href="#" title="">
-                <div><span uk-icon="thumbnails"></span></div>
+                <div><span uk-icon="thumbnails"></span>
+                </div>
                 <div>
                   <p>Dashboard</p>
                 </div>
-                <div></div></a><a class="sidebar__navigation-btn sidebar__navigation-btn--external" href="#" title="">
-                <div><span uk-icon="users"></span></div>
-                <div>
-                  <p>Account</p>
+                <div></div></a>
+          <ul uk-accordion="multiple: true">
+            <li><a class="uk-accordion-title sidebar__navigation-btn sidebar__navigation-btn--external" href="#" title="">
+                    <div><i class="icon-font icon-account"></i>
+                    </div>
+                    <div>
+                      <p>Account</p>
+                    </div>
+                    <div><span uk-icon="chevron-down"></span></div></a>
+              <div class="uk-accordion-content"><a class="sidebar__navigation-btn sidebar__navigation-btn--internal" href="#" title="">
+                      <div><i class="icon-font"></i>
+                      </div>
+                      <div>
+                        <p>Account action 1</p>
+                      </div></a><a class="sidebar__navigation-btn sidebar__navigation-btn--internal" href="#" title="">
+                      <div><i class="icon-font"></i>
+                      </div>
+                      <div>
+                        <p>Account action 2</p>
+                      </div></a><a class="sidebar__navigation-btn sidebar__navigation-btn--internal" href="#" title="">
+                      <div><i class="icon-font"></i>
+                      </div>
+                      <div>
+                        <p>Account action 3</p>
+                      </div></a>
+              </div>
+            </li>
+          </ul><a class="sidebar__navigation-btn sidebar__navigation-btn--external" href="#" title="">
+                <div><i class="icon-font icon-support"></i>
                 </div>
-                <div></div></a><a class="sidebar__navigation-btn sidebar__navigation-btn--external" href="#" title="">
-                <div><span uk-icon="receiver"></span></div>
                 <div>
                   <p>Tech Support</p>
                 </div>
                 <div></div></a>
           <ul uk-accordion="multiple: true">
             <li><a class="uk-accordion-title sidebar__navigation-btn sidebar__navigation-btn--external" href="#" title="">
-                    <div><span uk-icon="world"></span></div>
+                    <div><i class="icon-font icon-monitors"></i>
+                    </div>
                     <div>
                       <p>Monitors</p>
                     </div>
                     <div><span uk-icon="chevron-down"></span></div></a>
               <div class="uk-accordion-content"><a class="sidebar__navigation-btn sidebar__navigation-btn--internal" href="#" title="">
-                      <div><span uk-icon=""></span></div>
+                      <div><i class="icon-font"></i>
+                      </div>
                       <div>
-                        <p>Meeting Activity</p>
+                        <p>Monitors action 1</p>
                       </div></a><a class="sidebar__navigation-btn sidebar__navigation-btn--internal" href="#" title="">
-                      <div><span uk-icon=""></span></div>
+                      <div><i class="icon-font"></i>
+                      </div>
                       <div>
-                        <p>Virtual Class Activity</p>
+                        <p>Monitors action 2</p>
                       </div></a><a class="sidebar__navigation-btn sidebar__navigation-btn--internal" href="#" title="">
-                      <div><span uk-icon=""></span></div>
+                      <div><i class="icon-font"></i>
+                      </div>
                       <div>
-                        <p>Content Launch Activity</p>
-                      </div></a><a class="sidebar__navigation-btn sidebar__navigation-btn--internal" href="#" title="">
-                      <div><span uk-icon=""></span></div>
-                      <div>
-                        <p>Training Launch Activity</p>
-                      </div></a><a class="sidebar__navigation-btn sidebar__navigation-btn--internal" href="#" title="">
-                      <div><span uk-icon=""></span></div>
-                      <div>
-                        <p>On-Demand Activity</p>
+                        <p>Monitors action 3</p>
                       </div></a>
               </div>
             </li>
             <li><a class="uk-accordion-title sidebar__navigation-btn sidebar__navigation-btn--external" href="#" title="">
-                    <div><span uk-icon="file-text"></span></div>
+                    <div><i class="icon-font icon-reports"></i>
+                    </div>
                     <div>
                       <p>Reports</p>
                     </div>
                     <div><span uk-icon="chevron-down"></span></div></a>
               <div class="uk-accordion-content"><a class="sidebar__navigation-btn sidebar__navigation-btn--internal" href="#" title="">
-                      <div><span uk-icon=""></span></div>
+                      <div><i class="icon-font"></i>
+                      </div>
                       <div>
-                        <p>Meeting Activity</p>
+                        <p>Status</p>
                       </div></a><a class="sidebar__navigation-btn sidebar__navigation-btn--internal" href="#" title="">
-                      <div><span uk-icon=""></span></div>
+                      <div><i class="icon-font"></i>
+                      </div>
                       <div>
-                        <p>Virtual Class Activity</p>
+                        <p>Metrics</p>
                       </div></a><a class="sidebar__navigation-btn sidebar__navigation-btn--internal" href="#" title="">
-                      <div><span uk-icon=""></span></div>
+                      <div><i class="icon-font"></i>
+                      </div>
                       <div>
-                        <p>Content Launch Activity</p>
-                      </div></a><a class="sidebar__navigation-btn sidebar__navigation-btn--internal" href="#" title="">
-                      <div><span uk-icon=""></span></div>
-                      <div>
-                        <p>Training Launch Activity</p>
-                      </div></a><a class="sidebar__navigation-btn sidebar__navigation-btn--internal" href="#" title="">
-                      <div><span uk-icon=""></span></div>
-                      <div>
-                        <p>On-Demand Activity</p>
+                        <p>Activity</p>
                       </div></a>
               </div>
             </li>
           </ul><a class="sidebar__navigation-btn sidebar__navigation-btn--external" href="#" title="">
-                <div><span uk-icon="cog"></span></div>
+                <div><span uk-icon="cog"></span>
+                </div>
                 <div>
                   <p>Settings</p>
                 </div>
                 <div></div></a><a class="sidebar__navigation-btn sidebar__navigation-btn--external" href="#" title="">
-                <div><span uk-icon="sign-out"></span></div>
+                <div><span uk-icon="sign-out"></span>
+                </div>
                 <div>
                   <p>Logout</p>
                 </div>
@@ -165,25 +183,10 @@
     </section>
     <!-- SECTION sidebar :: END-->
     <div class="body body--start p-dashboard">
-      <!-- SECTION additional information :: START-->
-      <div class="a-info" id="a-info">
-        <div class="uk-section uk-padding-remove-top uk-padding-remove-bottom uk-flex uk-flex-right uk-margin-bottom">
-          <div class="uk-inline">
-            <button class="uk-button uk-button-default uk-background-default" type="button"><span class="uk-margin-right">HELP</span><span uk-icon="chevron-down"></span></button>
-            <div uk-dropdown="mode: click">
-              <ul class="uk-nav uk-dropdown-nav">
-                <li><a href="#">Item 1</a></li>
-                <li><a href="#">Item 2</a></li>
-                <li><a href="#">Item 3</a></li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- SECTION additional information :: END-->
+      <!--include ./components/dashboard/_additional-info-->
       <!-- SECTION new\edit case :: START-->
       <div class="d-case" id="d-case">
-        <div class="uk-section uk-padding-remove-top uk-padding-remove-bottom uk-margin-medium-bottom">
+        <div class="uk-section uk-padding-remove-top uk-padding-remove-bottom uk-margin-xlarge-bottom uk-margin-large-top">
           <div class="uk-card uk-card-default uk-box-shadow-small">
             <div class="uk-card-header uk-flex uk-flex-top uk-flex-between">
               <div class="uk-width-1-2">
@@ -204,9 +207,11 @@
                     <div class="uk-width-auto">
                       <div class="uk-card">
                         <div class="uk-flex uk-flex-middle">
-                          <div><span uk-icon="icon: user"></span></div>
+                          <div><i class="icon-font icon-user"></i>
+                            <!--span(uk-icon="icon: user")-->
+                          </div>
                           <div>
-                            <p class="uk-margin-small-left uk-margin-remove-bottom uk-text-muted">Reported:</p><span class="uk-margin-small-left">Randah McKinnie</span>
+                            <p class="uk-margin-small-left uk-margin-remove-bottom uk-text-muted">Reported:</p><span class="uk-margin-small-left uk-text-bold">Randah McKinnie</span>
                           </div>
                         </div>
                       </div>

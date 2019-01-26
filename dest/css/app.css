@@ -97,7 +97,7 @@
 }
 
 /* line 23, src/scss/_generated/_spriteFont.scss */
-.icon-a-ticket-awaiting:before, .icon-a-ticket-closed:before, .icon-a-ticket-hold:before, .icon-a-ticket-open:before, .icon-d-metrics-max:before, .icon-d-metrics-meetings:before, .icon-d-metrics-powerpoint:before, .icon-warning:before {
+.icon-a-ticket-awaiting:before, .icon-a-ticket-closed:before, .icon-a-ticket-hold:before, .icon-a-ticket-open:before, .icon-account:before, .icon-d-metrics-max:before, .icon-d-metrics-meetings:before, .icon-d-metrics-powerpoint:before, .icon-monitors:before, .icon-reports:before, .icon-support:before, .icon-user:before, .icon-warning:before {
   font-family: "iconFont", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -108,44 +108,69 @@
   text-transform: none;
 }
 
-/* line 59, src/scss/_generated/_spriteFont.scss */
+/* line 74, src/scss/_generated/_spriteFont.scss */
 .icon-a-ticket-awaiting:before {
   content: "";
 }
 
-/* line 59, src/scss/_generated/_spriteFont.scss */
+/* line 74, src/scss/_generated/_spriteFont.scss */
 .icon-a-ticket-closed:before {
   content: "";
 }
 
-/* line 59, src/scss/_generated/_spriteFont.scss */
+/* line 74, src/scss/_generated/_spriteFont.scss */
 .icon-a-ticket-hold:before {
   content: "";
 }
 
-/* line 59, src/scss/_generated/_spriteFont.scss */
+/* line 74, src/scss/_generated/_spriteFont.scss */
 .icon-a-ticket-open:before {
   content: "";
 }
 
-/* line 59, src/scss/_generated/_spriteFont.scss */
-.icon-d-metrics-max:before {
+/* line 74, src/scss/_generated/_spriteFont.scss */
+.icon-account:before {
   content: "";
 }
 
-/* line 59, src/scss/_generated/_spriteFont.scss */
-.icon-d-metrics-meetings:before {
+/* line 74, src/scss/_generated/_spriteFont.scss */
+.icon-d-metrics-max:before {
   content: "";
 }
 
-/* line 59, src/scss/_generated/_spriteFont.scss */
-.icon-d-metrics-powerpoint:before {
+/* line 74, src/scss/_generated/_spriteFont.scss */
+.icon-d-metrics-meetings:before {
   content: "";
 }
 
-/* line 59, src/scss/_generated/_spriteFont.scss */
-.icon-warning:before {
+/* line 74, src/scss/_generated/_spriteFont.scss */
+.icon-d-metrics-powerpoint:before {
   content: "";
+}
+
+/* line 74, src/scss/_generated/_spriteFont.scss */
+.icon-monitors:before {
+  content: "";
+}
+
+/* line 74, src/scss/_generated/_spriteFont.scss */
+.icon-reports:before {
+  content: "";
+}
+
+/* line 74, src/scss/_generated/_spriteFont.scss */
+.icon-support:before {
+  content: "";
+}
+
+/* line 74, src/scss/_generated/_spriteFont.scss */
+.icon-user:before {
+  content: "";
+}
+
+/* line 74, src/scss/_generated/_spriteFont.scss */
+.icon-warning:before {
+  content: "";
 }
 
 /* line 1, src/scss/_shared/_main-setting-reset.scss */
@@ -1987,8 +2012,10 @@ section .uk-button {
 }
 
 /* line 336, src/scss/_components/_sidebar.scss */
+.sidebar__navigation .uk-accordion-title--external:hover > div .icon-font,
 .sidebar__navigation .uk-accordion-title--external:hover > div span,
-.sidebar__navigation .uk-accordion-title--external:hover > div p, .sidebar__navigation-btn--external:hover > div span,
+.sidebar__navigation .uk-accordion-title--external:hover > div p, .sidebar__navigation-btn--external:hover > div .icon-font,
+.sidebar__navigation-btn--external:hover > div span,
 .sidebar__navigation-btn--external:hover > div p {
   color: #00a6d9;
   -webkit-transition: color 0.3s ease-in-out;
@@ -1997,30 +2024,30 @@ section .uk-button {
 }
 
 @media screen and (max-width: 1599px) {
-  /* line 346, src/scss/_components/_sidebar.scss */
+  /* line 347, src/scss/_components/_sidebar.scss */
   .is-collapsed .sidebar__navigation .uk-accordion-title--external > div:nth-of-type(1), .is-collapsed .sidebar__navigation-btn--external > div:nth-of-type(1) {
     width: 100px;
   }
 }
 
-/* line 352, src/scss/_components/_sidebar.scss */
+/* line 353, src/scss/_components/_sidebar.scss */
 .sidebar__navigation .uk-accordion-title--external > div:nth-of-type(2), .sidebar__navigation-btn--external > div:nth-of-type(2) {
   max-width: -webkit-calc(100% - (100px + 66px));
   max-width: calc(100% - (100px + 66px));
 }
 
-/* line 358, src/scss/_components/_sidebar.scss */
+/* line 359, src/scss/_components/_sidebar.scss */
 .sidebar__navigation .uk-accordion-title--internal, .sidebar__navigation-btn--internal {
   padding-top: 17px;
   padding-bottom: 17px;
 }
 
-/* line 362, src/scss/_components/_sidebar.scss */
+/* line 363, src/scss/_components/_sidebar.scss */
 .sidebar__navigation .uk-accordion-title--internal:hover, .sidebar__navigation-btn--internal:hover {
   text-decoration: none;
 }
 
-/* line 366, src/scss/_components/_sidebar.scss */
+/* line 367, src/scss/_components/_sidebar.scss */
 .sidebar__navigation .uk-accordion-title--internal:hover > div span,
 .sidebar__navigation .uk-accordion-title--internal:hover > div p, .sidebar__navigation-btn--internal:hover > div span,
 .sidebar__navigation-btn--internal:hover > div p {
@@ -2031,41 +2058,41 @@ section .uk-button {
 }
 
 @media screen and (max-width: 1599px) {
-  /* line 376, src/scss/_components/_sidebar.scss */
+  /* line 377, src/scss/_components/_sidebar.scss */
   .is-collapsed .sidebar__navigation .uk-accordion-title--internal > div:nth-of-type(1), .is-collapsed .sidebar__navigation-btn--internal > div:nth-of-type(1) {
     width: 40px;
   }
 }
 
 @media screen and (max-width: 1599px) {
-  /* line 382, src/scss/_components/_sidebar.scss */
+  /* line 383, src/scss/_components/_sidebar.scss */
   .is-collapsed-hover .sidebar__navigation .uk-accordion-title--internal > div:nth-of-type(1), .is-collapsed-hover .sidebar__navigation-btn--internal > div:nth-of-type(1) {
     width: 40px;
   }
 }
 
-/* line 388, src/scss/_components/_sidebar.scss */
+/* line 389, src/scss/_components/_sidebar.scss */
 .sidebar__navigation .uk-accordion-title--internal > div:nth-of-type(2), .sidebar__navigation-btn--internal > div:nth-of-type(2) {
   max-width: -webkit-calc(100% - 100px);
   max-width: calc(100% - 100px);
 }
 
 @media screen and (max-width: 1599px) {
-  /* line 388, src/scss/_components/_sidebar.scss */
+  /* line 389, src/scss/_components/_sidebar.scss */
   .sidebar__navigation .uk-accordion-title--internal > div:nth-of-type(2), .sidebar__navigation-btn--internal > div:nth-of-type(2) {
     max-width: -webkit-calc(100% - 40px);
     max-width: calc(100% - 40px);
   }
 }
 
-/* line 396, src/scss/_components/_sidebar.scss */
+/* line 397, src/scss/_components/_sidebar.scss */
 .sidebar__navigation .uk-accordion-title--internal p, .sidebar__navigation-btn--internal p {
   overflow: hidden;
   -o-text-overflow: ellipsis;
      text-overflow: ellipsis;
 }
 
-/* line 402, src/scss/_components/_sidebar.scss */
+/* line 403, src/scss/_components/_sidebar.scss */
 .sidebar__navigation .uk-accordion-title p, .sidebar__navigation-btn p {
   white-space: nowrap;
   margin: 0;
@@ -2078,7 +2105,7 @@ section .uk-button {
 }
 
 @media screen and (min-width: 320px) {
-  /* line 402, src/scss/_components/_sidebar.scss */
+  /* line 403, src/scss/_components/_sidebar.scss */
   .sidebar__navigation .uk-accordion-title p, .sidebar__navigation-btn p {
     font-size: -webkit-calc(18px + 6 * (100vw - 320px) / 1280);
     font-size: calc(18px + 6 * (100vw - 320px) / 1280);
@@ -2086,20 +2113,20 @@ section .uk-button {
 }
 
 @media screen and (min-width: 1600px) {
-  /* line 402, src/scss/_components/_sidebar.scss */
+  /* line 403, src/scss/_components/_sidebar.scss */
   .sidebar__navigation .uk-accordion-title p, .sidebar__navigation-btn p {
     font-size: 24px;
   }
 }
 
 @media screen and (max-width: 1599px) {
-  /* line 402, src/scss/_components/_sidebar.scss */
+  /* line 403, src/scss/_components/_sidebar.scss */
   .sidebar__navigation .uk-accordion-title p, .sidebar__navigation-btn p {
     opacity: 0;
   }
 }
 
-/* line 413, src/scss/_components/_sidebar.scss */
+/* line 414, src/scss/_components/_sidebar.scss */
 .is-collapsed .sidebar__navigation .uk-accordion-title p, .is-collapsed .sidebar__navigation-btn p {
   opacity: 0;
   -webkit-transition: opacity 0.3s ease-in-out;
@@ -2108,18 +2135,46 @@ section .uk-button {
 }
 
 @media screen and (max-width: 1599px) {
-  /* line 413, src/scss/_components/_sidebar.scss */
+  /* line 414, src/scss/_components/_sidebar.scss */
   .is-collapsed .sidebar__navigation .uk-accordion-title p, .is-collapsed .sidebar__navigation-btn p {
     opacity: 1;
   }
 }
 
-/* line 421, src/scss/_components/_sidebar.scss */
+/* line 422, src/scss/_components/_sidebar.scss */
 .is-collapsed-hover .sidebar__navigation .uk-accordion-title p, .is-collapsed-hover .sidebar__navigation-btn p {
   opacity: 1;
 }
 
-/* line 426, src/scss/_components/_sidebar.scss */
+/* line 427, src/scss/_components/_sidebar.scss */
+.sidebar__navigation .uk-accordion-title .icon-font, .sidebar__navigation-btn .icon-font {
+  color: #ffffff;
+  -webkit-transition: color 0.3s ease-in-out;
+  -o-transition: color 0.3s ease-in-out;
+  transition: color 0.3s ease-in-out;
+}
+
+/* line 431, src/scss/_components/_sidebar.scss */
+.sidebar__navigation .uk-accordion-title .icon-font.icon-account, .sidebar__navigation-btn .icon-font.icon-account {
+  font-size: 22px;
+}
+
+/* line 434, src/scss/_components/_sidebar.scss */
+.sidebar__navigation .uk-accordion-title .icon-font.icon-support, .sidebar__navigation-btn .icon-font.icon-support {
+  font-size: 22px;
+}
+
+/* line 437, src/scss/_components/_sidebar.scss */
+.sidebar__navigation .uk-accordion-title .icon-font.icon-monitors, .sidebar__navigation-btn .icon-font.icon-monitors {
+  font-size: 22px;
+}
+
+/* line 440, src/scss/_components/_sidebar.scss */
+.sidebar__navigation .uk-accordion-title .icon-font.icon-reports, .sidebar__navigation-btn .icon-font.icon-reports {
+  font-size: 18px;
+}
+
+/* line 445, src/scss/_components/_sidebar.scss */
 .sidebar__navigation .uk-accordion-title span, .sidebar__navigation-btn span {
   color: #ffffff;
   -webkit-transition: color 0.3s ease-in-out;
@@ -2127,42 +2182,42 @@ section .uk-button {
   transition: color 0.3s ease-in-out;
 }
 
-/* line 430, src/scss/_components/_sidebar.scss */
+/* line 449, src/scss/_components/_sidebar.scss */
 .sidebar__navigation .uk-accordion-title span[uk-icon="thumbnails"] svg, .sidebar__navigation-btn span[uk-icon="thumbnails"] svg {
   width: 25px;
   height: 25px;
 }
 
-/* line 436, src/scss/_components/_sidebar.scss */
+/* line 455, src/scss/_components/_sidebar.scss */
 .sidebar__navigation .uk-accordion-title span[uk-icon="users"] svg, .sidebar__navigation-btn span[uk-icon="users"] svg {
   width: 30px;
   height: 28px;
 }
 
-/* line 442, src/scss/_components/_sidebar.scss */
+/* line 461, src/scss/_components/_sidebar.scss */
 .sidebar__navigation .uk-accordion-title span[uk-icon="receiver"] svg, .sidebar__navigation-btn span[uk-icon="receiver"] svg {
   width: 25px;
 }
 
-/* line 447, src/scss/_components/_sidebar.scss */
+/* line 466, src/scss/_components/_sidebar.scss */
 .sidebar__navigation .uk-accordion-title span[uk-icon="cog"] svg, .sidebar__navigation-btn span[uk-icon="cog"] svg {
-  width: 27px;
-  height: 27px;
+  width: 24px;
+  height: 24px;
 }
 
-/* line 453, src/scss/_components/_sidebar.scss */
+/* line 472, src/scss/_components/_sidebar.scss */
 .sidebar__navigation .uk-accordion-title span[uk-icon="sign-out"] svg, .sidebar__navigation-btn span[uk-icon="sign-out"] svg {
   width: 23px;
   height: 25px;
 }
 
-/* line 459, src/scss/_components/_sidebar.scss */
+/* line 478, src/scss/_components/_sidebar.scss */
 .sidebar__navigation .uk-accordion-title span[uk-icon="world"] svg, .sidebar__navigation-btn span[uk-icon="world"] svg {
   width: 25px;
   height: 25px;
 }
 
-/* line 465, src/scss/_components/_sidebar.scss */
+/* line 484, src/scss/_components/_sidebar.scss */
 .sidebar__navigation .uk-accordion-title span[uk-icon="file-text"] svg, .sidebar__navigation-btn span[uk-icon="file-text"] svg {
   width: 26px;
 }
@@ -3424,36 +3479,41 @@ section .uk-button {
 }
 
 /* line 41, src/scss/_components/_dashboard/_case.scss */
+.d-case__information .uk-width-auto .icon-font {
+  font-size: 36px;
+}
+
+/* line 45, src/scss/_components/_dashboard/_case.scss */
 .d-case__information .uk-width-auto p,
 .d-case__information .uk-width-auto span {
   font-size: 21px;
 }
 
-/* line 46, src/scss/_components/_dashboard/_case.scss */
+/* line 50, src/scss/_components/_dashboard/_case.scss */
 .d-case__information .uk-width-auto svg {
   -webkit-transform: scale(1.5);
       -ms-transform: scale(1.5);
           transform: scale(1.5);
 }
 
-/* line 53, src/scss/_components/_dashboard/_case.scss */
+/* line 57, src/scss/_components/_dashboard/_case.scss */
 .d-case__information .uk-width-expand .uk-form-controls:nth-of-type(n + 2) {
   width: 100%;
   max-width: 652px;
 }
 
-/* line 61, src/scss/_components/_dashboard/_case.scss */
+/* line 65, src/scss/_components/_dashboard/_case.scss */
 .d-case__information .uk-form-controls > div {
   width: 100%;
 }
 
-/* line 64, src/scss/_components/_dashboard/_case.scss */
+/* line 68, src/scss/_components/_dashboard/_case.scss */
 .d-case__information .uk-form-controls > div select {
   height: 100% !important;
   color: #4e4e4e;
 }
 
-/* line 69, src/scss/_components/_dashboard/_case.scss */
+/* line 73, src/scss/_components/_dashboard/_case.scss */
 .d-case__information .uk-form-controls > div button {
   width: 100%;
   height: 49px;
@@ -3464,18 +3524,18 @@ section .uk-button {
   font-size: 20px;
 }
 
-/* line 83, src/scss/_components/_dashboard/_case.scss */
+/* line 87, src/scss/_components/_dashboard/_case.scss */
 .d-case__description [uk-grid] .uk-width-auto {
   width: 341px;
 }
 
-/* line 87, src/scss/_components/_dashboard/_case.scss */
+/* line 91, src/scss/_components/_dashboard/_case.scss */
 .d-case__description [uk-grid] .uk-width-expand form {
   width: 100%;
   max-width: 652px;
 }
 
-/* line 96, src/scss/_components/_dashboard/_case.scss */
+/* line 100, src/scss/_components/_dashboard/_case.scss */
 .d-case__description .uk-form-controls:last-of-type .uk-button {
   width: 100%;
   max-width: 211px;
@@ -3486,18 +3546,18 @@ section .uk-button {
   font-size: 20px;
 }
 
-/* line 106, src/scss/_components/_dashboard/_case.scss */
+/* line 110, src/scss/_components/_dashboard/_case.scss */
 .d-case__description .uk-form-controls > div {
   width: 100%;
 }
 
-/* line 109, src/scss/_components/_dashboard/_case.scss */
+/* line 113, src/scss/_components/_dashboard/_case.scss */
 .d-case__description .uk-form-controls > div select {
   height: 100% !important;
   color: #4e4e4e;
 }
 
-/* line 114, src/scss/_components/_dashboard/_case.scss */
+/* line 118, src/scss/_components/_dashboard/_case.scss */
 .d-case__description .uk-form-controls > div button {
   width: 100%;
   height: 49px;
@@ -3508,7 +3568,7 @@ section .uk-button {
   font-size: 20px;
 }
 
-/* line 124, src/scss/_components/_dashboard/_case.scss */
+/* line 128, src/scss/_components/_dashboard/_case.scss */
 .d-case__description .uk-form-controls textarea {
   resize: none;
   padding: 10px 20px;
@@ -3544,7 +3604,7 @@ section .uk-button {
   color: #4e4e4e;
 }
 
-/* line 139, src/scss/_components/_dashboard/_case.scss */
+/* line 143, src/scss/_components/_dashboard/_case.scss */
 .d-case__attachments .uk-button {
   width: 100%;
   max-width: 272px;
@@ -3554,7 +3614,7 @@ section .uk-button {
   font-size: 16px;
 }
 
-/* line 147, src/scss/_components/_dashboard/_case.scss */
+/* line 151, src/scss/_components/_dashboard/_case.scss */
 .d-case__attachments-block {
   width: 100px;
   height: 100px;
@@ -3562,18 +3622,18 @@ section .uk-button {
   margin-right: 10px;
 }
 
-/* line 153, src/scss/_components/_dashboard/_case.scss */
+/* line 157, src/scss/_components/_dashboard/_case.scss */
 .d-case__attachments-block:last-of-type {
   margin-right: 0;
 }
 
-/* line 157, src/scss/_components/_dashboard/_case.scss */
+/* line 161, src/scss/_components/_dashboard/_case.scss */
 .d-case__attachments-block svg {
   opacity: 0.5;
   fill: #fff;
 }
 
-/* line 161, src/scss/_components/_dashboard/_case.scss */
+/* line 165, src/scss/_components/_dashboard/_case.scss */
 .d-case__attachments-block svg rect,
 .d-case__attachments-block svg polyline,
 .d-case__attachments-block svg line {

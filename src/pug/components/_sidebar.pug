@@ -1,26 +1,32 @@
 // SECTION sidebar :: START
 
-mixin sidebarNavBtn(classMod, iconName, btnName)
+mixin sidebarNavBtn(classMod, iconBool, iconName, btnName)
   a.sidebar__navigation-btn(
     href="#"
     class="sidebar__navigation-btn--" + classMod
     title=""
   )
     div
-      span(uk-icon= iconName)
+      if(iconBool)
+        span(uk-icon= iconName)
+      else
+        i.icon-font(class!= iconName)
     div
       p!= btnName
     if(classMod !== 'internal')
       div
 
-mixin sidebarNavAccordionBtn(classMod, iconName, btnName)
+mixin sidebarNavAccordionBtn(classMod, iconBool, iconName, btnName)
   a.uk-accordion-title.sidebar__navigation-btn(
     href="#"
     class="sidebar__navigation-btn--" + classMod
     title=""
   )
     div
-      span(uk-icon= iconName)
+      if(iconBool)
+        span(uk-icon= iconName)
+      else
+        i.icon-font(class!= iconName)
     div
       p!= btnName
     div
@@ -39,29 +45,33 @@ section#sidebar.sidebar
         p.sidebar__profile-name!= "Randah McKinnie"
 
     .sidebar__navigation
-      +sidebarNavBtn('external', 'thumbnails', 'Dashboard')
-      +sidebarNavBtn('external', 'users', 'Account')
-      +sidebarNavBtn('external', 'receiver', 'Tech Support')
+      +sidebarNavBtn('external', true, 'thumbnails', 'Dashboard')
 
       ul(uk-accordion="multiple: true")
         li
-          +sidebarNavAccordionBtn('external', 'world', 'Monitors')
+          +sidebarNavAccordionBtn('external', false, 'icon-account', 'Account')
           .uk-accordion-content
-            +sidebarNavBtn('internal', '', 'Meeting Activity')
-            +sidebarNavBtn('internal', '', 'Virtual Class Activity')
-            +sidebarNavBtn('internal', '', 'Content Launch Activity')
-            +sidebarNavBtn('internal', '', 'Training Launch Activity')
-            +sidebarNavBtn('internal', '', 'On-Demand Activity')
-        li
-          +sidebarNavAccordionBtn('external', 'file-text', 'Reports')
-          .uk-accordion-content
-            +sidebarNavBtn('internal', '', 'Meeting Activity')
-            +sidebarNavBtn('internal', '', 'Virtual Class Activity')
-            +sidebarNavBtn('internal', '', 'Content Launch Activity')
-            +sidebarNavBtn('internal', '', 'Training Launch Activity')
-            +sidebarNavBtn('internal', '', 'On-Demand Activity')
+            +sidebarNavBtn('internal', '', false, 'Account action 1')
+            +sidebarNavBtn('internal', '', false, 'Account action 2')
+            +sidebarNavBtn('internal', '', false, 'Account action 3')
 
-      +sidebarNavBtn('external', 'cog', 'Settings')
-      +sidebarNavBtn('external', 'sign-out', 'Logout')
+      +sidebarNavBtn('external', false, 'icon-support', 'Tech Support')
+
+      ul(uk-accordion="multiple: true")
+        li
+          +sidebarNavAccordionBtn('external', false, 'icon-monitors', 'Monitors')
+          .uk-accordion-content
+            +sidebarNavBtn('internal', '', false, 'Monitors action 1')
+            +sidebarNavBtn('internal', '', false, 'Monitors action 2')
+            +sidebarNavBtn('internal', '', false, 'Monitors action 3')
+        li
+          +sidebarNavAccordionBtn('external', false, 'icon-reports', 'Reports')
+          .uk-accordion-content
+            +sidebarNavBtn('internal', '', false, 'Status')
+            +sidebarNavBtn('internal', '', false, 'Metrics')
+            +sidebarNavBtn('internal', '', false, 'Activity')
+
+      +sidebarNavBtn('external', true, 'cog', 'Settings')
+      +sidebarNavBtn('external', true, 'sign-out', 'Logout')
 
 // SECTION sidebar :: END

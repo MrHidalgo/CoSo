@@ -333,6 +333,7 @@
           @include transition(background-color);
 
           > div {
+            .icon-font,
             span,
             p {
               color: #00a6d9;
@@ -423,6 +424,24 @@
         }
       }
 
+      .icon-font {
+        color: #ffffff;
+        @include transition(color);
+
+        &.icon-account {
+          font-size: 22px;
+        }
+        &.icon-support {
+          font-size: 22px;
+        }
+        &.icon-monitors {
+          font-size: 22px;
+        }
+        &.icon-reports {
+          font-size: 18px;
+        }
+      }
+
       span {
         color: #ffffff;
         @include transition(color);
@@ -445,8 +464,8 @@
         }
         &[uk-icon="cog"] {
           svg {
-            width: 27px;
-            height: 27px;
+            width: 24px;
+            height: 24px;
           }
         }
         &[uk-icon="sign-out"] {
