@@ -48,6 +48,9 @@
 	@if $filename == d-metrics-powerpoint {
 		$char: "\E007";
 	}
+	@if $filename == warning {
+		$char: "\E008";
+	}
 
 	@return $char;
 }
@@ -89,5 +92,9 @@
 }
 .icon-d-metrics-powerpoint {
 	@include icon(d-metrics-powerpoint);
+
+}
+.icon-warning {
+	@include icon(warning);
 
 }

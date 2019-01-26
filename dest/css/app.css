@@ -97,7 +97,7 @@
 }
 
 /* line 23, src/scss/_generated/_spriteFont.scss */
-.icon-a-ticket-awaiting:before, .icon-a-ticket-closed:before, .icon-a-ticket-hold:before, .icon-a-ticket-open:before, .icon-d-metrics-max:before, .icon-d-metrics-meetings:before, .icon-d-metrics-powerpoint:before {
+.icon-a-ticket-awaiting:before, .icon-a-ticket-closed:before, .icon-a-ticket-hold:before, .icon-a-ticket-open:before, .icon-d-metrics-max:before, .icon-d-metrics-meetings:before, .icon-d-metrics-powerpoint:before, .icon-warning:before {
   font-family: "iconFont", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -108,39 +108,44 @@
   text-transform: none;
 }
 
-/* line 56, src/scss/_generated/_spriteFont.scss */
+/* line 59, src/scss/_generated/_spriteFont.scss */
 .icon-a-ticket-awaiting:before {
   content: "";
 }
 
-/* line 56, src/scss/_generated/_spriteFont.scss */
+/* line 59, src/scss/_generated/_spriteFont.scss */
 .icon-a-ticket-closed:before {
   content: "";
 }
 
-/* line 56, src/scss/_generated/_spriteFont.scss */
+/* line 59, src/scss/_generated/_spriteFont.scss */
 .icon-a-ticket-hold:before {
   content: "";
 }
 
-/* line 56, src/scss/_generated/_spriteFont.scss */
+/* line 59, src/scss/_generated/_spriteFont.scss */
 .icon-a-ticket-open:before {
   content: "";
 }
 
-/* line 56, src/scss/_generated/_spriteFont.scss */
+/* line 59, src/scss/_generated/_spriteFont.scss */
 .icon-d-metrics-max:before {
   content: "";
 }
 
-/* line 56, src/scss/_generated/_spriteFont.scss */
+/* line 59, src/scss/_generated/_spriteFont.scss */
 .icon-d-metrics-meetings:before {
   content: "";
 }
 
-/* line 56, src/scss/_generated/_spriteFont.scss */
+/* line 59, src/scss/_generated/_spriteFont.scss */
 .icon-d-metrics-powerpoint:before {
   content: "";
+}
+
+/* line 59, src/scss/_generated/_spriteFont.scss */
+.icon-warning:before {
+  content: "";
 }
 
 /* line 1, src/scss/_shared/_main-setting-reset.scss */
@@ -3635,45 +3640,56 @@ section .uk-button {
 }
 
 /* line 9, src/scss/_components/_dashboard/_feed.scss */
+.d-feed [uk-grid] .uk-width-auto .uk-card-header {
+  padding-left: 10px;
+}
+
+/* line 13, src/scss/_components/_dashboard/_feed.scss */
 .d-feed [uk-grid] .uk-width-auto p {
   font-size: 20px;
 }
 
-/* line 16, src/scss/_components/_dashboard/_feed.scss */
+/* line 17, src/scss/_components/_dashboard/_feed.scss */
+.d-feed [uk-grid] .uk-width-auto .icon-warning {
+  color: #f76808;
+  font-size: 18px;
+}
+
+/* line 25, src/scss/_components/_dashboard/_feed.scss */
 .d-feed [uk-grid] .uk-width-auto .uk-card-body > [uk-grid]:nth-of-type(2) > div {
   background-color: #eeeeee;
   border-left: 3px solid #00a6d9;
-  border-top: 1px solid #e6e1e1;
+  border-top: 2px solid #e6e1e1;
 }
 
-/* line 21, src/scss/_components/_dashboard/_feed.scss */
+/* line 30, src/scss/_components/_dashboard/_feed.scss */
 .d-feed [uk-grid] .uk-width-auto .uk-card-body > [uk-grid]:nth-of-type(2) > div:last-of-type {
-  border-bottom: 1px solid #e6e1e1;
+  border-bottom: 2px solid #e6e1e1;
 }
 
-/* line 27, src/scss/_components/_dashboard/_feed.scss */
+/* line 36, src/scss/_components/_dashboard/_feed.scss */
 .d-feed [uk-grid] .uk-width-auto .uk-card-body > [uk-grid] [uk-icon='warning'] {
   color: #f76808;
 }
 
-/* line 36, src/scss/_components/_dashboard/_feed.scss */
+/* line 45, src/scss/_components/_dashboard/_feed.scss */
 .d-feed .uk-subnav {
   margin-left: 0;
   border-bottom: 1px solid #e6e1e1;
 }
 
-/* line 40, src/scss/_components/_dashboard/_feed.scss */
+/* line 49, src/scss/_components/_dashboard/_feed.scss */
 .d-feed .uk-subnav li {
   padding-left: 0;
 }
 
-/* line 44, src/scss/_components/_dashboard/_feed.scss */
+/* line 53, src/scss/_components/_dashboard/_feed.scss */
 .d-feed .uk-subnav li.uk-active a {
   background-color: transparent;
   color: #00a6d9;
 }
 
-/* line 50, src/scss/_components/_dashboard/_feed.scss */
+/* line 59, src/scss/_components/_dashboard/_feed.scss */
 .d-feed .uk-subnav li a {
   padding-left: 40px;
   padding-right: 40px;

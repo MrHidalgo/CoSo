@@ -6,8 +6,17 @@
       &-auto {
         width: 415px;
 
+        .uk-card-header {
+          padding-left: 10px;
+        }
+
         p {
           font-size: 20px;
+        }
+
+        .icon-warning {
+          color: #f76808;
+          font-size: 18px;
         }
 
         .uk-card-body {
@@ -16,10 +25,10 @@
               > div {
                 background-color: #eeeeee;
                 border-left: 3px solid #00a6d9;
-                border-top: 1px solid #e6e1e1;
+                border-top: 2px solid #e6e1e1;
 
                 &:last-of-type {
-                  border-bottom: 1px solid #e6e1e1;
+                  border-bottom: 2px solid #e6e1e1;
                 }
               }
             }
