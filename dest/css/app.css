@@ -1438,7 +1438,7 @@ section .uk-button {
 /* line 3, src/scss/_components/_sidebar.scss */
 .sidebar {
   z-index: 99;
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
   width: 379px;
@@ -1546,24 +1546,31 @@ section .uk-button {
   }
 }
 
-/* line 58, src/scss/_components/_sidebar.scss */
-.sidebar__wrapper {
-  position: relative;
+/* line 57, src/scss/_components/_sidebar.scss */
+.sidebar__scroll {
   overflow-y: auto;
-  height: -webkit-calc(100vh - 125px);
-  height: calc(100vh - 125px);
+  height: 100%;
 }
 
-@media screen and (max-width: 1599px) {
-  /* line 58, src/scss/_components/_sidebar.scss */
+/* line 63, src/scss/_components/_sidebar.scss */
+.sidebar__wrapper {
+  position: relative;
+  min-height: 903px;
+  height: -webkit-calc(100% - 300px);
+  height: calc(100% - 300px);
+  padding-bottom: 100px;
+}
+
+@media screen and (max-width: 1365px) {
+  /* line 63, src/scss/_components/_sidebar.scss */
   .sidebar__wrapper {
-    height: -webkit-calc(100vh - 65px);
-    height: calc(100vh - 65px);
+    min-height: 878px;
   }
 }
 
-/* line 69, src/scss/_components/_sidebar.scss */
+/* line 75, src/scss/_components/_sidebar.scss */
 .sidebar__profile {
+  overflow: hidden;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1577,7 +1584,7 @@ section .uk-button {
 }
 
 @media screen and (max-width: 1365px) {
-  /* line 69, src/scss/_components/_sidebar.scss */
+  /* line 75, src/scss/_components/_sidebar.scss */
   .sidebar__profile {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1595,7 +1602,7 @@ section .uk-button {
   }
 }
 
-/* line 83, src/scss/_components/_sidebar.scss */
+/* line 90, src/scss/_components/_sidebar.scss */
 .sidebar__profile-left {
   width: 155px;
   padding-left: 35px;
@@ -1605,7 +1612,7 @@ section .uk-button {
 }
 
 @media screen and (max-width: 1599px) {
-  /* line 83, src/scss/_components/_sidebar.scss */
+  /* line 90, src/scss/_components/_sidebar.scss */
   .sidebar__profile-left {
     width: 115px;
     padding-left: 20px;
@@ -1613,14 +1620,14 @@ section .uk-button {
 }
 
 @media screen and (max-width: 1365px) {
-  /* line 83, src/scss/_components/_sidebar.scss */
+  /* line 90, src/scss/_components/_sidebar.scss */
   .sidebar__profile-left {
     width: 100%;
     padding-left: 0;
   }
 }
 
-/* line 96, src/scss/_components/_sidebar.scss */
+/* line 103, src/scss/_components/_sidebar.scss */
 .is-collapsed .sidebar__profile-left {
   padding-left: 15px;
   -webkit-transition: padding-left 0.3s ease-in-out;
@@ -1629,33 +1636,33 @@ section .uk-button {
 }
 
 @media screen and (max-width: 1365px) {
-  /* line 96, src/scss/_components/_sidebar.scss */
+  /* line 103, src/scss/_components/_sidebar.scss */
   .is-collapsed .sidebar__profile-left {
     padding-left: 0;
   }
 }
 
-/* line 104, src/scss/_components/_sidebar.scss */
+/* line 111, src/scss/_components/_sidebar.scss */
 .is-collapsed-hover .sidebar__profile-left {
   padding-left: 35px;
 }
 
 @media screen and (max-width: 1599px) {
-  /* line 104, src/scss/_components/_sidebar.scss */
+  /* line 111, src/scss/_components/_sidebar.scss */
   .is-collapsed-hover .sidebar__profile-left {
     padding-left: 15px;
   }
 }
 
 @media screen and (max-width: 1365px) {
-  /* line 104, src/scss/_components/_sidebar.scss */
+  /* line 111, src/scss/_components/_sidebar.scss */
   .is-collapsed-hover .sidebar__profile-left {
     width: 100%;
     padding-left: 0;
   }
 }
 
-/* line 116, src/scss/_components/_sidebar.scss */
+/* line 123, src/scss/_components/_sidebar.scss */
 .sidebar__profile-right {
   width: 100%;
   max-width: -webkit-calc(100% - 155px);
@@ -1663,7 +1670,7 @@ section .uk-button {
 }
 
 @media screen and (max-width: 1599px) {
-  /* line 116, src/scss/_components/_sidebar.scss */
+  /* line 123, src/scss/_components/_sidebar.scss */
   .sidebar__profile-right {
     max-width: -webkit-calc(100% - 115px);
     max-width: calc(100% - 115px);
@@ -1671,14 +1678,14 @@ section .uk-button {
 }
 
 @media screen and (max-width: 1365px) {
-  /* line 116, src/scss/_components/_sidebar.scss */
+  /* line 123, src/scss/_components/_sidebar.scss */
   .sidebar__profile-right {
     max-width: 100%;
     text-align: center;
   }
 }
 
-/* line 128, src/scss/_components/_sidebar.scss */
+/* line 135, src/scss/_components/_sidebar.scss */
 .sidebar__profile-img {
   overflow: hidden;
   position: relative;
@@ -1693,7 +1700,7 @@ section .uk-button {
 }
 
 @media screen and (max-width: 1599px) {
-  /* line 128, src/scss/_components/_sidebar.scss */
+  /* line 135, src/scss/_components/_sidebar.scss */
   .sidebar__profile-img {
     width: 85px;
     height: 85px;
@@ -1702,7 +1709,7 @@ section .uk-button {
 }
 
 @media screen and (max-width: 1365px) {
-  /* line 128, src/scss/_components/_sidebar.scss */
+  /* line 135, src/scss/_components/_sidebar.scss */
   .sidebar__profile-img {
     width: 45px;
     height: 45px;
@@ -1712,7 +1719,7 @@ section .uk-button {
 }
 
 @media screen and (max-width: 767px) {
-  /* line 128, src/scss/_components/_sidebar.scss */
+  /* line 135, src/scss/_components/_sidebar.scss */
   .sidebar__profile-img {
     width: 85px;
     height: 85px;
@@ -1720,7 +1727,7 @@ section .uk-button {
 }
 
 @media screen and (max-width: 1365px) {
-  /* line 152, src/scss/_components/_sidebar.scss */
+  /* line 159, src/scss/_components/_sidebar.scss */
   .is-collapsed .sidebar__profile-img {
     width: 85px;
     height: 85px;
@@ -1731,7 +1738,7 @@ section .uk-button {
 }
 
 @media screen and (max-width: 1365px) {
-  /* line 160, src/scss/_components/_sidebar.scss */
+  /* line 167, src/scss/_components/_sidebar.scss */
   .is-collapsed-hover .sidebar__profile-img {
     width: 85px;
     height: 85px;
@@ -1741,7 +1748,7 @@ section .uk-button {
   }
 }
 
-/* line 173, src/scss/_components/_sidebar.scss */
+/* line 180, src/scss/_components/_sidebar.scss */
 .sidebar__profile-name {
   white-space: nowrap;
   margin: 0;
@@ -1753,7 +1760,7 @@ section .uk-button {
 }
 
 @media screen and (min-width: 320px) {
-  /* line 173, src/scss/_components/_sidebar.scss */
+  /* line 180, src/scss/_components/_sidebar.scss */
   .sidebar__profile-name {
     font-size: -webkit-calc(20px + 4 * (100vw - 320px) / 1280);
     font-size: calc(20px + 4 * (100vw - 320px) / 1280);
@@ -1761,27 +1768,27 @@ section .uk-button {
 }
 
 @media screen and (min-width: 1600px) {
-  /* line 173, src/scss/_components/_sidebar.scss */
+  /* line 180, src/scss/_components/_sidebar.scss */
   .sidebar__profile-name {
     font-size: 24px;
   }
 }
 
 @media screen and (max-width: 1599px) {
-  /* line 173, src/scss/_components/_sidebar.scss */
+  /* line 180, src/scss/_components/_sidebar.scss */
   .sidebar__profile-name {
     opacity: 0;
   }
 }
 
 @media screen and (max-width: 767px) {
-  /* line 173, src/scss/_components/_sidebar.scss */
+  /* line 180, src/scss/_components/_sidebar.scss */
   .sidebar__profile-name {
     opacity: 1;
   }
 }
 
-/* line 187, src/scss/_components/_sidebar.scss */
+/* line 194, src/scss/_components/_sidebar.scss */
 .is-collapsed .sidebar__profile-name {
   opacity: 0;
   -webkit-transition: opacity 0.3s ease-in-out;
@@ -1790,19 +1797,20 @@ section .uk-button {
 }
 
 @media screen and (max-width: 1599px) {
-  /* line 187, src/scss/_components/_sidebar.scss */
+  /* line 194, src/scss/_components/_sidebar.scss */
   .is-collapsed .sidebar__profile-name {
     opacity: 1;
   }
 }
 
-/* line 195, src/scss/_components/_sidebar.scss */
+/* line 202, src/scss/_components/_sidebar.scss */
 .is-collapsed-hover .sidebar__profile-name {
   opacity: 1;
 }
 
-/* line 203, src/scss/_components/_sidebar.scss */
+/* line 210, src/scss/_components/_sidebar.scss */
 .sidebar__navigation {
+  overflow: hidden;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1814,12 +1822,12 @@ section .uk-button {
           flex-direction: column;
 }
 
-/* line 207, src/scss/_components/_sidebar.scss */
+/* line 215, src/scss/_components/_sidebar.scss */
 .sidebar__navigation ul {
   margin: 0;
 }
 
-/* line 210, src/scss/_components/_sidebar.scss */
+/* line 218, src/scss/_components/_sidebar.scss */
 .sidebar__navigation ul li {
   margin: 0 !important;
   background-color: transparent;
@@ -1828,7 +1836,7 @@ section .uk-button {
   transition: padding-bottom 0.3s ease-in-out, border-bottom 0.3s ease-in-out, background-color 0.3s ease-in-out;
 }
 
-/* line 215, src/scss/_components/_sidebar.scss */
+/* line 223, src/scss/_components/_sidebar.scss */
 .sidebar__navigation ul li.uk-open {
   padding-bottom: 34px;
   border-bottom: 1px solid rgba(177, 176, 176, 0.3);
@@ -1838,7 +1846,7 @@ section .uk-button {
   transition: padding-bottom 0.3s ease-in-out, border-bottom 0.3s ease-in-out, background-color 0.3s ease-in-out;
 }
 
-/* line 221, src/scss/_components/_sidebar.scss */
+/* line 229, src/scss/_components/_sidebar.scss */
 .sidebar__navigation ul li.uk-open > .sidebar__navigation-btn {
   border-color: transparent;
   -webkit-transition: border-color 0.3s ease-in-out;
@@ -1846,7 +1854,7 @@ section .uk-button {
   transition: border-color 0.3s ease-in-out;
 }
 
-/* line 226, src/scss/_components/_sidebar.scss */
+/* line 234, src/scss/_components/_sidebar.scss */
 .sidebar__navigation ul li.uk-open > .sidebar__navigation-btn div span,
 .sidebar__navigation ul li.uk-open > .sidebar__navigation-btn div p {
   color: #00a6d9;
@@ -1855,7 +1863,7 @@ section .uk-button {
   transition: color 0.3s ease-in-out;
 }
 
-/* line 234, src/scss/_components/_sidebar.scss */
+/* line 242, src/scss/_components/_sidebar.scss */
 .sidebar__navigation ul li.uk-open > .sidebar__navigation-btn div:nth-of-type(3) span svg {
   -webkit-transform: rotate(-180deg);
       -ms-transform: rotate(-180deg);
@@ -1867,12 +1875,12 @@ section .uk-button {
   transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
 }
 
-/* line 247, src/scss/_components/_sidebar.scss */
+/* line 255, src/scss/_components/_sidebar.scss */
 .sidebar__navigation .uk-accordion-title:before {
   display: none;
 }
 
-/* line 252, src/scss/_components/_sidebar.scss */
+/* line 260, src/scss/_components/_sidebar.scss */
 .sidebar__navigation .uk-accordion-content {
   display: -webkit-box;
   display: -webkit-flex;
@@ -1886,7 +1894,7 @@ section .uk-button {
   margin-top: 0;
 }
 
-/* line 258, src/scss/_components/_sidebar.scss */
+/* line 266, src/scss/_components/_sidebar.scss */
 .sidebar__navigation .uk-accordion-title, .sidebar__navigation-btn {
   display: -webkit-box;
   display: -webkit-flex;
@@ -1901,7 +1909,7 @@ section .uk-button {
   transition: border-color 0.3s ease-in-out, background-color 0.3s ease-in-out;
 }
 
-/* line 265, src/scss/_components/_sidebar.scss */
+/* line 273, src/scss/_components/_sidebar.scss */
 .sidebar__navigation .uk-accordion-title > div:nth-of-type(1), .sidebar__navigation-btn > div:nth-of-type(1) {
   display: -webkit-box;
   display: -webkit-flex;
@@ -1918,13 +1926,13 @@ section .uk-button {
 }
 
 @media screen and (max-width: 1599px) {
-  /* line 265, src/scss/_components/_sidebar.scss */
+  /* line 273, src/scss/_components/_sidebar.scss */
   .sidebar__navigation .uk-accordion-title > div:nth-of-type(1), .sidebar__navigation-btn > div:nth-of-type(1) {
     width: 125px;
   }
 }
 
-/* line 274, src/scss/_components/_sidebar.scss */
+/* line 282, src/scss/_components/_sidebar.scss */
 .is-collapsed .sidebar__navigation .uk-accordion-title > div:nth-of-type(1), .is-collapsed .sidebar__navigation-btn > div:nth-of-type(1) {
   width: 125px;
   -webkit-transition: width 0.3s ease-in-out;
@@ -1933,23 +1941,23 @@ section .uk-button {
 }
 
 @media screen and (max-width: 1599px) {
-  /* line 274, src/scss/_components/_sidebar.scss */
+  /* line 282, src/scss/_components/_sidebar.scss */
   .is-collapsed .sidebar__navigation .uk-accordion-title > div:nth-of-type(1), .is-collapsed .sidebar__navigation-btn > div:nth-of-type(1) {
     width: 100px;
   }
 }
 
-/* line 282, src/scss/_components/_sidebar.scss */
+/* line 290, src/scss/_components/_sidebar.scss */
 .is-collapsed-hover .sidebar__navigation .uk-accordion-title > div:nth-of-type(1), .is-collapsed-hover .sidebar__navigation-btn > div:nth-of-type(1) {
   width: 100px;
 }
 
-/* line 287, src/scss/_components/_sidebar.scss */
+/* line 295, src/scss/_components/_sidebar.scss */
 .sidebar__navigation .uk-accordion-title > div:nth-of-type(2), .sidebar__navigation-btn > div:nth-of-type(2) {
   width: 100%;
 }
 
-/* line 291, src/scss/_components/_sidebar.scss */
+/* line 299, src/scss/_components/_sidebar.scss */
 .sidebar__navigation .uk-accordion-title > div:nth-of-type(3), .sidebar__navigation-btn > div:nth-of-type(3) {
   display: -webkit-box;
   display: -webkit-flex;
@@ -1970,14 +1978,14 @@ section .uk-button {
 }
 
 @media screen and (max-width: 1599px) {
-  /* line 291, src/scss/_components/_sidebar.scss */
+  /* line 299, src/scss/_components/_sidebar.scss */
   .sidebar__navigation .uk-accordion-title > div:nth-of-type(3), .sidebar__navigation-btn > div:nth-of-type(3) {
     opacity: 0;
     width: 0;
   }
 }
 
-/* line 302, src/scss/_components/_sidebar.scss */
+/* line 310, src/scss/_components/_sidebar.scss */
 .is-collapsed .sidebar__navigation .uk-accordion-title > div:nth-of-type(3), .is-collapsed .sidebar__navigation-btn > div:nth-of-type(3) {
   opacity: 0;
   width: 0;
@@ -1987,20 +1995,20 @@ section .uk-button {
 }
 
 @media screen and (max-width: 1599px) {
-  /* line 302, src/scss/_components/_sidebar.scss */
+  /* line 310, src/scss/_components/_sidebar.scss */
   .is-collapsed .sidebar__navigation .uk-accordion-title > div:nth-of-type(3), .is-collapsed .sidebar__navigation-btn > div:nth-of-type(3) {
     opacity: 1;
     width: 66px;
   }
 }
 
-/* line 312, src/scss/_components/_sidebar.scss */
+/* line 320, src/scss/_components/_sidebar.scss */
 .is-collapsed-hover .sidebar__navigation .uk-accordion-title > div:nth-of-type(3), .is-collapsed-hover .sidebar__navigation-btn > div:nth-of-type(3) {
   opacity: 1;
   width: 66px;
 }
 
-/* line 318, src/scss/_components/_sidebar.scss */
+/* line 326, src/scss/_components/_sidebar.scss */
 .sidebar__navigation .uk-accordion-title > div:nth-of-type(3) span svg, .sidebar__navigation-btn > div:nth-of-type(3) span svg {
   fill: #b1b0b0;
   -webkit-transition: -webkit-transform 0.3s ease-in-out;
@@ -2010,13 +2018,13 @@ section .uk-button {
   transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
 }
 
-/* line 326, src/scss/_components/_sidebar.scss */
+/* line 334, src/scss/_components/_sidebar.scss */
 .sidebar__navigation .uk-accordion-title--external, .sidebar__navigation-btn--external {
   min-height: 84px;
   border-bottom: 1px solid rgba(177, 176, 176, 0.3);
 }
 
-/* line 330, src/scss/_components/_sidebar.scss */
+/* line 338, src/scss/_components/_sidebar.scss */
 .sidebar__navigation .uk-accordion-title--external:hover, .sidebar__navigation-btn--external:hover {
   text-decoration: none;
   background-color: #3f3f3f;
@@ -2025,7 +2033,7 @@ section .uk-button {
   transition: background-color 0.3s ease-in-out;
 }
 
-/* line 336, src/scss/_components/_sidebar.scss */
+/* line 344, src/scss/_components/_sidebar.scss */
 .sidebar__navigation .uk-accordion-title--external:hover > div .icon-font,
 .sidebar__navigation .uk-accordion-title--external:hover > div span,
 .sidebar__navigation .uk-accordion-title--external:hover > div p, .sidebar__navigation-btn--external:hover > div .icon-font,
@@ -2038,30 +2046,30 @@ section .uk-button {
 }
 
 @media screen and (max-width: 1599px) {
-  /* line 347, src/scss/_components/_sidebar.scss */
+  /* line 355, src/scss/_components/_sidebar.scss */
   .is-collapsed .sidebar__navigation .uk-accordion-title--external > div:nth-of-type(1), .is-collapsed .sidebar__navigation-btn--external > div:nth-of-type(1) {
     width: 100px;
   }
 }
 
-/* line 353, src/scss/_components/_sidebar.scss */
+/* line 361, src/scss/_components/_sidebar.scss */
 .sidebar__navigation .uk-accordion-title--external > div:nth-of-type(2), .sidebar__navigation-btn--external > div:nth-of-type(2) {
   max-width: -webkit-calc(100% - (100px + 66px));
   max-width: calc(100% - (100px + 66px));
 }
 
-/* line 359, src/scss/_components/_sidebar.scss */
+/* line 367, src/scss/_components/_sidebar.scss */
 .sidebar__navigation .uk-accordion-title--internal, .sidebar__navigation-btn--internal {
   padding-top: 17px;
   padding-bottom: 17px;
 }
 
-/* line 363, src/scss/_components/_sidebar.scss */
+/* line 371, src/scss/_components/_sidebar.scss */
 .sidebar__navigation .uk-accordion-title--internal:hover, .sidebar__navigation-btn--internal:hover {
   text-decoration: none;
 }
 
-/* line 367, src/scss/_components/_sidebar.scss */
+/* line 375, src/scss/_components/_sidebar.scss */
 .sidebar__navigation .uk-accordion-title--internal:hover > div span,
 .sidebar__navigation .uk-accordion-title--internal:hover > div p, .sidebar__navigation-btn--internal:hover > div span,
 .sidebar__navigation-btn--internal:hover > div p {
@@ -2072,41 +2080,41 @@ section .uk-button {
 }
 
 @media screen and (max-width: 1599px) {
-  /* line 377, src/scss/_components/_sidebar.scss */
+  /* line 385, src/scss/_components/_sidebar.scss */
   .is-collapsed .sidebar__navigation .uk-accordion-title--internal > div:nth-of-type(1), .is-collapsed .sidebar__navigation-btn--internal > div:nth-of-type(1) {
     width: 40px;
   }
 }
 
 @media screen and (max-width: 1599px) {
-  /* line 383, src/scss/_components/_sidebar.scss */
+  /* line 391, src/scss/_components/_sidebar.scss */
   .is-collapsed-hover .sidebar__navigation .uk-accordion-title--internal > div:nth-of-type(1), .is-collapsed-hover .sidebar__navigation-btn--internal > div:nth-of-type(1) {
     width: 40px;
   }
 }
 
-/* line 389, src/scss/_components/_sidebar.scss */
+/* line 397, src/scss/_components/_sidebar.scss */
 .sidebar__navigation .uk-accordion-title--internal > div:nth-of-type(2), .sidebar__navigation-btn--internal > div:nth-of-type(2) {
   max-width: -webkit-calc(100% - 100px);
   max-width: calc(100% - 100px);
 }
 
 @media screen and (max-width: 1599px) {
-  /* line 389, src/scss/_components/_sidebar.scss */
+  /* line 397, src/scss/_components/_sidebar.scss */
   .sidebar__navigation .uk-accordion-title--internal > div:nth-of-type(2), .sidebar__navigation-btn--internal > div:nth-of-type(2) {
     max-width: -webkit-calc(100% - 40px);
     max-width: calc(100% - 40px);
   }
 }
 
-/* line 397, src/scss/_components/_sidebar.scss */
+/* line 405, src/scss/_components/_sidebar.scss */
 .sidebar__navigation .uk-accordion-title--internal p, .sidebar__navigation-btn--internal p {
   overflow: hidden;
   -o-text-overflow: ellipsis;
      text-overflow: ellipsis;
 }
 
-/* line 403, src/scss/_components/_sidebar.scss */
+/* line 411, src/scss/_components/_sidebar.scss */
 .sidebar__navigation .uk-accordion-title p, .sidebar__navigation-btn p {
   white-space: nowrap;
   margin: 0;
@@ -2119,7 +2127,7 @@ section .uk-button {
 }
 
 @media screen and (min-width: 320px) {
-  /* line 403, src/scss/_components/_sidebar.scss */
+  /* line 411, src/scss/_components/_sidebar.scss */
   .sidebar__navigation .uk-accordion-title p, .sidebar__navigation-btn p {
     font-size: -webkit-calc(18px + 6 * (100vw - 320px) / 1280);
     font-size: calc(18px + 6 * (100vw - 320px) / 1280);
@@ -2127,20 +2135,20 @@ section .uk-button {
 }
 
 @media screen and (min-width: 1600px) {
-  /* line 403, src/scss/_components/_sidebar.scss */
+  /* line 411, src/scss/_components/_sidebar.scss */
   .sidebar__navigation .uk-accordion-title p, .sidebar__navigation-btn p {
     font-size: 24px;
   }
 }
 
 @media screen and (max-width: 1599px) {
-  /* line 403, src/scss/_components/_sidebar.scss */
+  /* line 411, src/scss/_components/_sidebar.scss */
   .sidebar__navigation .uk-accordion-title p, .sidebar__navigation-btn p {
     opacity: 0;
   }
 }
 
-/* line 414, src/scss/_components/_sidebar.scss */
+/* line 422, src/scss/_components/_sidebar.scss */
 .is-collapsed .sidebar__navigation .uk-accordion-title p, .is-collapsed .sidebar__navigation-btn p {
   opacity: 0;
   -webkit-transition: opacity 0.3s ease-in-out;
@@ -2149,18 +2157,18 @@ section .uk-button {
 }
 
 @media screen and (max-width: 1599px) {
-  /* line 414, src/scss/_components/_sidebar.scss */
+  /* line 422, src/scss/_components/_sidebar.scss */
   .is-collapsed .sidebar__navigation .uk-accordion-title p, .is-collapsed .sidebar__navigation-btn p {
     opacity: 1;
   }
 }
 
-/* line 422, src/scss/_components/_sidebar.scss */
+/* line 430, src/scss/_components/_sidebar.scss */
 .is-collapsed-hover .sidebar__navigation .uk-accordion-title p, .is-collapsed-hover .sidebar__navigation-btn p {
   opacity: 1;
 }
 
-/* line 427, src/scss/_components/_sidebar.scss */
+/* line 435, src/scss/_components/_sidebar.scss */
 .sidebar__navigation .uk-accordion-title .icon-font, .sidebar__navigation-btn .icon-font {
   color: #ffffff;
   -webkit-transition: color 0.3s ease-in-out;
@@ -2168,27 +2176,27 @@ section .uk-button {
   transition: color 0.3s ease-in-out;
 }
 
-/* line 431, src/scss/_components/_sidebar.scss */
+/* line 439, src/scss/_components/_sidebar.scss */
 .sidebar__navigation .uk-accordion-title .icon-font.icon-account, .sidebar__navigation-btn .icon-font.icon-account {
   font-size: 22px;
 }
 
-/* line 434, src/scss/_components/_sidebar.scss */
+/* line 442, src/scss/_components/_sidebar.scss */
 .sidebar__navigation .uk-accordion-title .icon-font.icon-support, .sidebar__navigation-btn .icon-font.icon-support {
   font-size: 22px;
 }
 
-/* line 437, src/scss/_components/_sidebar.scss */
+/* line 445, src/scss/_components/_sidebar.scss */
 .sidebar__navigation .uk-accordion-title .icon-font.icon-monitors, .sidebar__navigation-btn .icon-font.icon-monitors {
   font-size: 22px;
 }
 
-/* line 440, src/scss/_components/_sidebar.scss */
+/* line 448, src/scss/_components/_sidebar.scss */
 .sidebar__navigation .uk-accordion-title .icon-font.icon-reports, .sidebar__navigation-btn .icon-font.icon-reports {
   font-size: 18px;
 }
 
-/* line 445, src/scss/_components/_sidebar.scss */
+/* line 453, src/scss/_components/_sidebar.scss */
 .sidebar__navigation .uk-accordion-title span, .sidebar__navigation-btn span {
   color: #ffffff;
   -webkit-transition: color 0.3s ease-in-out;
@@ -2196,44 +2204,162 @@ section .uk-button {
   transition: color 0.3s ease-in-out;
 }
 
-/* line 449, src/scss/_components/_sidebar.scss */
+/* line 457, src/scss/_components/_sidebar.scss */
 .sidebar__navigation .uk-accordion-title span[uk-icon="thumbnails"] svg, .sidebar__navigation-btn span[uk-icon="thumbnails"] svg {
   width: 25px;
   height: 25px;
 }
 
-/* line 455, src/scss/_components/_sidebar.scss */
+/* line 463, src/scss/_components/_sidebar.scss */
 .sidebar__navigation .uk-accordion-title span[uk-icon="users"] svg, .sidebar__navigation-btn span[uk-icon="users"] svg {
   width: 30px;
   height: 28px;
 }
 
-/* line 461, src/scss/_components/_sidebar.scss */
+/* line 469, src/scss/_components/_sidebar.scss */
 .sidebar__navigation .uk-accordion-title span[uk-icon="receiver"] svg, .sidebar__navigation-btn span[uk-icon="receiver"] svg {
   width: 25px;
 }
 
-/* line 466, src/scss/_components/_sidebar.scss */
+/* line 474, src/scss/_components/_sidebar.scss */
 .sidebar__navigation .uk-accordion-title span[uk-icon="cog"] svg, .sidebar__navigation-btn span[uk-icon="cog"] svg {
   width: 24px;
   height: 24px;
 }
 
-/* line 472, src/scss/_components/_sidebar.scss */
+/* line 480, src/scss/_components/_sidebar.scss */
 .sidebar__navigation .uk-accordion-title span[uk-icon="sign-out"] svg, .sidebar__navigation-btn span[uk-icon="sign-out"] svg {
   width: 23px;
   height: 25px;
 }
 
-/* line 478, src/scss/_components/_sidebar.scss */
+/* line 486, src/scss/_components/_sidebar.scss */
 .sidebar__navigation .uk-accordion-title span[uk-icon="world"] svg, .sidebar__navigation-btn span[uk-icon="world"] svg {
   width: 25px;
   height: 25px;
 }
 
-/* line 484, src/scss/_components/_sidebar.scss */
+/* line 492, src/scss/_components/_sidebar.scss */
 .sidebar__navigation .uk-accordion-title span[uk-icon="file-text"] svg, .sidebar__navigation-btn span[uk-icon="file-text"] svg {
   width: 26px;
+}
+
+/* line 501, src/scss/_components/_sidebar.scss */
+.sidebar__footer {
+  white-space: nowrap;
+  width: 100%;
+  height: 300px;
+  background-color: #00a8da;
+}
+
+@media screen and (max-width: 1599px) {
+  /* line 507, src/scss/_components/_sidebar.scss */
+  .sidebar__footer .sidebar__footer-top,
+  .sidebar__footer .sidebar__footer-bottom {
+    opacity: 0;
+    -webkit-transition: opacity 0.3s ease-in-out;
+    -o-transition: opacity 0.3s ease-in-out;
+    transition: opacity 0.3s ease-in-out;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  /* line 514, src/scss/_components/_sidebar.scss */
+  .sidebar__footer .sidebar__footer-top,
+  .sidebar__footer .sidebar__footer-bottom {
+    opacity: 1 !important;
+  }
+}
+
+/* line 521, src/scss/_components/_sidebar.scss */
+.is-collapsed .sidebar__footer .sidebar__footer-top,
+.is-collapsed .sidebar__footer .sidebar__footer-bottom {
+  opacity: 0;
+  -webkit-transition: opacity 0.3s ease-in-out;
+  -o-transition: opacity 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out;
+}
+
+/* line 529, src/scss/_components/_sidebar.scss */
+.is-collapsed-hover .sidebar__footer .sidebar__footer-top,
+.is-collapsed-hover .sidebar__footer .sidebar__footer-bottom {
+  opacity: 1;
+  -webkit-transition: opacity 0.3s ease-in-out;
+  -o-transition: opacity 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out;
+}
+
+/* line 536, src/scss/_components/_sidebar.scss */
+.sidebar__footer-top {
+  height: 81px;
+  border-bottom: 4px solid #0399c6;
+  -webkit-transition: opacity 0.3s ease-in-out;
+  -o-transition: opacity 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out;
+}
+
+/* line 542, src/scss/_components/_sidebar.scss */
+.sidebar__footer-bottom {
+  padding: 40px 40px 0;
+  -webkit-transition: opacity 0.3s ease-in-out;
+  -o-transition: opacity 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out;
+}
+
+@media screen and (max-width: 1365px) {
+  /* line 542, src/scss/_components/_sidebar.scss */
+  .sidebar__footer-bottom {
+    padding: 20px 20px 0;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  /* line 542, src/scss/_components/_sidebar.scss */
+  .sidebar__footer-bottom {
+    padding: 15px 15px 0 0;
+  }
+}
+
+/* line 552, src/scss/_components/_sidebar.scss */
+.sidebar__footer-bottom > span {
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.702);
+}
+
+@media screen and (max-width: 767px) {
+  /* line 552, src/scss/_components/_sidebar.scss */
+  .sidebar__footer-bottom > span {
+    display: block;
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+    text-align: center;
+    white-space: normal;
+    margin-left: 0 !important;
+  }
+}
+
+/* line 567, src/scss/_components/_sidebar.scss */
+.sidebar__footer-btn {
+  width: 40px;
+  height: 40px;
+  margin-left: 20px;
+  margin-right: 20px;
+  background-color: rgba(255, 255, 255, 0.2);
+  color: #ffffff;
+}
+
+/* line 576, src/scss/_components/_sidebar.scss */
+.sidebar__footer-link {
+  font-size: 24px;
+  color: rgba(255, 255, 255, 0.702);
+  font-weight: bold;
+  line-height: 1.5;
+}
+
+/* line 582, src/scss/_components/_sidebar.scss */
+.sidebar__footer-link span {
+  color: #ffffff;
 }
 
 /* line 3, src/scss/_components/_homepage/_login.scss */
@@ -3780,79 +3906,6 @@ section .uk-button {
 .d-case__attachments-block svg polyline,
 .d-case__attachments-block svg line {
   stroke: #fff !important;
-}
-
-/* line 7, src/scss/_components/_dashboard/_statistics.scss */
-.d-statistics .uk-card-body .uk-width-auto .uk-card {
-  width: 383px;
-  background-color: #00a6d9;
-  color: #ffffff;
-}
-
-/* line 12, src/scss/_components/_dashboard/_statistics.scss */
-.d-statistics .uk-card-body .uk-width-auto .uk-card h2,
-.d-statistics .uk-card-body .uk-width-auto .uk-card p,
-.d-statistics .uk-card-body .uk-width-auto .uk-card button {
-  color: #ffffff;
-}
-
-/* line 18, src/scss/_components/_dashboard/_statistics.scss */
-.d-statistics .uk-card-body .uk-width-auto .uk-card h2 {
-  font-size: 48px;
-}
-
-/* line 25, src/scss/_components/_dashboard/_statistics.scss */
-.d-statistics .uk-card-body .uk-width-expand .uk-card {
-  height: 100%;
-  border-left: 6px solid #00a6d9;
-  background-color: #ececec;
-}
-
-/* line 32, src/scss/_components/_dashboard/_statistics.scss */
-.d-statistics .uk-card-body .uk-width-expand .uk-card > div:nth-of-type(3) p {
-  color: #4e4e4e;
-  font-size: 20px;
-}
-
-/* line 37, src/scss/_components/_dashboard/_statistics.scss */
-.d-statistics .uk-card-body .uk-width-expand .uk-card > div:nth-of-type(3) span {
-  color: #a7a3a3;
-  font-size: 16px;
-}
-
-/* line 44, src/scss/_components/_dashboard/_statistics.scss */
-.d-statistics .uk-card-body .uk-width-expand .uk-card h2 {
-  font-size: 48px;
-}
-
-/* line 47, src/scss/_components/_dashboard/_statistics.scss */
-.d-statistics .uk-card-body .uk-width-expand .uk-card h2 span {
-  color: #f7a209;
-}
-
-/* line 50, src/scss/_components/_dashboard/_statistics.scss */
-.d-statistics .uk-card-body .uk-width-expand .uk-card h2 svg {
-  -webkit-transform: scale(2);
-      -ms-transform: scale(2);
-          transform: scale(2);
-}
-
-/* line 59, src/scss/_components/_dashboard/_statistics.scss */
-.d-statistics .uk-card-body .uk-width-expand [uk-grid] > div:nth-of-type(1) .uk-card {
-  background-image: url("../img/img-graph-0.png");
-  background-repeat: no-repeat;
-  background-position: bottom center;
-  -webkit-background-size: contain;
-          background-size: contain;
-}
-
-/* line 67, src/scss/_components/_dashboard/_statistics.scss */
-.d-statistics .uk-card-body .uk-width-expand [uk-grid] > div:nth-of-type(3) .uk-card {
-  background-image: url("../img/img-graph-1.png");
-  background-repeat: no-repeat;
-  background-position: bottom center;
-  -webkit-background-size: contain;
-          background-size: contain;
 }
 
 /* line 6, src/scss/_components/_dashboard/_feed.scss */

@@ -34,44 +34,65 @@ mixin sidebarNavAccordionBtn(classMod, iconBool, iconName, btnName)
 
 
 section#sidebar.sidebar
-  .sidebar__wrapper
+  .sidebar__scroll
+    .sidebar__wrapper
 
-    .sidebar__profile
-      .sidebar__profile-left
-        .sidebar__profile-img
-          img(src="./img/img-user.jpg" srcset="./img/img-user@2x.jpg 2x" alt="" title="")
+      .sidebar__profile
+        .sidebar__profile-left
+          .sidebar__profile-img
+            img(src="./img/img-user.jpg" srcset="./img/img-user@2x.jpg 2x" alt="" title="")
 
-      .sidebar__profile-right
-        p.sidebar__profile-name!= "Randah McKinnie"
+        .sidebar__profile-right
+          p.sidebar__profile-name!= "Randah McKinnie"
 
-    .sidebar__navigation
-      +sidebarNavBtn('external', true, 'thumbnails', 'Dashboard')
+      .sidebar__navigation
+        +sidebarNavBtn('external', true, 'thumbnails', 'Dashboard')
 
-      ul(uk-accordion="multiple: true")
-        li
-          +sidebarNavAccordionBtn('external', false, 'icon-account', 'Account')
-          .uk-accordion-content
-            +sidebarNavBtn('internal', '', false, 'Account action 1')
-            +sidebarNavBtn('internal', '', false, 'Account action 2')
-            +sidebarNavBtn('internal', '', false, 'Account action 3')
+        ul(uk-accordion="multiple: true")
+          li
+            +sidebarNavAccordionBtn('external', false, 'icon-account', 'Account')
+            .uk-accordion-content
+              +sidebarNavBtn('internal', '', false, 'Account action 1')
+              +sidebarNavBtn('internal', '', false, 'Account action 2')
+              +sidebarNavBtn('internal', '', false, 'Account action 3')
 
-      +sidebarNavBtn('external', false, 'icon-support', 'Tech Support')
+        +sidebarNavBtn('external', false, 'icon-support', 'Tech Support')
 
-      ul(uk-accordion="multiple: true")
-        li
-          +sidebarNavAccordionBtn('external', false, 'icon-monitors', 'Monitors')
-          .uk-accordion-content
-            +sidebarNavBtn('internal', '', false, 'Monitors action 1')
-            +sidebarNavBtn('internal', '', false, 'Monitors action 2')
-            +sidebarNavBtn('internal', '', false, 'Monitors action 3')
-        li
-          +sidebarNavAccordionBtn('external', false, 'icon-reports', 'Reports')
-          .uk-accordion-content
-            +sidebarNavBtn('internal', '', false, 'Status')
-            +sidebarNavBtn('internal', '', false, 'Metrics')
-            +sidebarNavBtn('internal', '', false, 'Activity')
+        ul(uk-accordion="multiple: true")
+          li
+            +sidebarNavAccordionBtn('external', false, 'icon-monitors', 'Monitors')
+            .uk-accordion-content
+              +sidebarNavBtn('internal', '', false, 'Monitors action 1')
+              +sidebarNavBtn('internal', '', false, 'Monitors action 2')
+              +sidebarNavBtn('internal', '', false, 'Monitors action 3')
+          li
+            +sidebarNavAccordionBtn('external', false, 'icon-reports', 'Reports')
+            .uk-accordion-content
+              +sidebarNavBtn('internal', '', false, 'Status')
+              +sidebarNavBtn('internal', '', false, 'Metrics')
+              +sidebarNavBtn('internal', '', false, 'Activity')
 
-      +sidebarNavBtn('external', true, 'cog', 'Settings')
-      +sidebarNavBtn('external', true, 'sign-out', 'Logout')
+        +sidebarNavBtn('external', true, 'cog', 'Settings')
+        +sidebarNavBtn('external', true, 'sign-out', 'Logout')
+
+
+    .sidebar__footer
+      .sidebar__footer-top.uk-flex.uk-flex-center.uk-flex-middle
+        a.sidebar__footer-btn.uk-flex.uk-flex-middle.uk-flex-center.uk-border-circle(href="#" class="" title="")
+          span(uk-icon="facebook")
+        a.sidebar__footer-btn.uk-flex.uk-flex-middle.uk-flex-center.uk-border-circle(href="#" class="" title="")
+          span(uk-icon="twitter")
+        a.sidebar__footer-btn.uk-flex.uk-flex-middle.uk-flex-center.uk-border-circle(href="#" class="" title="")
+          span(uk-icon="linkedin")
+
+      .sidebar__footer-bottom
+        a.sidebar__footer-link.uk-flex.uk-flex-middle.uk-margin-small-bottom.uk-margin-medium-left(href="#" class="" title="")
+          p.uk-margin-remove!= "CoSo Insights"
+          span(uk-icon="chevron-right")
+        a.sidebar__footer-link.uk-flex.uk-flex-middle.uk-margin-medium-bottom.uk-margin-medium-left(href="#" class="" title="")
+          p.uk-margin-remove!= "CoSoCloud"
+          span(uk-icon="chevron-right")
+
+        span.uk-margin-medium-left!= "Copyright © 2018 Connect Solutions"
 
 // SECTION sidebar :: END

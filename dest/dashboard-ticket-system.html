@@ -65,119 +65,127 @@
     <!-- HEADER :: END-->
     <!-- SECTION sidebar :: START-->
     <section class="sidebar" id="sidebar">
-      <div class="sidebar__wrapper">
-        <div class="sidebar__profile">
-          <div class="sidebar__profile-left">
-            <div class="sidebar__profile-img"><img src="./img/img-user.jpg" srcset="./img/img-user@2x.jpg 2x" alt="" title=""></div>
+      <div class="sidebar__scroll">
+        <div class="sidebar__wrapper">
+          <div class="sidebar__profile">
+            <div class="sidebar__profile-left">
+              <div class="sidebar__profile-img"><img src="./img/img-user.jpg" srcset="./img/img-user@2x.jpg 2x" alt="" title=""></div>
+            </div>
+            <div class="sidebar__profile-right">
+              <p class="sidebar__profile-name">Randah McKinnie</p>
+            </div>
           </div>
-          <div class="sidebar__profile-right">
-            <p class="sidebar__profile-name">Randah McKinnie</p>
+          <div class="sidebar__navigation"><a class="sidebar__navigation-btn sidebar__navigation-btn--external" href="#" title="">
+                  <div><span uk-icon="thumbnails"></span>
+                  </div>
+                  <div>
+                    <p>Dashboard</p>
+                  </div>
+                  <div></div></a>
+            <ul uk-accordion="multiple: true">
+              <li><a class="uk-accordion-title sidebar__navigation-btn sidebar__navigation-btn--external" href="#" title="">
+                      <div><i class="icon-font icon-account"></i>
+                      </div>
+                      <div>
+                        <p>Account</p>
+                      </div>
+                      <div><span uk-icon="chevron-down"></span></div></a>
+                <div class="uk-accordion-content"><a class="sidebar__navigation-btn sidebar__navigation-btn--internal" href="#" title="">
+                        <div><i class="icon-font"></i>
+                        </div>
+                        <div>
+                          <p>Account action 1</p>
+                        </div></a><a class="sidebar__navigation-btn sidebar__navigation-btn--internal" href="#" title="">
+                        <div><i class="icon-font"></i>
+                        </div>
+                        <div>
+                          <p>Account action 2</p>
+                        </div></a><a class="sidebar__navigation-btn sidebar__navigation-btn--internal" href="#" title="">
+                        <div><i class="icon-font"></i>
+                        </div>
+                        <div>
+                          <p>Account action 3</p>
+                        </div></a>
+                </div>
+              </li>
+            </ul><a class="sidebar__navigation-btn sidebar__navigation-btn--external" href="#" title="">
+                  <div><i class="icon-font icon-support"></i>
+                  </div>
+                  <div>
+                    <p>Tech Support</p>
+                  </div>
+                  <div></div></a>
+            <ul uk-accordion="multiple: true">
+              <li><a class="uk-accordion-title sidebar__navigation-btn sidebar__navigation-btn--external" href="#" title="">
+                      <div><i class="icon-font icon-monitors"></i>
+                      </div>
+                      <div>
+                        <p>Monitors</p>
+                      </div>
+                      <div><span uk-icon="chevron-down"></span></div></a>
+                <div class="uk-accordion-content"><a class="sidebar__navigation-btn sidebar__navigation-btn--internal" href="#" title="">
+                        <div><i class="icon-font"></i>
+                        </div>
+                        <div>
+                          <p>Monitors action 1</p>
+                        </div></a><a class="sidebar__navigation-btn sidebar__navigation-btn--internal" href="#" title="">
+                        <div><i class="icon-font"></i>
+                        </div>
+                        <div>
+                          <p>Monitors action 2</p>
+                        </div></a><a class="sidebar__navigation-btn sidebar__navigation-btn--internal" href="#" title="">
+                        <div><i class="icon-font"></i>
+                        </div>
+                        <div>
+                          <p>Monitors action 3</p>
+                        </div></a>
+                </div>
+              </li>
+              <li><a class="uk-accordion-title sidebar__navigation-btn sidebar__navigation-btn--external" href="#" title="">
+                      <div><i class="icon-font icon-reports"></i>
+                      </div>
+                      <div>
+                        <p>Reports</p>
+                      </div>
+                      <div><span uk-icon="chevron-down"></span></div></a>
+                <div class="uk-accordion-content"><a class="sidebar__navigation-btn sidebar__navigation-btn--internal" href="#" title="">
+                        <div><i class="icon-font"></i>
+                        </div>
+                        <div>
+                          <p>Status</p>
+                        </div></a><a class="sidebar__navigation-btn sidebar__navigation-btn--internal" href="#" title="">
+                        <div><i class="icon-font"></i>
+                        </div>
+                        <div>
+                          <p>Metrics</p>
+                        </div></a><a class="sidebar__navigation-btn sidebar__navigation-btn--internal" href="#" title="">
+                        <div><i class="icon-font"></i>
+                        </div>
+                        <div>
+                          <p>Activity</p>
+                        </div></a>
+                </div>
+              </li>
+            </ul><a class="sidebar__navigation-btn sidebar__navigation-btn--external" href="#" title="">
+                  <div><span uk-icon="cog"></span>
+                  </div>
+                  <div>
+                    <p>Settings</p>
+                  </div>
+                  <div></div></a><a class="sidebar__navigation-btn sidebar__navigation-btn--external" href="#" title="">
+                  <div><span uk-icon="sign-out"></span>
+                  </div>
+                  <div>
+                    <p>Logout</p>
+                  </div>
+                  <div></div></a>
           </div>
         </div>
-        <div class="sidebar__navigation"><a class="sidebar__navigation-btn sidebar__navigation-btn--external" href="#" title="">
-                <div><span uk-icon="thumbnails"></span>
-                </div>
-                <div>
-                  <p>Dashboard</p>
-                </div>
-                <div></div></a>
-          <ul uk-accordion="multiple: true">
-            <li><a class="uk-accordion-title sidebar__navigation-btn sidebar__navigation-btn--external" href="#" title="">
-                    <div><i class="icon-font icon-account"></i>
-                    </div>
-                    <div>
-                      <p>Account</p>
-                    </div>
-                    <div><span uk-icon="chevron-down"></span></div></a>
-              <div class="uk-accordion-content"><a class="sidebar__navigation-btn sidebar__navigation-btn--internal" href="#" title="">
-                      <div><i class="icon-font"></i>
-                      </div>
-                      <div>
-                        <p>Account action 1</p>
-                      </div></a><a class="sidebar__navigation-btn sidebar__navigation-btn--internal" href="#" title="">
-                      <div><i class="icon-font"></i>
-                      </div>
-                      <div>
-                        <p>Account action 2</p>
-                      </div></a><a class="sidebar__navigation-btn sidebar__navigation-btn--internal" href="#" title="">
-                      <div><i class="icon-font"></i>
-                      </div>
-                      <div>
-                        <p>Account action 3</p>
-                      </div></a>
-              </div>
-            </li>
-          </ul><a class="sidebar__navigation-btn sidebar__navigation-btn--external" href="#" title="">
-                <div><i class="icon-font icon-support"></i>
-                </div>
-                <div>
-                  <p>Tech Support</p>
-                </div>
-                <div></div></a>
-          <ul uk-accordion="multiple: true">
-            <li><a class="uk-accordion-title sidebar__navigation-btn sidebar__navigation-btn--external" href="#" title="">
-                    <div><i class="icon-font icon-monitors"></i>
-                    </div>
-                    <div>
-                      <p>Monitors</p>
-                    </div>
-                    <div><span uk-icon="chevron-down"></span></div></a>
-              <div class="uk-accordion-content"><a class="sidebar__navigation-btn sidebar__navigation-btn--internal" href="#" title="">
-                      <div><i class="icon-font"></i>
-                      </div>
-                      <div>
-                        <p>Monitors action 1</p>
-                      </div></a><a class="sidebar__navigation-btn sidebar__navigation-btn--internal" href="#" title="">
-                      <div><i class="icon-font"></i>
-                      </div>
-                      <div>
-                        <p>Monitors action 2</p>
-                      </div></a><a class="sidebar__navigation-btn sidebar__navigation-btn--internal" href="#" title="">
-                      <div><i class="icon-font"></i>
-                      </div>
-                      <div>
-                        <p>Monitors action 3</p>
-                      </div></a>
-              </div>
-            </li>
-            <li><a class="uk-accordion-title sidebar__navigation-btn sidebar__navigation-btn--external" href="#" title="">
-                    <div><i class="icon-font icon-reports"></i>
-                    </div>
-                    <div>
-                      <p>Reports</p>
-                    </div>
-                    <div><span uk-icon="chevron-down"></span></div></a>
-              <div class="uk-accordion-content"><a class="sidebar__navigation-btn sidebar__navigation-btn--internal" href="#" title="">
-                      <div><i class="icon-font"></i>
-                      </div>
-                      <div>
-                        <p>Status</p>
-                      </div></a><a class="sidebar__navigation-btn sidebar__navigation-btn--internal" href="#" title="">
-                      <div><i class="icon-font"></i>
-                      </div>
-                      <div>
-                        <p>Metrics</p>
-                      </div></a><a class="sidebar__navigation-btn sidebar__navigation-btn--internal" href="#" title="">
-                      <div><i class="icon-font"></i>
-                      </div>
-                      <div>
-                        <p>Activity</p>
-                      </div></a>
-              </div>
-            </li>
-          </ul><a class="sidebar__navigation-btn sidebar__navigation-btn--external" href="#" title="">
-                <div><span uk-icon="cog"></span>
-                </div>
-                <div>
-                  <p>Settings</p>
-                </div>
-                <div></div></a><a class="sidebar__navigation-btn sidebar__navigation-btn--external" href="#" title="">
-                <div><span uk-icon="sign-out"></span>
-                </div>
-                <div>
-                  <p>Logout</p>
-                </div>
-                <div></div></a>
+        <div class="sidebar__footer">
+          <div class="sidebar__footer-top uk-flex uk-flex-center uk-flex-middle"><a class="sidebar__footer-btn uk-flex uk-flex-middle uk-flex-center uk-border-circle" href="#" title=""><span uk-icon="facebook"></span></a><a class="sidebar__footer-btn uk-flex uk-flex-middle uk-flex-center uk-border-circle" href="#" title=""><span uk-icon="twitter"></span></a><a class="sidebar__footer-btn uk-flex uk-flex-middle uk-flex-center uk-border-circle" href="#" title=""><span uk-icon="linkedin"></span></a></div>
+          <div class="sidebar__footer-bottom"><a class="sidebar__footer-link uk-flex uk-flex-middle uk-margin-small-bottom uk-margin-medium-left" href="#" title="">
+              <p class="uk-margin-remove">CoSo Insights</p><span uk-icon="chevron-right"></span></a><a class="sidebar__footer-link uk-flex uk-flex-middle uk-margin-medium-bottom uk-margin-medium-left" href="#" title="">
+              <p class="uk-margin-remove">CoSoCloud</p><span uk-icon="chevron-right"></span></a><span class="uk-margin-medium-left">Copyright © 2018 Connect Solutions</span></div>
         </div>
       </div>
     </section>
