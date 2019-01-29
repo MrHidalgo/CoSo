@@ -9,15 +9,17 @@ section#login.login
 
           h1.login__title!= "Welcome to<br>CoSo Insights"
 
-          p.login__text!= "Login to access dashboard"
+          p.login__text!= "Enter your username and<br>password to login"
+
+          +logotype('login', '#', 'img-logotype-white', 'png')
+
+          a.login__site(href="#" class="" title="")!= "cosocloud.com"
 
         .login__body-right
 
           .login__block
             .login__block-head
               p.login__block-title!= "Log In"
-
-              .login__block-img
 
               form
                 fieldset(class="uk-fieldset")
@@ -29,11 +31,10 @@ section#login.login
                     button(type="submit" class="uk-button uk-button-primary")!= "Login"
 
             .login__block-footer
-              a.login__block-btn(href="#" class="" title="")!= "Don’t have an account? Sign Up"
               a.login__block-link(href="#" class="" title="")!= "Forgot Password?"
 
-      .login__additional
-        a.login__site(href="#" class="" title="")!= "cosocloud.com"
+          +logotype('login', '#', 'img-logotype-white', 'png')
 
-        +logotype('login', '#', 'img-logotype', 'png')
+          a.login__site(href="#" class="" title="")!= "cosocloud.com"
+
 // SECTION login :: END

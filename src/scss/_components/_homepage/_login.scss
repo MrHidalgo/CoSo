@@ -47,7 +47,7 @@
       left: 0;
       width: 100%;
       height: calc(100% - 120px);
-      background-color: #00a6d9;
+      background-color: #4e4e4e;
       @include adaptive(767) {
         top: 0;
         height: 100%;
@@ -69,7 +69,7 @@
     &-left {
       padding-top: 60px;
       padding-bottom: 90px;
-      padding-left: 101px;
+      padding-left: 103px;
       width: 509px;
       @include adaptive(991) {
         padding-left: 30px;
@@ -106,18 +106,6 @@
     }
   }
 
-  &__additional {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding-top: 29px;
-    @include adaptive(575) {
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-    }
-  }
-
   &__title,
   &__text,
   &__site {
@@ -135,30 +123,28 @@
   }
 
   &__text {
-    color: #fff;
+    color: #00a6d9;
     line-height: line-height-convert(30, 24);
     @include fluid(padding-bottom, 320px, 767px, 30px, 55px);
     @include fluid(font-size, 320px, 767px, 20px, 24px);
   }
 
   .logo {
+    @include fluid(margin-bottom, 320px, 767px, 30px, 118px);
     @include adaptive(767) {
       &__link {
         justify-content: center;
       }
     }
-    @include adaptive(575) {
-      margin-top: 29px;
-    }
   }
 
   &__site {
-    color: #00a6d9;
+    color: #ffffff;
     @include transition(color);
     @include fluid(font-size, 320px, 767px, 20px, 24px);
 
     &:hover {
-      color: #4e4e4e;
+      color: #00a6d9;
       text-decoration: none;
       @include transition(color);
     }
@@ -169,8 +155,7 @@
     max-width: 476px;
     height: 811px;
     background-color: #fff;
-    box-shadow: 0 6px 54px 0 rgba(0, 0, 0, 0.1);
-
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.15);
     @include adaptive(767) {
       height: auto;
       margin-left: auto;
@@ -179,89 +164,36 @@
     }
 
     &-head {
-      //height: calc(100% - 96px);
-      padding: 0 55px;
-      @include fluid(padding-top, 320px, 767px, 50px, 71px);
-      @include adaptive(1199) {
-        padding-left: 35px;
-        padding-right: 35px;
-      }
+      height: calc(100% - 96px);
+      padding: 144px 55px 0;
+      @include fluid(padding-top, 320px, 767px, 50px, 144px);
       @include adaptive(767) {
         padding-bottom: 50px;
       }
       @include adaptive(575) {
         padding-left: 15px;
         padding-right: 15px;
-        padding-bottom: 0;
       }
     }
 
     &-footer {
       display: flex;
-      flex-direction: column;
-      //align-items: center;
-      //justify-content: center;
-      //height: 96px;
-      padding: 0 55px 50px;
-      //background-color: #ececec;
-      @include adaptive(1199) {
-        padding-left: 35px;
-        padding-right: 35px;
-      }
-      @include adaptive(575) {
-        padding-left: 15px;
-        padding-right: 15px;
-      }
+      align-items: center;
+      justify-content: center;
+      height: 96px;
+      padding: 0 55px 0;
+      background-color: #ececec;
     }
 
     &-title {
       color: #00a6d9;
       text-align: center;
-      @include fluid(padding-bottom, 320px, 767px, 50px, 56px);
+      @include fluid(padding-bottom, 320px, 767px, 50px, 143px);
       @include fluid(font-size, 320px, 767px, 24px, 30px);
-    }
-
-    &-img {
-      position: relative;
-      top: 0;
-      left: 0;
-      width: 110px;
-      height: 110px;
-      margin-left: auto;
-      margin-right: auto;
-      border-radius: 100%;
-      background-color: #00a6d9;
-      margin-bottom: 50px;
-    }
-
-    &-btn {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      width: 100%;
-      height: 60px;
-      border-radius: 0;
-      border-style: solid;
-      border-width: 2px;
-      border-color: #9b9b9b;
-      background-color: #fff;
-      color: #00a6d9;
-      text-align: center;
-      @include fluid(margin-bottom, 320px, 767px, 30px, 60px);
-      @include fluid(font-size, 320px, 1199px, 18px, 24px);
-      @include transition(border-color);
-
-      &:hover {
-        border-color: #00a6d9;
-        color: #00a6d9;
-        text-decoration: none;
-        @include transition(border-color);
-      }
     }
 
     &-link {
       color: #00a6d9;
-      text-align: center;
       @include transition(color);
       @include fluid(font-size, 320px, 767px, 20px, 24px);
 
