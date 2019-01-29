@@ -34,10 +34,11 @@ body {
   }
 
   &.p-login {
-    background-color: #00a6d9;
-    background-image: url('../img/img-login-starburst.png');
+    background-color: #ececec;
+    background-image: url('../img/img-login-pattern-bg.png');
     background-repeat: no-repeat;
-    background-position: center right;
+    background-position: center;
+    background-size: cover;
   }
 }
 
