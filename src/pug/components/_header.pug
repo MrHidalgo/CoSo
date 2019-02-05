@@ -30,16 +30,16 @@ header#header.header
 
     .header__wrapper-right
 
-      .header__dCenter
+      .header__dCenter.uk-flex.uk-flex-middle
         p!= "Data Centers:"
-        div
-          a(href="#" class="" title="")
-            i.icon-png.i-data-center-gb
-          a(href="#" class="" title="")
-            i.icon-png.i-data-center-us
-          a(href="#" class="" title="")
-            i.icon-png.i-data-center-es
-          a(href="#" class="" title="")
-            i.icon-png.i-data-center-ch
+        div.uk-flex.uk-flex-middle
+          a.uk-flex.uk-flex-top(href="#" class="" title="")
+            +iconSVG('UK')
+          a.uk-flex.uk-flex-top(href="#" class="" title="")
+            +iconSVG('US')
+          a.uk-flex.uk-flex-top(href="#" class="" title="")
+            +iconSVG('USe')
+          a.uk-flex.uk-flex-top(href="#" class="" title="")
+            +iconSVG('CH')
 
 // HEADER :: END

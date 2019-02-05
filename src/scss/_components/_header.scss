@@ -314,25 +314,37 @@
   }
 
   &__dCenter {
-    display: flex;
-    align-items: center;
-
     p {
       font-size: 18px;
       padding-right: 9px;
     }
 
     div {
-      display: flex;
-      align-items: center;
 
       a {
-        display: flex;
-        align-items: flex-start;
         margin-right: 7px;
 
         &:last-of-type {
           margin-right: 0;
+        }
+      }
+
+      .icon {
+        &-UK {
+          width: 26px;
+          height: 34px;
+        }
+        &-US {
+          width: 27px;
+          height: 34px;
+        }
+        &-USe {
+          width: 27px;
+          height: 35px;
+        }
+        &-CH {
+          width: 28px;
+          height: 35px
         }
       }
     }
