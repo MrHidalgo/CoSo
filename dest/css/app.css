@@ -178,12 +178,10 @@ body.p-login {
 /* line 44, src/scss/_shared/_main-setting-reset.scss */
 body {
   display: -webkit-box;
-  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -webkit-flex-direction: column;
       -ms-flex-direction: column;
           flex-direction: column;
   min-height: 100vh;
@@ -214,20 +212,16 @@ body.is-collapsed > .body {
 /* line 62, src/scss/_shared/_main-setting-reset.scss */
 body > .body {
   display: -webkit-box;
-  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -webkit-flex-direction: column;
       -ms-flex-direction: column;
           flex-direction: column;
   -webkit-box-pack: center;
-  -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
   -webkit-box-flex: 1;
-  -webkit-flex: 1 0 auto;
       -ms-flex: 1 0 auto;
           flex: 1 0 auto;
   padding-right: 70px;
@@ -271,7 +265,6 @@ body > .body {
 /* line 86, src/scss/_shared/_main-setting-reset.scss */
 body > .body--start {
   -webkit-box-pack: start;
-  -webkit-justify-content: flex-start;
       -ms-flex-pack: start;
           justify-content: flex-start;
 }
@@ -374,7 +367,6 @@ input[type="text"] {
 /* line 183, src/scss/_shared/_main-setting-reset.scss */
 picture {
   display: -webkit-box;
-  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   top: 0;
@@ -405,7 +397,6 @@ section.login .uk-input {
 @media screen and (min-width: 320px) {
   /* line 5, src/scss/_shared/_common.scss */
   section.login .uk-input {
-    margin-bottom: -webkit-calc(30px + 12 * (100vw - 320px) / 447);
     margin-bottom: calc(30px + 12 * (100vw - 320px) / 447);
   }
 }
@@ -422,8 +413,7 @@ section.login .uk-button {
   width: 100%;
   height: 60px;
   margin-top: 27px;
-  -webkit-border-radius: 10px;
-          border-radius: 10px;
+  border-radius: 10px;
   border-style: solid;
   border-width: 1px;
   border-color: #dad8d8;
@@ -436,7 +426,6 @@ section.login .uk-button {
 @media screen and (min-width: 320px) {
   /* line 8, src/scss/_shared/_common.scss */
   section.login .uk-button {
-    margin-top: -webkit-calc(0 + 27 * (100vw - 320px) / 447);
     margin-top: calc(0 + 27 * (100vw - 320px) / 447);
   }
 }
@@ -451,7 +440,6 @@ section.login .uk-button {
 @media screen and (min-width: 320px) {
   /* line 8, src/scss/_shared/_common.scss */
   section.login .uk-button {
-    font-size: -webkit-calc(24px + 6 * (100vw - 320px) / 447);
     font-size: calc(24px + 6 * (100vw - 320px) / 447);
   }
 }
@@ -467,8 +455,7 @@ section.login .uk-button {
 section .uk-input {
   height: 49px;
   padding: 0 22px;
-  -webkit-border-radius: 10px;
-          border-radius: 10px;
+  border-radius: 10px;
   border: 2px solid #dad8d8;
   font-size: 20px;
 }
@@ -476,7 +463,6 @@ section .uk-input {
 @media screen and (min-width: 320px) {
   /* line 23, src/scss/_shared/_common.scss */
   section .uk-input {
-    font-size: -webkit-calc(20px + 4 * (100vw - 320px) / 447);
     font-size: calc(20px + 4 * (100vw - 320px) / 447);
   }
 }
@@ -497,7 +483,6 @@ section .uk-input.placeholder {
 @media screen and (min-width: 320px) {
   /* line 88, src/scss/_utilities/_mixin.scss */
   section .uk-input.placeholder {
-    font-size: -webkit-calc(20px + 4 * (100vw - 320px) / 447);
     font-size: calc(20px + 4 * (100vw - 320px) / 447);
   }
 }
@@ -578,7 +563,6 @@ section .uk-input::-webkit-input-placeholder {
 @media screen and (min-width: 320px) {
   /* line 92, src/scss/_utilities/_mixin.scss */
   section .uk-input::-webkit-input-placeholder {
-    font-size: -webkit-calc(20px + 4 * (100vw - 320px) / 447);
     font-size: calc(20px + 4 * (100vw - 320px) / 447);
   }
 }
@@ -608,8 +592,7 @@ section .uk-button:hover {
 
 /* line 47, src/scss/_shared/_common.scss */
 .uk-section > .uk-card {
-  -webkit-border-radius: 5px;
-          border-radius: 5px;
+  border-radius: 5px;
 }
 
 /* line 3, src/scss/_shared/_iconSVG.scss */
@@ -621,7 +604,6 @@ section .uk-button:hover {
 /* line 1, src/scss/_shared/_iconFont.scss */
 .icon-font {
   display: -webkit-box;
-  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   line-height: 1;
@@ -630,11 +612,9 @@ section .uk-button:hover {
 /* line 4, src/scss/_macros/_logotype.scss */
 .logo__link {
   display: -webkit-box;
-  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-  -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
 }
@@ -649,7 +629,6 @@ section .uk-button:hover {
 @media screen and (max-width: 767px) {
   /* line 8, src/scss/_macros/_logotype.scss */
   .logo__link img {
-    width: -webkit-calc(306px / 3);
     width: calc(306px / 3);
   }
 }
@@ -674,14 +653,6 @@ section .uk-button:hover {
 
 /* line 17, src/scss/_components/_header.scss */
 .header__wrapper {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
   height: 125px;
 }
 
@@ -692,20 +663,8 @@ section .uk-button:hover {
   }
 }
 
-/* line 25, src/scss/_components/_header.scss */
+/* line 23, src/scss/_components/_header.scss */
 .header__wrapper-left {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   width: 379px;
   height: 100%;
   padding-left: 15px;
@@ -716,36 +675,27 @@ section .uk-button:hover {
 }
 
 @media screen and (max-width: 1599px) {
-  /* line 25, src/scss/_components/_header.scss */
+  /* line 23, src/scss/_components/_header.scss */
   .header__wrapper-left {
     width: 125px;
   }
 }
 
 @media screen and (max-width: 1365px) {
-  /* line 25, src/scss/_components/_header.scss */
+  /* line 23, src/scss/_components/_header.scss */
   .header__wrapper-left {
     width: 65px;
   }
 }
 
 @media screen and (max-width: 767px) {
-  /* line 25, src/scss/_components/_header.scss */
+  /* line 23, src/scss/_components/_header.scss */
   .header__wrapper-left {
     z-index: 10;
     position: absolute;
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-    -webkit-align-items: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: justify;
-    -webkit-justify-content: space-between;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -webkit-box-pack: justify !important;
+        -ms-flex-pack: justify !important;
+            justify-content: space-between !important;
     top: 0;
     left: 0;
     -webkit-transform: translateX(-100%);
@@ -763,7 +713,7 @@ section .uk-button:hover {
   }
 }
 
-/* line 56, src/scss/_components/_header.scss */
+/* line 49, src/scss/_components/_header.scss */
 .is-collapsed .header__wrapper-left {
   width: 125px;
   -webkit-transition: width 0.3s ease-in-out;
@@ -772,14 +722,14 @@ section .uk-button:hover {
 }
 
 @media screen and (max-width: 1365px) {
-  /* line 56, src/scss/_components/_header.scss */
+  /* line 49, src/scss/_components/_header.scss */
   .is-collapsed .header__wrapper-left {
     width: 65px;
   }
 }
 
 @media screen and (max-width: 767px) {
-  /* line 56, src/scss/_components/_header.scss */
+  /* line 49, src/scss/_components/_header.scss */
   .is-collapsed .header__wrapper-left {
     width: 250px;
     -webkit-transform: translateX(0);
@@ -793,21 +743,18 @@ section .uk-button:hover {
   }
 }
 
-/* line 69, src/scss/_components/_header.scss */
+/* line 62, src/scss/_components/_header.scss */
 .header__wrapper-left > a {
   display: none;
   -webkit-box-align: center;
-  -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
   -webkit-box-pack: center;
-  -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
   width: 20px;
   height: 20px;
-  -webkit-border-radius: 100%;
-          border-radius: 100%;
+  border-radius: 100%;
   border: 1px solid #00a8de;
   color: #00a8de;
   font-size: 16px;
@@ -817,16 +764,15 @@ section .uk-button:hover {
 }
 
 @media screen and (max-width: 767px) {
-  /* line 69, src/scss/_components/_header.scss */
+  /* line 62, src/scss/_components/_header.scss */
   .header__wrapper-left > a {
     display: -webkit-box;
-    display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
   }
 }
 
-/* line 84, src/scss/_components/_header.scss */
+/* line 77, src/scss/_components/_header.scss */
 .header__wrapper-left > a:hover {
   opacity: 0.75;
   color: #4e4e4e;
@@ -836,18 +782,9 @@ section .uk-button:hover {
   transition: opacity 0.3s ease-in-out;
 }
 
-/* line 93, src/scss/_components/_header.scss */
+/* line 86, src/scss/_components/_header.scss */
 .header__wrapper-middle {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
   width: 100%;
-  max-width: -webkit-calc(100% - (379px + 353px));
   max-width: calc(100% - (379px + 353px));
   border-left: 1px solid #e6e1e1;
   border-right: 1px solid #e6e1e1;
@@ -857,31 +794,28 @@ section .uk-button:hover {
 }
 
 @media screen and (max-width: 1599px) {
-  /* line 93, src/scss/_components/_header.scss */
+  /* line 86, src/scss/_components/_header.scss */
   .header__wrapper-middle {
-    max-width: -webkit-calc(100% - (125px + 353px));
     max-width: calc(100% - (125px + 353px));
   }
 }
 
 @media screen and (max-width: 1365px) {
-  /* line 93, src/scss/_components/_header.scss */
+  /* line 86, src/scss/_components/_header.scss */
   .header__wrapper-middle {
-    max-width: -webkit-calc(100% - (62px + 353px));
     max-width: calc(100% - (62px + 353px));
   }
 }
 
 @media screen and (max-width: 1199px) {
-  /* line 93, src/scss/_components/_header.scss */
+  /* line 86, src/scss/_components/_header.scss */
   .header__wrapper-middle {
-    max-width: -webkit-calc(100% - (62px + 280px));
     max-width: calc(100% - (62px + 280px));
   }
 }
 
 @media screen and (max-width: 767px) {
-  /* line 93, src/scss/_components/_header.scss */
+  /* line 86, src/scss/_components/_header.scss */
   .header__wrapper-middle {
     max-width: 100%;
     border: none;
@@ -889,9 +823,8 @@ section .uk-button:hover {
 }
 
 @media screen and (min-width: 1440px) {
-  /* line 115, src/scss/_components/_header.scss */
+  /* line 106, src/scss/_components/_header.scss */
   .is-collapsed .header__wrapper-middle {
-    max-width: -webkit-calc(100% - (125px + 353px));
     max-width: calc(100% - (125px + 353px));
     -webkit-transition: max-width 0.3s ease-in-out;
     -o-transition: max-width 0.3s ease-in-out;
@@ -899,73 +832,51 @@ section .uk-button:hover {
   }
 }
 
-/* line 123, src/scss/_components/_header.scss */
+/* line 114, src/scss/_components/_header.scss */
 .header__wrapper-middle > div:nth-of-type(1) {
   width: 200px;
   border-right: 1px solid #e6e1e1;
 }
 
 @media screen and (max-width: 1365px) {
-  /* line 123, src/scss/_components/_header.scss */
+  /* line 114, src/scss/_components/_header.scss */
   .header__wrapper-middle > div:nth-of-type(1) {
     width: 62px;
   }
 }
 
-/* line 131, src/scss/_components/_header.scss */
+/* line 122, src/scss/_components/_header.scss */
 .header__wrapper-middle > div:nth-of-type(2) {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   width: 100%;
-  max-width: -webkit-calc(100% - 200px);
   max-width: calc(100% - 200px);
   padding-left: 25px;
   padding-right: 25px;
 }
 
 @media screen and (max-width: 1365px) {
-  /* line 131, src/scss/_components/_header.scss */
+  /* line 122, src/scss/_components/_header.scss */
   .header__wrapper-middle > div:nth-of-type(2) {
-    max-width: -webkit-calc(100% - 62px);
     max-width: calc(100% - 62px);
   }
 }
 
 @media screen and (max-width: 1199px) {
-  /* line 131, src/scss/_components/_header.scss */
+  /* line 122, src/scss/_components/_header.scss */
   .header__wrapper-middle > div:nth-of-type(2) {
     padding-left: 15px;
     padding-right: 15px;
   }
 }
 
-/* line 150, src/scss/_components/_header.scss */
+/* line 138, src/scss/_components/_header.scss */
 .header__wrapper-right {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
   width: 353px;
   padding-left: 25px;
   padding-right: 15px;
 }
 
 @media screen and (max-width: 1199px) {
-  /* line 150, src/scss/_components/_header.scss */
+  /* line 138, src/scss/_components/_header.scss */
   .header__wrapper-right {
     width: 280px;
     padding-left: 15px;
@@ -973,61 +884,48 @@ section .uk-button:hover {
 }
 
 @media screen and (max-width: 767px) {
-  /* line 150, src/scss/_components/_header.scss */
+  /* line 138, src/scss/_components/_header.scss */
   .header__wrapper-right {
-    display: none;
+    display: none !important;
   }
 }
 
-/* line 167, src/scss/_components/_header.scss */
+/* line 153, src/scss/_components/_header.scss */
 .header__collapse {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   height: 125px;
 }
 
 @media screen and (max-width: 1599px) {
-  /* line 167, src/scss/_components/_header.scss */
+  /* line 153, src/scss/_components/_header.scss */
   .header__collapse {
     height: 65px;
   }
 }
 
-/* line 176, src/scss/_components/_header.scss */
+/* line 159, src/scss/_components/_header.scss */
 .header__collapse:hover {
   text-decoration: none;
 }
 
-/* line 180, src/scss/_components/_header.scss */
+/* line 163, src/scss/_components/_header.scss */
 .header__collapse div {
   position: relative;
   width: 32px;
   height: 22px;
 }
 
-/* line 185, src/scss/_components/_header.scss */
+/* line 168, src/scss/_components/_header.scss */
 .header__collapse div i {
   overflow: hidden;
   position: absolute;
   left: 0;
   width: 100%;
   height: 4px;
-  -webkit-border-radius: 2px;
-          border-radius: 2px;
+  border-radius: 2px;
   background-color: #a7a3a3;
 }
 
-/* line 194, src/scss/_components/_header.scss */
+/* line 177, src/scss/_components/_header.scss */
 .header__collapse div i:before {
   content: '';
   position: absolute;
@@ -1042,13 +940,13 @@ section .uk-button:hover {
 }
 
 @media screen and (max-width: 1599px) {
-  /* line 194, src/scss/_components/_header.scss */
+  /* line 177, src/scss/_components/_header.scss */
   .header__collapse div i:before {
     width: 100%;
   }
 }
 
-/* line 207, src/scss/_components/_header.scss */
+/* line 190, src/scss/_components/_header.scss */
 .is-collapsed .header__collapse div i:before {
   width: 100%;
   -webkit-transition: width 0.3s ease-in-out;
@@ -1057,23 +955,23 @@ section .uk-button:hover {
 }
 
 @media screen and (max-width: 1599px) {
-  /* line 207, src/scss/_components/_header.scss */
+  /* line 190, src/scss/_components/_header.scss */
   .is-collapsed .header__collapse div i:before {
     width: 11px;
   }
 }
 
-/* line 214, src/scss/_components/_header.scss */
+/* line 197, src/scss/_components/_header.scss */
 .is-collapsed-hover .header__collapse div i:before {
   width: 11px;
 }
 
-/* line 219, src/scss/_components/_header.scss */
+/* line 202, src/scss/_components/_header.scss */
 .header__collapse div i:nth-of-type(1) {
   top: 0;
 }
 
-/* line 223, src/scss/_components/_header.scss */
+/* line 206, src/scss/_components/_header.scss */
 .header__collapse div i:nth-of-type(2) {
   top: 50%;
   -webkit-transform: translateY(-50%);
@@ -1081,12 +979,12 @@ section .uk-button:hover {
           transform: translateY(-50%);
 }
 
-/* line 228, src/scss/_components/_header.scss */
+/* line 211, src/scss/_components/_header.scss */
 .header__collapse div i:nth-of-type(3) {
   bottom: 0;
 }
 
-/* line 234, src/scss/_components/_header.scss */
+/* line 217, src/scss/_components/_header.scss */
 .header__collapse span {
   padding-left: 18px;
   color: #4e4e4e;
@@ -1094,232 +992,162 @@ section .uk-button:hover {
 }
 
 @media screen and (max-width: 1365px) {
-  /* line 234, src/scss/_components/_header.scss */
+  /* line 217, src/scss/_components/_header.scss */
   .header__collapse span {
     display: none;
   }
 }
 
-/* line 244, src/scss/_components/_header.scss */
+/* line 227, src/scss/_components/_header.scss */
 .header__search {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
   width: 100%;
-  max-width: -webkit-calc(100% - 240px);
   max-width: calc(100% - 240px);
 }
 
 @media screen and (max-width: 1199px) {
-  /* line 244, src/scss/_components/_header.scss */
+  /* line 227, src/scss/_components/_header.scss */
   .header__search {
     max-width: 100%;
   }
 }
 
-/* line 252, src/scss/_components/_header.scss */
+/* line 234, src/scss/_components/_header.scss */
 .header__search form {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
   position: relative;
   width: 100%;
   height: 40px;
 }
 
-/* line 259, src/scss/_components/_header.scss */
+/* line 239, src/scss/_components/_header.scss */
 .header__search form span.uk-search-icon {
   width: 58px;
 }
 
 @media screen and (max-width: 1199px) {
-  /* line 259, src/scss/_components/_header.scss */
+  /* line 239, src/scss/_components/_header.scss */
   .header__search form span.uk-search-icon {
     width: 44px;
   }
 }
 
-/* line 265, src/scss/_components/_header.scss */
+/* line 245, src/scss/_components/_header.scss */
 .header__search form span.uk-search-icon svg {
   width: 29px;
   height: 29px;
 }
 
-/* line 271, src/scss/_components/_header.scss */
+/* line 251, src/scss/_components/_header.scss */
 .header__search form input.uk-search-input {
   height: 40px;
   padding-left: 58px !important;
   padding-right: 15px;
-  font-size: 20px;
+  font-size: 24px;
 }
 
-@media screen and (min-width: 320px) {
-  /* line 271, src/scss/_components/_header.scss */
+@media screen and (max-width: 767px) {
+  /* line 251, src/scss/_components/_header.scss */
   .header__search form input.uk-search-input {
-    font-size: -webkit-calc(20px + 4 * (100vw - 320px) / 447);
-    font-size: calc(20px + 4 * (100vw - 320px) / 447);
-  }
-}
-
-@media screen and (min-width: 767px) {
-  /* line 271, src/scss/_components/_header.scss */
-  .header__search form input.uk-search-input {
-    font-size: 24px;
+    font-size: 20px;
   }
 }
 
 /* line 88, src/scss/_utilities/_mixin.scss */
 .header__search form input.uk-search-input.placeholder {
   color: #4e4e4e;
-  font-size: 20px;
+  font-size: 24px;
 }
 
-@media screen and (min-width: 320px) {
+@media screen and (max-width: 767px) {
   /* line 88, src/scss/_utilities/_mixin.scss */
   .header__search form input.uk-search-input.placeholder {
-    font-size: -webkit-calc(20px + 4 * (100vw - 320px) / 447);
-    font-size: calc(20px + 4 * (100vw - 320px) / 447);
-  }
-}
-
-@media screen and (min-width: 767px) {
-  /* line 88, src/scss/_utilities/_mixin.scss */
-  .header__search form input.uk-search-input.placeholder {
-    font-size: 24px;
+    font-size: 20px;
   }
 }
 
 /* line 89, src/scss/_utilities/_mixin.scss */
 .header__search form input.uk-search-input:-moz-placeholder {
   color: #4e4e4e;
-  font-size: 20px;
+  font-size: 24px;
 }
 
-@media screen and (min-width: 320px) {
+@media screen and (max-width: 767px) {
   /* line 89, src/scss/_utilities/_mixin.scss */
   .header__search form input.uk-search-input:-moz-placeholder {
-    font-size: calc(20px + 4 * (100vw - 320px) / 447);
-  }
-}
-
-@media screen and (min-width: 767px) {
-  /* line 89, src/scss/_utilities/_mixin.scss */
-  .header__search form input.uk-search-input:-moz-placeholder {
-    font-size: 24px;
+    font-size: 20px;
   }
 }
 
 /* line 90, src/scss/_utilities/_mixin.scss */
 .header__search form input.uk-search-input::-moz-placeholder {
   color: #4e4e4e;
-  font-size: 20px;
+  font-size: 24px;
 }
 
-@media screen and (min-width: 320px) {
+@media screen and (max-width: 767px) {
   /* line 90, src/scss/_utilities/_mixin.scss */
   .header__search form input.uk-search-input::-moz-placeholder {
-    font-size: calc(20px + 4 * (100vw - 320px) / 447);
-  }
-}
-
-@media screen and (min-width: 767px) {
-  /* line 90, src/scss/_utilities/_mixin.scss */
-  .header__search form input.uk-search-input::-moz-placeholder {
-    font-size: 24px;
+    font-size: 20px;
   }
 }
 
 /* line 91, src/scss/_utilities/_mixin.scss */
 .header__search form input.uk-search-input:-ms-input-placeholder {
   color: #4e4e4e;
-  font-size: 20px;
+  font-size: 24px;
 }
 
-@media screen and (min-width: 320px) {
+@media screen and (max-width: 767px) {
   /* line 91, src/scss/_utilities/_mixin.scss */
   .header__search form input.uk-search-input:-ms-input-placeholder {
-    font-size: calc(20px + 4 * (100vw - 320px) / 447);
-  }
-}
-
-@media screen and (min-width: 767px) {
-  /* line 91, src/scss/_utilities/_mixin.scss */
-  .header__search form input.uk-search-input:-ms-input-placeholder {
-    font-size: 24px;
+    font-size: 20px;
   }
 }
 
 /* line 92, src/scss/_utilities/_mixin.scss */
 .header__search form input.uk-search-input::-webkit-input-placeholder {
   color: #4e4e4e;
-  font-size: 20px;
+  font-size: 24px;
 }
 
-@media screen and (min-width: 320px) {
+@media screen and (max-width: 767px) {
   /* line 92, src/scss/_utilities/_mixin.scss */
   .header__search form input.uk-search-input::-webkit-input-placeholder {
-    font-size: -webkit-calc(20px + 4 * (100vw - 320px) / 447);
-    font-size: calc(20px + 4 * (100vw - 320px) / 447);
-  }
-}
-
-@media screen and (min-width: 767px) {
-  /* line 92, src/scss/_utilities/_mixin.scss */
-  .header__search form input.uk-search-input::-webkit-input-placeholder {
-    font-size: 24px;
+    font-size: 20px;
   }
 }
 
 @media screen and (max-width: 1199px) {
-  /* line 271, src/scss/_components/_header.scss */
+  /* line 251, src/scss/_components/_header.scss */
   .header__search form input.uk-search-input {
     padding-left: 44px !important;
   }
 }
 
 @media screen and (max-width: 767px) {
-  /* line 271, src/scss/_components/_header.scss */
+  /* line 251, src/scss/_components/_header.scss */
   .header__search form input.uk-search-input {
     padding-right: 0;
   }
 }
 
-/* line 290, src/scss/_components/_header.scss */
+/* line 276, src/scss/_components/_header.scss */
 .header__date {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: end;
-  -webkit-justify-content: flex-end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
   width: 240px;
 }
 
 @media screen and (max-width: 1199px) {
-  /* line 290, src/scss/_components/_header.scss */
+  /* line 276, src/scss/_components/_header.scss */
   .header__date {
-    display: none;
+    display: none !important;
   }
 }
 
-/* line 299, src/scss/_components/_header.scss */
+/* line 282, src/scss/_components/_header.scss */
 .header__date p {
   font-size: 18px;
 }
 
-/* line 303, src/scss/_components/_header.scss */
+/* line 286, src/scss/_components/_header.scss */
 .header__date > span {
   width: 1px;
   height: 43px;
@@ -1329,48 +1157,48 @@ section .uk-button:hover {
 }
 
 @media screen and (max-width: 1199px) {
-  /* line 303, src/scss/_components/_header.scss */
+  /* line 286, src/scss/_components/_header.scss */
   .header__date > span {
     margin-left: 15px;
     margin-right: 15px;
   }
 }
 
-/* line 317, src/scss/_components/_header.scss */
+/* line 300, src/scss/_components/_header.scss */
 .header__dCenter p {
   font-size: 18px;
   padding-right: 9px;
 }
 
-/* line 324, src/scss/_components/_header.scss */
+/* line 307, src/scss/_components/_header.scss */
 .header__dCenter div a {
   margin-right: 7px;
 }
 
-/* line 327, src/scss/_components/_header.scss */
+/* line 310, src/scss/_components/_header.scss */
 .header__dCenter div a:last-of-type {
   margin-right: 0;
 }
 
-/* line 333, src/scss/_components/_header.scss */
+/* line 316, src/scss/_components/_header.scss */
 .header__dCenter div .icon-UK {
   width: 26px;
   height: 34px;
 }
 
-/* line 337, src/scss/_components/_header.scss */
+/* line 320, src/scss/_components/_header.scss */
 .header__dCenter div .icon-US {
   width: 27px;
   height: 34px;
 }
 
-/* line 341, src/scss/_components/_header.scss */
+/* line 324, src/scss/_components/_header.scss */
 .header__dCenter div .icon-USe {
   width: 27px;
   height: 35px;
 }
 
-/* line 345, src/scss/_components/_header.scss */
+/* line 328, src/scss/_components/_header.scss */
 .header__dCenter div .icon-CH {
   width: 28px;
   height: 35px;
@@ -1497,7 +1325,6 @@ section .uk-button:hover {
 .sidebar__wrapper {
   position: relative;
   min-height: 903px;
-  height: -webkit-calc(100% - 300px);
   height: calc(100% - 300px);
   padding-bottom: 100px;
 }
@@ -1512,14 +1339,6 @@ section .uk-button:hover {
 /* line 75, src/scss/_components/_sidebar.scss */
 .sidebar__profile {
   overflow: hidden;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
   height: 215px;
   border-bottom: 1px solid rgba(177, 176, 176, 0.3);
 }
@@ -1529,11 +1348,9 @@ section .uk-button:hover {
   .sidebar__profile {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-    -webkit-flex-direction: column;
         -ms-flex-direction: column;
             flex-direction: column;
     -webkit-box-pack: center;
-    -webkit-justify-content: center;
         -ms-flex-pack: center;
             justify-content: center;
     height: auto;
@@ -1543,7 +1360,7 @@ section .uk-button:hover {
   }
 }
 
-/* line 90, src/scss/_components/_sidebar.scss */
+/* line 88, src/scss/_components/_sidebar.scss */
 .sidebar__profile-left {
   width: 155px;
   padding-left: 35px;
@@ -1553,7 +1370,7 @@ section .uk-button:hover {
 }
 
 @media screen and (max-width: 1599px) {
-  /* line 90, src/scss/_components/_sidebar.scss */
+  /* line 88, src/scss/_components/_sidebar.scss */
   .sidebar__profile-left {
     width: 115px;
     padding-left: 20px;
@@ -1561,14 +1378,14 @@ section .uk-button:hover {
 }
 
 @media screen and (max-width: 1365px) {
-  /* line 90, src/scss/_components/_sidebar.scss */
+  /* line 88, src/scss/_components/_sidebar.scss */
   .sidebar__profile-left {
     width: 100%;
     padding-left: 0;
   }
 }
 
-/* line 103, src/scss/_components/_sidebar.scss */
+/* line 101, src/scss/_components/_sidebar.scss */
 .is-collapsed .sidebar__profile-left {
   padding-left: 15px;
   -webkit-transition: padding-left 0.3s ease-in-out;
@@ -1577,63 +1394,60 @@ section .uk-button:hover {
 }
 
 @media screen and (max-width: 1365px) {
-  /* line 103, src/scss/_components/_sidebar.scss */
+  /* line 101, src/scss/_components/_sidebar.scss */
   .is-collapsed .sidebar__profile-left {
     padding-left: 0;
   }
 }
 
-/* line 111, src/scss/_components/_sidebar.scss */
+/* line 109, src/scss/_components/_sidebar.scss */
 .is-collapsed-hover .sidebar__profile-left {
   padding-left: 35px;
 }
 
 @media screen and (max-width: 1599px) {
-  /* line 111, src/scss/_components/_sidebar.scss */
+  /* line 109, src/scss/_components/_sidebar.scss */
   .is-collapsed-hover .sidebar__profile-left {
     padding-left: 15px;
   }
 }
 
 @media screen and (max-width: 1365px) {
-  /* line 111, src/scss/_components/_sidebar.scss */
+  /* line 109, src/scss/_components/_sidebar.scss */
   .is-collapsed-hover .sidebar__profile-left {
     width: 100%;
     padding-left: 0;
   }
 }
 
-/* line 123, src/scss/_components/_sidebar.scss */
+/* line 121, src/scss/_components/_sidebar.scss */
 .sidebar__profile-right {
   width: 100%;
-  max-width: -webkit-calc(100% - 155px);
   max-width: calc(100% - 155px);
 }
 
 @media screen and (max-width: 1599px) {
-  /* line 123, src/scss/_components/_sidebar.scss */
+  /* line 121, src/scss/_components/_sidebar.scss */
   .sidebar__profile-right {
-    max-width: -webkit-calc(100% - 115px);
     max-width: calc(100% - 115px);
   }
 }
 
 @media screen and (max-width: 1365px) {
-  /* line 123, src/scss/_components/_sidebar.scss */
+  /* line 121, src/scss/_components/_sidebar.scss */
   .sidebar__profile-right {
     max-width: 100%;
     text-align: center;
   }
 }
 
-/* line 135, src/scss/_components/_sidebar.scss */
+/* line 133, src/scss/_components/_sidebar.scss */
 .sidebar__profile-img {
   overflow: hidden;
   position: relative;
   width: 95px;
   height: 95px;
-  -webkit-border-radius: 100%;
-          border-radius: 100%;
+  border-radius: 100%;
   border: 1px solid #fff;
   -webkit-transition: width 0.3s ease-in-out, height 0.3s ease-in-out;
   -o-transition: width 0.3s ease-in-out, height 0.3s ease-in-out;
@@ -1641,7 +1455,7 @@ section .uk-button:hover {
 }
 
 @media screen and (max-width: 1599px) {
-  /* line 135, src/scss/_components/_sidebar.scss */
+  /* line 133, src/scss/_components/_sidebar.scss */
   .sidebar__profile-img {
     width: 85px;
     height: 85px;
@@ -1650,7 +1464,7 @@ section .uk-button:hover {
 }
 
 @media screen and (max-width: 1365px) {
-  /* line 135, src/scss/_components/_sidebar.scss */
+  /* line 133, src/scss/_components/_sidebar.scss */
   .sidebar__profile-img {
     width: 45px;
     height: 45px;
@@ -1660,7 +1474,7 @@ section .uk-button:hover {
 }
 
 @media screen and (max-width: 767px) {
-  /* line 135, src/scss/_components/_sidebar.scss */
+  /* line 133, src/scss/_components/_sidebar.scss */
   .sidebar__profile-img {
     width: 85px;
     height: 85px;
@@ -1668,7 +1482,7 @@ section .uk-button:hover {
 }
 
 @media screen and (max-width: 1365px) {
-  /* line 159, src/scss/_components/_sidebar.scss */
+  /* line 157, src/scss/_components/_sidebar.scss */
   .is-collapsed .sidebar__profile-img {
     width: 85px;
     height: 85px;
@@ -1679,7 +1493,7 @@ section .uk-button:hover {
 }
 
 @media screen and (max-width: 1365px) {
-  /* line 167, src/scss/_components/_sidebar.scss */
+  /* line 165, src/scss/_components/_sidebar.scss */
   .is-collapsed-hover .sidebar__profile-img {
     width: 85px;
     height: 85px;
@@ -1689,7 +1503,7 @@ section .uk-button:hover {
   }
 }
 
-/* line 180, src/scss/_components/_sidebar.scss */
+/* line 178, src/scss/_components/_sidebar.scss */
 .sidebar__profile-name {
   white-space: nowrap;
   margin: 0;
@@ -1701,35 +1515,34 @@ section .uk-button:hover {
 }
 
 @media screen and (min-width: 320px) {
-  /* line 180, src/scss/_components/_sidebar.scss */
+  /* line 178, src/scss/_components/_sidebar.scss */
   .sidebar__profile-name {
-    font-size: -webkit-calc(20px + 4 * (100vw - 320px) / 1280);
     font-size: calc(20px + 4 * (100vw - 320px) / 1280);
   }
 }
 
 @media screen and (min-width: 1600px) {
-  /* line 180, src/scss/_components/_sidebar.scss */
+  /* line 178, src/scss/_components/_sidebar.scss */
   .sidebar__profile-name {
     font-size: 24px;
   }
 }
 
 @media screen and (max-width: 1599px) {
-  /* line 180, src/scss/_components/_sidebar.scss */
+  /* line 178, src/scss/_components/_sidebar.scss */
   .sidebar__profile-name {
     opacity: 0;
   }
 }
 
 @media screen and (max-width: 767px) {
-  /* line 180, src/scss/_components/_sidebar.scss */
+  /* line 178, src/scss/_components/_sidebar.scss */
   .sidebar__profile-name {
     opacity: 1;
   }
 }
 
-/* line 194, src/scss/_components/_sidebar.scss */
+/* line 192, src/scss/_components/_sidebar.scss */
 .is-collapsed .sidebar__profile-name {
   opacity: 0;
   -webkit-transition: opacity 0.3s ease-in-out;
@@ -1738,37 +1551,28 @@ section .uk-button:hover {
 }
 
 @media screen and (max-width: 1599px) {
-  /* line 194, src/scss/_components/_sidebar.scss */
+  /* line 192, src/scss/_components/_sidebar.scss */
   .is-collapsed .sidebar__profile-name {
     opacity: 1;
   }
 }
 
-/* line 202, src/scss/_components/_sidebar.scss */
+/* line 200, src/scss/_components/_sidebar.scss */
 .is-collapsed-hover .sidebar__profile-name {
   opacity: 1;
 }
 
-/* line 210, src/scss/_components/_sidebar.scss */
+/* line 208, src/scss/_components/_sidebar.scss */
 .sidebar__navigation {
   overflow: hidden;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -webkit-flex-direction: column;
-      -ms-flex-direction: column;
-          flex-direction: column;
 }
 
-/* line 215, src/scss/_components/_sidebar.scss */
+/* line 211, src/scss/_components/_sidebar.scss */
 .sidebar__navigation ul {
   margin: 0;
 }
 
-/* line 218, src/scss/_components/_sidebar.scss */
+/* line 214, src/scss/_components/_sidebar.scss */
 .sidebar__navigation ul li {
   margin: 0 !important;
   background-color: transparent;
@@ -1777,7 +1581,7 @@ section .uk-button:hover {
   transition: padding-bottom 0.3s ease-in-out, border-bottom 0.3s ease-in-out, background-color 0.3s ease-in-out;
 }
 
-/* line 223, src/scss/_components/_sidebar.scss */
+/* line 219, src/scss/_components/_sidebar.scss */
 .sidebar__navigation ul li.uk-open {
   padding-bottom: 34px;
   border-bottom: 1px solid rgba(177, 176, 176, 0.3);
@@ -1787,7 +1591,7 @@ section .uk-button:hover {
   transition: padding-bottom 0.3s ease-in-out, border-bottom 0.3s ease-in-out, background-color 0.3s ease-in-out;
 }
 
-/* line 229, src/scss/_components/_sidebar.scss */
+/* line 225, src/scss/_components/_sidebar.scss */
 .sidebar__navigation ul li.uk-open > .sidebar__navigation-btn {
   border-color: transparent;
   -webkit-transition: border-color 0.3s ease-in-out;
@@ -1795,7 +1599,7 @@ section .uk-button:hover {
   transition: border-color 0.3s ease-in-out;
 }
 
-/* line 234, src/scss/_components/_sidebar.scss */
+/* line 230, src/scss/_components/_sidebar.scss */
 .sidebar__navigation ul li.uk-open > .sidebar__navigation-btn div span,
 .sidebar__navigation ul li.uk-open > .sidebar__navigation-btn div p {
   color: #00a6d9;
@@ -1804,7 +1608,7 @@ section .uk-button:hover {
   transition: color 0.3s ease-in-out;
 }
 
-/* line 242, src/scss/_components/_sidebar.scss */
+/* line 238, src/scss/_components/_sidebar.scss */
 .sidebar__navigation ul li.uk-open > .sidebar__navigation-btn div:nth-of-type(3) span svg {
   -webkit-transform: rotate(-180deg);
       -ms-transform: rotate(-180deg);
@@ -1816,50 +1620,20 @@ section .uk-button:hover {
   transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
 }
 
-/* line 255, src/scss/_components/_sidebar.scss */
+/* line 251, src/scss/_components/_sidebar.scss */
 .sidebar__navigation .uk-accordion-title:before {
   display: none;
 }
 
-/* line 260, src/scss/_components/_sidebar.scss */
-.sidebar__navigation .uk-accordion-content {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -webkit-flex-direction: column;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  margin-top: 0;
-}
-
-/* line 266, src/scss/_components/_sidebar.scss */
+/* line 256, src/scss/_components/_sidebar.scss */
 .sidebar__navigation .uk-accordion-title, .sidebar__navigation-btn {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
   -webkit-transition: border-color 0.3s ease-in-out, background-color 0.3s ease-in-out;
   -o-transition: border-color 0.3s ease-in-out, background-color 0.3s ease-in-out;
   transition: border-color 0.3s ease-in-out, background-color 0.3s ease-in-out;
 }
 
-/* line 273, src/scss/_components/_sidebar.scss */
+/* line 261, src/scss/_components/_sidebar.scss */
 .sidebar__navigation .uk-accordion-title > div:nth-of-type(1), .sidebar__navigation-btn > div:nth-of-type(1) {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   width: 100px;
   -webkit-transition: width 0.3s ease-in-out;
   -o-transition: width 0.3s ease-in-out;
@@ -1867,13 +1641,13 @@ section .uk-button:hover {
 }
 
 @media screen and (max-width: 1599px) {
-  /* line 273, src/scss/_components/_sidebar.scss */
+  /* line 261, src/scss/_components/_sidebar.scss */
   .sidebar__navigation .uk-accordion-title > div:nth-of-type(1), .sidebar__navigation-btn > div:nth-of-type(1) {
     width: 125px;
   }
 }
 
-/* line 282, src/scss/_components/_sidebar.scss */
+/* line 268, src/scss/_components/_sidebar.scss */
 .is-collapsed .sidebar__navigation .uk-accordion-title > div:nth-of-type(1), .is-collapsed .sidebar__navigation-btn > div:nth-of-type(1) {
   width: 125px;
   -webkit-transition: width 0.3s ease-in-out;
@@ -1882,36 +1656,24 @@ section .uk-button:hover {
 }
 
 @media screen and (max-width: 1599px) {
-  /* line 282, src/scss/_components/_sidebar.scss */
+  /* line 268, src/scss/_components/_sidebar.scss */
   .is-collapsed .sidebar__navigation .uk-accordion-title > div:nth-of-type(1), .is-collapsed .sidebar__navigation-btn > div:nth-of-type(1) {
     width: 100px;
   }
 }
 
-/* line 290, src/scss/_components/_sidebar.scss */
+/* line 276, src/scss/_components/_sidebar.scss */
 .is-collapsed-hover .sidebar__navigation .uk-accordion-title > div:nth-of-type(1), .is-collapsed-hover .sidebar__navigation-btn > div:nth-of-type(1) {
   width: 100px;
 }
 
-/* line 295, src/scss/_components/_sidebar.scss */
+/* line 281, src/scss/_components/_sidebar.scss */
 .sidebar__navigation .uk-accordion-title > div:nth-of-type(2), .sidebar__navigation-btn > div:nth-of-type(2) {
   width: 100%;
 }
 
-/* line 299, src/scss/_components/_sidebar.scss */
+/* line 285, src/scss/_components/_sidebar.scss */
 .sidebar__navigation .uk-accordion-title > div:nth-of-type(3), .sidebar__navigation-btn > div:nth-of-type(3) {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   width: 66px;
   -webkit-transition: opacity 0.3s ease-in-out, width 0.3s ease-in-out;
   -o-transition: opacity 0.3s ease-in-out, width 0.3s ease-in-out;
@@ -1919,14 +1681,14 @@ section .uk-button:hover {
 }
 
 @media screen and (max-width: 1599px) {
-  /* line 299, src/scss/_components/_sidebar.scss */
+  /* line 285, src/scss/_components/_sidebar.scss */
   .sidebar__navigation .uk-accordion-title > div:nth-of-type(3), .sidebar__navigation-btn > div:nth-of-type(3) {
     opacity: 0;
     width: 0;
   }
 }
 
-/* line 310, src/scss/_components/_sidebar.scss */
+/* line 293, src/scss/_components/_sidebar.scss */
 .is-collapsed .sidebar__navigation .uk-accordion-title > div:nth-of-type(3), .is-collapsed .sidebar__navigation-btn > div:nth-of-type(3) {
   opacity: 0;
   width: 0;
@@ -1936,20 +1698,20 @@ section .uk-button:hover {
 }
 
 @media screen and (max-width: 1599px) {
-  /* line 310, src/scss/_components/_sidebar.scss */
+  /* line 293, src/scss/_components/_sidebar.scss */
   .is-collapsed .sidebar__navigation .uk-accordion-title > div:nth-of-type(3), .is-collapsed .sidebar__navigation-btn > div:nth-of-type(3) {
     opacity: 1;
     width: 66px;
   }
 }
 
-/* line 320, src/scss/_components/_sidebar.scss */
+/* line 303, src/scss/_components/_sidebar.scss */
 .is-collapsed-hover .sidebar__navigation .uk-accordion-title > div:nth-of-type(3), .is-collapsed-hover .sidebar__navigation-btn > div:nth-of-type(3) {
   opacity: 1;
   width: 66px;
 }
 
-/* line 326, src/scss/_components/_sidebar.scss */
+/* line 309, src/scss/_components/_sidebar.scss */
 .sidebar__navigation .uk-accordion-title > div:nth-of-type(3) span svg, .sidebar__navigation-btn > div:nth-of-type(3) span svg {
   fill: #b1b0b0;
   -webkit-transition: -webkit-transform 0.3s ease-in-out;
@@ -1959,13 +1721,13 @@ section .uk-button:hover {
   transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
 }
 
-/* line 334, src/scss/_components/_sidebar.scss */
+/* line 317, src/scss/_components/_sidebar.scss */
 .sidebar__navigation .uk-accordion-title--external, .sidebar__navigation-btn--external {
   min-height: 84px;
   border-bottom: 1px solid rgba(177, 176, 176, 0.3);
 }
 
-/* line 338, src/scss/_components/_sidebar.scss */
+/* line 321, src/scss/_components/_sidebar.scss */
 .sidebar__navigation .uk-accordion-title--external:hover, .sidebar__navigation-btn--external:hover {
   text-decoration: none;
   background-color: #3f3f3f;
@@ -1974,7 +1736,7 @@ section .uk-button:hover {
   transition: background-color 0.3s ease-in-out;
 }
 
-/* line 344, src/scss/_components/_sidebar.scss */
+/* line 327, src/scss/_components/_sidebar.scss */
 .sidebar__navigation .uk-accordion-title--external:hover > div .icon-font,
 .sidebar__navigation .uk-accordion-title--external:hover > div span,
 .sidebar__navigation .uk-accordion-title--external:hover > div p, .sidebar__navigation-btn--external:hover > div .icon-font,
@@ -1987,30 +1749,29 @@ section .uk-button:hover {
 }
 
 @media screen and (max-width: 1599px) {
-  /* line 355, src/scss/_components/_sidebar.scss */
+  /* line 338, src/scss/_components/_sidebar.scss */
   .is-collapsed .sidebar__navigation .uk-accordion-title--external > div:nth-of-type(1), .is-collapsed .sidebar__navigation-btn--external > div:nth-of-type(1) {
     width: 100px;
   }
 }
 
-/* line 361, src/scss/_components/_sidebar.scss */
+/* line 344, src/scss/_components/_sidebar.scss */
 .sidebar__navigation .uk-accordion-title--external > div:nth-of-type(2), .sidebar__navigation-btn--external > div:nth-of-type(2) {
-  max-width: -webkit-calc(100% - (100px + 66px));
   max-width: calc(100% - (100px + 66px));
 }
 
-/* line 367, src/scss/_components/_sidebar.scss */
+/* line 350, src/scss/_components/_sidebar.scss */
 .sidebar__navigation .uk-accordion-title--internal, .sidebar__navigation-btn--internal {
   padding-top: 17px;
   padding-bottom: 17px;
 }
 
-/* line 371, src/scss/_components/_sidebar.scss */
+/* line 354, src/scss/_components/_sidebar.scss */
 .sidebar__navigation .uk-accordion-title--internal:hover, .sidebar__navigation-btn--internal:hover {
   text-decoration: none;
 }
 
-/* line 375, src/scss/_components/_sidebar.scss */
+/* line 358, src/scss/_components/_sidebar.scss */
 .sidebar__navigation .uk-accordion-title--internal:hover > div span,
 .sidebar__navigation .uk-accordion-title--internal:hover > div p, .sidebar__navigation-btn--internal:hover > div span,
 .sidebar__navigation-btn--internal:hover > div p {
@@ -2021,41 +1782,39 @@ section .uk-button:hover {
 }
 
 @media screen and (max-width: 1599px) {
-  /* line 385, src/scss/_components/_sidebar.scss */
+  /* line 368, src/scss/_components/_sidebar.scss */
   .is-collapsed .sidebar__navigation .uk-accordion-title--internal > div:nth-of-type(1), .is-collapsed .sidebar__navigation-btn--internal > div:nth-of-type(1) {
     width: 40px;
   }
 }
 
 @media screen and (max-width: 1599px) {
-  /* line 391, src/scss/_components/_sidebar.scss */
+  /* line 374, src/scss/_components/_sidebar.scss */
   .is-collapsed-hover .sidebar__navigation .uk-accordion-title--internal > div:nth-of-type(1), .is-collapsed-hover .sidebar__navigation-btn--internal > div:nth-of-type(1) {
     width: 40px;
   }
 }
 
-/* line 397, src/scss/_components/_sidebar.scss */
+/* line 380, src/scss/_components/_sidebar.scss */
 .sidebar__navigation .uk-accordion-title--internal > div:nth-of-type(2), .sidebar__navigation-btn--internal > div:nth-of-type(2) {
-  max-width: -webkit-calc(100% - 100px);
   max-width: calc(100% - 100px);
 }
 
 @media screen and (max-width: 1599px) {
-  /* line 397, src/scss/_components/_sidebar.scss */
+  /* line 380, src/scss/_components/_sidebar.scss */
   .sidebar__navigation .uk-accordion-title--internal > div:nth-of-type(2), .sidebar__navigation-btn--internal > div:nth-of-type(2) {
-    max-width: -webkit-calc(100% - 40px);
     max-width: calc(100% - 40px);
   }
 }
 
-/* line 405, src/scss/_components/_sidebar.scss */
+/* line 388, src/scss/_components/_sidebar.scss */
 .sidebar__navigation .uk-accordion-title--internal p, .sidebar__navigation-btn--internal p {
   overflow: hidden;
   -o-text-overflow: ellipsis;
      text-overflow: ellipsis;
 }
 
-/* line 411, src/scss/_components/_sidebar.scss */
+/* line 394, src/scss/_components/_sidebar.scss */
 .sidebar__navigation .uk-accordion-title p, .sidebar__navigation-btn p {
   white-space: nowrap;
   margin: 0;
@@ -2068,28 +1827,27 @@ section .uk-button:hover {
 }
 
 @media screen and (min-width: 320px) {
-  /* line 411, src/scss/_components/_sidebar.scss */
+  /* line 394, src/scss/_components/_sidebar.scss */
   .sidebar__navigation .uk-accordion-title p, .sidebar__navigation-btn p {
-    font-size: -webkit-calc(18px + 6 * (100vw - 320px) / 1280);
     font-size: calc(18px + 6 * (100vw - 320px) / 1280);
   }
 }
 
 @media screen and (min-width: 1600px) {
-  /* line 411, src/scss/_components/_sidebar.scss */
+  /* line 394, src/scss/_components/_sidebar.scss */
   .sidebar__navigation .uk-accordion-title p, .sidebar__navigation-btn p {
     font-size: 24px;
   }
 }
 
 @media screen and (max-width: 1599px) {
-  /* line 411, src/scss/_components/_sidebar.scss */
+  /* line 394, src/scss/_components/_sidebar.scss */
   .sidebar__navigation .uk-accordion-title p, .sidebar__navigation-btn p {
     opacity: 0;
   }
 }
 
-/* line 422, src/scss/_components/_sidebar.scss */
+/* line 405, src/scss/_components/_sidebar.scss */
 .is-collapsed .sidebar__navigation .uk-accordion-title p, .is-collapsed .sidebar__navigation-btn p {
   opacity: 0;
   -webkit-transition: opacity 0.3s ease-in-out;
@@ -2098,18 +1856,18 @@ section .uk-button:hover {
 }
 
 @media screen and (max-width: 1599px) {
-  /* line 422, src/scss/_components/_sidebar.scss */
+  /* line 405, src/scss/_components/_sidebar.scss */
   .is-collapsed .sidebar__navigation .uk-accordion-title p, .is-collapsed .sidebar__navigation-btn p {
     opacity: 1;
   }
 }
 
-/* line 430, src/scss/_components/_sidebar.scss */
+/* line 413, src/scss/_components/_sidebar.scss */
 .is-collapsed-hover .sidebar__navigation .uk-accordion-title p, .is-collapsed-hover .sidebar__navigation-btn p {
   opacity: 1;
 }
 
-/* line 435, src/scss/_components/_sidebar.scss */
+/* line 418, src/scss/_components/_sidebar.scss */
 .sidebar__navigation .uk-accordion-title .icon-font, .sidebar__navigation-btn .icon-font {
   color: #ffffff;
   -webkit-transition: color 0.3s ease-in-out;
@@ -2117,27 +1875,27 @@ section .uk-button:hover {
   transition: color 0.3s ease-in-out;
 }
 
-/* line 439, src/scss/_components/_sidebar.scss */
+/* line 422, src/scss/_components/_sidebar.scss */
 .sidebar__navigation .uk-accordion-title .icon-font.icon-account, .sidebar__navigation-btn .icon-font.icon-account {
   font-size: 22px;
 }
 
-/* line 442, src/scss/_components/_sidebar.scss */
+/* line 425, src/scss/_components/_sidebar.scss */
 .sidebar__navigation .uk-accordion-title .icon-font.icon-support, .sidebar__navigation-btn .icon-font.icon-support {
   font-size: 22px;
 }
 
-/* line 445, src/scss/_components/_sidebar.scss */
+/* line 428, src/scss/_components/_sidebar.scss */
 .sidebar__navigation .uk-accordion-title .icon-font.icon-monitors, .sidebar__navigation-btn .icon-font.icon-monitors {
   font-size: 22px;
 }
 
-/* line 448, src/scss/_components/_sidebar.scss */
+/* line 431, src/scss/_components/_sidebar.scss */
 .sidebar__navigation .uk-accordion-title .icon-font.icon-reports, .sidebar__navigation-btn .icon-font.icon-reports {
   font-size: 18px;
 }
 
-/* line 453, src/scss/_components/_sidebar.scss */
+/* line 436, src/scss/_components/_sidebar.scss */
 .sidebar__navigation .uk-accordion-title span, .sidebar__navigation-btn span {
   color: #ffffff;
   -webkit-transition: color 0.3s ease-in-out;
@@ -2145,47 +1903,47 @@ section .uk-button:hover {
   transition: color 0.3s ease-in-out;
 }
 
-/* line 457, src/scss/_components/_sidebar.scss */
+/* line 440, src/scss/_components/_sidebar.scss */
 .sidebar__navigation .uk-accordion-title span[uk-icon="thumbnails"] svg, .sidebar__navigation-btn span[uk-icon="thumbnails"] svg {
   width: 25px;
   height: 25px;
 }
 
-/* line 463, src/scss/_components/_sidebar.scss */
+/* line 446, src/scss/_components/_sidebar.scss */
 .sidebar__navigation .uk-accordion-title span[uk-icon="users"] svg, .sidebar__navigation-btn span[uk-icon="users"] svg {
   width: 30px;
   height: 28px;
 }
 
-/* line 469, src/scss/_components/_sidebar.scss */
+/* line 452, src/scss/_components/_sidebar.scss */
 .sidebar__navigation .uk-accordion-title span[uk-icon="receiver"] svg, .sidebar__navigation-btn span[uk-icon="receiver"] svg {
   width: 25px;
 }
 
-/* line 474, src/scss/_components/_sidebar.scss */
+/* line 457, src/scss/_components/_sidebar.scss */
 .sidebar__navigation .uk-accordion-title span[uk-icon="cog"] svg, .sidebar__navigation-btn span[uk-icon="cog"] svg {
   width: 24px;
   height: 24px;
 }
 
-/* line 480, src/scss/_components/_sidebar.scss */
+/* line 463, src/scss/_components/_sidebar.scss */
 .sidebar__navigation .uk-accordion-title span[uk-icon="sign-out"] svg, .sidebar__navigation-btn span[uk-icon="sign-out"] svg {
   width: 23px;
   height: 25px;
 }
 
-/* line 486, src/scss/_components/_sidebar.scss */
+/* line 469, src/scss/_components/_sidebar.scss */
 .sidebar__navigation .uk-accordion-title span[uk-icon="world"] svg, .sidebar__navigation-btn span[uk-icon="world"] svg {
   width: 25px;
   height: 25px;
 }
 
-/* line 492, src/scss/_components/_sidebar.scss */
+/* line 475, src/scss/_components/_sidebar.scss */
 .sidebar__navigation .uk-accordion-title span[uk-icon="file-text"] svg, .sidebar__navigation-btn span[uk-icon="file-text"] svg {
   width: 26px;
 }
 
-/* line 501, src/scss/_components/_sidebar.scss */
+/* line 484, src/scss/_components/_sidebar.scss */
 .sidebar__footer {
   white-space: nowrap;
   width: 100%;
@@ -2194,7 +1952,7 @@ section .uk-button:hover {
 }
 
 @media screen and (max-width: 1599px) {
-  /* line 507, src/scss/_components/_sidebar.scss */
+  /* line 490, src/scss/_components/_sidebar.scss */
   .sidebar__footer .sidebar__footer-top,
   .sidebar__footer .sidebar__footer-bottom {
     opacity: 0;
@@ -2205,14 +1963,14 @@ section .uk-button:hover {
 }
 
 @media screen and (max-width: 767px) {
-  /* line 514, src/scss/_components/_sidebar.scss */
+  /* line 497, src/scss/_components/_sidebar.scss */
   .sidebar__footer .sidebar__footer-top,
   .sidebar__footer .sidebar__footer-bottom {
     opacity: 1 !important;
   }
 }
 
-/* line 521, src/scss/_components/_sidebar.scss */
+/* line 504, src/scss/_components/_sidebar.scss */
 .is-collapsed .sidebar__footer .sidebar__footer-top,
 .is-collapsed .sidebar__footer .sidebar__footer-bottom {
   opacity: 0;
@@ -2221,7 +1979,7 @@ section .uk-button:hover {
   transition: opacity 0.3s ease-in-out;
 }
 
-/* line 529, src/scss/_components/_sidebar.scss */
+/* line 512, src/scss/_components/_sidebar.scss */
 .is-collapsed-hover .sidebar__footer .sidebar__footer-top,
 .is-collapsed-hover .sidebar__footer .sidebar__footer-bottom {
   opacity: 1;
@@ -2230,7 +1988,7 @@ section .uk-button:hover {
   transition: opacity 0.3s ease-in-out;
 }
 
-/* line 536, src/scss/_components/_sidebar.scss */
+/* line 519, src/scss/_components/_sidebar.scss */
 .sidebar__footer-top {
   height: 81px;
   border-bottom: 4px solid #0399c6;
@@ -2239,7 +1997,7 @@ section .uk-button:hover {
   transition: opacity 0.3s ease-in-out;
 }
 
-/* line 542, src/scss/_components/_sidebar.scss */
+/* line 525, src/scss/_components/_sidebar.scss */
 .sidebar__footer-bottom {
   padding: 40px 40px 0;
   -webkit-transition: opacity 0.3s ease-in-out;
@@ -2248,27 +2006,27 @@ section .uk-button:hover {
 }
 
 @media screen and (max-width: 1365px) {
-  /* line 542, src/scss/_components/_sidebar.scss */
+  /* line 525, src/scss/_components/_sidebar.scss */
   .sidebar__footer-bottom {
     padding: 20px 20px 0;
   }
 }
 
 @media screen and (max-width: 767px) {
-  /* line 542, src/scss/_components/_sidebar.scss */
+  /* line 525, src/scss/_components/_sidebar.scss */
   .sidebar__footer-bottom {
     padding: 15px 15px 0 0;
   }
 }
 
-/* line 552, src/scss/_components/_sidebar.scss */
+/* line 535, src/scss/_components/_sidebar.scss */
 .sidebar__footer-bottom > span {
   font-size: 14px;
   color: rgba(255, 255, 255, 0.702);
 }
 
 @media screen and (max-width: 767px) {
-  /* line 552, src/scss/_components/_sidebar.scss */
+  /* line 535, src/scss/_components/_sidebar.scss */
   .sidebar__footer-bottom > span {
     display: block;
     width: 100%;
@@ -2280,7 +2038,7 @@ section .uk-button:hover {
   }
 }
 
-/* line 567, src/scss/_components/_sidebar.scss */
+/* line 550, src/scss/_components/_sidebar.scss */
 .sidebar__footer-btn {
   width: 40px;
   height: 40px;
@@ -2293,7 +2051,7 @@ section .uk-button:hover {
   transition: background-color 0.3s ease-in-out;
 }
 
-/* line 576, src/scss/_components/_sidebar.scss */
+/* line 559, src/scss/_components/_sidebar.scss */
 .sidebar__footer-btn:hover {
   color: #ffffff;
   background-color: #026b8b;
@@ -2302,7 +2060,7 @@ section .uk-button:hover {
   transition: background-color 0.3s ease-in-out;
 }
 
-/* line 583, src/scss/_components/_sidebar.scss */
+/* line 566, src/scss/_components/_sidebar.scss */
 .sidebar__footer-link {
   font-size: 24px;
   color: rgba(255, 255, 255, 0.702);
@@ -2313,7 +2071,7 @@ section .uk-button:hover {
   transition: color 0.3s ease-in-out;
 }
 
-/* line 590, src/scss/_components/_sidebar.scss */
+/* line 573, src/scss/_components/_sidebar.scss */
 .sidebar__footer-link:hover {
   color: #026b8b;
   -webkit-transition: color 0.3s ease-in-out;
@@ -2321,7 +2079,7 @@ section .uk-button:hover {
   transition: color 0.3s ease-in-out;
 }
 
-/* line 594, src/scss/_components/_sidebar.scss */
+/* line 577, src/scss/_components/_sidebar.scss */
 .sidebar__footer-link:hover span {
   color: #026b8b;
   -webkit-transition: color 0.3s ease-in-out;
@@ -2329,7 +2087,7 @@ section .uk-button:hover {
   transition: color 0.3s ease-in-out;
 }
 
-/* line 600, src/scss/_components/_sidebar.scss */
+/* line 583, src/scss/_components/_sidebar.scss */
 .sidebar__footer-link span {
   color: #ffffff;
   -webkit-transition: color 0.3s ease-in-out;
@@ -2346,7 +2104,6 @@ section .uk-button:hover {
 
 /* line 8, src/scss/_components/_homepage/_login.scss */
 .login__box {
-  min-height: -webkit-calc(100vh - 100px);
   min-height: calc(100vh - 100px);
   text-align: center;
   font-size: 0;
@@ -2358,7 +2115,6 @@ section .uk-button:hover {
     content: '';
     display: inline-block;
     vertical-align: middle;
-    min-height: -webkit-calc(100vh - 100px);
     min-height: calc(100vh - 100px);
   }
 }
@@ -2374,14 +2130,6 @@ section .uk-button:hover {
 
 /* line 31, src/scss/_components/_homepage/_login.scss */
 .login__body {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
   position: relative;
   height: 811px;
 }
@@ -2390,14 +2138,13 @@ section .uk-button:hover {
   /* line 31, src/scss/_components/_homepage/_login.scss */
   .login__body {
     height: auto;
-    -webkit-flex-wrap: wrap;
-        -ms-flex-wrap: wrap;
-            flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     padding-bottom: 30px;
   }
 }
 
-/* line 42, src/scss/_components/_homepage/_login.scss */
+/* line 40, src/scss/_components/_homepage/_login.scss */
 .login__body:before {
   content: '';
   z-index: 0;
@@ -2405,92 +2152,89 @@ section .uk-button:hover {
   top: 60px;
   left: 0;
   width: 100%;
-  height: -webkit-calc(100% - 120px);
   height: calc(100% - 120px);
   background-color: #4e4e4e;
 }
 
 @media screen and (max-width: 767px) {
-  /* line 42, src/scss/_components/_homepage/_login.scss */
+  /* line 40, src/scss/_components/_homepage/_login.scss */
   .login__body:before {
     top: 0;
     height: 100%;
   }
 }
 
-/* line 57, src/scss/_components/_homepage/_login.scss */
+/* line 55, src/scss/_components/_homepage/_login.scss */
 .login__body-left, .login__body-right {
   z-index: 2;
   position: relative;
   height: 100%;
 }
 
-/* line 63, src/scss/_components/_homepage/_login.scss */
+/* line 61, src/scss/_components/_homepage/_login.scss */
 .login__body-left p,
 .login__body-left h1, .login__body-right p,
 .login__body-right h1 {
   margin: 0;
 }
 
-/* line 69, src/scss/_components/_homepage/_login.scss */
+/* line 67, src/scss/_components/_homepage/_login.scss */
 .login__body-left {
+  width: 509px;
   padding-top: 60px;
   padding-bottom: 90px;
   padding-left: 103px;
-  width: 509px;
 }
 
 @media screen and (max-width: 991px) {
-  /* line 69, src/scss/_components/_homepage/_login.scss */
+  /* line 67, src/scss/_components/_homepage/_login.scss */
   .login__body-left {
-    padding-left: 30px;
     width: 350px;
+    padding-left: 30px;
   }
 }
 
 @media screen and (max-width: 767px) {
-  /* line 69, src/scss/_components/_homepage/_login.scss */
+  /* line 67, src/scss/_components/_homepage/_login.scss */
   .login__body-left {
     width: 100%;
     padding: 0 15px;
   }
-  /* line 82, src/scss/_components/_homepage/_login.scss */
+  /* line 80, src/scss/_components/_homepage/_login.scss */
   .login__body-left .logo,
   .login__body-left .login__site {
     display: none;
   }
 }
 
-/* line 89, src/scss/_components/_homepage/_login.scss */
+/* line 87, src/scss/_components/_homepage/_login.scss */
 .login__body-right {
   width: 100%;
-  max-width: -webkit-calc(100% - 509px);
   max-width: calc(100% - 509px);
 }
 
 @media screen and (max-width: 991px) {
-  /* line 89, src/scss/_components/_homepage/_login.scss */
+  /* line 87, src/scss/_components/_homepage/_login.scss */
   .login__body-right {
-    max-width: -webkit-calc(100% - 350px);
     max-width: calc(100% - 350px);
   }
 }
 
 @media screen and (max-width: 767px) {
-  /* line 89, src/scss/_components/_homepage/_login.scss */
+  /* line 87, src/scss/_components/_homepage/_login.scss */
   .login__body-right {
     max-width: 100%;
   }
 }
 
-/* line 99, src/scss/_components/_homepage/_login.scss */
+/* line 97, src/scss/_components/_homepage/_login.scss */
 .login__body-right .logo,
 .login__body-right .login__site {
   display: none;
 }
 
 @media screen and (max-width: 767px) {
-  /* line 99, src/scss/_components/_homepage/_login.scss */
+  /* line 97, src/scss/_components/_homepage/_login.scss */
   .login__body-right .logo,
   .login__body-right .login__site {
     display: block;
@@ -2498,159 +2242,81 @@ section .uk-button:hover {
 }
 
 @media screen and (max-width: 767px) {
-  /* line 109, src/scss/_components/_homepage/_login.scss */
+  /* line 107, src/scss/_components/_homepage/_login.scss */
   .login__title, .login__text, .login__site {
     text-align: center;
   }
 }
 
-/* line 117, src/scss/_components/_homepage/_login.scss */
+/* line 115, src/scss/_components/_homepage/_login.scss */
 .login__title {
+  padding-top: 119px;
+  padding-bottom: 47px;
   color: #fff;
   line-height: 1.10417;
-  padding-top: 50px;
-  padding-bottom: 30px;
-  font-size: 38px;
-}
-
-@media screen and (min-width: 320px) {
-  /* line 117, src/scss/_components/_homepage/_login.scss */
-  .login__title {
-    padding-top: -webkit-calc(50px + 69 * (100vw - 320px) / 447);
-    padding-top: calc(50px + 69 * (100vw - 320px) / 447);
-  }
-}
-
-@media screen and (min-width: 767px) {
-  /* line 117, src/scss/_components/_homepage/_login.scss */
-  .login__title {
-    padding-top: 119px;
-  }
-}
-
-@media screen and (min-width: 320px) {
-  /* line 117, src/scss/_components/_homepage/_login.scss */
-  .login__title {
-    padding-bottom: -webkit-calc(30px + 17 * (100vw - 320px) / 447);
-    padding-bottom: calc(30px + 17 * (100vw - 320px) / 447);
-  }
-}
-
-@media screen and (min-width: 767px) {
-  /* line 117, src/scss/_components/_homepage/_login.scss */
-  .login__title {
-    padding-bottom: 47px;
-  }
-}
-
-@media screen and (min-width: 320px) {
-  /* line 117, src/scss/_components/_homepage/_login.scss */
-  .login__title {
-    font-size: -webkit-calc(38px + 10 * (100vw - 320px) / 447);
-    font-size: calc(38px + 10 * (100vw - 320px) / 447);
-  }
-}
-
-@media screen and (min-width: 767px) {
-  /* line 117, src/scss/_components/_homepage/_login.scss */
-  .login__title {
-    font-size: 48px;
-  }
-}
-
-/* line 125, src/scss/_components/_homepage/_login.scss */
-.login__text {
-  color: #00a6d9;
-  line-height: 1.25;
-  padding-bottom: 30px;
-  font-size: 20px;
-}
-
-@media screen and (min-width: 320px) {
-  /* line 125, src/scss/_components/_homepage/_login.scss */
-  .login__text {
-    padding-bottom: -webkit-calc(30px + 25 * (100vw - 320px) / 447);
-    padding-bottom: calc(30px + 25 * (100vw - 320px) / 447);
-  }
-}
-
-@media screen and (min-width: 767px) {
-  /* line 125, src/scss/_components/_homepage/_login.scss */
-  .login__text {
-    padding-bottom: 55px;
-  }
-}
-
-@media screen and (min-width: 320px) {
-  /* line 125, src/scss/_components/_homepage/_login.scss */
-  .login__text {
-    font-size: -webkit-calc(20px + 4 * (100vw - 320px) / 447);
-    font-size: calc(20px + 4 * (100vw - 320px) / 447);
-  }
-}
-
-@media screen and (min-width: 767px) {
-  /* line 125, src/scss/_components/_homepage/_login.scss */
-  .login__text {
-    font-size: 24px;
-  }
-}
-
-/* line 132, src/scss/_components/_homepage/_login.scss */
-.login .logo {
-  margin-bottom: 30px;
-}
-
-@media screen and (min-width: 320px) {
-  /* line 132, src/scss/_components/_homepage/_login.scss */
-  .login .logo {
-    margin-bottom: -webkit-calc(30px + 88 * (100vw - 320px) / 447);
-    margin-bottom: calc(30px + 88 * (100vw - 320px) / 447);
-  }
-}
-
-@media screen and (min-width: 767px) {
-  /* line 132, src/scss/_components/_homepage/_login.scss */
-  .login .logo {
-    margin-bottom: 118px;
-  }
+  font-size: 48px;
 }
 
 @media screen and (max-width: 767px) {
-  /* line 135, src/scss/_components/_homepage/_login.scss */
+  /* line 115, src/scss/_components/_homepage/_login.scss */
+  .login__title {
+    padding-top: 50px;
+    padding-bottom: 30px;
+    font-size: 38px;
+  }
+}
+
+/* line 128, src/scss/_components/_homepage/_login.scss */
+.login__text {
+  padding-bottom: 55px;
+  color: #00a6d9;
+  line-height: 1.25;
+  font-size: 24px;
+}
+
+@media screen and (max-width: 767px) {
+  /* line 128, src/scss/_components/_homepage/_login.scss */
+  .login__text {
+    padding-bottom: 30px;
+    font-size: 20px;
+  }
+}
+
+/* line 139, src/scss/_components/_homepage/_login.scss */
+.login .logo {
+  margin-bottom: 118px;
+}
+
+@media screen and (max-width: 767px) {
+  /* line 139, src/scss/_components/_homepage/_login.scss */
+  .login .logo {
+    margin-bottom: 30px;
+  }
+  /* line 144, src/scss/_components/_homepage/_login.scss */
   .login .logo__link {
     -webkit-box-pack: center;
-    -webkit-justify-content: center;
         -ms-flex-pack: center;
             justify-content: center;
   }
 }
 
-/* line 141, src/scss/_components/_homepage/_login.scss */
+/* line 150, src/scss/_components/_homepage/_login.scss */
 .login__site {
   color: #ffffff;
+  font-size: 24px;
   -webkit-transition: color 0.3s ease-in-out;
   -o-transition: color 0.3s ease-in-out;
   transition: color 0.3s ease-in-out;
-  font-size: 20px;
 }
 
-@media screen and (min-width: 320px) {
-  /* line 141, src/scss/_components/_homepage/_login.scss */
+@media screen and (max-width: 767px) {
+  /* line 150, src/scss/_components/_homepage/_login.scss */
   .login__site {
-    font-size: -webkit-calc(20px + 4 * (100vw - 320px) / 447);
-    font-size: calc(20px + 4 * (100vw - 320px) / 447);
+    font-size: 20px;
   }
 }
 
-@media screen and (min-width: 767px) {
-  /* line 141, src/scss/_components/_homepage/_login.scss */
-  .login__site {
-    font-size: 24px;
-  }
-}
-
-/* line 146, src/scss/_components/_homepage/_login.scss */
+/* line 158, src/scss/_components/_homepage/_login.scss */
 .login__site:hover {
   color: #00a6d9;
   text-decoration: none;
@@ -2659,7 +2325,7 @@ section .uk-button:hover {
   transition: color 0.3s ease-in-out;
 }
 
-/* line 153, src/scss/_components/_homepage/_login.scss */
+/* line 165, src/scss/_components/_homepage/_login.scss */
 .login__block {
   width: 100%;
   max-width: 476px;
@@ -2670,7 +2336,7 @@ section .uk-button:hover {
 }
 
 @media screen and (max-width: 767px) {
-  /* line 153, src/scss/_components/_homepage/_login.scss */
+  /* line 165, src/scss/_components/_homepage/_login.scss */
   .login__block {
     height: auto;
     margin-left: auto;
@@ -2679,127 +2345,70 @@ section .uk-button:hover {
   }
 }
 
-/* line 166, src/scss/_components/_homepage/_login.scss */
+/* line 178, src/scss/_components/_homepage/_login.scss */
 .login__block-head {
-  height: -webkit-calc(100% - 96px);
   height: calc(100% - 96px);
-  padding: 144px 55px 0;
-  padding-top: 50px;
-}
-
-@media screen and (min-width: 320px) {
-  /* line 166, src/scss/_components/_homepage/_login.scss */
-  .login__block-head {
-    padding-top: -webkit-calc(50px + 94 * (100vw - 320px) / 447);
-    padding-top: calc(50px + 94 * (100vw - 320px) / 447);
-  }
-}
-
-@media screen and (min-width: 767px) {
-  /* line 166, src/scss/_components/_homepage/_login.scss */
-  .login__block-head {
-    padding-top: 144px;
-  }
+  padding-top: 144px;
+  padding-left: 55px;
+  padding-right: 55px;
 }
 
 @media screen and (max-width: 767px) {
-  /* line 166, src/scss/_components/_homepage/_login.scss */
+  /* line 178, src/scss/_components/_homepage/_login.scss */
   .login__block-head {
+    padding-top: 50px;
     padding-bottom: 50px;
   }
 }
 
 @media screen and (max-width: 575px) {
-  /* line 166, src/scss/_components/_homepage/_login.scss */
+  /* line 178, src/scss/_components/_homepage/_login.scss */
   .login__block-head {
     padding-left: 15px;
     padding-right: 15px;
   }
 }
 
-/* line 179, src/scss/_components/_homepage/_login.scss */
+/* line 193, src/scss/_components/_homepage/_login.scss */
 .login__block-footer {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   height: 96px;
   padding: 0 55px 0;
   background-color: #ececec;
 }
 
-/* line 188, src/scss/_components/_homepage/_login.scss */
+/* line 199, src/scss/_components/_homepage/_login.scss */
 .login__block-title {
+  padding-bottom: 143px;
   color: #00a6d9;
   text-align: center;
-  padding-bottom: 50px;
-  font-size: 24px;
+  font-size: 30px;
 }
 
-@media screen and (min-width: 320px) {
-  /* line 188, src/scss/_components/_homepage/_login.scss */
+@media screen and (max-width: 767px) {
+  /* line 199, src/scss/_components/_homepage/_login.scss */
   .login__block-title {
-    padding-bottom: -webkit-calc(50px + 93 * (100vw - 320px) / 447);
-    padding-bottom: calc(50px + 93 * (100vw - 320px) / 447);
-  }
-}
-
-@media screen and (min-width: 767px) {
-  /* line 188, src/scss/_components/_homepage/_login.scss */
-  .login__block-title {
-    padding-bottom: 143px;
-  }
-}
-
-@media screen and (min-width: 320px) {
-  /* line 188, src/scss/_components/_homepage/_login.scss */
-  .login__block-title {
-    font-size: -webkit-calc(24px + 6 * (100vw - 320px) / 447);
-    font-size: calc(24px + 6 * (100vw - 320px) / 447);
-  }
-}
-
-@media screen and (min-width: 767px) {
-  /* line 188, src/scss/_components/_homepage/_login.scss */
-  .login__block-title {
-    font-size: 30px;
-  }
-}
-
-/* line 195, src/scss/_components/_homepage/_login.scss */
-.login__block-link {
-  color: #00a6d9;
-  -webkit-transition: color 0.3s ease-in-out;
-  -o-transition: color 0.3s ease-in-out;
-  transition: color 0.3s ease-in-out;
-  font-size: 20px;
-  transition: color 0.3s ease-in-out;
-}
-
-@media screen and (min-width: 320px) {
-  /* line 195, src/scss/_components/_homepage/_login.scss */
-  .login__block-link {
-    font-size: -webkit-calc(20px + 4 * (100vw - 320px) / 447);
-    font-size: calc(20px + 4 * (100vw - 320px) / 447);
-  }
-}
-
-@media screen and (min-width: 767px) {
-  /* line 195, src/scss/_components/_homepage/_login.scss */
-  .login__block-link {
+    padding-bottom: 50px;
     font-size: 24px;
   }
 }
 
-/* line 201, src/scss/_components/_homepage/_login.scss */
+/* line 210, src/scss/_components/_homepage/_login.scss */
+.login__block-link {
+  color: #00a6d9;
+  font-size: 24px;
+  -webkit-transition: color 0.3s ease-in-out;
+  -o-transition: color 0.3s ease-in-out;
+  transition: color 0.3s ease-in-out;
+}
+
+@media screen and (max-width: 767px) {
+  /* line 210, src/scss/_components/_homepage/_login.scss */
+  .login__block-link {
+    font-size: 20px;
+  }
+}
+
+/* line 218, src/scss/_components/_homepage/_login.scss */
 .login__block-link:hover {
   color: #026b8b;
   text-decoration: none;
@@ -2811,10 +2420,8 @@ section .uk-button:hover {
 /* line 4, src/scss/_components/_dashboard/_additional-information.scss */
 .a-info button {
   height: 70px;
-  -webkit-border-bottom-left-radius: 5px;
-          border-bottom-left-radius: 5px;
-  -webkit-border-bottom-right-radius: 5px;
-          border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
   -webkit-box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.15);
           box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.15);
   font-size: 18px;
@@ -2906,8 +2513,7 @@ section .uk-button:hover {
   height: 49px;
   padding-left: 22px;
   padding-right: 22px;
-  -webkit-border-radius: 5px;
-          border-radius: 5px;
+  border-radius: 5px;
   background-color: #00a6d9;
   font-size: 20px;
   -webkit-transition: background-color 0.3s ease-in-out;
@@ -2933,8 +2539,7 @@ section .uk-button:hover {
   width: 100%;
   height: 49px;
   padding: 0 20px;
-  -webkit-border-radius: 5px;
-          border-radius: 5px;
+  border-radius: 5px;
   font-size: 20px;
 }
 
@@ -2983,8 +2588,7 @@ section .uk-button:hover {
 .tickets-table .uk-table__status {
   width: auto;
   padding: 5px 10px;
-  -webkit-border-radius: 2em;
-          border-radius: 2em;
+  border-radius: 2em;
   border: 1px solid transparent;
 }
 
@@ -3029,11 +2633,9 @@ section .uk-button:hover {
 .tickets-table thead p,
 .tickets-table thead label {
   display: -webkit-box;
-  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-  -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
   color: #4e4e4e;
@@ -3142,8 +2744,7 @@ section .uk-button:hover {
 /* line 35, src/scss/_components/_dashboard/_ticket-comments.scss */
 .t-comments__bottom button {
   height: 32px;
-  -webkit-border-radius: 10px;
-          border-radius: 10px;
+  border-radius: 10px;
 }
 
 /* line 39, src/scss/_components/_dashboard/_ticket-comments.scss */
@@ -3256,8 +2857,7 @@ section .uk-button:hover {
   width: 100%;
   height: 49px;
   padding: 0 20px;
-  -webkit-border-radius: 5px;
-          border-radius: 5px;
+  border-radius: 5px;
   font-size: 20px;
 }
 
@@ -3374,11 +2974,9 @@ section .uk-button:hover {
 .d-support .uk-table thead a,
 .d-support .uk-table thead p {
   display: -webkit-box;
-  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-  -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
   color: #4e4e4e;
@@ -3412,8 +3010,7 @@ section .uk-button:hover {
 .d-support .uk-table__status {
   width: auto;
   padding: 5px 10px;
-  -webkit-border-radius: 2em;
-          border-radius: 2em;
+  border-radius: 2em;
 }
 
 /* line 56, src/scss/_components/_dashboard/_support.scss */
@@ -3460,8 +3057,7 @@ section .uk-button:hover {
   height: 49px;
   padding-left: 22px;
   padding-right: 22px;
-  -webkit-border-radius: 5px;
-          border-radius: 5px;
+  border-radius: 5px;
   background-color: #00a6d9;
   font-size: 20px;
   -webkit-transition: background-color 0.3s ease-in-out;
@@ -3537,8 +3133,7 @@ section .uk-button:hover {
   width: 100%;
   height: 49px;
   padding: 0 20px;
-  -webkit-border-radius: 5px;
-          border-radius: 5px;
+  border-radius: 5px;
   font-size: 20px;
 }
 
@@ -3580,8 +3175,7 @@ section .uk-button:hover {
   width: 100%;
   height: 49px;
   padding: 0 20px;
-  -webkit-border-radius: 10px;
-          border-radius: 10px;
+  border-radius: 10px;
   border: 1px solid #c9c9c9;
   font-size: 20px;
 }
@@ -3656,8 +3250,7 @@ section .uk-button:hover {
   width: 100%;
   height: 49px;
   padding: 0 20px;
-  -webkit-border-radius: 10px;
-          border-radius: 10px;
+  border-radius: 10px;
   border: 1px solid #c9c9c9;
   font-size: 20px;
 }
@@ -3678,8 +3271,7 @@ section .uk-button:hover {
   width: 100%;
   max-width: 211px;
   height: 40px;
-  -webkit-border-radius: 10px;
-          border-radius: 10px;
+  border-radius: 10px;
   background: #00a6d9;
   font-size: 20px;
   -webkit-transition: background-color 0.3s ease-in-out;
@@ -3711,8 +3303,7 @@ section .uk-button:hover {
   width: 100%;
   height: 49px;
   padding: 0 20px;
-  -webkit-border-radius: 10px;
-          border-radius: 10px;
+  border-radius: 10px;
   border: 1px solid #c9c9c9;
   font-size: 20px;
 }
@@ -3721,8 +3312,7 @@ section .uk-button:hover {
 .d-case__description .uk-form-controls textarea {
   resize: none;
   padding: 10px 20px;
-  -webkit-border-radius: 10px;
-          border-radius: 10px;
+  border-radius: 10px;
   border: 1px solid #c9c9c9;
   color: #4e4e4e;
   font-size: 20px;
@@ -3757,8 +3347,7 @@ section .uk-button:hover {
 .d-case__attachments .uk-button {
   width: 100%;
   max-width: 272px;
-  -webkit-border-radius: 10px;
-          border-radius: 10px;
+  border-radius: 10px;
   background-color: #00a6d9;
   font-size: 16px;
 }

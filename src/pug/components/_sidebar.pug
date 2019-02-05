@@ -1,12 +1,12 @@
 // SECTION sidebar :: START
 
 mixin sidebarNavBtn(classMod, iconBool, iconName, btnName)
-  a.sidebar__navigation-btn(
+  a.sidebar__navigation-btn.uk-flex.uk-flex-middle(
     href="#"
     class="sidebar__navigation-btn--" + classMod
     title=""
   )
-    div
+    div.uk-flex.uk-flex-center
       if(iconBool)
         span(uk-icon= iconName)
       else
@@ -14,22 +14,22 @@ mixin sidebarNavBtn(classMod, iconBool, iconName, btnName)
     div
       p!= btnName
     if(classMod !== 'internal')
-      div
+      div.uk-flex.uk-flex-middle.uk-flex-center
 
 mixin sidebarNavAccordionBtn(classMod, iconBool, iconName, btnName)
-  a.uk-accordion-title.sidebar__navigation-btn(
+  a.uk-accordion-title.sidebar__navigation-btn.uk-flex.uk-flex-middle(
     href="#"
     class="sidebar__navigation-btn--" + classMod
     title=""
   )
-    div
+    div.uk-flex.uk-flex-center
       if(iconBool)
         span(uk-icon= iconName)
       else
         i.icon-font(class!= iconName)
     div
       p!= btnName
-    div
+    div.uk-flex.uk-flex-middle.uk-flex-center
       span(uk-icon='chevron-down')
 
 
@@ -37,7 +37,7 @@ section#sidebar.sidebar
   .sidebar__scroll
     .sidebar__wrapper
 
-      .sidebar__profile
+      .sidebar__profile.uk-flex.uk-flex-middle
         .sidebar__profile-left
           .sidebar__profile-img
             img(src="./img/img-user.jpg" srcset="./img/img-user@2x.jpg 2x" alt="" title="")
@@ -45,13 +45,13 @@ section#sidebar.sidebar
         .sidebar__profile-right
           p.sidebar__profile-name!= "Randah McKinnie"
 
-      .sidebar__navigation
+      .sidebar__navigation.uk-flex.uk-flex-column
         +sidebarNavBtn('external', true, 'thumbnails', 'Dashboard')
 
         ul(uk-accordion="multiple: true")
           li
             +sidebarNavAccordionBtn('external', false, 'icon-account', 'Account')
-            .uk-accordion-content
+            .uk-accordion-content.uk-flex.uk-flex-column.uk-margin-remove-top
               +sidebarNavBtn('internal', '', false, 'Account action 1')
               +sidebarNavBtn('internal', '', false, 'Account action 2')
               +sidebarNavBtn('internal', '', false, 'Account action 3')
@@ -61,13 +61,13 @@ section#sidebar.sidebar
         ul(uk-accordion="multiple: true")
           li
             +sidebarNavAccordionBtn('external', false, 'icon-monitors', 'Monitors')
-            .uk-accordion-content
+            .uk-accordion-content.uk-flex.uk-flex-column.uk-margin-remove-top
               +sidebarNavBtn('internal', '', false, 'Monitors action 1')
               +sidebarNavBtn('internal', '', false, 'Monitors action 2')
               +sidebarNavBtn('internal', '', false, 'Monitors action 3')
           li
             +sidebarNavAccordionBtn('external', false, 'icon-reports', 'Reports')
-            .uk-accordion-content
+            .uk-accordion-content.uk-flex.uk-flex-column.uk-margin-remove-top
               +sidebarNavBtn('internal', '', false, 'Status')
               +sidebarNavBtn('internal', '', false, 'Metrics')
               +sidebarNavBtn('internal', '', false, 'Activity')

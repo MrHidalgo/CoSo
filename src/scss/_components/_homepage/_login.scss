@@ -29,8 +29,6 @@
   }
 
   &__body {
-    display: flex;
-    align-items: center;
     position: relative;
     height: 811px;
     @include adaptive(767) {
@@ -67,13 +65,13 @@
     }
 
     &-left {
+      width: 509px;
       padding-top: 60px;
       padding-bottom: 90px;
       padding-left: 103px;
-      width: 509px;
       @include adaptive(991) {
-        padding-left: 30px;
         width: 350px;
+        padding-left: 30px;
       }
       @include adaptive(767) {
         width: 100%;
@@ -115,23 +113,34 @@
   }
 
   &__title {
+    padding-top: 119px;
+    padding-bottom: 47px;
     color: #fff;
     line-height: line-height-convert(53,48);
-    @include fluid(padding-top, 320px, 767px, 50px, 119px);
-    @include fluid(padding-bottom, 320px, 767px, 30px, 47px);
-    @include fluid(font-size, 320px, 767px, 38px, 48px);
+    font-size: 48px;
+    @include adaptive(767) {
+      padding-top: 50px;
+      padding-bottom: 30px;
+      font-size: 38px;
+    }
   }
 
   &__text {
+    padding-bottom: 55px;
     color: #00a6d9;
     line-height: line-height-convert(30, 24);
-    @include fluid(padding-bottom, 320px, 767px, 30px, 55px);
-    @include fluid(font-size, 320px, 767px, 20px, 24px);
+    font-size: 24px;
+    @include adaptive(767) {
+      padding-bottom: 30px;
+      font-size: 20px;
+    }
   }
 
   .logo {
-    @include fluid(margin-bottom, 320px, 767px, 30px, 118px);
+    margin-bottom: 118px;
     @include adaptive(767) {
+      margin-bottom: 30px;
+
       &__link {
         justify-content: center;
       }
@@ -140,8 +149,11 @@
 
   &__site {
     color: #ffffff;
+    font-size: 24px;
+    @include adaptive(767) {
+      font-size: 20px;
+    }
     @include transition(color);
-    @include fluid(font-size, 320px, 767px, 20px, 24px);
 
     &:hover {
       color: #00a6d9;
@@ -165,9 +177,11 @@
 
     &-head {
       height: calc(100% - 96px);
-      padding: 144px 55px 0;
-      @include fluid(padding-top, 320px, 767px, 50px, 144px);
+      padding-top: 144px;
+      padding-left: 55px;
+      padding-right: 55px;
       @include adaptive(767) {
+        padding-top: 50px;
         padding-bottom: 50px;
       }
       @include adaptive(575) {
@@ -177,26 +191,29 @@
     }
 
     &-footer {
-      display: flex;
-      align-items: center;
-      justify-content: center;
       height: 96px;
       padding: 0 55px 0;
       background-color: #ececec;
     }
 
     &-title {
+      padding-bottom: 143px;
       color: #00a6d9;
       text-align: center;
-      @include fluid(padding-bottom, 320px, 767px, 50px, 143px);
-      @include fluid(font-size, 320px, 767px, 24px, 30px);
+      font-size: 30px;
+      @include adaptive(767) {
+        padding-bottom: 50px;
+        font-size: 24px;
+      }
     }
 
     &-link {
       color: #00a6d9;
+      font-size: 24px;
       @include transition(color);
-      @include fluid(font-size, 320px, 767px, 20px, 24px);
-      @include transition(color);
+      @include adaptive(767) {
+        font-size: 20px;
+      }
 
       &:hover {
         color: #026b8b;

@@ -4,7 +4,7 @@ section#login.login
   .login__box
     .login__box-wrapper
 
-      .login__body
+      .login__body.uk-flex.uk-flex-middle
         .login__body-left
 
           h1.login__title!= "Welcome to<br>CoSo Insights"
@@ -30,7 +30,7 @@ section#login.login
                   div
                     button(type="submit" class="uk-button uk-button-primary")!= "Login"
 
-            .login__block-footer
+            .login__block-footer.uk-flex.uk-flex-middle.uk-flex-center
               a.login__block-link(href="#" class="" title="")!= "Forgot Password?"
 
           +logotype('login', '#', 'img-logotype-white', 'png')

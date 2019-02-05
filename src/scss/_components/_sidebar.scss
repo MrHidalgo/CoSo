@@ -1,4 +1,4 @@
-// HEADER :: START
+// SIDEBAR :: START
 
 .sidebar {
   z-index: 99;
@@ -74,8 +74,6 @@
   // profile
   &__profile {
     overflow: hidden;
-    display: flex;
-    align-items: center;
     height: 215px;
     border-bottom: 1px solid rgba(#b1b0b0, 0.3);
     @include adaptive(1365) {
@@ -209,8 +207,6 @@
   // navigation
   &__navigation {
     overflow: hidden;
-    display: flex;
-    flex-direction: column;
 
     ul {
       margin: 0;
@@ -257,22 +253,12 @@
       }
     }
 
-    .uk-accordion-content {
-      display: flex;
-      flex-direction: column;
-      margin-top: 0;
-    }
-
     .uk-accordion-title,
     &-btn {
-      display: flex;
-      align-items: center;
       @include transition(border-color, background-color);
 
       > div {
         &:nth-of-type(1) {
-          display: flex;
-          justify-content: center;
           width: 100px;
           @include transition(width);
           @include adaptive(1599) {
@@ -297,9 +283,6 @@
         }
 
         &:nth-of-type(3) {
-          display: flex;
-          align-items: center;
-          justify-content: center;
           width: 66px;
           @include transition(opacity, width);
           @include adaptive(1599) {
@@ -605,4 +588,4 @@
   }
 }
 
-// HEADER :: END
+// SIDEBAR :: END

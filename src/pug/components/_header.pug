@@ -1,34 +1,34 @@
 // HEADER :: START
 
 header#header.header
-  .header__wrapper
-    .header__wrapper-left
+  .header__wrapper.uk-flex.uk-flex-middle
+    .header__wrapper-left.uk-flex.uk-flex-middle.uk-flex-center
 
       +logotype('header', '', 'img-logotype', 'png')
 
       a(href="#" class="" title="" btn-collapseHide-js)!= "<"
 
-    .header__wrapper-middle
+    .header__wrapper-middle.uk-flex.uk-flex-middle
       div
-        a.header__collapse(href="#" class="" title="" btn-collapse-js)
+        a.header__collapse.uk-flex.uk-flex-middle.uk-flex-center(href="#" class="" title="" btn-collapse-js)
           div
             i
             i
             i
           span!= "Collapse"
 
-      div
-        .header__search
-          form(action="" autocomplete='off' class="uk-search uk-search-large")
+      div.uk-flex.uk-flex-middle.uk-flex-between
+        .header__search.uk-flex
+          form.uk-flex.uk-flex-middle(action="" autocomplete='off' class="uk-search uk-search-large")
             span(uk-search-icon)
             input(class="uk-search-input" type="search" placeholder="Search...")
 
-        .header__date
+        .header__date.uk-flex.uk-flex-middle.uk-flex-right
           p!= "<span>12:00</span> PM"
           span
           p!= "Dec 10, 2018"
 
-    .header__wrapper-right
+    .header__wrapper-right.uk-flex.uk-flex-middle
 
       .header__dCenter.uk-flex.uk-flex-middle
         p!= "Data Centers:"
