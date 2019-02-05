@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- META TAGS-->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=0">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <!-- TITLE-->
+    <title>CoSo Insights Portal - Dashboard Ticket System</title>
+    <!-- FAVICON-->
+    <link rel="apple-touch-icon" sizes="60x60" href="./icon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="./icon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="./icon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="./icon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="./icon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="./icon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="./icon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="./icon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="./icon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./icon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="./icon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./icon/favicon-16x16.png">
+    <link rel="manifest" href="./icon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="./icon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <!-- STYLE :: START-->
+    <link rel="stylesheet" href="css/vendor.css">
+    <link rel="stylesheet" href="css/app.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.2/css/uikit.min.css">
+    <!-- STYLE :: END--><!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
+  </head>
+  <body>
+    <!-- HEADER :: START-->
+    <header class="header" id="header">
+      <div class="header__wrapper uk-flex uk-flex-middle">
+        <div class="header__wrapper-left uk-flex uk-flex-middle uk-flex-center">
+          <div class="logo logo--header"><a class="logo__link" href="/" title=""><img class="logo__img" src="./img/img-logotype.png" srcset="./img/img-logotype@2x.png 2x" alt="" title=""/></a></div><a href="#" title="" btn-collapseHide-js><</a>
+        </div>
+        <div class="header__wrapper-middle uk-flex uk-flex-middle">
+          <div><a class="header__collapse uk-flex uk-flex-middle uk-flex-center" href="#" title="" btn-collapse-js>
+              <div><i></i><i></i><i></i></div><span>Collapse</span></a></div>
+          <div class="uk-flex uk-flex-middle uk-flex-between">
+            <div class="header__search uk-flex">
+              <form class="uk-flex uk-flex-middle uk-search uk-search-large" action="" autocomplete="off"><span uk-search-icon></span>
+                <input class="uk-search-input" type="search" placeholder="Search...">
+              </form>
+            </div>
+            <div class="header__date uk-flex uk-flex-middle uk-flex-right">
+              <p><span>12:00</span> PM</p><span></span>
+              <p>Dec 10, 2018</p>
+            </div>
+          </div>
+        </div>
+        <div class="header__wrapper-right uk-flex uk-flex-middle">
+          <div class="header__dCenter uk-flex uk-flex-middle">
+            <p>Data Centers:</p>
+            <div class="uk-flex uk-flex-middle"><a class="uk-flex uk-flex-top" href="#" title="">
+                <svg class="icon-svg icon-UK ">
+                  <use xlink:href="./img/sprite.svg#UK"></use>
+                </svg></a><a class="uk-flex uk-flex-top" href="#" title="">
+                <svg class="icon-svg icon-US ">
+                  <use xlink:href="./img/sprite.svg#US"></use>
+                </svg></a><a class="uk-flex uk-flex-top" href="#" title="">
+                <svg class="icon-svg icon-USe ">
+                  <use xlink:href="./img/sprite.svg#USe"></use>
+                </svg></a><a class="uk-flex uk-flex-top" href="#" title="">
+                <svg class="icon-svg icon-CH ">
+                  <use xlink:href="./img/sprite.svg#CH"></use>
+                </svg></a></div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- HEADER :: END-->
+    <!-- SECTION sidebar :: START-->
+    <section class="sidebar" id="sidebar">
+      <div class="sidebar__scroll">
+        <div class="sidebar__wrapper">
+          <div class="sidebar__profile uk-flex uk-flex-middle">
+            <div class="sidebar__profile-left">
+              <div class="sidebar__profile-img"><img src="./img/img-user.jpg" srcset="./img/img-user@2x.jpg 2x" alt="" title=""></div>
+            </div>
+            <div class="sidebar__profile-right">
+              <p class="sidebar__profile-name">Randah McKinnie</p>
+            </div>
+          </div>
+          <div class="sidebar__navigation uk-flex uk-flex-column"><a class="sidebar__navigation-btn uk-flex uk-flex-middle sidebar__navigation-btn--external" href="#" title="">
+                  <div class="uk-flex uk-flex-center"><span uk-icon="thumbnails"></span>
+                  </div>
+                  <div>
+                    <p>Dashboard</p>
+                  </div>
+                  <div class="uk-flex uk-flex-middle uk-flex-center"></div></a>
+            <ul uk-accordion="multiple: true">
+              <li><a class="uk-accordion-title sidebar__navigation-btn uk-flex uk-flex-middle sidebar__navigation-btn--external" href="#" title="">
+                      <div class="uk-flex uk-flex-center"><i class="icon-font icon-account"></i>
+                      </div>
+                      <div>
+                        <p>Account</p>
+                      </div>
+                      <div class="uk-flex uk-flex-middle uk-flex-center"><span uk-icon="chevron-down"></span></div></a>
+                <div class="uk-accordion-content uk-flex uk-flex-column uk-margin-remove-top"><a class="sidebar__navigation-btn uk-flex uk-flex-middle sidebar__navigation-btn--internal" href="#" title="">
+                        <div class="uk-flex uk-flex-center"><i class="icon-font"></i>
+                        </div>
+                        <div>
+                          <p>Account action 1</p>
+                        </div></a><a class="sidebar__navigation-btn uk-flex uk-flex-middle sidebar__navigation-btn--internal" href="#" title="">
+                        <div class="uk-flex uk-flex-center"><i class="icon-font"></i>
+                        </div>
+                        <div>
+                          <p>Account action 2</p>
+                        </div></a><a class="sidebar__navigation-btn uk-flex uk-flex-middle sidebar__navigation-btn--internal" href="#" title="">
+                        <div class="uk-flex uk-flex-center"><i class="icon-font"></i>
+                        </div>
+                        <div>
+                          <p>Account action 3</p>
+                        </div></a>
+                </div>
+              </li>
+            </ul><a class="sidebar__navigation-btn uk-flex uk-flex-middle sidebar__navigation-btn--external" href="#" title="">
+                  <div class="uk-flex uk-flex-center"><i class="icon-font icon-support"></i>
+                  </div>
+                  <div>
+                    <p>Tech Support</p>
+                  </div>
+                  <div class="uk-flex uk-flex-middle uk-flex-center"></div></a>
+            <ul uk-accordion="multiple: true">
+              <li><a class="uk-accordion-title sidebar__navigation-btn uk-flex uk-flex-middle sidebar__navigation-btn--external" href="#" title="">
+                      <div class="uk-flex uk-flex-center"><i class="icon-font icon-monitors"></i>
+                      </div>
+                      <div>
+                        <p>Monitors</p>
+                      </div>
+                      <div class="uk-flex uk-flex-middle uk-flex-center"><span uk-icon="chevron-down"></span></div></a>
+                <div class="uk-accordion-content uk-flex uk-flex-column uk-margin-remove-top"><a class="sidebar__navigation-btn uk-flex uk-flex-middle sidebar__navigation-btn--internal" href="#" title="">
+                        <div class="uk-flex uk-flex-center"><i class="icon-font"></i>
+                        </div>
+                        <div>
+                          <p>Monitors action 1</p>
+                        </div></a><a class="sidebar__navigation-btn uk-flex uk-flex-middle sidebar__navigation-btn--internal" href="#" title="">
+                        <div class="uk-flex uk-flex-center"><i class="icon-font"></i>
+                        </div>
+                        <div>
+                          <p>Monitors action 2</p>
+                        </div></a><a class="sidebar__navigation-btn uk-flex uk-flex-middle sidebar__navigation-btn--internal" href="#" title="">
+                        <div class="uk-flex uk-flex-center"><i class="icon-font"></i>
+                        </div>
+                        <div>
+                          <p>Monitors action 3</p>
+                        </div></a>
+                </div>
+              </li>
+              <li><a class="uk-accordion-title sidebar__navigation-btn uk-flex uk-flex-middle sidebar__navigation-btn--external" href="#" title="">
+                      <div class="uk-flex uk-flex-center"><i class="icon-font icon-reports"></i>
+                      </div>
+                      <div>
+                        <p>Reports</p>
+                      </div>
+                      <div class="uk-flex uk-flex-middle uk-flex-center"><span uk-icon="chevron-down"></span></div></a>
+                <div class="uk-accordion-content uk-flex uk-flex-column uk-margin-remove-top"><a class="sidebar__navigation-btn uk-flex uk-flex-middle sidebar__navigation-btn--internal" href="#" title="">
+                        <div class="uk-flex uk-flex-center"><i class="icon-font"></i>
+                        </div>
+                        <div>
+                          <p>Status</p>
+                        </div></a><a class="sidebar__navigation-btn uk-flex uk-flex-middle sidebar__navigation-btn--internal" href="#" title="">
+                        <div class="uk-flex uk-flex-center"><i class="icon-font"></i>
+                        </div>
+                        <div>
+                          <p>Metrics</p>
+                        </div></a><a class="sidebar__navigation-btn uk-flex uk-flex-middle sidebar__navigation-btn--internal" href="#" title="">
+                        <div class="uk-flex uk-flex-center"><i class="icon-font"></i>
+                        </div>
+                        <div>
+                          <p>Activity</p>
+                        </div></a>
+                </div>
+              </li>
+            </ul><a class="sidebar__navigation-btn uk-flex uk-flex-middle sidebar__navigation-btn--external" href="#" title="">
+                  <div class="uk-flex uk-flex-center"><span uk-icon="cog"></span>
+                  </div>
+                  <div>
+                    <p>Settings</p>
+                  </div>
+                  <div class="uk-flex uk-flex-middle uk-flex-center"></div></a><a class="sidebar__navigation-btn uk-flex uk-flex-middle sidebar__navigation-btn--external" href="#" title="">
+                  <div class="uk-flex uk-flex-center"><span uk-icon="sign-out"></span>
+                  </div>
+                  <div>
+                    <p>Logout</p>
+                  </div>
+                  <div class="uk-flex uk-flex-middle uk-flex-center"></div></a>
+          </div>
+        </div>
+        <div class="sidebar__footer">
+          <div class="sidebar__footer-top uk-flex uk-flex-center uk-flex-middle"><a class="sidebar__footer-btn uk-flex uk-flex-middle uk-flex-center uk-border-circle" href="#" title=""><span uk-icon="facebook"></span></a><a class="sidebar__footer-btn uk-flex uk-flex-middle uk-flex-center uk-border-circle" href="#" title=""><span uk-icon="twitter"></span></a><a class="sidebar__footer-btn uk-flex uk-flex-middle uk-flex-center uk-border-circle" href="#" title=""><span uk-icon="linkedin"></span></a></div>
+          <div class="sidebar__footer-bottom"><a class="sidebar__footer-link uk-flex uk-flex-middle uk-margin-small-bottom uk-margin-medium-left" href="#" title="">
+              <p class="uk-margin-remove">CoSo Insights</p><span uk-icon="chevron-right"></span></a><a class="sidebar__footer-link uk-flex uk-flex-middle uk-margin-medium-bottom uk-margin-medium-left" href="#" title="">
+              <p class="uk-margin-remove">CoSoCloud</p><span uk-icon="chevron-right"></span></a><span class="uk-margin-medium-left">Copyright © 2018 Connect Solutions</span></div>
+        </div>
+      </div>
+    </section>
+    <!-- SECTION sidebar :: END-->
+    <div class="body body--start p-dashboard">
+      <!-- SECTION additional information :: START-->
+      <div class="a-info" id="a-info">
+        <div class="uk-section uk-padding-remove-top uk-padding-remove-bottom uk-flex uk-flex-right uk-margin-bottom">
+          <div class="uk-inline uk-margin-small-right">
+            <button class="uk-button uk-button-default uk-background-default" type="button"><span class="uk-margin-right">SELECT INSTALLS</span><span uk-icon="chevron-down"></span></button>
+            <div uk-dropdown="mode: click">
+              <ul class="uk-nav uk-dropdown-nav">
+                <li><a href="#">Item 1</a></li>
+                <li><a href="#">Item 2</a></li>
+                <li><a href="#">Item 3</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="uk-inline">
+            <button class="uk-button uk-button-default uk-background-default" type="button"><span class="uk-margin-right">HELP</span><span uk-icon="chevron-down"></span></button>
+            <div uk-dropdown="mode: click">
+              <ul class="uk-nav uk-dropdown-nav">
+                <li><a href="#">Item 1</a></li>
+                <li><a href="#">Item 2</a></li>
+                <li><a href="#">Item 3</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- SECTION additional information :: END-->
+      <!-- SECTION ticket activity :: START-->
+      <div class="t-activity" id="t-activity">
+        <div class="uk-section uk-padding-remove-top uk-padding-remove-bottom uk-margin-medium-bottom">
+          <div class="uk-card uk-card-default uk-box-shadow-small">
+            <div class="uk-card-header uk-flex uk-flex-middle uk-flex-between">
+              <div class="uk-width-1-2 uk-flex uk-flex-middle">
+                <h2 class="uk-margin-remove-bottom uk-card-title uk-text-bold">Ticket Activity</h2><span class="uk-margin-medium-left uk-text-muted uk-text-bold">December 2018</span>
+              </div>
+              <div class="uk-width-1-2 uk-flex uk-flex-right uk-flex-middle"><a class="uk-button uk-button-link" href="#" title=""><span class="uk-text-muted" uk-icon="minus"></span></a><a class="uk-button uk-button-link uk-margin-small-left" href="#" title=""><span class="uk-text-muted" uk-icon="close"></span></a></div>
+            </div>
+            <div class="uk-card-body">
+              <div class="uk-grid-small uk-child-width-expand" uk-grid>
+                <div>
+                  <div class="uk-card uk-flex uk-flex-top">
+                    <div class="uk-width-1-2 uk-height-small uk-flex uk-flex-center uk-flex-middle"><i class="icon-font icon-a-ticket-open"></i></div>
+                    <div class="uk-width-1-2 uk-height-small uk-text-center">
+                      <p class="uk-margin-remove uk-text-bold uk-text-uppercase">8</p>
+                      <p class="uk-margin-remove uk-text-bold uk-text-uppercase">OPEN</p>
+                    </div>
+                  </div>
+                </div>
+                <div>
+                  <div class="uk-card uk-flex uk-flex-top">
+                    <div class="uk-width-1-2 uk-height-small uk-flex uk-flex-center uk-flex-middle"><i class="icon-font icon-a-ticket-awaiting"></i></div>
+                    <div class="uk-width-1-2 uk-height-small uk-text-center">
+                      <p class="uk-margin-remove uk-text-bold uk-text-uppercase">8</p>
+                      <p class="uk-margin-remove uk-text-bold uk-text-uppercase">AWAITING RESPONSE</p>
+                    </div>
+                  </div>
+                </div>
+                <div>
+                  <div class="uk-card uk-flex uk-flex-top">
+                    <div class="uk-width-1-2 uk-height-small uk-flex uk-flex-center uk-flex-middle"><i class="icon-font icon-a-ticket-hold"></i></div>
+                    <div class="uk-width-1-2 uk-height-small uk-text-center">
+                      <p class="uk-margin-remove uk-text-bold uk-text-uppercase">2</p>
+                      <p class="uk-margin-remove uk-text-bold uk-text-uppercase">ON HOLD</p>
+                    </div>
+                  </div>
+                </div>
+                <div>
+                  <div class="uk-card uk-flex uk-flex-top">
+                    <div class="uk-width-1-2 uk-height-small uk-flex uk-flex-center uk-flex-middle"><i class="icon-font icon-a-ticket-closed"></i></div>
+                    <div class="uk-width-1-2 uk-height-small uk-text-center">
+                      <p class="uk-margin-remove uk-text-bold uk-text-uppercase">3</p>
+                      <p class="uk-margin-remove uk-text-bold uk-text-uppercase">closed</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- SECTION ticket activity :: END-->
+      <!-- SECTION all tickets :: START-->
+      <div class="all-tickets" id="all-tickets">
+        <div class="uk-section uk-padding-remove-top uk-padding-remove-bottom uk-margin-medium-bottom">
+          <div class="uk-card-header uk-flex uk-flex-middle uk-flex-between uk-padding-remove-right">
+            <div class="uk-width-1-2 uk-flex uk-flex-middle">
+              <h2 class="uk-margin-remove-bottom uk-card-title uk-text-bold uk-text-muted">All Tickets</h2>
+            </div>
+            <div class="uk-width-1-2 uk-flex uk-flex-right uk-flex-middle">
+              <button class="uk-flex uk-flex-middle uk-flex-between uk-button uk-button-primary uk-button-large"><span uk-icon="plus"></span><span class="uk-text-capitalize">New Ticket</span></button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- SECTION all tickets :: END-->
+      <!-- SECTION find tickets :: START-->
+      <div class="tickets-find" id="tickets-find">
+        <div class="uk-section uk-padding-remove-top uk-padding-remove-bottom uk-margin-medium-bottom">
+          <div class="uk-card uk-card-default uk-box-shadow-small">
+            <div class="uk-card-header uk-flex uk-flex-middle uk-flex-between">
+              <div class="uk-width-1-2 uk-flex uk-flex-middle">
+                <form class="uk-search uk-search-large"><span uk-search-icon></span>
+                  <input class="uk-search-input" type="search" placeholder="Find Tickets...">
+                </form>
+              </div>
+              <div class="uk-width-1-2 uk-flex uk-flex-right uk-flex-middle"><a class="uk-button uk-button-link" href="#" title=""><span class="uk-text-muted" uk-icon="minus"></span></a><a class="uk-button uk-button-link uk-margin-small-left" href="#" title=""><span class="uk-text-muted" uk-icon="close"></span></a></div>
+            </div>
+            <div class="uk-card-body">
+              <form>
+                <fieldset class="uk-fieldset">
+                  <div class="uk-flex uk-flex-bottom uk-grid-small uk-child-width-expand" uk-grid>
+                    <div>
+                      <label class="uk-text-muted uk-margin-small-bottom uk-flex uk-form-label">Ticket Status</label>
+                      <div class="uk-form-controls">
+                        <div uk-form-custom="target: &gt; * &gt; span:first-child">
+                          <select class="uk-select">
+                            <option>All tickets</option>
+                            <option>Option 01</option>
+                            <option>Option 02</option>
+                          </select>
+                          <button class="uk-text-capitalize uk-button uk-button-default uk-flex uk-flex-middle uk-flex-between" type="button" tabindex="-1"><span></span><span uk-icon="icon: chevron-down"></span></button>
+                        </div>
+                      </div>
+                    </div>
+                    <div>
+                      <label class="uk-text-muted uk-margin-small-bottom uk-flex uk-form-label">Priority</label>
+                      <div class="uk-form-controls">
+                        <div uk-form-custom="target: &gt; * &gt; span:first-child">
+                          <select class="uk-select">
+                            <option>New</option>
+                            <option>Option 01</option>
+                            <option>Option 02</option>
+                          </select>
+                          <button class="uk-text-capitalize uk-button uk-button-default uk-flex uk-flex-middle uk-flex-between" type="button" tabindex="-1"><span></span><span uk-icon="icon: chevron-down"></span></button>
+                        </div>
+                      </div>
+                    </div>
+                    <div>
+                      <label class="uk-text-muted uk-margin-small-bottom uk-flex uk-form-label">Reporters</label>
+                      <div class="uk-form-controls">
+                        <div uk-form-custom="target: &gt; * &gt; span:first-child">
+                          <select class="uk-select">
+                            <option>All reporters</option>
+                            <option>Option 01</option>
+                            <option>Option 02</option>
+                          </select>
+                          <button class="uk-text-capitalize uk-button uk-button-default uk-flex uk-flex-middle uk-flex-between" type="button" tabindex="-1"><span></span><span uk-icon="icon: chevron-down"></span></button>
+                        </div>
+                      </div>
+                    </div>
+                    <div>
+                      <label class="uk-text-muted uk-margin-small-bottom uk-flex uk-form-label">Sort by</label>
+                      <div class="uk-form-controls">
+                        <div uk-form-custom="target: &gt; * &gt; span:first-child">
+                          <select class="uk-select">
+                            <option>Date Created</option>
+                            <option>Option 01</option>
+                            <option>Option 02</option>
+                          </select>
+                          <button class="uk-text-capitalize uk-button uk-button-default uk-flex uk-flex-middle uk-flex-between" type="button" tabindex="-1"><span></span><span uk-icon="icon: chevron-down"></span></button>
+                        </div>
+                      </div>
+                    </div>
+                    <div>
+                      <button class="uk-button uk-button-apply uk-button-default uk-button-small uk-text-capitalize">Apply filters</button>
+                    </div>
+                  </div>
+                </fieldset>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- SECTION find tickets :: END-->
+      <!-- SECTION tickets table :: START-->
+      <div class="tickets-table" id="tickets-table">
+        <div class="uk-section uk-padding-remove-top uk-padding-remove-bottom uk-margin-xlarge-bottom">
+          <div class="uk-card uk-card-default uk-box-shadow-small">
+            <table class="uk-table uk-table-responsive uk-table-divider uk-table-hover uk-table-middle">
+              <thead>
+                <tr>
+                  <th><a href="#" title="">
+                      <p class="uk-text-capitalize uk-margin-remove-bottom">Ticket ID</p><span uk-icon="triangle-up"></span></a></th>
+                  <th><a href="#" title="">
+                      <p class="uk-text-capitalize uk-margin-remove-bottom">Status</p><span uk-icon="triangle-up"></span></a></th>
+                  <th><a href="#" title="">
+                      <p class="uk-text-capitalize uk-margin-remove-bottom">Priority</p><span uk-icon="triangle-up"></span></a></th>
+                  <th><a href="#" title="">
+                      <p class="uk-text-capitalize uk-margin-remove-bottom">Reporter</p><span uk-icon="triangle-up"></span></a></th>
+                  <th><a href="#" title="">
+                      <p class="uk-text-capitalize uk-margin-remove-bottom">Subject</p><span uk-icon="triangle-up"></span></a></th>
+                  <th>
+                    <div class="uk-flex uk-flex-middle">
+                      <p class="uk-text-capitalize uk-margin-remove-bottom">Date Updated</p>
+                      <div class="uk-inline uk-margin-small-left">
+                        <label>
+                          <input class="uk-checkbox" type="checkbox">
+                        </label>
+                        <div class="uk-padding-remove" uk-dropdown="mode: click">
+                          <ul class="uk-nav uk-dropdown-nav">
+                            <li>
+                              <label>
+                                <input class="uk-radio" type="radio" name="radio2" checked><span class="uk-flex uk-text-capitalize uk-margin-small-left">Date Created</span>
+                              </label>
+                            </li>
+                            <li class="uk-padding-remove uk-margin-remove uk-nav-divider"></li>
+                            <li>
+                              <label>
+                                <input class="uk-radio" type="radio" name="radio2"><span class="uk-flex uk-text-capitalize uk-margin-small-left">Date Updated</span>
+                              </label>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </th>
+                  <th></th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><span>3950-D</span></td>
+                  <td>
+                    <div class="uk-table__status uk-table__status--new uk-flex-inline uk-flex-middle"><span class="uk-border-circle uk-margin-small-right"></span>
+                      <p class="uk-margin-remove">New</p>
+                    </div>
+                  </td>
+                  <td><span class="uk-table__priority uk-table__priority--normal">Normal</span></td>
+                  <td><span uk-tooltip="title: skelly@aaski.com; pos:top;">Randah McKinnie</span></td>
+                  <td><span>Problem with System functionality</span></td>
+                  <td><span>Nov 18, 2018</span></td>
+                  <td><a class="uk-icon-link" href="#" uk-icon="move"></a></td>
+                </tr>
+                <tr>
+                  <td><span>3950-D</span></td>
+                  <td>
+                    <div class="uk-table__status uk-table__status--hold uk-flex-inline uk-flex-middle"><span class="uk-border-circle uk-margin-small-right"></span>
+                      <p class="uk-margin-remove">On Hold</p>
+                    </div>
+                  </td>
+                  <td><span class="uk-table__priority uk-table__priority--normal">Normal</span></td>
+                  <td><span uk-tooltip="title: skelly@aaski.com; pos:top;">Randah McKinnie</span></td>
+                  <td><span>Problem with System functionality</span></td>
+                  <td><span>Nov 18, 2018</span></td>
+                  <td><a class="uk-icon-link" href="#" uk-icon="expand"></a></td>
+                </tr>
+                <tr>
+                  <td><span>3950-D</span></td>
+                  <td>
+                    <div class="uk-table__status uk-table__status--critical uk-flex-inline uk-flex-middle"><span class="uk-border-circle uk-margin-small-right"></span>
+                      <p class="uk-margin-remove">Escalated</p>
+                    </div>
+                  </td>
+                  <td><span class="uk-table__priority uk-table__priority--critical">Critical</span></td>
+                  <td><span uk-tooltip="title: skelly@aaski.com; pos:top;">Randah McKinnie</span></td>
+                  <td><span>Problem with System functionality</span></td>
+                  <td><span>Nov 18, 2018</span></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td><span>3950-D</span></td>
+                  <td>
+                    <div class="uk-table__status uk-table__status--awaiting uk-flex-inline uk-flex-middle"><span class="uk-border-circle uk-margin-small-right"></span>
+                      <p class="uk-margin-remove">Awaiting</p>
+                    </div>
+                  </td>
+                  <td><span class="uk-table__priority uk-table__priority--critical">Critical</span></td>
+                  <td><span uk-tooltip="title: skelly@aaski.com; pos:top;">Randah McKinnie</span></td>
+                  <td><span>Problem with System functionality</span></td>
+                  <td><span>Nov 18, 2018</span></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td><span>3950-D</span></td>
+                  <td>
+                    <div class="uk-table__status uk-table__status--progress uk-flex-inline uk-flex-middle"><span class="uk-border-circle uk-margin-small-right"></span>
+                      <p class="uk-margin-remove">In Progress</p>
+                    </div>
+                  </td>
+                  <td><span class="uk-table__priority uk-table__priority--normal">Normal</span></td>
+                  <td><span uk-tooltip="title: skelly@aaski.com; pos:top;">Randah McKinnie</span></td>
+                  <td><span>Problem with System functionality</span></td>
+                  <td><span>Nov 18, 2018</span></td>
+                  <td></td>
+                </tr>
+              </tbody>
+            </table>
+            <ul class="uk-padding-small uk-pagination uk-flex-center" uk-margin>
+              <li class="uk-padding-remove uk-margin-small-left uk-margin-small-right uk-border-circle uk-active"><a class="uk-flex uk-flex-middle uk-flex-center" href="#" title="">1</a></li>
+              <li class="uk-padding-remove uk-margin-small-left uk-margin-small-right uk-border-circle"><a class="uk-flex uk-flex-middle uk-flex-center" href="#" title="">2</a></li>
+              <li class="uk-padding-remove uk-margin-small-left uk-margin-small-right uk-border-circle"><a class="uk-flex uk-flex-middle uk-flex-center" href="#" title="">3</a></li>
+              <li class="uk-padding-remove uk-margin-small-left uk-margin-small-right uk-border-circle"><a class="uk-flex uk-flex-middle uk-flex-center" href="#" title="">4</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- SECTION tickets table :: END-->
+    </div>
+    <!--include ../components/_footer-->
+  </body>
+  <!-- SCRIPT :: START-->
+  <script src="js/vendor.js"></script>
+  <script src="js/app.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.2/js/uikit.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.2/js/uikit-icons.min.js"></script>
+  <!-- SCRIPT :: END-->
+</html>
