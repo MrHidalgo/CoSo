@@ -104,6 +104,12 @@
           border-radius: 10px;
           background: #00a6d9;
           font-size: 20px;
+          @include transition(background-color);
+
+          &:hover {
+            background-color: #026b8b;
+            @include transition(background-color);
+          }
         }
       }
 

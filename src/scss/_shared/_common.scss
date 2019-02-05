@@ -34,6 +34,12 @@ section {
 
   .uk-button {
     background-color: rgb(0, 166, 217);
+    @include transition(background-color);
+
+    &:hover {
+      background-color: #026b8b;
+      @include transition(background-color);
+    }
   }
 }
 

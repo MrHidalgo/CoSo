@@ -571,6 +571,13 @@
       margin-right: 20px;
       background-color: rgba(#ffffff, 0.2);
       color: #ffffff;
+      @include transition(background-color);
+
+      &:hover {
+        color: #ffffff;
+        background-color: #026b8b;
+        @include transition(background-color);
+      }
     }
 
     &-link {
@@ -578,9 +585,21 @@
       color: rgba(255, 255, 255, 0.702);
       font-weight: bold;
       line-height: 1.5;
+      @include transition(color);
+
+      &:hover {
+        color: #026b8b;
+        @include transition(color);
+
+        span {
+          color: #026b8b;
+          @include transition(color);
+        }
+      }
 
       span {
         color: #ffffff;
+        @include transition(color);
       }
     }
   }

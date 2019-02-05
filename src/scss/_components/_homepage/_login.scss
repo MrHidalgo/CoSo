@@ -196,9 +196,10 @@
       color: #00a6d9;
       @include transition(color);
       @include fluid(font-size, 320px, 767px, 20px, 24px);
+      @include transition(color);
 
       &:hover {
-        color: #4e4e4e;
+        color: #026b8b;
         text-decoration: none;
         @include transition(color);
       }
