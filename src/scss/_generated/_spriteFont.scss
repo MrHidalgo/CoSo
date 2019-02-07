@@ -42,29 +42,32 @@
 	@if $filename == account {
 		$char: "\E005";
 	}
-	@if $filename == d-metrics-max {
+	@if $filename == arrow-up {
 		$char: "\E006";
 	}
-	@if $filename == d-metrics-meetings {
+	@if $filename == d-metrics-max {
 		$char: "\E007";
 	}
-	@if $filename == d-metrics-powerpoint {
+	@if $filename == d-metrics-meetings {
 		$char: "\E008";
 	}
-	@if $filename == monitors {
+	@if $filename == d-metrics-powerpoint {
 		$char: "\E009";
 	}
-	@if $filename == reports {
+	@if $filename == monitors {
 		$char: "\E00A";
 	}
-	@if $filename == support {
+	@if $filename == reports {
 		$char: "\E00B";
 	}
-	@if $filename == user {
+	@if $filename == support {
 		$char: "\E00C";
 	}
-	@if $filename == warning {
+	@if $filename == user {
 		$char: "\E00D";
+	}
+	@if $filename == warning {
+		$char: "\E00E";
 	}
 
 	@return $char;
@@ -99,6 +102,10 @@
 }
 .icon-account {
 	@include icon(account);
+
+}
+.icon-arrow-up {
+	@include icon(arrow-up);
 
 }
 .icon-d-metrics-max {

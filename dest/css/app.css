@@ -43,12 +43,24 @@
 }
 
 /* line 17, src/scss/_generated/_spriteSVG.scss */
+.icon-calendar {
+  width: 477.33px;
+  height: 488.15px;
+}
+
+/* line 21, src/scss/_generated/_spriteSVG.scss */
+.icon-cog-install {
+  width: 26px;
+  height: 25.93px;
+}
+
+/* line 25, src/scss/_generated/_spriteSVG.scss */
 .icon-view-state-0 {
   width: 24px;
   height: 24px;
 }
 
-/* line 21, src/scss/_generated/_spriteSVG.scss */
+/* line 29, src/scss/_generated/_spriteSVG.scss */
 .icon-view-state-1 {
   width: 24px;
   height: 24px;
@@ -61,7 +73,7 @@
 }
 
 /* line 23, src/scss/_generated/_spriteFont.scss */
-.icon-a-ticket-awaiting:before, .icon-a-ticket-closed:before, .icon-a-ticket-hold:before, .icon-a-ticket-open:before, .icon-account:before, .icon-d-metrics-max:before, .icon-d-metrics-meetings:before, .icon-d-metrics-powerpoint:before, .icon-monitors:before, .icon-reports:before, .icon-support:before, .icon-user:before, .icon-warning:before {
+.icon-a-ticket-awaiting:before, .icon-a-ticket-closed:before, .icon-a-ticket-hold:before, .icon-a-ticket-open:before, .icon-account:before, .icon-arrow-up:before, .icon-d-metrics-max:before, .icon-d-metrics-meetings:before, .icon-d-metrics-powerpoint:before, .icon-monitors:before, .icon-reports:before, .icon-support:before, .icon-user:before, .icon-warning:before {
   font-family: "iconFont", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -72,69 +84,74 @@
   text-transform: none;
 }
 
-/* line 74, src/scss/_generated/_spriteFont.scss */
+/* line 77, src/scss/_generated/_spriteFont.scss */
 .icon-a-ticket-awaiting:before {
   content: "";
 }
 
-/* line 74, src/scss/_generated/_spriteFont.scss */
+/* line 77, src/scss/_generated/_spriteFont.scss */
 .icon-a-ticket-closed:before {
   content: "";
 }
 
-/* line 74, src/scss/_generated/_spriteFont.scss */
+/* line 77, src/scss/_generated/_spriteFont.scss */
 .icon-a-ticket-hold:before {
   content: "";
 }
 
-/* line 74, src/scss/_generated/_spriteFont.scss */
+/* line 77, src/scss/_generated/_spriteFont.scss */
 .icon-a-ticket-open:before {
   content: "";
 }
 
-/* line 74, src/scss/_generated/_spriteFont.scss */
+/* line 77, src/scss/_generated/_spriteFont.scss */
 .icon-account:before {
   content: "";
 }
 
-/* line 74, src/scss/_generated/_spriteFont.scss */
-.icon-d-metrics-max:before {
+/* line 77, src/scss/_generated/_spriteFont.scss */
+.icon-arrow-up:before {
   content: "";
 }
 
-/* line 74, src/scss/_generated/_spriteFont.scss */
-.icon-d-metrics-meetings:before {
+/* line 77, src/scss/_generated/_spriteFont.scss */
+.icon-d-metrics-max:before {
   content: "";
 }
 
-/* line 74, src/scss/_generated/_spriteFont.scss */
-.icon-d-metrics-powerpoint:before {
+/* line 77, src/scss/_generated/_spriteFont.scss */
+.icon-d-metrics-meetings:before {
   content: "";
 }
 
-/* line 74, src/scss/_generated/_spriteFont.scss */
-.icon-monitors:before {
+/* line 77, src/scss/_generated/_spriteFont.scss */
+.icon-d-metrics-powerpoint:before {
   content: "";
 }
 
-/* line 74, src/scss/_generated/_spriteFont.scss */
-.icon-reports:before {
+/* line 77, src/scss/_generated/_spriteFont.scss */
+.icon-monitors:before {
   content: "";
 }
 
-/* line 74, src/scss/_generated/_spriteFont.scss */
-.icon-support:before {
+/* line 77, src/scss/_generated/_spriteFont.scss */
+.icon-reports:before {
   content: "";
 }
 
-/* line 74, src/scss/_generated/_spriteFont.scss */
-.icon-user:before {
+/* line 77, src/scss/_generated/_spriteFont.scss */
+.icon-support:before {
   content: "";
 }
 
-/* line 74, src/scss/_generated/_spriteFont.scss */
-.icon-warning:before {
+/* line 77, src/scss/_generated/_spriteFont.scss */
+.icon-user:before {
   content: "";
+}
+
+/* line 77, src/scss/_generated/_spriteFont.scss */
+.icon-warning:before {
+  content: "";
 }
 
 /* line 1, src/scss/_shared/_main-setting-reset.scss */
@@ -3439,6 +3456,118 @@ section .uk-button:hover {
 .d-case__attachments-block svg polyline,
 .d-case__attachments-block svg line {
   stroke: #fff !important;
+}
+
+/* line 7, src/scss/_components/_dashboard/_statistics.scss */
+.d-statistics .uk-card-body .uk-width-auto .uk-card {
+  width: 383px;
+  background-color: #00a6d9;
+  color: #ffffff;
+}
+
+/* line 12, src/scss/_components/_dashboard/_statistics.scss */
+.d-statistics .uk-card-body .uk-width-auto .uk-card h2,
+.d-statistics .uk-card-body .uk-width-auto .uk-card p,
+.d-statistics .uk-card-body .uk-width-auto .uk-card button {
+  color: #ffffff;
+}
+
+/* line 18, src/scss/_components/_dashboard/_statistics.scss */
+.d-statistics .uk-card-body .uk-width-auto .uk-card h2 {
+  font-size: 48px;
+}
+
+/* line 25, src/scss/_components/_dashboard/_statistics.scss */
+.d-statistics .uk-card-body .uk-width-expand .uk-card {
+  height: 100%;
+  border-left: 6px solid #00a6d9;
+  background-color: #ececec;
+}
+
+/* line 32, src/scss/_components/_dashboard/_statistics.scss */
+.d-statistics .uk-card-body .uk-width-expand .uk-card > div:nth-of-type(3) p {
+  color: #4e4e4e;
+  font-size: 20px;
+}
+
+/* line 37, src/scss/_components/_dashboard/_statistics.scss */
+.d-statistics .uk-card-body .uk-width-expand .uk-card > div:nth-of-type(3) span {
+  color: #a7a3a3;
+  font-size: 16px;
+}
+
+/* line 44, src/scss/_components/_dashboard/_statistics.scss */
+.d-statistics .uk-card-body .uk-width-expand .uk-card h2 {
+  font-size: 48px;
+}
+
+/* line 47, src/scss/_components/_dashboard/_statistics.scss */
+.d-statistics .uk-card-body .uk-width-expand .uk-card h2 span {
+  color: #f7a209;
+}
+
+/* line 50, src/scss/_components/_dashboard/_statistics.scss */
+.d-statistics .uk-card-body .uk-width-expand .uk-card h2 svg {
+  -webkit-transform: scale(2);
+      -ms-transform: scale(2);
+          transform: scale(2);
+}
+
+/* line 60, src/scss/_components/_dashboard/_statistics.scss */
+.d-statistics .uk-card-body .uk-width-expand [uk-grid] > div:nth-of-type(1) .uk-card, .d-statistics .uk-card-body .uk-width-expand [uk-grid] > div:nth-of-type(3) .uk-card {
+  background-repeat: no-repeat;
+  background-position: bottom center;
+  background-size: contain;
+}
+
+/* line 68, src/scss/_components/_dashboard/_statistics.scss */
+.d-statistics .uk-card-body .uk-width-expand [uk-grid] > div:nth-of-type(1) .uk-card {
+  background-image: url("../img/img-graph-0.png");
+}
+
+/* line 73, src/scss/_components/_dashboard/_statistics.scss */
+.d-statistics .uk-card-body .uk-width-expand [uk-grid] > div:nth-of-type(3) .uk-card {
+  background-image: url("../img/img-graph-1.png");
+}
+
+/* line 85, src/scss/_components/_dashboard/_statistics.scss */
+.d-statistics .uk-card-default .icon-cog-install {
+  fill: #fff;
+}
+
+/* line 89, src/scss/_components/_dashboard/_statistics.scss */
+.d-statistics .uk-card-default .icon-calendar {
+  width: 25px;
+  height: 25px;
+}
+
+/* line 94, src/scss/_components/_dashboard/_statistics.scss */
+.d-statistics .uk-card-default .icon-d-metrics-max {
+  font-size: 33px;
+}
+
+/* line 98, src/scss/_components/_dashboard/_statistics.scss */
+.d-statistics .uk-card-default .icon-arrow-up {
+  color: #f7a209;
+  font-size: 35px;
+}
+
+/* line 105, src/scss/_components/_dashboard/_statistics.scss */
+.d-statistics .uk-card-default span[uk-icon="clock"] svg {
+  width: 28px;
+  height: 28px;
+}
+
+/* line 111, src/scss/_components/_dashboard/_statistics.scss */
+.d-statistics .uk-card-default .uk-card-footer {
+  border-color: transparent;
+  padding-bottom: 40px;
+}
+
+/* line 116, src/scss/_components/_dashboard/_statistics.scss */
+.d-statistics .uk-card-default .uk-card-footer a svg {
+  width: 23px;
+  height: 23px;
 }
 
 /* line 6, src/scss/_components/_dashboard/_feed.scss */
