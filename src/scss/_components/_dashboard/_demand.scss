@@ -86,11 +86,14 @@
       }
 
       &:nth-of-type(2) {
-        padding: 20px;
+        padding: 20px 40px 0;
+
+        > p {
+          font-size: 20px;
+        }
       }
 
       &:nth-of-type(3) {}
-
       [uk-tab] {
         border-radius: 10px;
         border: 1px solid #dad8d8;
@@ -122,6 +125,10 @@
         }
       }
     }
+  }
+
+  &__graph {
+    padding-bottom: 20px;
   }
 }
 

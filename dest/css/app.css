@@ -3251,31 +3251,36 @@ section .uk-button:hover {
 
 /* line 88, src/scss/_components/_dashboard/_demand.scss */
 .d-demand__bottom > div:nth-of-type(2) {
-  padding: 20px;
+  padding: 20px 40px 0;
 }
 
-/* line 94, src/scss/_components/_dashboard/_demand.scss */
+/* line 91, src/scss/_components/_dashboard/_demand.scss */
+.d-demand__bottom > div:nth-of-type(2) > p {
+  font-size: 20px;
+}
+
+/* line 97, src/scss/_components/_dashboard/_demand.scss */
 .d-demand__bottom > div [uk-tab] {
   border-radius: 10px;
   border: 1px solid #dad8d8;
 }
 
-/* line 98, src/scss/_components/_dashboard/_demand.scss */
+/* line 101, src/scss/_components/_dashboard/_demand.scss */
 .d-demand__bottom > div [uk-tab]:before {
   display: none;
 }
 
-/* line 104, src/scss/_components/_dashboard/_demand.scss */
+/* line 107, src/scss/_components/_dashboard/_demand.scss */
 .d-demand__bottom > div [uk-tab] li:last-child a {
   border-right: none;
 }
 
-/* line 109, src/scss/_components/_dashboard/_demand.scss */
+/* line 112, src/scss/_components/_dashboard/_demand.scss */
 .d-demand__bottom > div [uk-tab] li.uk-active a {
   color: #00a6d9;
 }
 
-/* line 114, src/scss/_components/_dashboard/_demand.scss */
+/* line 117, src/scss/_components/_dashboard/_demand.scss */
 .d-demand__bottom > div [uk-tab] li a {
   width: 82px;
   padding-top: 10px !important;
@@ -3283,6 +3288,11 @@ section .uk-button:hover {
   border-color: transparent;
   border-right: 1px solid #dad8d8;
   font-size: 20px;
+}
+
+/* line 130, src/scss/_components/_dashboard/_demand.scss */
+.d-demand__graph {
+  padding-bottom: 20px;
 }
 
 /* line 7, src/scss/_components/_dashboard/_case.scss */
