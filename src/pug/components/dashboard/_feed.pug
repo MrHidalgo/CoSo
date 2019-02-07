@@ -4,111 +4,98 @@
 
   .uk-section.uk-padding-remove-top.uk-padding-remove-bottom.uk-margin-medium-bottom
 
-    .uk-grid-medium.uk-child-width-expand.uk-grid-match(uk-grid uk-height-match="target: > div > .uk-card")
+    .uk-grid-medium.uk-child-width-expand.uk-grid-match(uk-grid uk-height-match="target: > div  .uk-card")
       .uk-width-expand
-        .uk-card.uk-card-default.uk-box-shadow-small
-          .uk-card-header.uk-flex.uk-flex-middle.uk-flex-between
-            .uk-width-1-2.uk-flex.uk-flex-middle
-              h2.uk-margin-remove-bottom.uk-card-title.uk-text-bold!= "Live Feed of Moving Averages"
+        .uk-section.uk-padding-remove.uk-margin-remove
+          .uk-card.uk-card-default.uk-box-shadow-small
+            .uk-card-header.uk-flex.uk-flex-middle.uk-flex-between
+              .uk-width-1-2.uk-flex.uk-flex-middle
+                h2.uk-margin-remove-bottom.uk-card-title.uk-text-bold!= "Live Feed of Moving Averages"
 
-            .uk-width-1-2.uk-flex.uk-flex-right.uk-flex-middle
-              a.uk-button.uk-button-link(href="#" class="" title="")
-                span.uk-text-muted(uk-icon='minus')
-              a.uk-button.uk-button-link.uk-margin-small-left(href="#" class="" title="")
-                span.uk-text-muted(uk-icon='close')
+              .uk-width-1-2.uk-flex.uk-flex-right.uk-flex-middle
+                a.uk-button.uk-button-link(href="#" class="" title="")
+                  span.uk-text-muted(uk-icon='minus')
+                a.uk-button.uk-button-link.uk-margin-small-left(href="#" class="" title="")
+                  span.uk-text-muted(uk-icon='close')
 
-          .uk-card-body.uk-padding-remove
-            ul(class="uk-subnav uk-subnav-pill" uk-switcher)
-              li
-                a.uk-text-bold.uk-text-uppercase(href="#" class="" title="")!= 'MEETINGS'
-              li
-                a.uk-text-bold.uk-text-uppercase(href="#" class="" title="")!= 'users'
-              li
-                a.uk-text-bold.uk-text-uppercase(href="#" class="" title="")!= 'Content'
+            .uk-card-body.uk-padding-remove
+              ul(class="uk-subnav uk-subnav-pill" uk-switcher)
+                li
+                  a.uk-text-bold.uk-text-uppercase(href="#" class="" title="")!= 'MEETINGS'
+                li
+                  a.uk-text-bold.uk-text-uppercase(href="#" class="" title="")!= 'users'
+                li
+                  a.uk-text-bold.uk-text-uppercase(href="#" class="" title="")!= 'Content'
 
-            ul.uk-padding-small(class="uk-switcher uk-margin")
-              li
-                span!= "MEETINGS content"
-              li
-                span!= "USERS content"
-              li
-                span!= "CONTENT content"
+              ul.uk-padding-small(class="uk-switcher uk-margin")
+                li
+                  span!= "MEETINGS content"
+                li
+                  span!= "USERS content"
+                li
+                  span!= "CONTENT content"
 
 
       .uk-width-auto
-        .uk-card.uk-card-default.uk-box-shadow-small
-          .uk-card-header.uk-flex.uk-flex-middle.uk-flex-between
-            .uk-flex.uk-flex-middle
-              h2.uk-margin-remove-bottom.uk-card-title.uk-text-bold!= "Account Information"
+        .uk-section.uk-padding-remove.uk-margin-remove
+          .uk-card.uk-card-default.uk-box-shadow-small
+            .uk-card-header.uk-flex.uk-flex-middle.uk-flex-between
+              .uk-flex.uk-flex-middle
+                h2.uk-margin-remove-bottom.uk-card-title.uk-text-bold!= "Health Check"
 
-          .uk-card-body.uk-padding-remove
-            div.uk-padding-small(uk-grid)
-              .uk-width-1-2
-                p.uk-text-muted.uk-margin-small-bottom!= "Company"
-              .uk-width-1-2
-                p.uk-text-muted.uk-margin-small-bottom.uk-text-uppercase!= "KAPLAN"
-              .uk-width-1-2.uk-margin-remove
-                p.uk-text-muted.uk-margin-small-bottom!= "License"
-              .uk-width-1-2.uk-margin-remove
-                p.uk-text-muted.uk-margin-small-bottom!= "45TOWUEG56-1"
-              .uk-width-1-2.uk-margin-remove
-                p.uk-text-muted.uk-margin-small-bottom!= "Live Date"
-              .uk-width-1-2.uk-margin-remove
-                p.uk-text-muted.uk-margin-small-bottom!= "Nov 30, 2018"
-              .uk-width-1-2.uk-margin-remove
-                p.uk-text-muted.uk-margin-small-bottom!= "Expire Date"
-              .uk-width-1-2.uk-margin-remove
-                p.uk-text-muted.uk-margin-small-bottom!= "Nov 30, 2020"
+            .uk-card-body.uk-padding-remove
+              div.uk-padding-small(uk-grid)
+                .uk-width-1-2
+                  p.uk-text-muted.uk-margin-small-bottom!= "Company"
+                .uk-width-1-2
+                  p.uk-margin-small-bottom.uk-text-uppercase!= "KAPLAN"
+                .uk-width-1-2.uk-margin-remove
+                  p.uk-text-muted.uk-margin-small-bottom!= "CSM"
+                .uk-width-1-2.uk-margin-remove
+                  p.uk-text-muted.uk-margin-small-bottom!= "CSM Info goes here"
+                .uk-width-1-2.uk-margin-remove
+                  p.uk-text-muted.uk-margin-small-bottom!= "Account Rep"
+                .uk-width-1-2.uk-margin-remove
+                  p.uk-text-muted.uk-margin-small-bottom!= "Randah McKinnie"
+                .uk-width-1-2.uk-margin-remove
+                  p.uk-text-muted.uk-margin-small-bottom!= "Partner Rep"
+                .uk-width-1-2.uk-margin-remove
+                  p.uk-text-muted.uk-margin-small-bottom!= "Kristen Sasser"
 
-            div.uk-margin-remove(uk-grid)
-              .uk-width-1.uk-padding-small.uk-margin-remove
-                div(uk-grid)
-                  .uk-width-1-2
-                    p!= "Total Systems"
-                  .uk-width-1-2.uk-flex.uk-flex-middle.uk-flex-between
-                    span(class="uk-badge")!= "4"
-                    a(href="" class="uk-icon-link" uk-icon="question")
-              .uk-width-1.uk-padding-small.uk-margin-remove
-                div(uk-grid)
-                  .uk-width-1-2
-                    p!= "System Status"
-                  .uk-width-1-2.uk-flex.uk-flex-middle.uk-flex-between
-                    div.uk-flex.uk-flex-middle
-                      span.uk-margin-small-right(class="uk-badge")
-                      span.uk-margin-small-right(class="uk-badge")
-                      span.uk-margin-small-right(class="uk-badge")
-                      i.icon-font.icon-warning
-                    div
+              div.uk-margin-remove(uk-grid)
+                .uk-width-1.uk-padding-small.uk-margin-remove
+                  div(uk-grid)
+                    .uk-width-1-2
+                      p!= "Total Systems"
+                    .uk-width-1-2.uk-flex.uk-flex-middle.uk-flex-between
+                      span(class="uk-badge")!= "4"
                       a(href="" class="uk-icon-link" uk-icon="question")
-
-            div.uk-padding-small.uk-margin-remove-top(uk-grid)
-              .uk-width-1-2
-                p.uk-text-muted.uk-margin-small-bottom!= "CSM"
-              .uk-width-1-2
-                p.uk-text-muted.uk-margin-small-bottom!= "CSM Info goes here"
-              .uk-width-1-2.uk-margin-remove
-                p.uk-text-muted.uk-margin-small-bottom!= "Account Rep"
-              .uk-width-1-2.uk-margin-remove
-                p.uk-text-muted.uk-margin-small-bottom!= "Randah McKinnie"
-              .uk-width-1-2.uk-margin-remove
-                p.uk-text-muted.uk-margin-small-bottom!= "Partner Rep"
-              .uk-width-1-2.uk-margin-remove
-                p.uk-text-muted.uk-margin-small-bottom!= "Kristen Sasser"
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+                .uk-width-1.uk-padding-small.uk-margin-remove
+                  div(uk-grid)
+                    .uk-width-1-2
+                      p!= "System Status"
+                    .uk-width-1-2.uk-flex.uk-flex-middle.uk-flex-between
+                      div.uk-flex.uk-flex-middle
+                        span.uk-margin-small-right(class="uk-badge uk-badge--small")
+                        span.uk-margin-small-right(class="uk-badge uk-badge--small")
+                        span.uk-margin-small-right(class="uk-badge uk-badge--small")
+                        i.icon-font.icon-warning
+                      div
+                        a(href="" class="uk-icon-link" uk-icon="question")
+              //
+              //div.uk-padding-small.uk-margin-remove-top(uk-grid)
+              //  .uk-width-1-2
+              //    p.uk-text-muted.uk-margin-small-bottom!= "CSM"
+              //  .uk-width-1-2
+              //    p.uk-text-muted.uk-margin-small-bottom!= "CSM Info goes here"
+              //  .uk-width-1-2.uk-margin-remove
+              //    p.uk-text-muted.uk-margin-small-bottom!= "Account Rep"
+              //  .uk-width-1-2.uk-margin-remove
+              //    p.uk-text-muted.uk-margin-small-bottom!= "Randah McKinnie"
+              //  .uk-width-1-2.uk-margin-remove
+              //    p.uk-text-muted.uk-margin-small-bottom!= "Partner Rep"
+              //  .uk-width-1-2.uk-margin-remove
+              //    p.uk-text-muted.uk-margin-small-bottom!= "Kristen Sasser"
 
 
 // SECTION live feed & check :: END

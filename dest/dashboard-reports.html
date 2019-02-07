@@ -93,34 +93,20 @@
                   <div>
                     <p>Dashboard</p>
                   </div>
+                  <div class="uk-flex uk-flex-middle uk-flex-center"></div></a><a class="sidebar__navigation-btn uk-flex uk-flex-middle sidebar__navigation-btn--external" href="#" title="">
+                  <div class="uk-flex uk-flex-center"><i class="icon-font icon-account"></i>
+                  </div>
+                  <div>
+                    <p>Account</p>
+                  </div>
                   <div class="uk-flex uk-flex-middle uk-flex-center"></div></a>
-            <ul uk-accordion="multiple: true">
-              <li><a class="uk-accordion-title sidebar__navigation-btn uk-flex uk-flex-middle sidebar__navigation-btn--external" href="#" title="">
-                      <div class="uk-flex uk-flex-center"><i class="icon-font icon-account"></i>
-                      </div>
-                      <div>
-                        <p>Account</p>
-                      </div>
-                      <div class="uk-flex uk-flex-middle uk-flex-center"><span uk-icon="chevron-down"></span></div></a>
-                <div class="uk-accordion-content uk-flex uk-flex-column uk-margin-remove-top"><a class="sidebar__navigation-btn uk-flex uk-flex-middle sidebar__navigation-btn--internal" href="#" title="">
-                        <div class="uk-flex uk-flex-center"><i class="icon-font"></i>
-                        </div>
-                        <div>
-                          <p>Account action 1</p>
-                        </div></a><a class="sidebar__navigation-btn uk-flex uk-flex-middle sidebar__navigation-btn--internal" href="#" title="">
-                        <div class="uk-flex uk-flex-center"><i class="icon-font"></i>
-                        </div>
-                        <div>
-                          <p>Account action 2</p>
-                        </div></a><a class="sidebar__navigation-btn uk-flex uk-flex-middle sidebar__navigation-btn--internal" href="#" title="">
-                        <div class="uk-flex uk-flex-center"><i class="icon-font"></i>
-                        </div>
-                        <div>
-                          <p>Account action 3</p>
-                        </div></a>
-                </div>
-              </li>
-            </ul><a class="sidebar__navigation-btn uk-flex uk-flex-middle sidebar__navigation-btn--external" href="#" title="">
+            <!--ul(uk-accordion="multiple: true")-->
+            <!--  li-->
+            <!--    +sidebarNavAccordionBtn('external', false, 'icon-account', 'Account')-->
+            <!--    .uk-accordion-content.uk-flex.uk-flex-column.uk-margin-remove-top-->
+            <!--      +sidebarNavBtn('internal', '', false, 'Account action 1')-->
+            <!--      +sidebarNavBtn('internal', '', false, 'Account action 2')-->
+            <!--      +sidebarNavBtn('internal', '', false, 'Account action 3')--><a class="sidebar__navigation-btn uk-flex uk-flex-middle sidebar__navigation-btn--external" href="#" title="">
                   <div class="uk-flex uk-flex-center"><i class="icon-font icon-support"></i>
                   </div>
                   <div>
@@ -208,7 +194,7 @@
         <div class="uk-section uk-padding-remove-top uk-padding-remove-bottom uk-flex uk-flex-right uk-margin-bottom">
           <div class="uk-inline uk-margin-small-right">
             <button class="uk-button uk-button-default uk-background-default" type="button"><span class="uk-margin-right">SELECT INSTALLS</span><span uk-icon="chevron-down"></span></button>
-            <div uk-dropdown="mode: click">
+            <div uk-dropdown="mode: click; pos: bottom-right">
               <ul class="uk-nav uk-dropdown-nav">
                 <li><a href="#">Item 1</a></li>
                 <li><a href="#">Item 2</a></li>
@@ -218,7 +204,7 @@
           </div>
           <div class="uk-inline">
             <button class="uk-button uk-button-default uk-background-default" type="button"><span class="uk-margin-right">HELP</span><span uk-icon="chevron-down"></span></button>
-            <div uk-dropdown="mode: click">
+            <div uk-dropdown="mode: click; pos: bottom-right">
               <ul class="uk-nav uk-dropdown-nav">
                 <li><a href="#">Item 1</a></li>
                 <li><a href="#">Item 2</a></li>

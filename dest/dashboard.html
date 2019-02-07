@@ -44,9 +44,6 @@
               <div><i></i><i></i><i></i></div><span>Collapse</span></a></div>
           <div class="uk-flex uk-flex-middle uk-flex-between">
             <div class="header__search uk-flex">
-              <form class="uk-flex uk-flex-middle uk-search uk-search-large" action="" autocomplete="off"><span uk-search-icon></span>
-                <input class="uk-search-input" type="search" placeholder="Search...">
-              </form>
             </div>
             <div class="header__date uk-flex uk-flex-middle uk-flex-right">
               <p><span>12:00</span> PM</p><span></span>
@@ -93,34 +90,20 @@
                   <div>
                     <p>Dashboard</p>
                   </div>
+                  <div class="uk-flex uk-flex-middle uk-flex-center"></div></a><a class="sidebar__navigation-btn uk-flex uk-flex-middle sidebar__navigation-btn--external" href="#" title="">
+                  <div class="uk-flex uk-flex-center"><i class="icon-font icon-account"></i>
+                  </div>
+                  <div>
+                    <p>Account</p>
+                  </div>
                   <div class="uk-flex uk-flex-middle uk-flex-center"></div></a>
-            <ul uk-accordion="multiple: true">
-              <li><a class="uk-accordion-title sidebar__navigation-btn uk-flex uk-flex-middle sidebar__navigation-btn--external" href="#" title="">
-                      <div class="uk-flex uk-flex-center"><i class="icon-font icon-account"></i>
-                      </div>
-                      <div>
-                        <p>Account</p>
-                      </div>
-                      <div class="uk-flex uk-flex-middle uk-flex-center"><span uk-icon="chevron-down"></span></div></a>
-                <div class="uk-accordion-content uk-flex uk-flex-column uk-margin-remove-top"><a class="sidebar__navigation-btn uk-flex uk-flex-middle sidebar__navigation-btn--internal" href="#" title="">
-                        <div class="uk-flex uk-flex-center"><i class="icon-font"></i>
-                        </div>
-                        <div>
-                          <p>Account action 1</p>
-                        </div></a><a class="sidebar__navigation-btn uk-flex uk-flex-middle sidebar__navigation-btn--internal" href="#" title="">
-                        <div class="uk-flex uk-flex-center"><i class="icon-font"></i>
-                        </div>
-                        <div>
-                          <p>Account action 2</p>
-                        </div></a><a class="sidebar__navigation-btn uk-flex uk-flex-middle sidebar__navigation-btn--internal" href="#" title="">
-                        <div class="uk-flex uk-flex-center"><i class="icon-font"></i>
-                        </div>
-                        <div>
-                          <p>Account action 3</p>
-                        </div></a>
-                </div>
-              </li>
-            </ul><a class="sidebar__navigation-btn uk-flex uk-flex-middle sidebar__navigation-btn--external" href="#" title="">
+            <!--ul(uk-accordion="multiple: true")-->
+            <!--  li-->
+            <!--    +sidebarNavAccordionBtn('external', false, 'icon-account', 'Account')-->
+            <!--    .uk-accordion-content.uk-flex.uk-flex-column.uk-margin-remove-top-->
+            <!--      +sidebarNavBtn('internal', '', false, 'Account action 1')-->
+            <!--      +sidebarNavBtn('internal', '', false, 'Account action 2')-->
+            <!--      +sidebarNavBtn('internal', '', false, 'Account action 3')--><a class="sidebar__navigation-btn uk-flex uk-flex-middle sidebar__navigation-btn--external" href="#" title="">
                   <div class="uk-flex uk-flex-center"><i class="icon-font icon-support"></i>
                   </div>
                   <div>
@@ -208,7 +191,7 @@
         <div class="uk-section uk-padding-remove-top uk-padding-remove-bottom uk-flex uk-flex-right uk-margin-bottom">
           <div class="uk-inline uk-margin-small-right">
             <button class="uk-button uk-button-default uk-background-default" type="button"><span class="uk-margin-right">SELECT INSTALLS</span><span uk-icon="chevron-down"></span></button>
-            <div uk-dropdown="mode: click">
+            <div uk-dropdown="mode: click; pos: bottom-right">
               <ul class="uk-nav uk-dropdown-nav">
                 <li><a href="#">Item 1</a></li>
                 <li><a href="#">Item 2</a></li>
@@ -218,7 +201,7 @@
           </div>
           <div class="uk-inline">
             <button class="uk-button uk-button-default uk-background-default" type="button"><span class="uk-margin-right">HELP</span><span uk-icon="chevron-down"></span></button>
-            <div uk-dropdown="mode: click">
+            <div uk-dropdown="mode: click; pos: bottom-right">
               <ul class="uk-nav uk-dropdown-nav">
                 <li><a href="#">Item 1</a></li>
                 <li><a href="#">Item 2</a></li>
@@ -232,103 +215,101 @@
       <!-- SECTION live feed & check :: START-->
       <div class="d-feed" id="d-feed">
         <div class="uk-section uk-padding-remove-top uk-padding-remove-bottom uk-margin-medium-bottom">
-          <div class="uk-grid-medium uk-child-width-expand uk-grid-match" uk-grid uk-height-match="target: &gt; div &gt; .uk-card">
+          <div class="uk-grid-medium uk-child-width-expand uk-grid-match" uk-grid uk-height-match="target: &gt; div  .uk-card">
             <div class="uk-width-expand">
-              <div class="uk-card uk-card-default uk-box-shadow-small">
-                <div class="uk-card-header uk-flex uk-flex-middle uk-flex-between">
-                  <div class="uk-width-1-2 uk-flex uk-flex-middle">
-                    <h2 class="uk-margin-remove-bottom uk-card-title uk-text-bold">Live Feed of Moving Averages</h2>
+              <div class="uk-section uk-padding-remove uk-margin-remove">
+                <div class="uk-card uk-card-default uk-box-shadow-small">
+                  <div class="uk-card-header uk-flex uk-flex-middle uk-flex-between">
+                    <div class="uk-width-1-2 uk-flex uk-flex-middle">
+                      <h2 class="uk-margin-remove-bottom uk-card-title uk-text-bold">Live Feed of Moving Averages</h2>
+                    </div>
+                    <div class="uk-width-1-2 uk-flex uk-flex-right uk-flex-middle"><a class="uk-button uk-button-link" href="#" title=""><span class="uk-text-muted" uk-icon="minus"></span></a><a class="uk-button uk-button-link uk-margin-small-left" href="#" title=""><span class="uk-text-muted" uk-icon="close"></span></a></div>
                   </div>
-                  <div class="uk-width-1-2 uk-flex uk-flex-right uk-flex-middle"><a class="uk-button uk-button-link" href="#" title=""><span class="uk-text-muted" uk-icon="minus"></span></a><a class="uk-button uk-button-link uk-margin-small-left" href="#" title=""><span class="uk-text-muted" uk-icon="close"></span></a></div>
-                </div>
-                <div class="uk-card-body uk-padding-remove">
-                  <ul class="uk-subnav uk-subnav-pill" uk-switcher>
-                    <li><a class="uk-text-bold uk-text-uppercase" href="#" title="">MEETINGS</a></li>
-                    <li><a class="uk-text-bold uk-text-uppercase" href="#" title="">users</a></li>
-                    <li><a class="uk-text-bold uk-text-uppercase" href="#" title="">Content</a></li>
-                  </ul>
-                  <ul class="uk-padding-small uk-switcher uk-margin">
-                    <li><span>MEETINGS content</span></li>
-                    <li><span>USERS content</span></li>
-                    <li><span>CONTENT content</span></li>
-                  </ul>
+                  <div class="uk-card-body uk-padding-remove">
+                    <ul class="uk-subnav uk-subnav-pill" uk-switcher>
+                      <li><a class="uk-text-bold uk-text-uppercase" href="#" title="">MEETINGS</a></li>
+                      <li><a class="uk-text-bold uk-text-uppercase" href="#" title="">users</a></li>
+                      <li><a class="uk-text-bold uk-text-uppercase" href="#" title="">Content</a></li>
+                    </ul>
+                    <ul class="uk-padding-small uk-switcher uk-margin">
+                      <li><span>MEETINGS content</span></li>
+                      <li><span>USERS content</span></li>
+                      <li><span>CONTENT content</span></li>
+                    </ul>
+                  </div>
                 </div>
               </div>
             </div>
             <div class="uk-width-auto">
-              <div class="uk-card uk-card-default uk-box-shadow-small">
-                <div class="uk-card-header uk-flex uk-flex-middle uk-flex-between">
-                  <div class="uk-flex uk-flex-middle">
-                    <h2 class="uk-margin-remove-bottom uk-card-title uk-text-bold">Account Information</h2>
-                  </div>
-                </div>
-                <div class="uk-card-body uk-padding-remove">
-                  <div class="uk-padding-small" uk-grid>
-                    <div class="uk-width-1-2">
-                      <p class="uk-text-muted uk-margin-small-bottom">Company</p>
-                    </div>
-                    <div class="uk-width-1-2">
-                      <p class="uk-text-muted uk-margin-small-bottom uk-text-uppercase">KAPLAN</p>
-                    </div>
-                    <div class="uk-width-1-2 uk-margin-remove">
-                      <p class="uk-text-muted uk-margin-small-bottom">License</p>
-                    </div>
-                    <div class="uk-width-1-2 uk-margin-remove">
-                      <p class="uk-text-muted uk-margin-small-bottom">45TOWUEG56-1</p>
-                    </div>
-                    <div class="uk-width-1-2 uk-margin-remove">
-                      <p class="uk-text-muted uk-margin-small-bottom">Live Date</p>
-                    </div>
-                    <div class="uk-width-1-2 uk-margin-remove">
-                      <p class="uk-text-muted uk-margin-small-bottom">Nov 30, 2018</p>
-                    </div>
-                    <div class="uk-width-1-2 uk-margin-remove">
-                      <p class="uk-text-muted uk-margin-small-bottom">Expire Date</p>
-                    </div>
-                    <div class="uk-width-1-2 uk-margin-remove">
-                      <p class="uk-text-muted uk-margin-small-bottom">Nov 30, 2020</p>
+              <div class="uk-section uk-padding-remove uk-margin-remove">
+                <div class="uk-card uk-card-default uk-box-shadow-small">
+                  <div class="uk-card-header uk-flex uk-flex-middle uk-flex-between">
+                    <div class="uk-flex uk-flex-middle">
+                      <h2 class="uk-margin-remove-bottom uk-card-title uk-text-bold">Health Check</h2>
                     </div>
                   </div>
-                  <div class="uk-margin-remove" uk-grid>
-                    <div class="uk-width-1 uk-padding-small uk-margin-remove">
-                      <div uk-grid>
-                        <div class="uk-width-1-2">
-                          <p>Total Systems</p>
-                        </div>
-                        <div class="uk-width-1-2 uk-flex uk-flex-middle uk-flex-between"><span class="uk-badge">4</span><a class="uk-icon-link" href="" uk-icon="question"></a></div>
+                  <div class="uk-card-body uk-padding-remove">
+                    <div class="uk-padding-small" uk-grid>
+                      <div class="uk-width-1-2">
+                        <p class="uk-text-muted uk-margin-small-bottom">Company</p>
+                      </div>
+                      <div class="uk-width-1-2">
+                        <p class="uk-margin-small-bottom uk-text-uppercase">KAPLAN</p>
+                      </div>
+                      <div class="uk-width-1-2 uk-margin-remove">
+                        <p class="uk-text-muted uk-margin-small-bottom">CSM</p>
+                      </div>
+                      <div class="uk-width-1-2 uk-margin-remove">
+                        <p class="uk-text-muted uk-margin-small-bottom">CSM Info goes here</p>
+                      </div>
+                      <div class="uk-width-1-2 uk-margin-remove">
+                        <p class="uk-text-muted uk-margin-small-bottom">Account Rep</p>
+                      </div>
+                      <div class="uk-width-1-2 uk-margin-remove">
+                        <p class="uk-text-muted uk-margin-small-bottom">Randah McKinnie</p>
+                      </div>
+                      <div class="uk-width-1-2 uk-margin-remove">
+                        <p class="uk-text-muted uk-margin-small-bottom">Partner Rep</p>
+                      </div>
+                      <div class="uk-width-1-2 uk-margin-remove">
+                        <p class="uk-text-muted uk-margin-small-bottom">Kristen Sasser</p>
                       </div>
                     </div>
-                    <div class="uk-width-1 uk-padding-small uk-margin-remove">
-                      <div uk-grid>
-                        <div class="uk-width-1-2">
-                          <p>System Status</p>
+                    <div class="uk-margin-remove" uk-grid>
+                      <div class="uk-width-1 uk-padding-small uk-margin-remove">
+                        <div uk-grid>
+                          <div class="uk-width-1-2">
+                            <p>Total Systems</p>
+                          </div>
+                          <div class="uk-width-1-2 uk-flex uk-flex-middle uk-flex-between"><span class="uk-badge">4</span><a class="uk-icon-link" href="" uk-icon="question"></a></div>
                         </div>
-                        <div class="uk-width-1-2 uk-flex uk-flex-middle uk-flex-between">
-                          <div class="uk-flex uk-flex-middle"><span class="uk-margin-small-right uk-badge"></span><span class="uk-margin-small-right uk-badge"></span><span class="uk-margin-small-right uk-badge"></span><i class="icon-font icon-warning"></i></div>
-                          <div><a class="uk-icon-link" href="" uk-icon="question"></a></div>
+                      </div>
+                      <div class="uk-width-1 uk-padding-small uk-margin-remove">
+                        <div uk-grid>
+                          <div class="uk-width-1-2">
+                            <p>System Status</p>
+                          </div>
+                          <div class="uk-width-1-2 uk-flex uk-flex-middle uk-flex-between">
+                            <div class="uk-flex uk-flex-middle"><span class="uk-margin-small-right uk-badge uk-badge--small"></span><span class="uk-margin-small-right uk-badge uk-badge--small"></span><span class="uk-margin-small-right uk-badge uk-badge--small"></span><i class="icon-font icon-warning"></i></div>
+                            <div><a class="uk-icon-link" href="" uk-icon="question"></a></div>
+                          </div>
                         </div>
                       </div>
                     </div>
-                  </div>
-                  <div class="uk-padding-small uk-margin-remove-top" uk-grid>
-                    <div class="uk-width-1-2">
-                      <p class="uk-text-muted uk-margin-small-bottom">CSM</p>
-                    </div>
-                    <div class="uk-width-1-2">
-                      <p class="uk-text-muted uk-margin-small-bottom">CSM Info goes here</p>
-                    </div>
-                    <div class="uk-width-1-2 uk-margin-remove">
-                      <p class="uk-text-muted uk-margin-small-bottom">Account Rep</p>
-                    </div>
-                    <div class="uk-width-1-2 uk-margin-remove">
-                      <p class="uk-text-muted uk-margin-small-bottom">Randah McKinnie</p>
-                    </div>
-                    <div class="uk-width-1-2 uk-margin-remove">
-                      <p class="uk-text-muted uk-margin-small-bottom">Partner Rep</p>
-                    </div>
-                    <div class="uk-width-1-2 uk-margin-remove">
-                      <p class="uk-text-muted uk-margin-small-bottom">Kristen Sasser</p>
-                    </div>
+                    <!---->
+                    <!--div.uk-padding-small.uk-margin-remove-top(uk-grid)-->
+                    <!--  .uk-width-1-2-->
+                    <!--    p.uk-text-muted.uk-margin-small-bottom!= "CSM"-->
+                    <!--  .uk-width-1-2-->
+                    <!--    p.uk-text-muted.uk-margin-small-bottom!= "CSM Info goes here"-->
+                    <!--  .uk-width-1-2.uk-margin-remove-->
+                    <!--    p.uk-text-muted.uk-margin-small-bottom!= "Account Rep"-->
+                    <!--  .uk-width-1-2.uk-margin-remove-->
+                    <!--    p.uk-text-muted.uk-margin-small-bottom!= "Randah McKinnie"-->
+                    <!--  .uk-width-1-2.uk-margin-remove-->
+                    <!--    p.uk-text-muted.uk-margin-small-bottom!= "Partner Rep"-->
+                    <!--  .uk-width-1-2.uk-margin-remove-->
+                    <!--    p.uk-text-muted.uk-margin-small-bottom!= "Kristen Sasser"-->
                   </div>
                 </div>
               </div>

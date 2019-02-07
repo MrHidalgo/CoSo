@@ -64,6 +64,19 @@
       }
     }
   }
+
+  .uk-badge {
+    width: 27px;
+    height: 27px;
+    font-size: 18px;
+    background-color: #00a6d9;
+
+    &--small {
+      min-width: 19px;
+      width: 19px;
+      height: 19px;
+    }
+  }
 }
 
 // SECTION live feed & check :: END

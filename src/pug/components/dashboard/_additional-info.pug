@@ -9,7 +9,7 @@
         button(class="uk-button uk-button-default uk-background-default" type="button")
           span.uk-margin-right!= "SELECT INSTALLS"
           span(uk-icon='chevron-down')
-        div(uk-dropdown="mode: click")
+        div(uk-dropdown="mode: click; pos: bottom-right")
           ul(class="uk-nav uk-dropdown-nav")
             each val, idx in [1,2,3]
               li
@@ -19,7 +19,7 @@
       button(class="uk-button uk-button-default uk-background-default" type="button")
         span.uk-margin-right!= "HELP"
         span(uk-icon='chevron-down')
-      div(uk-dropdown="mode: click")
+      div(uk-dropdown="mode: click; pos: bottom-right")
         ul(class="uk-nav uk-dropdown-nav")
           each val, idx in [1,2,3]
             li

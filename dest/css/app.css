@@ -3442,4 +3442,19 @@ section .uk-button:hover {
   font-size: 20px;
 }
 
+/* line 68, src/scss/_components/_dashboard/_feed.scss */
+.d-feed .uk-badge {
+  width: 27px;
+  height: 27px;
+  font-size: 18px;
+  background-color: #00a6d9;
+}
+
+/* line 74, src/scss/_components/_dashboard/_feed.scss */
+.d-feed .uk-badge--small {
+  min-width: 19px;
+  width: 19px;
+  height: 19px;
+}
+
 /*# sourceMappingURL=maps/app.css.map */

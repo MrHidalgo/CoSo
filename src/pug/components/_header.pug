@@ -19,9 +19,12 @@ header#header.header
 
       div.uk-flex.uk-flex-middle.uk-flex-between
         .header__search.uk-flex
-          form.uk-flex.uk-flex-middle(action="" autocomplete='off' class="uk-search uk-search-large")
-            span(uk-search-icon)
-            input(class="uk-search-input" type="search" placeholder="Search...")
+
+          if(pageSubClassName !== 'p-dashboard-main')
+
+            form.uk-flex.uk-flex-middle(action="" autocomplete='off' class="uk-search uk-search-large")
+              span(uk-search-icon)
+              input(class="uk-search-input" type="search" placeholder="Search...")
 
         .header__date.uk-flex.uk-flex-middle.uk-flex-right
           p!= "<span>12:00</span> PM"
