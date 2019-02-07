@@ -5,6 +5,8 @@
     thead,
     tbody {
       tr {
+        border-width: 2px;
+
         th,
         td {
           &:nth-of-type(1) {
@@ -41,10 +43,10 @@
 
     &__priority {
       &--normal {
-        color: #00a8da;
+        color: #00a8da !important;
       }
       &--critical {
-        color: #f76808;
+        color: #f76808 !important;
       }
     }
 
@@ -85,10 +87,17 @@
   }
 
   &__header {
+    h2 {
+      font-size: 28px;
+    }
+
     p {
       font-size: 18px;
 
       span {
+        width: 24px;
+        height: 24px;
+        font-size: 18px;
         background-color: #00a6d9;
       }
     }
@@ -99,7 +108,7 @@
       height: 49px;
       padding-left: 22px;
       padding-right: 22px;
-      border-radius: 5px;
+      border-radius: 10px;
       background-color: #00a6d9;
       font-size: 20px;
       @include transition(background-color);
@@ -117,7 +126,7 @@
 
   &__footer {
     padding: 15px 40px;
-    border-top: 1px solid #e5e5e5;
+    border-top: 2px solid #e5e5e5;
 
     button {
       border-color: transparent;
@@ -130,6 +139,13 @@
 
       svg {
         fill: #00a6d9;
+      }
+    }
+
+    a {
+      svg {
+        width: 23px;
+        height: 23px;
       }
     }
   }

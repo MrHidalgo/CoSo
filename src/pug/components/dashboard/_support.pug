@@ -20,7 +20,7 @@
             h2.uk-margin-remove-bottom.uk-card-title.uk-text-bold.uk-text-muted!= "Recent Tickets"
 
           .uk-width-1-2.uk-flex.uk-flex-middle.uk-flex-right
-            p.uk-margin-remove!= "<span class='uk-badge'>8</span> Open Tickets"
+            p.uk-margin-remove.uk-flex.uk-flex-middle!= "<span class='uk-badge uk-margin-small-right'>8</span> Open Tickets"
 
             button.uk-flex.uk-flex-middle.uk-flex-between.uk-margin-medium-left(class!= "uk-button uk-button-primary uk-button-large")
               span(uk-icon="plus")
@@ -66,27 +66,29 @@
                 td
                   span!= "Nov 18, 2018"
                 td
-                  a(href="#" class="uk-icon-link" uk-icon="chevron-down")
+                  a(href="#" class="")
+                    +iconSVG('view-state-0')
               tr
                 td
-                  span!= '3950-D'
+                  span!= '3520-D'
                 td
                   div.uk-table__status.uk-table__status--hold.uk-flex-inline.uk-flex-middle
                     span.uk-border-circle.uk-margin-small-right
                     p.uk-margin-remove!= "On Hold"
                 td
-                  span.uk-table__priority.uk-table__priority--normal!= "Normal"
+                  span.uk-table__priority.uk-table__priority--critical!= "Critical"
                 td
-                  span!= "Problem with System functionality"
+                  span!= "Understanding dashobard functionality"
                 td
-                  span(uk-tooltip="title: skelly@aaski.com; pos:top;")!= "Randah McKinnie"
+                  span(uk-tooltip="title: skelly@aaski.com; pos:top;")!= "Sean Kelly"
                 td
-                  span!= "Nov 18, 2018"
+                  span!= "Nov 10, 2018"
                 td
-                  a(href="#" class="uk-icon-link" uk-icon="chevron-down")
+                  a(href="#" class="")
+                    +iconSVG('view-state-1')
               tr
                 td
-                  span!= '3950-D'
+                  span!= '3510-D'
                 td
                   div.uk-table__status.uk-table__status--critical.uk-flex-inline.uk-flex-middle
                     span.uk-border-circle.uk-margin-small-right
@@ -94,31 +96,49 @@
                 td
                   span.uk-table__priority.uk-table__priority--critical!= "Critical"
                 td
-                  span!= "Problem with System functionality"
+                  span!= "Password Reset"
                 td
                   span(uk-tooltip="title: skelly@aaski.com; pos:top;")!= "Randah McKinnie"
 
                 td
-                  span!= "Nov 18, 2018"
+                  span!= "Nov 5, 2018"
                 td
-                  a(href="#" class="uk-icon-link" uk-icon="chevron-down")
+                  //a(href="#" class="")
+                  //  i.icon-font.icon-view-state-0
               tr
                 td
-                  span!= '3950-D'
+                  span!= '3360-D'
                 td
                   div.uk-table__status.uk-table__status--progress.uk-flex-inline.uk-flex-middle
                     span.uk-border-circle.uk-margin-small-right
                     p.uk-margin-remove!= "In Progress"
                 td
+                  span.uk-table__priority.uk-table__priority--normal!= "Low"
+                td
+                  span!= "Account Upgrade"
+                td
+                  span(uk-tooltip="title: skelly@aaski.com; pos:top;")!= "Sean Kelly"
+                td
+                  span!= "Nov 1, 2018"
+                td
+                  //a(href="#" class="uk-icon-link" uk-icon="chevron-down")
+              tr
+                td
+                  span!= '3150-D'
+                td
+                  div.uk-table__status.uk-table__status--new.uk-flex-inline.uk-flex-middle
+                    span.uk-border-circle.uk-margin-small-right
+                    p.uk-margin-remove!= "New"
+                td
                   span.uk-table__priority.uk-table__priority--normal!= "Normal"
                 td
-                  span!= "Problem with System functionality"
+                  span!= "Assistance with system changes"
                 td
                   span(uk-tooltip="title: skelly@aaski.com; pos:top;")!= "Randah McKinnie"
                 td
-                  span!= "Nov 18, 2018"
+                  span!= "Oct 29, 2018"
                 td
-                  a(href="#" class="uk-icon-link" uk-icon="chevron-down")
+                  //a(href="#" class="uk-icon-link" uk-icon="chevron-down")
 
         .d-support__footer.uk-flex.uk-flex-middle.uk-flex-between
           .uk-width-1-2

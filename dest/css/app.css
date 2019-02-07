@@ -42,6 +42,18 @@
   height: 512px;
 }
 
+/* line 17, src/scss/_generated/_spriteSVG.scss */
+.icon-view-state-0 {
+  width: 24px;
+  height: 24px;
+}
+
+/* line 21, src/scss/_generated/_spriteSVG.scss */
+.icon-view-state-1 {
+  width: 24px;
+  height: 24px;
+}
+
 @font-face {
   font-family: "iconFont";
   src: url("../fonts/iconFont.eot");
@@ -2980,7 +2992,13 @@ section .uk-button:hover {
   font-size: 28px;
 }
 
-/* line 10, src/scss/_components/_dashboard/_support.scss */
+/* line 7, src/scss/_components/_dashboard/_support.scss */
+.d-support .uk-table thead tr,
+.d-support .uk-table tbody tr {
+  border-width: 2px;
+}
+
+/* line 12, src/scss/_components/_dashboard/_support.scss */
 .d-support .uk-table thead tr th:nth-of-type(1),
 .d-support .uk-table thead tr td:nth-of-type(1),
 .d-support .uk-table tbody tr th:nth-of-type(1),
@@ -2988,7 +3006,7 @@ section .uk-button:hover {
   padding-left: 40px;
 }
 
-/* line 18, src/scss/_components/_dashboard/_support.scss */
+/* line 20, src/scss/_components/_dashboard/_support.scss */
 .d-support .uk-table thead a,
 .d-support .uk-table thead p {
   display: -webkit-box;
@@ -3002,80 +3020,88 @@ section .uk-button:hover {
   font-weight: bold;
 }
 
-/* line 30, src/scss/_components/_dashboard/_support.scss */
+/* line 32, src/scss/_components/_dashboard/_support.scss */
 .d-support .uk-table tbody tr:hover {
   background-color: rgba(153, 153, 153, 0.1) !important;
 }
 
-/* line 35, src/scss/_components/_dashboard/_support.scss */
+/* line 37, src/scss/_components/_dashboard/_support.scss */
 .d-support .uk-table tbody span,
 .d-support .uk-table tbody p {
   font-size: 18px;
   color: #a7a3a3;
 }
 
-/* line 43, src/scss/_components/_dashboard/_support.scss */
+/* line 45, src/scss/_components/_dashboard/_support.scss */
 .d-support .uk-table__priority--normal {
-  color: #00a8da;
+  color: #00a8da !important;
 }
 
-/* line 46, src/scss/_components/_dashboard/_support.scss */
+/* line 48, src/scss/_components/_dashboard/_support.scss */
 .d-support .uk-table__priority--critical {
-  color: #f76808;
+  color: #f76808 !important;
 }
 
-/* line 51, src/scss/_components/_dashboard/_support.scss */
+/* line 53, src/scss/_components/_dashboard/_support.scss */
 .d-support .uk-table__status {
   width: auto;
   padding: 5px 10px;
   border-radius: 2em;
 }
 
-/* line 56, src/scss/_components/_dashboard/_support.scss */
+/* line 58, src/scss/_components/_dashboard/_support.scss */
 .d-support .uk-table__status span {
   width: 12px;
   height: 12px;
   background-color: #9ee3f3;
 }
 
-/* line 63, src/scss/_components/_dashboard/_support.scss */
+/* line 65, src/scss/_components/_dashboard/_support.scss */
 .d-support .uk-table__status--new span {
   background-color: #9ee3f3;
 }
 
-/* line 69, src/scss/_components/_dashboard/_support.scss */
+/* line 71, src/scss/_components/_dashboard/_support.scss */
 .d-support .uk-table__status--awaiting span {
   background-color: #f7a209;
 }
 
-/* line 74, src/scss/_components/_dashboard/_support.scss */
+/* line 76, src/scss/_components/_dashboard/_support.scss */
 .d-support .uk-table__status--progress span {
   background-color: #00a6d9;
 }
 
-/* line 80, src/scss/_components/_dashboard/_support.scss */
+/* line 82, src/scss/_components/_dashboard/_support.scss */
 .d-support .uk-table__status--hold span, .d-support .uk-table__status--critical span {
   background-color: #f76808;
 }
 
-/* line 88, src/scss/_components/_dashboard/_support.scss */
+/* line 90, src/scss/_components/_dashboard/_support.scss */
+.d-support__header h2 {
+  font-size: 28px;
+}
+
+/* line 94, src/scss/_components/_dashboard/_support.scss */
 .d-support__header p {
   font-size: 18px;
 }
 
-/* line 91, src/scss/_components/_dashboard/_support.scss */
+/* line 97, src/scss/_components/_dashboard/_support.scss */
 .d-support__header p span {
+  width: 24px;
+  height: 24px;
+  font-size: 18px;
   background-color: #00a6d9;
 }
 
-/* line 96, src/scss/_components/_dashboard/_support.scss */
+/* line 105, src/scss/_components/_dashboard/_support.scss */
 .d-support__header button {
   width: 100%;
   max-width: 187px;
   height: 49px;
   padding-left: 22px;
   padding-right: 22px;
-  border-radius: 5px;
+  border-radius: 10px;
   background-color: #00a6d9;
   font-size: 20px;
   -webkit-transition: background-color 0.3s ease-in-out;
@@ -3083,7 +3109,7 @@ section .uk-button:hover {
   transition: background-color 0.3s ease-in-out;
 }
 
-/* line 107, src/scss/_components/_dashboard/_support.scss */
+/* line 116, src/scss/_components/_dashboard/_support.scss */
 .d-support__header button:hover {
   background-color: #026b8b;
   -webkit-transition: background-color 0.3s ease-in-out;
@@ -3091,32 +3117,38 @@ section .uk-button:hover {
   transition: background-color 0.3s ease-in-out;
 }
 
-/* line 112, src/scss/_components/_dashboard/_support.scss */
+/* line 121, src/scss/_components/_dashboard/_support.scss */
 .d-support__header button span {
   line-height: 1;
 }
 
-/* line 118, src/scss/_components/_dashboard/_support.scss */
+/* line 127, src/scss/_components/_dashboard/_support.scss */
 .d-support__footer {
   padding: 15px 40px;
-  border-top: 1px solid #e5e5e5;
+  border-top: 2px solid #e5e5e5;
 }
 
-/* line 122, src/scss/_components/_dashboard/_support.scss */
+/* line 131, src/scss/_components/_dashboard/_support.scss */
 .d-support__footer button {
   border-color: transparent;
   color: #00a6d9;
   font-size: 19px;
 }
 
-/* line 127, src/scss/_components/_dashboard/_support.scss */
+/* line 136, src/scss/_components/_dashboard/_support.scss */
 .d-support__footer button:hover {
   border-color: transparent;
 }
 
-/* line 131, src/scss/_components/_dashboard/_support.scss */
+/* line 140, src/scss/_components/_dashboard/_support.scss */
 .d-support__footer button svg {
   fill: #00a6d9;
+}
+
+/* line 146, src/scss/_components/_dashboard/_support.scss */
+.d-support__footer a svg {
+  width: 23px;
+  height: 23px;
 }
 
 /* line 8, src/scss/_components/_dashboard/_demand.scss */
