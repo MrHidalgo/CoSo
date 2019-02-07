@@ -231,11 +231,14 @@
                       <li><a class="uk-text-bold uk-text-uppercase" href="#" title="">users</a></li>
                       <li><a class="uk-text-bold uk-text-uppercase" href="#" title="">Content</a></li>
                     </ul>
-                    <ul class="uk-padding-small uk-switcher uk-margin">
-                      <li><span>MEETINGS content</span></li>
-                      <li><span>USERS content</span></li>
-                      <li><span>CONTENT content</span></li>
-                    </ul>
+                    <div></div>
+                    <!--ul.uk-padding-small(class="uk-switcher uk-margin")-->
+                    <!--  li-->
+                    <!--    span!= "MEETINGS content"-->
+                    <!--  li-->
+                    <!--    span!= "USERS content"-->
+                    <!--  li-->
+                    <!--    span!= "CONTENT content"-->
                   </div>
                 </div>
               </div>
@@ -318,6 +321,62 @@
         </div>
       </div>
       <!-- SECTION live feed & check :: END-->
+      <!-- SECTION current activity :: START-->
+      <div class="d-activity" id="d-activity">
+        <div class="uk-section uk-padding-remove-top uk-padding-remove-bottom uk-margin-medium-bottom">
+          <div class="uk-card uk-card-default uk-box-shadow-small">
+            <div class="uk-card-header uk-flex uk-flex-middle uk-flex-between">
+              <div class="uk-width-1-2 uk-flex uk-flex-middle uk-grid-divider" uk-grid>
+                <h2 class="uk-margin-remove-bottom uk-card-title uk-text-bold">Current System Activity</h2>
+              </div>
+              <div class="uk-width-1-2 uk-flex uk-flex-right uk-flex-middle"><a class="uk-button uk-button-link" href="#" title=""><span class="uk-text-muted" uk-icon="minus"></span></a><a class="uk-button uk-button-link uk-margin-small-left" href="#" title=""><span class="uk-text-muted" uk-icon="close"></span></a></div>
+            </div>
+            <div class="uk-card-body">
+              <div class="d-activity__block">
+                <div class="uk-grid-small uk-child-width-expand uk-grid-match" uk-grid uk-height-match="target: &gt; div &gt; .uk-card">
+                  <div>
+                    <div class="uk-card uk-card-default uk-padding uk-flex uk-flex-middle uk-flex-between">
+                      <div><i class="icon-font icon-d-activity-accounts"></i></div>
+                      <div>
+                        <p class="uk-margin-remove uk-text-bold">70</p><span class="uk-text-bold uk-text-uppercase">Total users</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div>
+                    <div class="uk-card uk-card-default uk-padding uk-flex uk-flex-column">
+                      <div class="uk-flex uk-flex-middle uk-margin-small-bottom">
+                        <p class="uk-margin-remove uk-text-bold">50</p><span class="uk-margin-small-left uk-text-uppercase">LIVE<br>Users</span>
+                      </div>
+                      <div class="uk-flex uk-flex-middle">
+                        <p class="uk-margin-remove uk-text-bold">20</p><span class="uk-margin-small-left uk-text-uppercase">on-demand<br>Users</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div>
+                    <div class="uk-card uk-card-default uk-padding uk-flex uk-flex-column">
+                      <div class="uk-flex uk-flex-middle uk-margin-small-bottom">
+                        <p class="uk-margin-remove uk-text-bold">35</p><span class="uk-margin-small-left uk-text-uppercase">Registered<br>Users</span>
+                      </div>
+                      <div class="uk-flex uk-flex-middle">
+                        <p class="uk-margin-remove uk-text-bold">35</p><span class="uk-margin-small-left uk-text-uppercase">Guest<br>Users</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div>
+                    <div class="uk-card uk-card-default uk-padding uk-flex uk-flex-middle uk-flex-between">
+                      <div><i class="icon-font icon-d-activity-session"></i></div>
+                      <div>
+                        <p class="uk-margin-remove uk-text-bold">22</p><span class="uk-text-bold uk-text-uppercase">LIVE ROOMS</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- SECTION current activity :: END-->
       <!-- SECTION daily metrics :: START-->
       <div class="d-metrics" id="d-metrics">
         <div class="uk-section uk-padding-remove-top uk-padding-remove-bottom uk-margin-medium-bottom">

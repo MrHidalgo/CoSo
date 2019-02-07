@@ -1,0 +1,95 @@
+// SECTION current activity :: START
+
+.d-activity {
+
+  .uk-card {
+    &.uk-card-default {
+      .uk-card-body {
+        padding-bottom: 20px;
+      }
+    }
+  }
+
+  &__block {
+    [uk-grid] {
+      > div {
+        .uk-card {
+          padding: 30px;
+        }
+
+        &:nth-of-type(1),
+        &:nth-of-type(4) {
+          .uk-card {
+            > div {
+              width: 100%;
+              max-width: 50%;
+
+              p {
+                line-height: 1;
+                font-size: 75px;
+                font-weight: 900;
+                font-family: "Open Sans", sans-serif;
+              }
+
+              span {
+                font-size: 18px;
+              }
+            }
+          }
+        }
+
+        &:nth-of-type(2),
+        &:nth-of-type(3) {
+          p {
+            line-height: 1;
+            font-size: 48px;
+          }
+
+          span {
+            line-height: 1.2;
+            font-size: 17px;
+          }
+        }
+
+        &:nth-of-type(1) {
+          .uk-card {
+            background-color: #f7a209;
+          }
+        }
+        &:nth-of-type(2) {
+          .uk-card {
+            background-color: #f9be52;
+          }
+        }
+        &:nth-of-type(3) {
+          .uk-card {
+            background-color: #999694;
+          }
+        }
+        &:nth-of-type(4) {
+          .uk-card {
+            background-color: #00a6d9;
+          }
+        }
+      }
+    }
+
+    .icon-font {
+      color: #fff;
+
+      &.icon-d-activity-accounts {
+        font-size: 105px;
+      }
+      &.icon-d-activity-session {
+        font-size: 100px;
+      }
+    }
+
+    p,
+    span {
+      color: #ffffff;
+    }
+  }
+}
+
+// SECTION current activity :: END

@@ -45,29 +45,35 @@
 	@if $filename == arrow-up {
 		$char: "\E006";
 	}
-	@if $filename == d-metrics-max {
+	@if $filename == d-activity-accounts {
 		$char: "\E007";
 	}
-	@if $filename == d-metrics-meetings {
+	@if $filename == d-activity-session {
 		$char: "\E008";
 	}
-	@if $filename == d-metrics-powerpoint {
+	@if $filename == d-metrics-max {
 		$char: "\E009";
 	}
-	@if $filename == monitors {
+	@if $filename == d-metrics-meetings {
 		$char: "\E00A";
 	}
-	@if $filename == reports {
+	@if $filename == d-metrics-powerpoint {
 		$char: "\E00B";
 	}
-	@if $filename == support {
+	@if $filename == monitors {
 		$char: "\E00C";
 	}
-	@if $filename == user {
+	@if $filename == reports {
 		$char: "\E00D";
 	}
-	@if $filename == warning {
+	@if $filename == support {
 		$char: "\E00E";
+	}
+	@if $filename == user {
+		$char: "\E00F";
+	}
+	@if $filename == warning {
+		$char: "\E010";
 	}
 
 	@return $char;
@@ -106,6 +112,14 @@
 }
 .icon-arrow-up {
 	@include icon(arrow-up);
+
+}
+.icon-d-activity-accounts {
+	@include icon(d-activity-accounts);
+
+}
+.icon-d-activity-session {
+	@include icon(d-activity-session);
 
 }
 .icon-d-metrics-max {
