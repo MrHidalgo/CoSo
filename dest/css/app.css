@@ -3232,6 +3232,59 @@ section .uk-button:hover {
   max-width: 176px;
 }
 
+/* line 74, src/scss/_components/_dashboard/_demand.scss */
+.d-demand__bottom > div:nth-of-type(1) {
+  padding: 40px 40px 20px;
+}
+
+/* line 77, src/scss/_components/_dashboard/_demand.scss */
+.d-demand__bottom > div:nth-of-type(1) p {
+  font-size: 20px;
+}
+
+/* line 80, src/scss/_components/_dashboard/_demand.scss */
+.d-demand__bottom > div:nth-of-type(1) p span {
+  width: 12px;
+  height: 12px;
+  background-color: #00a6d9;
+}
+
+/* line 88, src/scss/_components/_dashboard/_demand.scss */
+.d-demand__bottom > div:nth-of-type(2) {
+  padding: 20px;
+}
+
+/* line 94, src/scss/_components/_dashboard/_demand.scss */
+.d-demand__bottom > div [uk-tab] {
+  border-radius: 10px;
+  border: 1px solid #dad8d8;
+}
+
+/* line 98, src/scss/_components/_dashboard/_demand.scss */
+.d-demand__bottom > div [uk-tab]:before {
+  display: none;
+}
+
+/* line 104, src/scss/_components/_dashboard/_demand.scss */
+.d-demand__bottom > div [uk-tab] li:last-child a {
+  border-right: none;
+}
+
+/* line 109, src/scss/_components/_dashboard/_demand.scss */
+.d-demand__bottom > div [uk-tab] li.uk-active a {
+  color: #00a6d9;
+}
+
+/* line 114, src/scss/_components/_dashboard/_demand.scss */
+.d-demand__bottom > div [uk-tab] li a {
+  width: 82px;
+  padding-top: 10px !important;
+  padding-bottom: 10px !important;
+  border-color: transparent;
+  border-right: 1px solid #dad8d8;
+  font-size: 20px;
+}
+
 /* line 7, src/scss/_components/_dashboard/_case.scss */
 .d-case .uk-card.uk-card-default .uk-card-header {
   border-bottom: none;

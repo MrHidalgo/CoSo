@@ -14,7 +14,7 @@
           a.uk-button.uk-button-link.uk-margin-small-left(href="#" class="" title="")
             span.uk-text-muted(uk-icon='close')
 
-      .uk-card-body
+      .uk-card-body.uk-padding-remove-bottom
 
         .d-demand__top
 
@@ -65,6 +65,23 @@
                             span.uk-margin-small-left(uk-icon="icon: chevron-down")
 
         .d-demand__bottom
+          .uk-flex.uk-flex-middle.uk-flex-center
+            p.uk-flex.uk-flex-middle.uk-text-muted
+              span.uk-margin-small-right.uk-border-circle
+              != "On Demand Launches All Attendees"
+
+          div
+          div.uk-flex.uk-flex-middle.uk-flex-center
+            ul.uk-tab-bottom.uk-margin-remove(uk-tab)
+              li.uk-padding-remove.uk-active
+                a.uk-text-capitalize.uk-padding-remove(href="#" class="" title="")!= "Day"
+              li.uk-padding-remove
+                a.uk-text-capitalize.uk-padding-remove(href="#" class="" title="")!= "Week"
+              li.uk-padding-remove
+                a.uk-text-capitalize.uk-padding-remove(href="#" class="" title="")!= "Month"
+              li.uk-padding-remove
+                a.uk-text-capitalize.uk-padding-remove(href="#" class="" title="")!= "Year"
+
 
       .uk-card-footer.uk-padding-remove-top.uk-flex.uk-flex-middle.uk-flex-right
         a(href="" class="uk-icon-link" uk-icon="question")
