@@ -27,7 +27,7 @@
       .uk-card-header.uk-flex.uk-flex-middle.uk-flex-between
         .uk-width-1-2.uk-flex.uk-flex-middle.uk-grid-divider(uk-grid)
           h2.uk-margin-remove-bottom.uk-card-title.uk-text-bold!= "Daily Metrics"
-          h3.uk-margin-remove-bottom.uk-card-title.uk-text-bold.uk-text-muted!= "Current System Activity"
+          //h3.uk-margin-remove-bottom.uk-card-title.uk-text-bold.uk-text-muted!= "Current System Activity"
 
         .uk-width-1-2.uk-flex.uk-flex-right.uk-flex-middle
           a.uk-button.uk-button-link(href="#" class="" title="")
@@ -50,25 +50,28 @@
         .d-metrics__block
           div.uk-grid-small.uk-child-width-expand.uk-grid-match(uk-grid uk-height-match="target: > div > .uk-card")
             div
-              .uk-card.uk-card-default.uk-padding.uk-flex.uk-flex-top.uk-flex-between
+              .uk-card.uk-card-default.uk-padding.uk-flex.uk-flex-middle.uk-flex-between
                 div
                   i.icon-font.icon-d-metrics-meetings
                 div
                   p.uk-margin-small-bottom.uk-text-bold!= "62"
                   span.uk-text-bold.uk-text-uppercase!= "MEETINGS"
             div
-              .uk-card.uk-card-default.uk-padding.uk-flex.uk-flex-top.uk-flex-between
+              .uk-card.uk-card-default.uk-padding.uk-flex.uk-flex-middle.uk-flex-between
                 div
                   i.icon-font.icon-d-metrics-powerpoint
                 div
                   p.uk-margin-small-bottom.uk-text-bold!= "9"
                   span.uk-text-bold.uk-text-uppercase!= "PowerPoint Conversions"
             div
-              .uk-card.uk-card-default.uk-padding.uk-flex.uk-flex-top.uk-flex-between
+              .uk-card.uk-card-default.uk-padding.uk-flex.uk-flex-middle.uk-flex-between
                 div
                   i.icon-font.icon-d-metrics-max
                 div
                   p.uk-margin-small-bottom.uk-text-bold!= "55"
                   span.uk-text-bold.uk-text-uppercase!= "Max attendees"
+
+      .uk-card-footer.uk-padding-remove-top.uk-flex.uk-flex-middle.uk-flex-right
+        a(href="" class="uk-icon-link" uk-icon="question")
 
 // SECTION daily metrics :: END

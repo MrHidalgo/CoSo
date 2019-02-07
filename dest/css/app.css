@@ -2874,7 +2874,7 @@ section .uk-button:hover {
 
 /* line 5, src/scss/_components/_dashboard/_metrics.scss */
 .d-metrics__badge > p {
-  font-size: 16px;
+  font-size: 19px;
 }
 
 /* line 11, src/scss/_components/_dashboard/_metrics.scss */
@@ -2899,65 +2899,82 @@ section .uk-button:hover {
   color: #00a6d9;
 }
 
-/* line 36, src/scss/_components/_dashboard/_metrics.scss */
+/* line 34, src/scss/_components/_dashboard/_metrics.scss */
+.d-metrics .uk-card.uk-card-default .uk-card-body {
+  padding-bottom: 20px;
+}
+
+/* line 37, src/scss/_components/_dashboard/_metrics.scss */
+.d-metrics .uk-card.uk-card-default .uk-card-footer {
+  padding-bottom: 20px;
+  border-color: transparent;
+}
+
+/* line 42, src/scss/_components/_dashboard/_metrics.scss */
+.d-metrics .uk-card.uk-card-default .uk-card-footer a svg {
+  width: 23px;
+  height: 23px;
+}
+
+/* line 55, src/scss/_components/_dashboard/_metrics.scss */
 .d-metrics__block [uk-grid] > div:nth-of-type(1) .uk-card {
   background-color: #f7a209;
 }
 
-/* line 41, src/scss/_components/_dashboard/_metrics.scss */
+/* line 60, src/scss/_components/_dashboard/_metrics.scss */
 .d-metrics__block [uk-grid] > div:nth-of-type(2) .uk-card {
   background-color: #00a6d9;
 }
 
-/* line 46, src/scss/_components/_dashboard/_metrics.scss */
+/* line 65, src/scss/_components/_dashboard/_metrics.scss */
 .d-metrics__block [uk-grid] > div:nth-of-type(3) .uk-card {
   background-color: #6d6a67;
 }
 
-/* line 55, src/scss/_components/_dashboard/_metrics.scss */
+/* line 74, src/scss/_components/_dashboard/_metrics.scss */
 .d-metrics__block .uk-card > div:nth-of-type(1) {
   width: 40%;
 }
 
-/* line 58, src/scss/_components/_dashboard/_metrics.scss */
+/* line 77, src/scss/_components/_dashboard/_metrics.scss */
 .d-metrics__block .uk-card > div:nth-of-type(2) {
   width: 60%;
   text-align: center;
 }
 
-/* line 65, src/scss/_components/_dashboard/_metrics.scss */
+/* line 84, src/scss/_components/_dashboard/_metrics.scss */
 .d-metrics__block .icon-font {
   color: #ffffff;
 }
 
-/* line 68, src/scss/_components/_dashboard/_metrics.scss */
+/* line 87, src/scss/_components/_dashboard/_metrics.scss */
 .d-metrics__block .icon-font.icon-d-metrics-meetings {
   font-size: 129px;
 }
 
-/* line 71, src/scss/_components/_dashboard/_metrics.scss */
+/* line 90, src/scss/_components/_dashboard/_metrics.scss */
 .d-metrics__block .icon-font.icon-d-metrics-powerpoint {
   font-size: 126px;
 }
 
-/* line 74, src/scss/_components/_dashboard/_metrics.scss */
+/* line 93, src/scss/_components/_dashboard/_metrics.scss */
 .d-metrics__block .icon-font.icon-d-metrics-max {
-  font-size: 116px;
+  font-size: 143px;
 }
 
-/* line 79, src/scss/_components/_dashboard/_metrics.scss */
+/* line 98, src/scss/_components/_dashboard/_metrics.scss */
 .d-metrics__block p,
 .d-metrics__block span {
   color: #ffffff;
 }
 
-/* line 84, src/scss/_components/_dashboard/_metrics.scss */
+/* line 103, src/scss/_components/_dashboard/_metrics.scss */
 .d-metrics__block p {
   line-height: 1;
   font-size: 60px;
 }
 
-/* line 89, src/scss/_components/_dashboard/_metrics.scss */
+/* line 108, src/scss/_components/_dashboard/_metrics.scss */
 .d-metrics__block span {
   line-height: 1.2;
   font-size: 28px;
