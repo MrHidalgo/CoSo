@@ -83,6 +83,11 @@
   }
 
   &__description {
+    width: 100%;
+    max-width: 652px;
+    margin-left: auto;
+    margin-right: auto;
+
     [uk-grid] {
       .uk-width-auto {
         width: 341px;
@@ -152,6 +157,12 @@
       border-radius: 10px;
       background-color: #00a6d9;
       font-size: 16px;
+      @include transition(background-color);
+
+      &:hover {
+        background-color: #026b8b;
+        @include transition(background-color);
+      }
     }
 
     &-block {

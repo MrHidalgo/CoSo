@@ -37,11 +37,25 @@
       border-radius: 10px;
 
       &:nth-of-type(1) {
+        border-color: #3f3f3f;
         background-color: #3f3f3f;
         color: #fff;
+        @include transition(border-color, background-color);
+
+        &:hover {
+          border-color: #026b8b;
+          background-color: #026b8b;
+          @include transition(border-color, background-color);
+        }
       }
       &:nth-of-type(2) {
         background-color: #00a6d9;
+        @include transition(background-color);
+
+        &:hover {
+          background-color: #026b8b;
+          @include transition(background-color);
+        }
       }
       &:nth-of-type(3) {}
     }

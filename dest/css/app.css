@@ -2825,13 +2825,37 @@ section .uk-button:hover {
 
 /* line 39, src/scss/_components/_dashboard/_ticket-comments.scss */
 .t-comments__bottom button:nth-of-type(1) {
+  border-color: #3f3f3f;
   background-color: #3f3f3f;
   color: #fff;
+  -webkit-transition: border-color 0.3s ease-in-out, background-color 0.3s ease-in-out;
+  -o-transition: border-color 0.3s ease-in-out, background-color 0.3s ease-in-out;
+  transition: border-color 0.3s ease-in-out, background-color 0.3s ease-in-out;
 }
 
-/* line 43, src/scss/_components/_dashboard/_ticket-comments.scss */
+/* line 45, src/scss/_components/_dashboard/_ticket-comments.scss */
+.t-comments__bottom button:nth-of-type(1):hover {
+  border-color: #026b8b;
+  background-color: #026b8b;
+  -webkit-transition: border-color 0.3s ease-in-out, background-color 0.3s ease-in-out;
+  -o-transition: border-color 0.3s ease-in-out, background-color 0.3s ease-in-out;
+  transition: border-color 0.3s ease-in-out, background-color 0.3s ease-in-out;
+}
+
+/* line 51, src/scss/_components/_dashboard/_ticket-comments.scss */
 .t-comments__bottom button:nth-of-type(2) {
   background-color: #00a6d9;
+  -webkit-transition: background-color 0.3s ease-in-out;
+  -o-transition: background-color 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out;
+}
+
+/* line 55, src/scss/_components/_dashboard/_ticket-comments.scss */
+.t-comments__bottom button:nth-of-type(2):hover {
+  background-color: #026b8b;
+  -webkit-transition: background-color 0.3s ease-in-out;
+  -o-transition: background-color 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out;
 }
 
 /* line 6, src/scss/_components/_dashboard/_report-tabs.scss */
@@ -3444,18 +3468,26 @@ section .uk-button:hover {
   font-size: 20px;
 }
 
-/* line 87, src/scss/_components/_dashboard/_case.scss */
+/* line 85, src/scss/_components/_dashboard/_case.scss */
+.d-case__description {
+  width: 100%;
+  max-width: 652px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* line 92, src/scss/_components/_dashboard/_case.scss */
 .d-case__description [uk-grid] .uk-width-auto {
   width: 341px;
 }
 
-/* line 91, src/scss/_components/_dashboard/_case.scss */
+/* line 96, src/scss/_components/_dashboard/_case.scss */
 .d-case__description [uk-grid] .uk-width-expand form {
   width: 100%;
   max-width: 652px;
 }
 
-/* line 100, src/scss/_components/_dashboard/_case.scss */
+/* line 105, src/scss/_components/_dashboard/_case.scss */
 .d-case__description .uk-form-controls:last-of-type .uk-button {
   width: 100%;
   max-width: 211px;
@@ -3468,7 +3500,7 @@ section .uk-button:hover {
   transition: background-color 0.3s ease-in-out;
 }
 
-/* line 109, src/scss/_components/_dashboard/_case.scss */
+/* line 114, src/scss/_components/_dashboard/_case.scss */
 .d-case__description .uk-form-controls:last-of-type .uk-button:hover {
   background-color: #026b8b;
   -webkit-transition: background-color 0.3s ease-in-out;
@@ -3476,18 +3508,18 @@ section .uk-button:hover {
   transition: background-color 0.3s ease-in-out;
 }
 
-/* line 116, src/scss/_components/_dashboard/_case.scss */
+/* line 121, src/scss/_components/_dashboard/_case.scss */
 .d-case__description .uk-form-controls > div {
   width: 100%;
 }
 
-/* line 119, src/scss/_components/_dashboard/_case.scss */
+/* line 124, src/scss/_components/_dashboard/_case.scss */
 .d-case__description .uk-form-controls > div select {
   height: 100% !important;
   color: #4e4e4e;
 }
 
-/* line 124, src/scss/_components/_dashboard/_case.scss */
+/* line 129, src/scss/_components/_dashboard/_case.scss */
 .d-case__description .uk-form-controls > div button {
   width: 100%;
   height: 49px;
@@ -3497,7 +3529,7 @@ section .uk-button:hover {
   font-size: 20px;
 }
 
-/* line 134, src/scss/_components/_dashboard/_case.scss */
+/* line 139, src/scss/_components/_dashboard/_case.scss */
 .d-case__description .uk-form-controls textarea {
   resize: none;
   padding: 10px 20px;
@@ -3532,16 +3564,27 @@ section .uk-button:hover {
   color: #4e4e4e;
 }
 
-/* line 149, src/scss/_components/_dashboard/_case.scss */
+/* line 154, src/scss/_components/_dashboard/_case.scss */
 .d-case__attachments .uk-button {
   width: 100%;
   max-width: 272px;
   border-radius: 10px;
   background-color: #00a6d9;
   font-size: 16px;
+  -webkit-transition: background-color 0.3s ease-in-out;
+  -o-transition: background-color 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out;
 }
 
-/* line 157, src/scss/_components/_dashboard/_case.scss */
+/* line 162, src/scss/_components/_dashboard/_case.scss */
+.d-case__attachments .uk-button:hover {
+  background-color: #026b8b;
+  -webkit-transition: background-color 0.3s ease-in-out;
+  -o-transition: background-color 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out;
+}
+
+/* line 168, src/scss/_components/_dashboard/_case.scss */
 .d-case__attachments-block {
   width: 100px;
   height: 100px;
@@ -3549,18 +3592,18 @@ section .uk-button:hover {
   margin-right: 10px;
 }
 
-/* line 163, src/scss/_components/_dashboard/_case.scss */
+/* line 174, src/scss/_components/_dashboard/_case.scss */
 .d-case__attachments-block:last-of-type {
   margin-right: 0;
 }
 
-/* line 167, src/scss/_components/_dashboard/_case.scss */
+/* line 178, src/scss/_components/_dashboard/_case.scss */
 .d-case__attachments-block svg {
   opacity: 0.5;
   fill: #fff;
 }
 
-/* line 171, src/scss/_components/_dashboard/_case.scss */
+/* line 182, src/scss/_components/_dashboard/_case.scss */
 .d-case__attachments-block svg rect,
 .d-case__attachments-block svg polyline,
 .d-case__attachments-block svg line {
