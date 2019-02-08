@@ -4,7 +4,7 @@
   width: 100%;
   height: 49px;
   padding: 0 20px;
-  border-radius: 5px;
+  border-radius: 10px;
   font-size: 20px;
 }
 
@@ -33,6 +33,11 @@
   .uk-button-apply {
     background-color: #9b9b9b;
     color: #ffffff;
+  }
+
+  .uk-card-body {
+    padding-top: 30px;
+    padding-bottom: 30px;
   }
 }
 

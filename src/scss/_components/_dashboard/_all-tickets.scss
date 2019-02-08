@@ -1,13 +1,17 @@
 // SECTION all tickets :: START
 
 .all-tickets {
+  h2 {
+    font-size: 28px;
+  }
+
   button {
     width: 100%;
     max-width: 187px;
     height: 49px;
     padding-left: 22px;
     padding-right: 22px;
-    border-radius: 5px;
+    border-radius: 10px;
     background-color: #00a6d9;
     font-size: 20px;
     @include transition(background-color);

@@ -44,9 +44,6 @@
               <div><i></i><i></i><i></i></div><span>Collapse</span></a></div>
           <div class="uk-flex uk-flex-middle uk-flex-between">
             <div class="header__search uk-flex">
-              <form class="uk-flex uk-flex-middle uk-search uk-search-large" action="" autocomplete="off"><span uk-search-icon></span>
-                <input class="uk-search-input" type="search" placeholder="Search...">
-              </form>
             </div>
             <div class="header__date uk-flex uk-flex-middle uk-flex-right">
               <p><span>12:00</span> PM</p><span></span>
@@ -99,14 +96,7 @@
                   <div>
                     <p>Account</p>
                   </div>
-                  <div class="uk-flex uk-flex-middle uk-flex-center"></div></a>
-            <!--ul(uk-accordion="multiple: true")-->
-            <!--  li-->
-            <!--    +sidebarNavAccordionBtn('external', false, 'icon-account', 'Account')-->
-            <!--    .uk-accordion-content.uk-flex.uk-flex-column.uk-margin-remove-top-->
-            <!--      +sidebarNavBtn('internal', '', false, 'Account action 1')-->
-            <!--      +sidebarNavBtn('internal', '', false, 'Account action 2')-->
-            <!--      +sidebarNavBtn('internal', '', false, 'Account action 3')--><a class="sidebar__navigation-btn uk-flex uk-flex-middle sidebar__navigation-btn--external" href="#" title="">
+                  <div class="uk-flex uk-flex-middle uk-flex-center"></div></a><a class="sidebar__navigation-btn uk-flex uk-flex-middle sidebar__navigation-btn--external" href="#" title="">
                   <div class="uk-flex uk-flex-center"><i class="icon-font icon-support"></i>
                   </div>
                   <div>
@@ -272,7 +262,7 @@
       <!-- SECTION all tickets :: START-->
       <div class="all-tickets" id="all-tickets">
         <div class="uk-section uk-padding-remove-top uk-padding-remove-bottom uk-margin-medium-bottom">
-          <div class="uk-card-header uk-flex uk-flex-middle uk-flex-between uk-padding-remove-right">
+          <div class="uk-card-header uk-padding-remove-top uk-padding-remove-bottom uk-flex uk-flex-middle uk-flex-between uk-padding-remove-right">
             <div class="uk-width-1-2 uk-flex uk-flex-middle">
               <h2 class="uk-margin-remove-bottom uk-card-title uk-text-bold uk-text-muted">All Tickets</h2>
             </div>
@@ -339,17 +329,16 @@
                       </div>
                     </div>
                     <div>
-                      <label class="uk-text-muted uk-margin-small-bottom uk-flex uk-form-label">Sort by</label>
-                      <div class="uk-form-controls">
-                        <div uk-form-custom="target: &gt; * &gt; span:first-child">
-                          <select class="uk-select">
-                            <option>Date Created</option>
-                            <option>Option 01</option>
-                            <option>Option 02</option>
-                          </select>
-                          <button class="uk-text-capitalize uk-button uk-button-default uk-flex uk-flex-middle uk-flex-between" type="button" tabindex="-1"><span></span><span uk-icon="icon: chevron-down"></span></button>
-                        </div>
-                      </div>
+                      <!--label.uk-text-muted.uk-margin-small-bottom.uk-flex(class="uk-form-label")!= "Sort by"-->
+                      <!--.uk-form-controls-->
+                      <!--  div(uk-form-custom="target: > * > span:first-child")-->
+                      <!--    select.uk-select-->
+                      <!--      option!= "Date Created"-->
+                      <!--      option!= "Option 01"-->
+                      <!--      option!= "Option 02"-->
+                      <!--    button.uk-text-capitalize(class="uk-button uk-button-default uk-flex uk-flex-middle uk-flex-between" type="button" tabindex="-1")-->
+                      <!--      span-->
+                      <!--      span(uk-icon="icon: chevron-down")-->
                     </div>
                     <div>
                       <button class="uk-button uk-button-apply uk-button-default uk-button-small uk-text-capitalize">Apply filters</button>

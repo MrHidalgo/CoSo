@@ -2467,72 +2467,77 @@ section .uk-button:hover {
   font-size: 18px;
 }
 
-/* line 14, src/scss/_components/_dashboard/_ticket-activity.scss */
+/* line 5, src/scss/_components/_dashboard/_ticket-activity.scss */
+.t-activity .uk-card-header span {
+  font-size: 18px;
+}
+
+/* line 20, src/scss/_components/_dashboard/_ticket-activity.scss */
 .t-activity [uk-grid] > div:nth-of-type(1) .uk-card {
   background-color: #00a6d9;
 }
 
-/* line 18, src/scss/_components/_dashboard/_ticket-activity.scss */
+/* line 24, src/scss/_components/_dashboard/_ticket-activity.scss */
 .t-activity [uk-grid] > div:nth-of-type(1) .icon-font {
   color: #ffffff;
 }
 
-/* line 21, src/scss/_components/_dashboard/_ticket-activity.scss */
+/* line 27, src/scss/_components/_dashboard/_ticket-activity.scss */
 .t-activity [uk-grid] > div:nth-of-type(1) .icon-font.icon-a-ticket-open {
   font-size: 123px;
 }
 
-/* line 14, src/scss/_components/_dashboard/_ticket-activity.scss */
+/* line 20, src/scss/_components/_dashboard/_ticket-activity.scss */
 .t-activity [uk-grid] > div:nth-of-type(2) .uk-card {
   background-color: #f7a209;
 }
 
-/* line 18, src/scss/_components/_dashboard/_ticket-activity.scss */
+/* line 24, src/scss/_components/_dashboard/_ticket-activity.scss */
 .t-activity [uk-grid] > div:nth-of-type(2) .icon-font {
   color: #ffffff;
 }
 
-/* line 21, src/scss/_components/_dashboard/_ticket-activity.scss */
+/* line 27, src/scss/_components/_dashboard/_ticket-activity.scss */
 .t-activity [uk-grid] > div:nth-of-type(2) .icon-font.icon-a-ticket-awaiting {
   font-size: 102px;
 }
 
-/* line 14, src/scss/_components/_dashboard/_ticket-activity.scss */
+/* line 20, src/scss/_components/_dashboard/_ticket-activity.scss */
 .t-activity [uk-grid] > div:nth-of-type(3) .uk-card {
   background-color: #f76808;
 }
 
-/* line 18, src/scss/_components/_dashboard/_ticket-activity.scss */
+/* line 24, src/scss/_components/_dashboard/_ticket-activity.scss */
 .t-activity [uk-grid] > div:nth-of-type(3) .icon-font {
   color: #ffffff;
 }
 
-/* line 21, src/scss/_components/_dashboard/_ticket-activity.scss */
+/* line 27, src/scss/_components/_dashboard/_ticket-activity.scss */
 .t-activity [uk-grid] > div:nth-of-type(3) .icon-font.icon-a-ticket-hold {
   font-size: 85px;
 }
 
-/* line 14, src/scss/_components/_dashboard/_ticket-activity.scss */
+/* line 20, src/scss/_components/_dashboard/_ticket-activity.scss */
 .t-activity [uk-grid] > div:nth-of-type(4) .uk-card {
   background-color: #6d6a67;
 }
 
-/* line 18, src/scss/_components/_dashboard/_ticket-activity.scss */
+/* line 24, src/scss/_components/_dashboard/_ticket-activity.scss */
 .t-activity [uk-grid] > div:nth-of-type(4) .icon-font {
   color: #ffffff;
 }
 
-/* line 21, src/scss/_components/_dashboard/_ticket-activity.scss */
+/* line 27, src/scss/_components/_dashboard/_ticket-activity.scss */
 .t-activity [uk-grid] > div:nth-of-type(4) .icon-font.icon-a-ticket-closed {
   font-size: 123px;
 }
 
-/* line 28, src/scss/_components/_dashboard/_ticket-activity.scss */
+/* line 34, src/scss/_components/_dashboard/_ticket-activity.scss */
 .t-activity [uk-grid] > div p {
   color: #ffffff;
 }
 
-/* line 31, src/scss/_components/_dashboard/_ticket-activity.scss */
+/* line 37, src/scss/_components/_dashboard/_ticket-activity.scss */
 .t-activity [uk-grid] > div p:nth-of-type(1) {
   padding-top: 20px;
   padding-bottom: 15px;
@@ -2540,20 +2545,25 @@ section .uk-button:hover {
   font-size: 55px;
 }
 
-/* line 38, src/scss/_components/_dashboard/_ticket-activity.scss */
+/* line 44, src/scss/_components/_dashboard/_ticket-activity.scss */
 .t-activity [uk-grid] > div p:nth-of-type(2) {
   line-height: 1.25;
   font-size: 24px;
 }
 
 /* line 4, src/scss/_components/_dashboard/_all-tickets.scss */
+.all-tickets h2 {
+  font-size: 28px;
+}
+
+/* line 8, src/scss/_components/_dashboard/_all-tickets.scss */
 .all-tickets button {
   width: 100%;
   max-width: 187px;
   height: 49px;
   padding-left: 22px;
   padding-right: 22px;
-  border-radius: 5px;
+  border-radius: 10px;
   background-color: #00a6d9;
   font-size: 20px;
   -webkit-transition: background-color 0.3s ease-in-out;
@@ -2561,7 +2571,7 @@ section .uk-button:hover {
   transition: background-color 0.3s ease-in-out;
 }
 
-/* line 15, src/scss/_components/_dashboard/_all-tickets.scss */
+/* line 19, src/scss/_components/_dashboard/_all-tickets.scss */
 .all-tickets button:hover {
   background-color: #026b8b;
   -webkit-transition: background-color 0.3s ease-in-out;
@@ -2569,7 +2579,7 @@ section .uk-button:hover {
   transition: background-color 0.3s ease-in-out;
 }
 
-/* line 20, src/scss/_components/_dashboard/_all-tickets.scss */
+/* line 24, src/scss/_components/_dashboard/_all-tickets.scss */
 .all-tickets button span {
   line-height: 1;
 }
@@ -2579,7 +2589,7 @@ section .uk-button:hover {
   width: 100%;
   height: 49px;
   padding: 0 20px;
-  border-radius: 5px;
+  border-radius: 10px;
   font-size: 20px;
 }
 
@@ -2604,6 +2614,12 @@ section .uk-button:hover {
 .tickets-find .uk-button-apply {
   background-color: #9b9b9b;
   color: #ffffff;
+}
+
+/* line 38, src/scss/_components/_dashboard/_tickets-find.scss */
+.tickets-find .uk-card-body {
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 /* line 10, src/scss/_components/_dashboard/_tickets-table.scss */

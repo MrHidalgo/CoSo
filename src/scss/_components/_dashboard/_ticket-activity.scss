@@ -1,6 +1,12 @@
 // SECTION ticket activity :: START
 
 .t-activity {
+  .uk-card-header {
+    span {
+      font-size: 18px;
+    }
+  }
+
   [uk-grid] {
     > div {
 
