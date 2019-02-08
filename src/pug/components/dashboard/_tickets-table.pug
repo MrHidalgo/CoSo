@@ -9,43 +9,29 @@
         thead
           tr
             th
-              a(href="#" class="" title="")
+              a.uk-flex.uk-flex-middle(href="#" class="" title="")
                 p.uk-text-capitalize.uk-margin-remove-bottom!= "Ticket ID"
                 span(uk-icon="triangle-up")
             th
-              a(href="#" class="" title="")
+              a.uk-flex.uk-flex-middle(href="#" class="" title="")
                 p.uk-text-capitalize.uk-margin-remove-bottom!= "Status"
                 span(uk-icon="triangle-up")
             th
-              a(href="#" class="" title="")
+              a.uk-flex.uk-flex-middle(href="#" class="" title="")
                 p.uk-text-capitalize.uk-margin-remove-bottom!= "Priority"
                 span(uk-icon="triangle-up")
             th
-              a(href="#" class="" title="")
+              a.uk-flex.uk-flex-middle(href="#" class="" title="")
                 p.uk-text-capitalize.uk-margin-remove-bottom!= "Reporter"
                 span(uk-icon="triangle-up")
             th
-              a(href="#" class="" title="")
+              a.uk-flex.uk-flex-middle(href="#" class="" title="")
                 p.uk-text-capitalize.uk-margin-remove-bottom!= "Subject"
                 span(uk-icon="triangle-up")
             th
-              div.uk-flex.uk-flex-middle
+              a.uk-flex.uk-flex-middle(href="#" class="" title="")
                 p.uk-text-capitalize.uk-margin-remove-bottom!= "Date Updated"
-                .uk-inline.uk-margin-small-left
-                  label
-                    input(class="uk-checkbox" type="checkbox")
-                  div.uk-padding-remove(uk-dropdown="mode: click")
-                    ul(class="uk-nav uk-dropdown-nav")
-                      li
-                        label
-                          input(class="uk-radio" type="radio" name="radio2" checked)
-                          span.uk-flex.uk-text-capitalize.uk-margin-small-left!= "Date Created"
-                      li.uk-padding-remove.uk-margin-remove(class="uk-nav-divider")
-                      li
-                        label
-                          input(class="uk-radio" type="radio" name="radio2")
-                          span.uk-flex.uk-text-capitalize.uk-margin-small-left!= "Date Updated"
-
+                span(uk-icon="triangle-up")
             th
         tbody
           tr
@@ -58,33 +44,33 @@
             td
               span.uk-table__priority.uk-table__priority--normal!= "Normal"
             td
-              span(uk-tooltip="title: skelly@aaski.com; pos:top;")!= "Randah McKinnie"
+              span(uk-tooltip="title: rmckinnie@aaski.com; pos:top;")!= "Randah McKinnie"
             td
               span!= "Problem with System functionality"
             td
               span!= "Nov 18, 2018"
             td
-              a(href="#" class="uk-icon-link" uk-icon="move")
+
           tr
             td
-              span!= '3950-D'
+              span!= '3520-D'
             td
               div.uk-table__status.uk-table__status--hold.uk-flex-inline.uk-flex-middle
                 span.uk-border-circle.uk-margin-small-right
                 p.uk-margin-remove!= "On Hold"
             td
-              span.uk-table__priority.uk-table__priority--normal!= "Normal"
+              span.uk-table__priority.uk-table__priority--critical!= "Critical"
             td
-              span(uk-tooltip="title: skelly@aaski.com; pos:top;")!= "Randah McKinnie"
+              span(uk-tooltip="title: skelly@aaski.com; pos:top;")!= "Sean Kelly"
             td
-              span!= "Problem with System functionality"
+              span!= "Understanding dashobard functionality"
             td
-              span!= "Nov 18, 2018"
+              span!= "Nov 10, 2018"
             td
-              a(href="#" class="uk-icon-link" uk-icon="expand")
+
           tr
             td
-              span!= '3950-D'
+              span!= '3510-D'
             td
               div.uk-table__status.uk-table__status--critical.uk-flex-inline.uk-flex-middle
                 span.uk-border-circle.uk-margin-small-right
@@ -92,11 +78,28 @@
             td
               span.uk-table__priority.uk-table__priority--critical!= "Critical"
             td
-              span(uk-tooltip="title: skelly@aaski.com; pos:top;")!= "Randah McKinnie"
+              span(uk-tooltip="title: skelly@aaski.com; pos:top;")!= "Sean Kelly"
             td
-              span!= "Problem with System functionality"
+              span!= "Password Reset"
             td
-              span!= "Nov 18, 2018"
+              span!= "Nov 5, 2018"
+            td
+
+          tr
+            td
+              span!= '3150-D'
+            td
+              div.uk-table__status.uk-table__status--new.uk-table__status--newwb.uk-flex-inline.uk-flex-middle
+                span.uk-border-circle.uk-margin-small-right
+                p.uk-margin-remove!= "New"
+            td
+              span.uk-table__priority.uk-table__priority--normal!= "Normal"
+            td
+              span(uk-tooltip="title: rmckinnie@aaski.com; pos:top;")!= "Randah McKinnie"
+            td
+              span!= "Assistance with system changes"
+            td
+              span!= "Oct 29, 2018"
             td
 
           tr
@@ -107,13 +110,47 @@
                 span.uk-border-circle.uk-margin-small-right
                 p.uk-margin-remove!= "Awaiting"
             td
-              span.uk-table__priority.uk-table__priority--critical!= "Critical"
+              span.uk-table__priority.uk-table__priority--normal!= "Normal"
             td
-              span(uk-tooltip="title: skelly@aaski.com; pos:top;")!= "Randah McKinnie"
+              span(uk-tooltip="title: skelly@aaski.com; pos:top;")!= "Sean Kelly"
             td
               span!= "Problem with System functionality"
             td
               span!= "Nov 18, 2018"
+            td
+
+          tr
+            td
+              span!= '3520-D'
+            td
+              div.uk-table__status.uk-table__status--hold.uk-flex-inline.uk-flex-middle
+                span.uk-border-circle.uk-margin-small-right
+                p.uk-margin-remove!= "On Hold"
+            td
+              span.uk-table__priority.uk-table__priority--critical!= "Critical"
+            td
+              span(uk-tooltip="title: skelly@aaski.com; pos:top;")!= "Sean Kelly"
+            td
+              span!= "Understanding dashobard functionality"
+            td
+              span!= "Nov 10, 2018"
+            td
+
+          tr
+            td
+              span!= '3510-D'
+            td
+              div.uk-table__status.uk-table__status--critical.uk-flex-inline.uk-flex-middle
+                span.uk-border-circle.uk-margin-small-right
+                p.uk-margin-remove!= "Escalated"
+            td
+              span.uk-table__priority.uk-table__priority--critical!= "Critical"
+            td
+              span(uk-tooltip="title: skelly@aaski.com; pos:top;")!= "Sean Kelly"
+            td
+              span!= "Password Reset"
+            td
+              span!= "Nov 5, 2018"
             td
 
           tr
@@ -124,18 +161,17 @@
                 span.uk-border-circle.uk-margin-small-right
                 p.uk-margin-remove!= "In Progress"
             td
-              span.uk-table__priority.uk-table__priority--normal!= "Normal"
+              span.uk-table__priority.uk-table__priority--normal!= "Low"
             td
               span(uk-tooltip="title: skelly@aaski.com; pos:top;")!= "Randah McKinnie"
             td
-              span!= "Problem with System functionality"
+              span!= "Account Upgrade"
             td
-              span!= "Nov 18, 2018"
+              span!= "Nov 1, 2018"
             td
 
 
-
-      ul.uk-padding-small(class="uk-pagination uk-flex-center" uk-margin)
+      ul.uk-margin-remove(class="uk-pagination uk-flex-center" uk-margin)
         li.uk-padding-remove.uk-margin-small-left.uk-margin-small-right.uk-border-circle.uk-active
           a.uk-flex.uk-flex-middle.uk-flex-center(href="#" class="" title="")!= "1"
         li.uk-padding-remove.uk-margin-small-left.uk-margin-small-right.uk-border-circle

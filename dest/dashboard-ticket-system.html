@@ -218,7 +218,7 @@
             <div class="uk-card-body">
               <div class="uk-grid-small uk-child-width-expand" uk-grid>
                 <div>
-                  <div class="uk-card uk-flex uk-flex-top">
+                  <div class="uk-card uk-flex uk-flex-top uk-padding-small">
                     <div class="uk-width-1-2 uk-height-small uk-flex uk-flex-center uk-flex-middle"><i class="icon-font icon-a-ticket-open"></i></div>
                     <div class="uk-width-1-2 uk-height-small uk-text-center">
                       <p class="uk-margin-remove uk-text-bold uk-text-uppercase">8</p>
@@ -227,7 +227,7 @@
                   </div>
                 </div>
                 <div>
-                  <div class="uk-card uk-flex uk-flex-top">
+                  <div class="uk-card uk-flex uk-flex-top uk-padding-small">
                     <div class="uk-width-1-2 uk-height-small uk-flex uk-flex-center uk-flex-middle"><i class="icon-font icon-a-ticket-awaiting"></i></div>
                     <div class="uk-width-1-2 uk-height-small uk-text-center">
                       <p class="uk-margin-remove uk-text-bold uk-text-uppercase">8</p>
@@ -236,7 +236,7 @@
                   </div>
                 </div>
                 <div>
-                  <div class="uk-card uk-flex uk-flex-top">
+                  <div class="uk-card uk-flex uk-flex-top uk-padding-small">
                     <div class="uk-width-1-2 uk-height-small uk-flex uk-flex-center uk-flex-middle"><i class="icon-font icon-a-ticket-hold"></i></div>
                     <div class="uk-width-1-2 uk-height-small uk-text-center">
                       <p class="uk-margin-remove uk-text-bold uk-text-uppercase">2</p>
@@ -245,7 +245,7 @@
                   </div>
                 </div>
                 <div>
-                  <div class="uk-card uk-flex uk-flex-top">
+                  <div class="uk-card uk-flex uk-flex-top uk-padding-small">
                     <div class="uk-width-1-2 uk-height-small uk-flex uk-flex-center uk-flex-middle"><i class="icon-font icon-a-ticket-closed"></i></div>
                     <div class="uk-width-1-2 uk-height-small uk-text-center">
                       <p class="uk-margin-remove uk-text-bold uk-text-uppercase">3</p>
@@ -358,41 +358,18 @@
             <table class="uk-table uk-table-responsive uk-table-divider uk-table-hover uk-table-middle">
               <thead>
                 <tr>
-                  <th><a href="#" title="">
+                  <th><a class="uk-flex uk-flex-middle" href="#" title="">
                       <p class="uk-text-capitalize uk-margin-remove-bottom">Ticket ID</p><span uk-icon="triangle-up"></span></a></th>
-                  <th><a href="#" title="">
+                  <th><a class="uk-flex uk-flex-middle" href="#" title="">
                       <p class="uk-text-capitalize uk-margin-remove-bottom">Status</p><span uk-icon="triangle-up"></span></a></th>
-                  <th><a href="#" title="">
+                  <th><a class="uk-flex uk-flex-middle" href="#" title="">
                       <p class="uk-text-capitalize uk-margin-remove-bottom">Priority</p><span uk-icon="triangle-up"></span></a></th>
-                  <th><a href="#" title="">
+                  <th><a class="uk-flex uk-flex-middle" href="#" title="">
                       <p class="uk-text-capitalize uk-margin-remove-bottom">Reporter</p><span uk-icon="triangle-up"></span></a></th>
-                  <th><a href="#" title="">
+                  <th><a class="uk-flex uk-flex-middle" href="#" title="">
                       <p class="uk-text-capitalize uk-margin-remove-bottom">Subject</p><span uk-icon="triangle-up"></span></a></th>
-                  <th>
-                    <div class="uk-flex uk-flex-middle">
-                      <p class="uk-text-capitalize uk-margin-remove-bottom">Date Updated</p>
-                      <div class="uk-inline uk-margin-small-left">
-                        <label>
-                          <input class="uk-checkbox" type="checkbox">
-                        </label>
-                        <div class="uk-padding-remove" uk-dropdown="mode: click">
-                          <ul class="uk-nav uk-dropdown-nav">
-                            <li>
-                              <label>
-                                <input class="uk-radio" type="radio" name="radio2" checked><span class="uk-flex uk-text-capitalize uk-margin-small-left">Date Created</span>
-                              </label>
-                            </li>
-                            <li class="uk-padding-remove uk-margin-remove uk-nav-divider"></li>
-                            <li>
-                              <label>
-                                <input class="uk-radio" type="radio" name="radio2"><span class="uk-flex uk-text-capitalize uk-margin-small-left">Date Updated</span>
-                              </label>
-                            </li>
-                          </ul>
-                        </div>
-                      </div>
-                    </div>
-                  </th>
+                  <th><a class="uk-flex uk-flex-middle" href="#" title="">
+                      <p class="uk-text-capitalize uk-margin-remove-bottom">Date Updated</p><span uk-icon="triangle-up"></span></a></th>
                   <th></th>
                 </tr>
               </thead>
@@ -405,35 +382,48 @@
                     </div>
                   </td>
                   <td><span class="uk-table__priority uk-table__priority--normal">Normal</span></td>
-                  <td><span uk-tooltip="title: skelly@aaski.com; pos:top;">Randah McKinnie</span></td>
+                  <td><span uk-tooltip="title: rmckinnie@aaski.com; pos:top;">Randah McKinnie</span></td>
                   <td><span>Problem with System functionality</span></td>
                   <td><span>Nov 18, 2018</span></td>
-                  <td><a class="uk-icon-link" href="#" uk-icon="move"></a></td>
+                  <td></td>
                 </tr>
                 <tr>
-                  <td><span>3950-D</span></td>
+                  <td><span>3520-D</span></td>
                   <td>
                     <div class="uk-table__status uk-table__status--hold uk-flex-inline uk-flex-middle"><span class="uk-border-circle uk-margin-small-right"></span>
                       <p class="uk-margin-remove">On Hold</p>
                     </div>
                   </td>
-                  <td><span class="uk-table__priority uk-table__priority--normal">Normal</span></td>
-                  <td><span uk-tooltip="title: skelly@aaski.com; pos:top;">Randah McKinnie</span></td>
-                  <td><span>Problem with System functionality</span></td>
-                  <td><span>Nov 18, 2018</span></td>
-                  <td><a class="uk-icon-link" href="#" uk-icon="expand"></a></td>
+                  <td><span class="uk-table__priority uk-table__priority--critical">Critical</span></td>
+                  <td><span uk-tooltip="title: skelly@aaski.com; pos:top;">Sean Kelly</span></td>
+                  <td><span>Understanding dashobard functionality</span></td>
+                  <td><span>Nov 10, 2018</span></td>
+                  <td></td>
                 </tr>
                 <tr>
-                  <td><span>3950-D</span></td>
+                  <td><span>3510-D</span></td>
                   <td>
                     <div class="uk-table__status uk-table__status--critical uk-flex-inline uk-flex-middle"><span class="uk-border-circle uk-margin-small-right"></span>
                       <p class="uk-margin-remove">Escalated</p>
                     </div>
                   </td>
                   <td><span class="uk-table__priority uk-table__priority--critical">Critical</span></td>
-                  <td><span uk-tooltip="title: skelly@aaski.com; pos:top;">Randah McKinnie</span></td>
-                  <td><span>Problem with System functionality</span></td>
-                  <td><span>Nov 18, 2018</span></td>
+                  <td><span uk-tooltip="title: skelly@aaski.com; pos:top;">Sean Kelly</span></td>
+                  <td><span>Password Reset</span></td>
+                  <td><span>Nov 5, 2018</span></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td><span>3150-D</span></td>
+                  <td>
+                    <div class="uk-table__status uk-table__status--new uk-table__status--newwb uk-flex-inline uk-flex-middle"><span class="uk-border-circle uk-margin-small-right"></span>
+                      <p class="uk-margin-remove">New</p>
+                    </div>
+                  </td>
+                  <td><span class="uk-table__priority uk-table__priority--normal">Normal</span></td>
+                  <td><span uk-tooltip="title: rmckinnie@aaski.com; pos:top;">Randah McKinnie</span></td>
+                  <td><span>Assistance with system changes</span></td>
+                  <td><span>Oct 29, 2018</span></td>
                   <td></td>
                 </tr>
                 <tr>
@@ -443,10 +433,36 @@
                       <p class="uk-margin-remove">Awaiting</p>
                     </div>
                   </td>
-                  <td><span class="uk-table__priority uk-table__priority--critical">Critical</span></td>
-                  <td><span uk-tooltip="title: skelly@aaski.com; pos:top;">Randah McKinnie</span></td>
+                  <td><span class="uk-table__priority uk-table__priority--normal">Normal</span></td>
+                  <td><span uk-tooltip="title: skelly@aaski.com; pos:top;">Sean Kelly</span></td>
                   <td><span>Problem with System functionality</span></td>
                   <td><span>Nov 18, 2018</span></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td><span>3520-D</span></td>
+                  <td>
+                    <div class="uk-table__status uk-table__status--hold uk-flex-inline uk-flex-middle"><span class="uk-border-circle uk-margin-small-right"></span>
+                      <p class="uk-margin-remove">On Hold</p>
+                    </div>
+                  </td>
+                  <td><span class="uk-table__priority uk-table__priority--critical">Critical</span></td>
+                  <td><span uk-tooltip="title: skelly@aaski.com; pos:top;">Sean Kelly</span></td>
+                  <td><span>Understanding dashobard functionality</span></td>
+                  <td><span>Nov 10, 2018</span></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td><span>3510-D</span></td>
+                  <td>
+                    <div class="uk-table__status uk-table__status--critical uk-flex-inline uk-flex-middle"><span class="uk-border-circle uk-margin-small-right"></span>
+                      <p class="uk-margin-remove">Escalated</p>
+                    </div>
+                  </td>
+                  <td><span class="uk-table__priority uk-table__priority--critical">Critical</span></td>
+                  <td><span uk-tooltip="title: skelly@aaski.com; pos:top;">Sean Kelly</span></td>
+                  <td><span>Password Reset</span></td>
+                  <td><span>Nov 5, 2018</span></td>
                   <td></td>
                 </tr>
                 <tr>
@@ -456,15 +472,15 @@
                       <p class="uk-margin-remove">In Progress</p>
                     </div>
                   </td>
-                  <td><span class="uk-table__priority uk-table__priority--normal">Normal</span></td>
+                  <td><span class="uk-table__priority uk-table__priority--normal">Low</span></td>
                   <td><span uk-tooltip="title: skelly@aaski.com; pos:top;">Randah McKinnie</span></td>
-                  <td><span>Problem with System functionality</span></td>
-                  <td><span>Nov 18, 2018</span></td>
+                  <td><span>Account Upgrade</span></td>
+                  <td><span>Nov 1, 2018</span></td>
                   <td></td>
                 </tr>
               </tbody>
             </table>
-            <ul class="uk-padding-small uk-pagination uk-flex-center" uk-margin>
+            <ul class="uk-margin-remove uk-pagination uk-flex-center" uk-margin>
               <li class="uk-padding-remove uk-margin-small-left uk-margin-small-right uk-border-circle uk-active"><a class="uk-flex uk-flex-middle uk-flex-center" href="#" title="">1</a></li>
               <li class="uk-padding-remove uk-margin-small-left uk-margin-small-right uk-border-circle"><a class="uk-flex uk-flex-middle uk-flex-center" href="#" title="">2</a></li>
               <li class="uk-padding-remove uk-margin-small-left uk-margin-small-right uk-border-circle"><a class="uk-flex uk-flex-middle uk-flex-center" href="#" title="">3</a></li>

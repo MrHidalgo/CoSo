@@ -2594,32 +2594,43 @@ section .uk-button:hover {
 }
 
 /* line 13, src/scss/_components/_dashboard/_tickets-find.scss */
+.tickets-find .uk-search-large span {
+  width: 30px;
+}
+
+/* line 17, src/scss/_components/_dashboard/_tickets-find.scss */
 .tickets-find .uk-search-large svg {
   width: 29px;
   height: 29px;
 }
 
-/* line 17, src/scss/_components/_dashboard/_tickets-find.scss */
+/* line 21, src/scss/_components/_dashboard/_tickets-find.scss */
 .tickets-find .uk-search-large input {
   height: auto;
-  font-size: 18px;
+  font-size: 24px;
+  padding-left: 50px !important;
 }
 
-/* line 24, src/scss/_components/_dashboard/_tickets-find.scss */
+/* line 29, src/scss/_components/_dashboard/_tickets-find.scss */
 .tickets-find .uk-form-controls > div {
   width: 100%;
 }
 
-/* line 33, src/scss/_components/_dashboard/_tickets-find.scss */
+/* line 38, src/scss/_components/_dashboard/_tickets-find.scss */
 .tickets-find .uk-button-apply {
   background-color: #9b9b9b;
   color: #ffffff;
 }
 
-/* line 38, src/scss/_components/_dashboard/_tickets-find.scss */
+/* line 43, src/scss/_components/_dashboard/_tickets-find.scss */
 .tickets-find .uk-card-body {
   padding-top: 30px;
   padding-bottom: 30px;
+}
+
+/* line 47, src/scss/_components/_dashboard/_tickets-find.scss */
+.tickets-find .uk-card-body label {
+  font-size: 18px;
 }
 
 /* line 10, src/scss/_components/_dashboard/_tickets-table.scss */
@@ -2660,66 +2671,64 @@ section .uk-button:hover {
 }
 
 /* line 40, src/scss/_components/_dashboard/_tickets-table.scss */
+.tickets-table .uk-table__status--newwb {
+  border-color: transparent;
+}
+
+/* line 44, src/scss/_components/_dashboard/_tickets-table.scss */
 .tickets-table .uk-table__status--new span {
   background-color: #9ee3f3;
 }
 
-/* line 46, src/scss/_components/_dashboard/_tickets-table.scss */
+/* line 50, src/scss/_components/_dashboard/_tickets-table.scss */
 .tickets-table .uk-table__status--awaiting span {
   background-color: #f7a209;
 }
 
-/* line 51, src/scss/_components/_dashboard/_tickets-table.scss */
+/* line 55, src/scss/_components/_dashboard/_tickets-table.scss */
 .tickets-table .uk-table__status--progress span {
   background-color: #6fdb52;
 }
 
-/* line 57, src/scss/_components/_dashboard/_tickets-table.scss */
+/* line 61, src/scss/_components/_dashboard/_tickets-table.scss */
 .tickets-table .uk-table__status--hold span, .tickets-table .uk-table__status--critical span {
   background-color: #f76808;
 }
 
-/* line 65, src/scss/_components/_dashboard/_tickets-table.scss */
+/* line 69, src/scss/_components/_dashboard/_tickets-table.scss */
 .tickets-table thead .uk-button {
   line-height: 1;
 }
 
-/* line 69, src/scss/_components/_dashboard/_tickets-table.scss */
+/* line 73, src/scss/_components/_dashboard/_tickets-table.scss */
 .tickets-table thead a,
-.tickets-table thead p,
-.tickets-table thead label {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+.tickets-table thead p {
   color: #4e4e4e;
   font-size: 20px;
   font-weight: bold;
 }
 
-/* line 79, src/scss/_components/_dashboard/_tickets-table.scss */
+/* line 80, src/scss/_components/_dashboard/_tickets-table.scss */
 .tickets-table thead .uk-dropdown {
   min-width: auto;
 }
 
-/* line 83, src/scss/_components/_dashboard/_tickets-table.scss */
+/* line 84, src/scss/_components/_dashboard/_tickets-table.scss */
 .tickets-table thead .uk-dropdown-nav li {
   padding: 10px;
 }
 
-/* line 87, src/scss/_components/_dashboard/_tickets-table.scss */
+/* line 88, src/scss/_components/_dashboard/_tickets-table.scss */
 .tickets-table thead .uk-dropdown-nav span {
   font-size: 16px;
 }
 
-/* line 96, src/scss/_components/_dashboard/_tickets-table.scss */
+/* line 97, src/scss/_components/_dashboard/_tickets-table.scss */
 .tickets-table tbody tr:hover {
   background-color: rgba(153, 153, 153, 0.1) !important;
 }
 
-/* line 101, src/scss/_components/_dashboard/_tickets-table.scss */
+/* line 102, src/scss/_components/_dashboard/_tickets-table.scss */
 .tickets-table tbody span,
 .tickets-table tbody p {
   font-size: 18px;
@@ -2727,16 +2736,27 @@ section .uk-button:hover {
 }
 
 /* line 109, src/scss/_components/_dashboard/_tickets-table.scss */
+.tickets-table .uk-card.uk-card-default {
+  padding-top: 20px;
+}
+
+/* line 113, src/scss/_components/_dashboard/_tickets-table.scss */
+.tickets-table .uk-pagination {
+  padding: 30px 40px;
+  border-top: 1px solid #e5e5e5;
+}
+
+/* line 117, src/scss/_components/_dashboard/_tickets-table.scss */
 .tickets-table .uk-pagination li {
   border: 1px solid #e7e3e2;
 }
 
-/* line 114, src/scss/_components/_dashboard/_tickets-table.scss */
+/* line 122, src/scss/_components/_dashboard/_tickets-table.scss */
 .tickets-table .uk-pagination li.uk-active a {
   color: #999;
 }
 
-/* line 119, src/scss/_components/_dashboard/_tickets-table.scss */
+/* line 127, src/scss/_components/_dashboard/_tickets-table.scss */
 .tickets-table .uk-pagination li a {
   width: 32px;
   height: 32px;

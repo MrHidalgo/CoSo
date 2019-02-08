@@ -10,13 +10,18 @@
 
 .tickets-find {
   .uk-search-large {
+    span {
+      width: 30px;
+    }
+
     svg {
       width: 29px;
       height: 29px;
     }
     input {
       height: auto;
-      font-size: 18px;
+      font-size: 24px;
+      padding-left: 50px !important;
     }
   }
 
@@ -38,6 +43,10 @@
   .uk-card-body {
     padding-top: 30px;
     padding-bottom: 30px;
+
+    label {
+      font-size: 18px;
+    }
   }
 }
 

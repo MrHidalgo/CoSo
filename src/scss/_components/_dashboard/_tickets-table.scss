@@ -37,6 +37,10 @@
       &--new {
         border-color: #e7e3e2;
 
+        &wb {
+          border-color: transparent;
+        }
+
         span {
           background-color: #9ee3f3;
         }
@@ -67,10 +71,7 @@
     }
 
     a,
-    p,
-    label {
-      display: flex;
-      align-items: center;
+    p {
       color: #4e4e4e;
       font-size: 20px;
       font-weight: bold;
@@ -105,7 +106,14 @@
     }
   }
 
+  .uk-card.uk-card-default {
+    padding-top: 20px;
+  }
+
   .uk-pagination {
+    padding: 30px 40px;
+    border-top: 1px solid #e5e5e5;
+
     li {
       border: 1px solid #e7e3e2;
 
