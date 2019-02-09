@@ -1363,16 +1363,8 @@ section .uk-button:hover {
 /* line 63, src/scss/_components/_sidebar.scss */
 .sidebar__wrapper {
   position: relative;
-  min-height: 903px;
-  height: calc(100% - 300px);
+  min-height: calc(100% - 300px);
   padding-bottom: 100px;
-}
-
-@media screen and (max-width: 1365px) {
-  /* line 63, src/scss/_components/_sidebar.scss */
-  .sidebar__wrapper {
-    min-height: 878px;
-  }
 }
 
 /* line 75, src/scss/_components/_sidebar.scss */
