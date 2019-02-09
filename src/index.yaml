@@ -12,7 +12,7 @@ PageList:
   ready: 50
 - file: dashboard-reports.html
   titleName: Dashboard Reports
-  ready: 35
+  ready: 50
 - file: dashboard-new-ticket.html
   titleName: Dashboard New Ticket
   ready: 55

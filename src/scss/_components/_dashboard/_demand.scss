@@ -29,6 +29,19 @@
               border-color: #00a6d9;
               background-color: #00a6d9;
               color: #ffffff;
+              @include transition(border-color, background-color);
+            }
+
+            select {
+              height: 100%;
+
+              &:hover {
+                & + button {
+                  border-color: #026b8b;
+                  background-color: #026b8b;
+                  @include transition(border-color, background-color);
+                }
+              }
             }
           }
         }
@@ -94,6 +107,7 @@
       }
 
       &:nth-of-type(3) {}
+
       [uk-tab] {
         border-radius: 10px;
         border: 1px solid #dad8d8;

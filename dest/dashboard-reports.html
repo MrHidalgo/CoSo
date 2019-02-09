@@ -247,20 +247,20 @@
                   <div class="uk-card uk-card-default uk-box-shadow-small">
                     <div class="uk-card-header uk-flex uk-flex-middle uk-flex-between">
                       <div class="uk-width-1-2 uk-flex uk-flex-middle">
-                        <h2 class="uk-margin-remove-bottom uk-card-title uk-text-bold">Available Hourly Peak Concurrency Reports</h2>
+                        <h2 class="uk-margin-remove-bottom uk-card-title uk-text-bold">Available Reports</h2>
                       </div>
                       <div class="uk-width-1-2 uk-flex uk-flex-right uk-flex-middle"><a class="uk-button uk-button-link" href="#" title=""><span class="uk-text-muted" uk-icon="minus"></span></a><a class="uk-button uk-button-link uk-margin-small-left" href="#" title=""><span class="uk-text-muted" uk-icon="close"></span></a></div>
                     </div>
                     <div class="uk-card-body">
                       <div uk-grid>
-                        <div class="uk-width-1-4"><a class="uk-card uk-flex uk-flex-between uk-padding-small uk-background-primary" href="#" uk-tooltip="title: Report Details; pos: top">
-                            <p class="uk-margin-remove uk-text-uppercase uk-text-bold">REPORT NAME HERE</p><span uk-icon="move"></span></a></div>
-                        <div class="uk-width-1-4"><a class="uk-card uk-flex uk-flex-between uk-padding-small uk-background-primary" href="#" uk-tooltip="title: Report Details; pos: top">
-                            <p class="uk-margin-remove uk-text-uppercase uk-text-bold">REPORT NAME HERE</p><span uk-icon="move"></span></a></div>
-                        <div class="uk-width-1-4"><a class="uk-card uk-flex uk-flex-between uk-padding-small uk-background-primary" href="#" uk-tooltip="title: Report Details; pos: top">
-                            <p class="uk-margin-remove uk-text-uppercase uk-text-bold">REPORT NAME HERE</p><span uk-icon="move"></span></a></div>
-                        <div class="uk-width-1-4"><a class="uk-card uk-flex uk-flex-between uk-padding-small uk-background-primary" href="#" uk-tooltip="title: Report Details; pos: top">
-                            <p class="uk-margin-remove uk-text-uppercase uk-text-bold">REPORT NAME HERE</p><span uk-icon="move"></span></a></div>
+                        <div class="uk-width-1-4"><a class="uk-card uk-flex uk-flex-middle uk-flex-between uk-padding-small uk-background-primary" href="#" uk-tooltip="title: Report Details; pos: top">
+                            <p class="uk-margin-remove uk-text-uppercase uk-text-bold">REPORT NAME HERE</p><span class="uk-flex uk-flex-middle" uk-icon="more"></span></a></div>
+                        <div class="uk-width-1-4"><a class="uk-card uk-flex uk-flex-middle uk-flex-between uk-padding-small uk-background-primary" href="#" uk-tooltip="title: Report Details; pos: top">
+                            <p class="uk-margin-remove uk-text-uppercase uk-text-bold">REPORT NAME HERE</p><span class="uk-flex uk-flex-middle" uk-icon="more"></span></a></div>
+                        <div class="uk-width-1-4"><a class="uk-card uk-flex uk-flex-middle uk-flex-between uk-padding-small uk-background-primary" href="#" uk-tooltip="title: Report Details; pos: top">
+                            <p class="uk-margin-remove uk-text-uppercase uk-text-bold">REPORT NAME HERE</p><span class="uk-flex uk-flex-middle" uk-icon="more"></span></a></div>
+                        <div class="uk-width-1-4"><a class="uk-card uk-flex uk-flex-middle uk-flex-between uk-padding-small uk-background-primary" href="#" uk-tooltip="title: Report Details; pos: top">
+                            <p class="uk-margin-remove uk-text-uppercase uk-text-bold">REPORT NAME HERE</p><span class="uk-flex uk-flex-middle" uk-icon="more"></span></a></div>
                       </div>
                       <div class="uk-flex uk-flex-right uk-margin-small-top"><a class="uk-button uk-button-link uk-text-lowercase uk-text-muted" href="#" title="">view all reports</a></div>
                     </div>
@@ -272,21 +272,32 @@
                   <div class="uk-card uk-card-default uk-box-shadow-small">
                     <div class="uk-card-header uk-flex uk-flex-middle uk-flex-between">
                       <div class="uk-width-1-2 uk-flex uk-flex-middle">
-                        <h2 class="uk-margin-remove-bottom uk-card-title uk-text-bold">Hourly Peak Concurrency</h2><span class="uk-margin-medium-left uk-text-bold">KPMG Product - APJ</span>
+                        <h2 class="uk-margin-remove-bottom uk-card-title uk-text-bold">Meeting Activity</h2>
+                        <!--span.uk-margin-medium-left.uk-text-bold!= "KPMG Product - APJ"-->
                       </div>
                       <div class="uk-width-1-2 uk-flex uk-flex-right uk-flex-middle"><a class="uk-button uk-button-link" href="#" title=""><span class="uk-text-muted" uk-icon="minus"></span></a><a class="uk-button uk-button-link uk-margin-small-left" href="#" title=""><span class="uk-text-muted" uk-icon="close"></span></a></div>
                     </div>
                     <div class="uk-card-body">
-                      <div>
+                      <div class="r-virtualClass__row r-virtualClass__row-0">
                         <form>
                           <fieldset class="uk-fieldset">
                             <div class="uk-flex uk-flex-middle uk-flex-between" uk-grid>
-                              <div class="uk-width-1-2">
+                              <div class="uk-width-expand">
                                 <div class="uk-card uk-card-body uk-flex uk-padding-remove">
                                   <div class="uk-margin-medium-right">
                                     <div uk-form-custom="target: &gt; * &gt; span:first-child">
                                       <select class="uk-select">
-                                        <option>Display Value</option>
+                                        <option>Connect Installation</option>
+                                        <option>Option 01</option>
+                                        <option>Option 02</option>
+                                      </select>
+                                      <button class="uk-text-capitalize uk-button uk-button-default uk-flex uk-flex-middle uk-flex-between" type="button" tabindex="-1"><span></span><span uk-icon="icon: chevron-down"></span></button>
+                                    </div>
+                                  </div>
+                                  <div class="uk-margin-medium-right">
+                                    <div uk-form-custom="target: &gt; * &gt; span:first-child">
+                                      <select class="uk-select">
+                                        <option>Range</option>
                                         <option>Option 01</option>
                                         <option>Option 02</option>
                                       </select>
@@ -296,7 +307,7 @@
                                   <div>
                                     <div uk-form-custom="target: &gt; * &gt; span:first-child">
                                       <select class="uk-select">
-                                        <option>History</option>
+                                        <option>User Type</option>
                                         <option>Option 01</option>
                                         <option>Option 02</option>
                                       </select>
@@ -305,7 +316,7 @@
                                   </div>
                                 </div>
                               </div>
-                              <div class="uk-width-1-2">
+                              <div class="uk-width-auto">
                                 <div class="uk-card uk-card-body uk-padding-remove uk-flex uk-flex-middle uk-flex-right">
                                   <div>
                                     <div uk-form-custom="target: &gt; * &gt; span:first-child">
@@ -323,17 +334,30 @@
                           </fieldset>
                         </form>
                       </div>
-                      <div class="uk-padding-large"></div>
-                    </div>
-                    <div class="uk-card-footer">
-                      <div>
-                        <h4 class="uk-text-bold">Chart Description</h4>
+                      <div class="uk-padding-large r-virtualClass__row r-virtualClass__row-1"></div>
+                      <div class="r-virtualClass__row r-virtualClass__row-2">
+                        <p class="uk-flex uk-flex-middle uk-flex-center uk-margin-remove uk-padding-small uk-text-muted">OCTOBER - Days of the month</p>
                       </div>
-                      <div>
-                        <p class="uk-margin-remove-bottom">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit.</p>
+                      <div class="r-virtualClass__row r-virtualClass__row-3">
+                        <div class="uk-flex uk-flex-middle uk-flex-center">
+                          <ul class="uk-tab-bottom uk-margin-remove" uk-tab>
+                            <li class="uk-padding-remove uk-active"><a class="uk-text-capitalize uk-padding-remove" href="#" title="">Day</a></li>
+                            <li class="uk-padding-remove"><a class="uk-text-capitalize uk-padding-remove" href="#" title="">Week</a></li>
+                            <li class="uk-padding-remove"><a class="uk-text-capitalize uk-padding-remove" href="#" title="">Month</a></li>
+                            <li class="uk-padding-remove"><a class="uk-text-capitalize uk-padding-remove" href="#" title="">Year</a></li>
+                          </ul>
+                        </div>
                       </div>
-                      <div class="uk-flex uk-flex-right uk-padding-small"><a class="uk-button uk-button-link" href="#" title="" uk-tooltip="title: Info; pos: top;"><span class="uk-text-muted" uk-icon="question"></span></a></div>
                     </div>
+                    <div class="uk-card-footer uk-flex uk-flex-middle uk-flex-right"><a class="uk-icon-link" href="" uk-icon="question"></a></div>
+                    <!--.uk-card-footer-->
+                    <!--  div-->
+                    <!--    h4.uk-text-bold!= "Chart Description"-->
+                    <!--  div-->
+                    <!--    p.uk-margin-remove-bottom!= "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit."-->
+                    <!--  div.uk-flex.uk-flex-right.uk-padding-small-->
+                    <!--    a.uk-button.uk-button-link(href="#" class="" title="" uk-tooltip="title: Info; pos: top;")-->
+                    <!--      span.uk-text-muted(uk-icon='question')-->
                   </div>
                 </div>
               </div>

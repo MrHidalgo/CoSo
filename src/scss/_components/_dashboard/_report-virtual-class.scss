@@ -1,0 +1,194 @@
+// SECTION report tabs :: START
+
+.r-virtualClass {
+  &__wrapper {
+    &-0 {
+      .uk-width-1-4 {
+        .uk-card {
+          border-left: 6px solid #6d6a67;
+        }
+      }
+
+      .uk {
+        &-card {
+          &:hover {
+            text-decoration: none;
+          }
+
+          p {
+            color: #ffffff;
+            font-size: 18px;
+            line-height: 1;
+          }
+
+          [uk-grid] {
+            svg {
+              fill: #fff;
+
+              rect {
+                stroke: #fff !important;
+              }
+            }
+          }
+
+          &-body {
+            a {
+              padding-top: 20px;
+              font-size: 18px;
+            }
+          }
+        }
+
+        &-background-primary {
+          background-color: #00a6d9;
+        }
+      }
+    }
+
+    &-1 {
+      .uk-card-header {
+        .uk-width-1-2 {
+          > span {
+            color: #f8ab20;
+            font-size: 20px;
+          }
+        }
+      }
+
+      .uk-card-footer {
+        h4,
+        p {
+          font-size: 20px;
+        }
+
+        p {
+          line-height: line-height-convert(24, 20);
+        }
+      }
+
+      form {
+        [uk-grid] {
+          .uk-width-expand,
+          .uk-width-auto {
+            .uk-card {
+              width: 100%;
+            }
+            &:nth-of-type(2) {
+              button {
+                border-color: #00a6d9;
+                background-color: #00a6d9;
+                border-radius: 10px;
+                color: #ffffff;
+                @include transition(border-color, background-color);
+              }
+
+              select {
+                height: 100%;
+
+                &:hover {
+                  & + button {
+                    border-color: #026b8b;
+                    background-color: #026b8b;
+                    @include transition(border-color, background-color);
+                  }
+                }
+              }
+            }
+          }
+          .uk-card {
+            > div {
+              width: 100%;
+
+              > div {
+                width: 100%;
+
+                select {
+                  width: 100%;
+                }
+
+                button {
+                  width: 100%;
+                  height: 49px;
+                  padding: 0 20px;
+                  border-radius: 10px;
+                  font-size: 20px;
+                }
+              }
+
+              &:nth-of-type(1) {
+                max-width: 265px;
+              }
+              &:nth-of-type(2) {
+                max-width: 162px;
+              }
+              &:nth-of-type(3) {
+                max-width: 176px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  &__row {
+    &-0 {}
+    &-1 {}
+
+    &-2 {
+      p {
+        padding-top: 30px;
+        padding-bottom: 30px;
+        font-size: 20px;
+      }
+    }
+
+    &-3 {
+      padding-bottom: 63px;
+    }
+  }
+
+  .uk-card {
+    &-footer {
+      a {
+        svg {
+          width: 23px;
+          height: 23px;
+        }
+      }
+    }
+  }
+
+  [uk-tab] {
+    border-radius: 10px;
+    border: 1px solid #dad8d8;
+
+    &:before {
+      display: none;
+    }
+
+    li {
+      &:last-child {
+        a {
+          border-right: none;
+        }
+      }
+      &.uk-active {
+        a {
+          color: #00a6d9;
+        }
+      }
+
+      a {
+        width: 82px;
+        padding-top: 10px !important;
+        padding-bottom: 10px !important;
+        border-color: transparent;
+        border-right: 1px solid #dad8d8;
+        font-size: 20px;
+      }
+    }
+  }
+}
+
+// SECTION report tabs :: END
