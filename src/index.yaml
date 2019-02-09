@@ -21,4 +21,4 @@ PageList:
   ready: 55
 - file: dashboard-metrics.html
   titleName: Dashboard Metrics
-  ready: 10
+  ready: 50
