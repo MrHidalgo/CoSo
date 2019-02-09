@@ -1,11 +1,7 @@
 // SECTION sidebar :: START
 
 mixin sidebarNavBtn(classMod, iconBool, iconName, btnName)
-  a.sidebar__navigation-btn.uk-flex.uk-flex-middle(
-    href="#"
-    class="sidebar__navigation-btn--" + classMod
-    title=""
-  )
+  mixin navBtnContent
     div.uk-flex.uk-flex-center
       if(iconBool)
         span(uk-icon= iconName)
@@ -15,6 +11,18 @@ mixin sidebarNavBtn(classMod, iconBool, iconName, btnName)
       p!= btnName
     if(classMod !== 'internal')
       div.uk-flex.uk-flex-middle.uk-flex-center
+
+  if (classMod === 'internal')
+    a.sidebar__navigation-btn.uk-flex.uk-flex-middle(href="#"
+      class="sidebar__navigation-btn--" + classMod
+      uk-tooltip= "title: " + btnName
+    )
+      +navBtnContent()
+  else
+    a.sidebar__navigation-btn.uk-flex.uk-flex-middle(href="#"
+      class="sidebar__navigation-btn--" + classMod
+    )
+      +navBtnContent()
 
 mixin sidebarNavAccordionBtn(classMod, iconBool, iconName, btnName)
   a.uk-accordion-title.sidebar__navigation-btn.uk-flex.uk-flex-middle(
@@ -52,17 +60,21 @@ section#sidebar.sidebar
 
         ul(uk-accordion="multiple: true")
           li
-            +sidebarNavAccordionBtn('external', false, 'icon-monitors', 'Monitors')
+            +sidebarNavAccordionBtn('external', false, 'icon-monitors', 'Metrics')
             .uk-accordion-content.uk-flex.uk-flex-column.uk-margin-remove-top
-              +sidebarNavBtn('internal', '', false, 'Monitors action 1')
-              +sidebarNavBtn('internal', '', false, 'Monitors action 2')
-              +sidebarNavBtn('internal', '', false, 'Monitors action 3')
+              +sidebarNavBtn('internal', '', false, 'Hourly Peak Concurrency')
+              +sidebarNavBtn('internal', '', false, 'Per Minute Concurrency')
+              +sidebarNavBtn('internal', '', false, 'Hourly Metrics')
+              +sidebarNavBtn('internal', '', false, 'Daily Metrics')
+              +sidebarNavBtn('internal', '', false, 'Monthly Metrics')
           li
             +sidebarNavAccordionBtn('external', false, 'icon-reports', 'Reports')
             .uk-accordion-content.uk-flex.uk-flex-column.uk-margin-remove-top
-              +sidebarNavBtn('internal', '', false, 'Status')
-              +sidebarNavBtn('internal', '', false, 'Metrics')
-              +sidebarNavBtn('internal', '', false, 'Activity')
+              +sidebarNavBtn('internal', '', false, 'Meeting Activity')
+              +sidebarNavBtn('internal', '', false, 'Virtual Class Activity')
+              +sidebarNavBtn('internal', '', false, 'Content Launch Activity')
+              +sidebarNavBtn('internal', '', false, 'Training Launch Activity')
+              +sidebarNavBtn('internal', '', false, 'On-Demand Activity')
 
         +sidebarNavBtn('external', true, 'cog', 'Settings')
         +sidebarNavBtn('external', true, 'sign-out', 'Logout')

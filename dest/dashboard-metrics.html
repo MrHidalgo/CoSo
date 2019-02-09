@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=0">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <!-- TITLE-->
-    <title>CoSo Insights Portal - Dashboard New Ticket</title>
+    <title>CoSo Insights Portal - Dashboard Metrics</title>
     <!-- FAVICON-->
     <link rel="apple-touch-icon" sizes="60x60" href="./icon/apple-icon-60x60.png">
     <link rel="apple-touch-icon" sizes="72x72" href="./icon/apple-icon-72x72.png">
@@ -44,6 +44,9 @@
               <div><i></i><i></i><i></i></div><span>Collapse</span></a></div>
           <div class="uk-flex uk-flex-middle uk-flex-between">
             <div class="header__search uk-flex">
+              <form class="uk-flex uk-flex-middle uk-search uk-search-large" action="" autocomplete="off"><span uk-search-icon></span>
+                <input class="uk-search-input" type="search" placeholder="Search...">
+              </form>
             </div>
             <div class="header__date uk-flex uk-flex-middle uk-flex-right">
               <p><span>12:00</span> PM</p><span></span>
@@ -202,6 +205,16 @@
       <!-- SECTION additional information :: START-->
       <div class="a-info" id="a-info">
         <div class="uk-section uk-padding-remove-top uk-padding-remove-bottom uk-flex uk-flex-right uk-margin-bottom">
+          <div class="uk-inline uk-margin-small-right">
+            <button class="uk-button uk-button-default uk-background-default" type="button"><span class="uk-margin-right">SELECT INSTALLS</span><span uk-icon="chevron-down"></span></button>
+            <div uk-dropdown="mode: click; pos: bottom-right">
+              <ul class="uk-nav uk-dropdown-nav">
+                <li><a href="#">Item 1</a></li>
+                <li><a href="#">Item 2</a></li>
+                <li><a href="#">Item 3</a></li>
+              </ul>
+            </div>
+          </div>
           <div class="uk-inline">
             <button class="uk-button uk-button-default uk-background-default" type="button"><span class="uk-margin-right">HELP</span><span uk-icon="chevron-down"></span></button>
             <div uk-dropdown="mode: click; pos: bottom-right">
@@ -215,214 +228,7 @@
         </div>
       </div>
       <!-- SECTION additional information :: END-->
-      <!-- SECTION new\edit case :: START-->
-      <div class="d-case" id="d-case">
-        <div class="uk-section uk-padding-remove-top uk-padding-remove-bottom uk-margin-medium-bottom">
-          <div class="uk-card uk-card-default uk-box-shadow-small">
-            <div class="uk-card-header uk-flex uk-flex-top uk-flex-between">
-              <div class="uk-width-1-2">
-                <h2 class="uk-margin-small-bottom uk-card-title uk-text-bold">New/Edit Cases</h2>
-                <p class="uk-margin-remove uk-text-muted">Lorem ipsum dolor sit amet, consectetur adipiscint</p>
-              </div>
-              <div class="uk-width-1-2 uk-flex uk-flex-right uk-flex-middle">
-                <h2 class="uk-margin-remove-bottom uk-card-title uk-text-bold">Case# 00</h2>
-              </div>
-            </div>
-            <div class="uk-card-body uk-padding-remove">
-              <div class="d-case__subtitle uk-flex uk-flex-middle">
-                <p class="uk-margin-remove uk-text-bold">Ticket Information</p>
-              </div>
-              <div class="uk-card-body">
-                <div class="d-case__information">
-                  <div uk-grid>
-                    <div class="uk-width-auto">
-                      <div class="uk-card">
-                        <div class="uk-flex uk-flex-middle">
-                          <div><i class="icon-font icon-user"></i></div>
-                          <div>
-                            <p class="uk-margin-small-left uk-margin-remove-bottom uk-text-muted">Created By:</p><span class="uk-margin-small-left">Randah McKinnie</span>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="uk-width-expand">
-                      <div class="uk-card">
-                        <form>
-                          <fieldset class="uk-fieldset">
-                            <div class="uk-form-controls uk-margin-medium-bottom">
-                              <div uk-grid>
-                                <div class="uk-width-1-4">
-                                  <div class="uk-form-controls">
-                                    <div uk-form-custom="target: &gt; * &gt; span:first-child">
-                                      <select class="uk-select">
-                                        <option>Status</option>
-                                        <option>Option 01</option>
-                                        <option>Option 02</option>
-                                      </select>
-                                      <button class="uk-text-capitalize uk-button uk-button-default uk-flex uk-flex-middle uk-flex-between" type="button" tabindex="-1"><span></span><span uk-icon="icon: chevron-down"></span></button>
-                                    </div>
-                                  </div>
-                                </div>
-                                <div class="uk-width-1-4">
-                                  <div class="uk-form-controls">
-                                    <div uk-form-custom="target: &gt; * &gt; span:first-child">
-                                      <select class="uk-select">
-                                        <option>Priority</option>
-                                        <option>Option 01</option>
-                                        <option>Option 02</option>
-                                      </select>
-                                      <button class="uk-text-capitalize uk-button uk-button-default uk-flex uk-flex-middle uk-flex-between" type="button" tabindex="-1"><span></span><span uk-icon="icon: chevron-down"></span></button>
-                                    </div>
-                                  </div>
-                                </div>
-                                <div class="uk-width-1-4">
-                                  <div class="uk-form-controls">
-                                    <div uk-form-custom="target: &gt; * &gt; span:first-child">
-                                      <select class="uk-select">
-                                        <option>Type</option>
-                                        <option>Option 01</option>
-                                        <option>Option 02</option>
-                                      </select>
-                                      <button class="uk-text-capitalize uk-button uk-button-default uk-flex uk-flex-middle uk-flex-between" type="button" tabindex="-1"><span></span><span uk-icon="icon: chevron-down"></span></button>
-                                    </div>
-                                  </div>
-                                </div>
-                                <div class="uk-width-1-4">
-                                  <div class="uk-form-controls">
-                                    <div uk-form-custom="target: &gt; * &gt; span:first-child">
-                                      <select class="uk-select">
-                                        <option>Case Origin</option>
-                                        <option>Option 01</option>
-                                        <option>Option 02</option>
-                                      </select>
-                                      <button class="uk-text-capitalize uk-button uk-button-default uk-flex uk-flex-middle uk-flex-between" type="button" tabindex="-1"><span></span><span uk-icon="icon: chevron-down"></span></button>
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="uk-form-controls uk-margin-medium-bottom">
-                              <input class="uk-input" type="text" placeholder="Contact Name">
-                            </div>
-                            <div class="uk-form-controls uk-margin-medium-bottom">
-                              <input class="uk-input" type="text" placeholder="This fiield is locked" disabled="disabled">
-                            </div>
-                            <div class="uk-form-controls">
-                              <input class="uk-input" type="text" placeholder="Account URL">
-                            </div>
-                          </fieldset>
-                        </form>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="d-case__subtitle uk-flex uk-flex-middle">
-                <p class="uk-margin-remove uk-text-bold">Description</p>
-              </div>
-              <div class="uk-card-body">
-                <div class="d-case__description">
-                  <form>
-                    <fieldset class="uk-fieldset">
-                      <div class="uk-form-controls uk-margin-medium-bottom">
-                        <div uk-form-custom="target: &gt; * &gt; span:first-child">
-                          <select class="uk-select">
-                            <option>Product</option>
-                            <option>Option 01</option>
-                            <option>Option 02</option>
-                          </select>
-                          <button class="uk-text-capitalize uk-button uk-button-default uk-flex uk-flex-middle uk-flex-between" type="button" tabindex="-1"><span></span><span uk-icon="icon: chevron-down"></span></button>
-                        </div>
-                      </div>
-                      <div class="uk-form-controls uk-margin-medium-bottom">
-                        <div uk-form-custom="target: &gt; * &gt; span:first-child">
-                          <select class="uk-select">
-                            <option>Subject</option>
-                            <option>Option 01</option>
-                            <option>Option 02</option>
-                          </select>
-                          <button class="uk-text-capitalize uk-button uk-button-default uk-flex uk-flex-middle uk-flex-between" type="button" tabindex="-1"><span></span><span uk-icon="icon: chevron-down"></span></button>
-                        </div>
-                      </div>
-                      <div class="uk-form-controls">
-                        <textarea class="uk-textarea" rows="8" placeholder="Description..."></textarea>
-                      </div>
-                    </fieldset>
-                  </form>
-                </div>
-              </div>
-              <div class="d-case__subtitle uk-flex uk-flex-middle">
-                <p class="uk-margin-remove uk-text-bold">Attachments</p>
-              </div>
-              <div class="uk-card-body">
-                <div class="d-case__attachments">
-                  <div>
-                    <div class="uk-padding-large uk-flex uk-flex-middle uk-flex-center js-upload uk-placeholder uk-text-center"><span uk-icon="icon: cloud-upload; ratio: 2"></span><span class="uk-text-large">&nbsp;Drag files here or&nbsp;</span>
-                      <form uk-form-custom>
-                        <input type="file" multiple><span class="uk-link uk-text-large">&nbsp;browse</span>
-                      </form>
-                    </div>
-                    <progress class="uk-progress" id="js-progressbar" value="0" max="100" hidden></progress>
-                  </div>
-                  <div class="uk-flex uk-flex-middle">
-                    <div class="d-case__attachments-block uk-flex uk-flex-middle uk-flex-center" uk-tooltip="title: fileName.ext"><span uk-icon="icon: image; ratio: 2"></span></div>
-                    <div class="d-case__attachments-block uk-flex uk-flex-middle uk-flex-center" uk-tooltip="title: fileName.ext"><span uk-icon="icon: file-text; ratio: 2"></span></div>
-                  </div>
-                  <div class="uk-flex uk-flex-center">
-                    <button class="uk-text-capitalize uk-text-bold uk-button uk-button-primary uk-button-small uk-margin-small-top">Create/Save Ticket</button>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- SECTION new\edit case :: END-->
-      <!-- SECTION ticket comments :: START-->
-      <div class="t-comments" id="t-comments">
-        <div class="uk-section uk-padding-remove-top uk-padding-remove-bottom uk-margin-xlarge-bottom">
-          <div class="uk-card uk-card-default uk-box-shadow-small">
-            <div class="uk-card-body">
-              <div class="t-comments__info">
-                <div class="uk-margin-medium-bottom">
-                  <div class="uk-flex uk-flex-between uk-margin-small-bottom"><span>Sean Kelly</span><span class="uk-text-muted">Nov 28, 2018</span></div>
-                  <div>
-                    <p class="uk-margin-remove-bottom">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                  </div>
-                </div>
-                <div class="uk-margin-large-bottom">
-                  <div class="uk-flex uk-flex-between uk-margin-small-bottom"><span>Evie Larson</span><span class="uk-text-muted">Nov 26, 2018</span></div>
-                  <div>
-                    <p class="uk-margin-remove-bottom">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                  </div>
-                </div>
-              </div>
-              <form>
-                <fieldset class="uk-fieldset">
-                  <div class="t-comments__wrapper uk-flex uk-flex-column">
-                    <div class="t-comments__top">
-                      <textarea class="uk-textarea" rows="8" placeholder="Write comment here..."></textarea>
-                    </div>
-                    <div class="t-comments__bottom uk-flex uk-flex-middle uk-flex-right">
-                      <button class="uk-button uk-button-default uk-button-small">Save Draft</button>
-                      <button class="uk-margin-small-left uk-button uk-button-primary uk-button-small">Comment</button>
-                      <button class="uk-margin-small-left uk-button uk-button-small" uk-tooltip="title: More Actions"><span uk-icon="more"></span></button>
-                      <div uk-dropdown="mode: click">
-                        <ul class="uk-nav uk-dropdown-nav">
-                          <li><a href="#" title="">Some action 1</a></li>
-                          <li><a href="#" title="">Some action 2</a></li>
-                          <li><a href="#" title="">Some action 3</a></li>
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
-                </fieldset>
-              </form>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- SECTION ticket comments :: END-->
+      <!--include ./components/dashboard/_report-tabs-->
     </div>
     <!--include ../components/_footer-->
   </body>

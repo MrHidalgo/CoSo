@@ -1,0 +1,16 @@
+---
+title: CoSo Insights Portal - Dashboard Metrics
+
+pageClassName: p-dashboard
+pageSubClassName: p-dashboard-metrics
+---
+extends shared/_layout
+
+block sidebar
+  include ./components/_sidebar
+
+block content
+  div.body.body--start(class!= pageClassName)
+
+    include ./components/dashboard/_additional-info
+    //include ./components/dashboard/_report-tabs
