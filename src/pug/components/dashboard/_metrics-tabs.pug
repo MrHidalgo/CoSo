@@ -1,0 +1,29 @@
+// SECTION metrics tabs :: START
+
+#m-tabs.m-tabs
+
+  div.uk-child-width-expand.uk-margin-medium-top.uk-margin-medium-bottom(uk-tab uk-switcher="animation: uk-animation-fade")
+    li
+      a.uk-text-capitalize(href="#" class="" title="")!= "Hourly Peak Concurrency"
+    li.uk-active
+      a.uk-text-capitalize(href="#" class="" title="")!= "Per Minute Concurrency"
+    li
+      a.uk-text-capitalize(href="#" class="" title="")!= "Hourly Metrics"
+    li
+      a.uk-text-capitalize(href="#" class="" title="")!= "Daily Metrics"
+    li
+      a.uk-text-capitalize(href="#" class="" title="")!= "Monthly Metrics"
+
+  .uk-switcher.uk-margin.uk-margin-xlarge-bottom
+    li
+      span!= "Hourly Peak Concurrency - CONTENT"
+    li
+      include ./_metrics-per-minute
+    li
+      span!= "Hourly Metrics - CONTENT"
+    li
+      span!= "Daily Metrics - CONTENT"
+    li
+      span!= "Monthly Metrics - CONTENT"
+
+// SECTION metrics tabs :: END

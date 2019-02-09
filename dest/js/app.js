@@ -159,10 +159,10 @@ $(document).ready(function (ev) {
 
     $('#sidebar').hover(function (ev) {
       hoverCallback('addClass');
-      hideAccordionCallback();
+      // hideAccordionCallback();
     }, function (ev) {
       hoverCallback('removeClass');
-      hideAccordionCallback();
+      // hideAccordionCallback();
     });
   };
 

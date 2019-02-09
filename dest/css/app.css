@@ -2869,6 +2869,25 @@ section .uk-button:hover {
   padding-bottom: 40px;
 }
 
+/* line 5, src/scss/_components/_dashboard/_metrics-tabs.scss */
+.m-tabs > [uk-tab]:before {
+  border-width: 2px;
+  border-color: #e6e1e1;
+}
+
+/* line 12, src/scss/_components/_dashboard/_metrics-tabs.scss */
+.m-tabs > [uk-tab] li.uk-active a {
+  border-width: 7px;
+  border-color: #00a6d9;
+}
+
+/* line 19, src/scss/_components/_dashboard/_metrics-tabs.scss */
+.m-tabs > [uk-tab] a {
+  font-size: 24px;
+  padding: 0;
+  padding-bottom: 40px;
+}
+
 /* line 7, src/scss/_components/_dashboard/_report-virtual-class.scss */
 .r-virtualClass__wrapper-0 .uk-width-1-4 .uk-card {
   border-left: 6px solid #6d6a67;
@@ -2881,56 +2900,63 @@ section .uk-button:hover {
 
 /* line 18, src/scss/_components/_dashboard/_report-virtual-class.scss */
 .r-virtualClass__wrapper-0 .uk-card p {
+  width: 100%;
+  max-width: calc(100% - 20px);
   color: #ffffff;
   font-size: 18px;
   line-height: 1;
 }
 
-/* line 25, src/scss/_components/_dashboard/_report-virtual-class.scss */
+/* line 26, src/scss/_components/_dashboard/_report-virtual-class.scss */
+.r-virtualClass__wrapper-0 .uk-card span {
+  width: 20px;
+}
+
+/* line 31, src/scss/_components/_dashboard/_report-virtual-class.scss */
 .r-virtualClass__wrapper-0 .uk-card [uk-grid] svg {
   fill: #fff;
 }
 
-/* line 28, src/scss/_components/_dashboard/_report-virtual-class.scss */
+/* line 34, src/scss/_components/_dashboard/_report-virtual-class.scss */
 .r-virtualClass__wrapper-0 .uk-card [uk-grid] svg rect {
   stroke: #fff !important;
 }
 
-/* line 35, src/scss/_components/_dashboard/_report-virtual-class.scss */
+/* line 41, src/scss/_components/_dashboard/_report-virtual-class.scss */
 .r-virtualClass__wrapper-0 .uk-card-body a {
   padding-top: 20px;
   font-size: 18px;
 }
 
-/* line 42, src/scss/_components/_dashboard/_report-virtual-class.scss */
+/* line 48, src/scss/_components/_dashboard/_report-virtual-class.scss */
 .r-virtualClass__wrapper-0 .uk-background-primary {
   background-color: #00a6d9;
 }
 
-/* line 51, src/scss/_components/_dashboard/_report-virtual-class.scss */
+/* line 57, src/scss/_components/_dashboard/_report-virtual-class.scss */
 .r-virtualClass__wrapper-1 .uk-card-header .uk-width-1-2 > span {
   color: #f8ab20;
   font-size: 20px;
 }
 
-/* line 59, src/scss/_components/_dashboard/_report-virtual-class.scss */
+/* line 65, src/scss/_components/_dashboard/_report-virtual-class.scss */
 .r-virtualClass__wrapper-1 .uk-card-footer h4,
 .r-virtualClass__wrapper-1 .uk-card-footer p {
   font-size: 20px;
 }
 
-/* line 64, src/scss/_components/_dashboard/_report-virtual-class.scss */
+/* line 70, src/scss/_components/_dashboard/_report-virtual-class.scss */
 .r-virtualClass__wrapper-1 .uk-card-footer p {
   line-height: 1.2;
 }
 
-/* line 73, src/scss/_components/_dashboard/_report-virtual-class.scss */
+/* line 79, src/scss/_components/_dashboard/_report-virtual-class.scss */
 .r-virtualClass__wrapper-1 form [uk-grid] .uk-width-expand .uk-card,
 .r-virtualClass__wrapper-1 form [uk-grid] .uk-width-auto .uk-card {
   width: 100%;
 }
 
-/* line 77, src/scss/_components/_dashboard/_report-virtual-class.scss */
+/* line 83, src/scss/_components/_dashboard/_report-virtual-class.scss */
 .r-virtualClass__wrapper-1 form [uk-grid] .uk-width-expand:nth-of-type(2) button,
 .r-virtualClass__wrapper-1 form [uk-grid] .uk-width-auto:nth-of-type(2) button {
   border-color: #00a6d9;
@@ -2942,13 +2968,13 @@ section .uk-button:hover {
   transition: border-color 0.3s ease-in-out, background-color 0.3s ease-in-out;
 }
 
-/* line 85, src/scss/_components/_dashboard/_report-virtual-class.scss */
+/* line 91, src/scss/_components/_dashboard/_report-virtual-class.scss */
 .r-virtualClass__wrapper-1 form [uk-grid] .uk-width-expand:nth-of-type(2) select,
 .r-virtualClass__wrapper-1 form [uk-grid] .uk-width-auto:nth-of-type(2) select {
   height: 100%;
 }
 
-/* line 89, src/scss/_components/_dashboard/_report-virtual-class.scss */
+/* line 95, src/scss/_components/_dashboard/_report-virtual-class.scss */
 .r-virtualClass__wrapper-1 form [uk-grid] .uk-width-expand:nth-of-type(2) select:hover + button,
 .r-virtualClass__wrapper-1 form [uk-grid] .uk-width-auto:nth-of-type(2) select:hover + button {
   border-color: #026b8b;
@@ -2958,22 +2984,22 @@ section .uk-button:hover {
   transition: border-color 0.3s ease-in-out, background-color 0.3s ease-in-out;
 }
 
-/* line 99, src/scss/_components/_dashboard/_report-virtual-class.scss */
+/* line 105, src/scss/_components/_dashboard/_report-virtual-class.scss */
 .r-virtualClass__wrapper-1 form [uk-grid] .uk-card > div {
   width: 100%;
 }
 
-/* line 102, src/scss/_components/_dashboard/_report-virtual-class.scss */
+/* line 108, src/scss/_components/_dashboard/_report-virtual-class.scss */
 .r-virtualClass__wrapper-1 form [uk-grid] .uk-card > div > div {
   width: 100%;
 }
 
-/* line 105, src/scss/_components/_dashboard/_report-virtual-class.scss */
+/* line 111, src/scss/_components/_dashboard/_report-virtual-class.scss */
 .r-virtualClass__wrapper-1 form [uk-grid] .uk-card > div > div select {
   width: 100%;
 }
 
-/* line 109, src/scss/_components/_dashboard/_report-virtual-class.scss */
+/* line 115, src/scss/_components/_dashboard/_report-virtual-class.scss */
 .r-virtualClass__wrapper-1 form [uk-grid] .uk-card > div > div button {
   width: 100%;
   height: 49px;
@@ -2982,62 +3008,247 @@ section .uk-button:hover {
   font-size: 20px;
 }
 
-/* line 118, src/scss/_components/_dashboard/_report-virtual-class.scss */
+/* line 124, src/scss/_components/_dashboard/_report-virtual-class.scss */
 .r-virtualClass__wrapper-1 form [uk-grid] .uk-card > div:nth-of-type(1) {
   max-width: 265px;
 }
 
-/* line 121, src/scss/_components/_dashboard/_report-virtual-class.scss */
+/* line 127, src/scss/_components/_dashboard/_report-virtual-class.scss */
 .r-virtualClass__wrapper-1 form [uk-grid] .uk-card > div:nth-of-type(2) {
   max-width: 162px;
 }
 
-/* line 124, src/scss/_components/_dashboard/_report-virtual-class.scss */
+/* line 130, src/scss/_components/_dashboard/_report-virtual-class.scss */
 .r-virtualClass__wrapper-1 form [uk-grid] .uk-card > div:nth-of-type(3) {
   max-width: 176px;
 }
 
-/* line 139, src/scss/_components/_dashboard/_report-virtual-class.scss */
+/* line 145, src/scss/_components/_dashboard/_report-virtual-class.scss */
 .r-virtualClass__row-2 p {
   padding-top: 30px;
   padding-bottom: 30px;
   font-size: 20px;
 }
 
-/* line 146, src/scss/_components/_dashboard/_report-virtual-class.scss */
+/* line 152, src/scss/_components/_dashboard/_report-virtual-class.scss */
 .r-virtualClass__row-3 {
   padding-bottom: 63px;
 }
 
-/* line 154, src/scss/_components/_dashboard/_report-virtual-class.scss */
+/* line 160, src/scss/_components/_dashboard/_report-virtual-class.scss */
 .r-virtualClass .uk-card-footer a svg {
   width: 23px;
   height: 23px;
 }
 
-/* line 162, src/scss/_components/_dashboard/_report-virtual-class.scss */
+/* line 168, src/scss/_components/_dashboard/_report-virtual-class.scss */
 .r-virtualClass [uk-tab] {
   border-radius: 10px;
   border: 1px solid #dad8d8;
 }
 
-/* line 166, src/scss/_components/_dashboard/_report-virtual-class.scss */
+/* line 172, src/scss/_components/_dashboard/_report-virtual-class.scss */
 .r-virtualClass [uk-tab]:before {
   display: none;
 }
 
-/* line 172, src/scss/_components/_dashboard/_report-virtual-class.scss */
+/* line 178, src/scss/_components/_dashboard/_report-virtual-class.scss */
 .r-virtualClass [uk-tab] li:last-child a {
   border-right: none;
 }
 
-/* line 177, src/scss/_components/_dashboard/_report-virtual-class.scss */
+/* line 183, src/scss/_components/_dashboard/_report-virtual-class.scss */
 .r-virtualClass [uk-tab] li.uk-active a {
   color: #00a6d9;
 }
 
-/* line 182, src/scss/_components/_dashboard/_report-virtual-class.scss */
+/* line 188, src/scss/_components/_dashboard/_report-virtual-class.scss */
 .r-virtualClass [uk-tab] li a {
+  width: 82px;
+  padding-top: 10px !important;
+  padding-bottom: 10px !important;
+  border-color: transparent;
+  border-right: 1px solid #dad8d8;
+  font-size: 20px;
+}
+
+/* line 7, src/scss/_components/_dashboard/_metrics-per-monite.scss */
+.m-perMinute__wrapper-0 .uk-width-1-4 .uk-card {
+  border-left: 6px solid #6d6a67;
+}
+
+/* line 14, src/scss/_components/_dashboard/_metrics-per-monite.scss */
+.m-perMinute__wrapper-0 .uk-card:hover {
+  text-decoration: none;
+}
+
+/* line 18, src/scss/_components/_dashboard/_metrics-per-monite.scss */
+.m-perMinute__wrapper-0 .uk-card p {
+  width: 100%;
+  max-width: calc(100% - 20px);
+  color: #ffffff;
+  font-size: 18px;
+  line-height: 1;
+}
+
+/* line 26, src/scss/_components/_dashboard/_metrics-per-monite.scss */
+.m-perMinute__wrapper-0 .uk-card span {
+  width: 20px;
+}
+
+/* line 31, src/scss/_components/_dashboard/_metrics-per-monite.scss */
+.m-perMinute__wrapper-0 .uk-card [uk-grid] svg {
+  fill: #fff;
+}
+
+/* line 34, src/scss/_components/_dashboard/_metrics-per-monite.scss */
+.m-perMinute__wrapper-0 .uk-card [uk-grid] svg rect {
+  stroke: #fff !important;
+}
+
+/* line 41, src/scss/_components/_dashboard/_metrics-per-monite.scss */
+.m-perMinute__wrapper-0 .uk-card-body a {
+  padding-top: 20px;
+  font-size: 18px;
+}
+
+/* line 48, src/scss/_components/_dashboard/_metrics-per-monite.scss */
+.m-perMinute__wrapper-0 .uk-background-primary {
+  background-color: #00a6d9;
+}
+
+/* line 57, src/scss/_components/_dashboard/_metrics-per-monite.scss */
+.m-perMinute__wrapper-1 .uk-card-header .uk-width-1-2 > span {
+  color: #f8ab20;
+  font-size: 20px;
+}
+
+/* line 65, src/scss/_components/_dashboard/_metrics-per-monite.scss */
+.m-perMinute__wrapper-1 .uk-card-footer h4,
+.m-perMinute__wrapper-1 .uk-card-footer p {
+  font-size: 20px;
+}
+
+/* line 70, src/scss/_components/_dashboard/_metrics-per-monite.scss */
+.m-perMinute__wrapper-1 .uk-card-footer p {
+  line-height: 1.2;
+}
+
+/* line 75, src/scss/_components/_dashboard/_metrics-per-monite.scss */
+.m-perMinute__wrapper-1 .uk-card-footer a svg {
+  width: 23px;
+  height: 23px;
+}
+
+/* line 86, src/scss/_components/_dashboard/_metrics-per-monite.scss */
+.m-perMinute__wrapper-1 form [uk-grid] .uk-width-expand .uk-card,
+.m-perMinute__wrapper-1 form [uk-grid] .uk-width-auto .uk-card {
+  width: 100%;
+}
+
+/* line 90, src/scss/_components/_dashboard/_metrics-per-monite.scss */
+.m-perMinute__wrapper-1 form [uk-grid] .uk-width-expand:nth-of-type(2) button,
+.m-perMinute__wrapper-1 form [uk-grid] .uk-width-auto:nth-of-type(2) button {
+  border-color: #00a6d9;
+  background-color: #00a6d9;
+  border-radius: 10px;
+  color: #ffffff;
+  -webkit-transition: border-color 0.3s ease-in-out, background-color 0.3s ease-in-out;
+  -o-transition: border-color 0.3s ease-in-out, background-color 0.3s ease-in-out;
+  transition: border-color 0.3s ease-in-out, background-color 0.3s ease-in-out;
+}
+
+/* line 98, src/scss/_components/_dashboard/_metrics-per-monite.scss */
+.m-perMinute__wrapper-1 form [uk-grid] .uk-width-expand:nth-of-type(2) select,
+.m-perMinute__wrapper-1 form [uk-grid] .uk-width-auto:nth-of-type(2) select {
+  height: 100%;
+}
+
+/* line 102, src/scss/_components/_dashboard/_metrics-per-monite.scss */
+.m-perMinute__wrapper-1 form [uk-grid] .uk-width-expand:nth-of-type(2) select:hover + button,
+.m-perMinute__wrapper-1 form [uk-grid] .uk-width-auto:nth-of-type(2) select:hover + button {
+  border-color: #026b8b;
+  background-color: #026b8b;
+  -webkit-transition: border-color 0.3s ease-in-out, background-color 0.3s ease-in-out;
+  -o-transition: border-color 0.3s ease-in-out, background-color 0.3s ease-in-out;
+  transition: border-color 0.3s ease-in-out, background-color 0.3s ease-in-out;
+}
+
+/* line 112, src/scss/_components/_dashboard/_metrics-per-monite.scss */
+.m-perMinute__wrapper-1 form [uk-grid] .uk-card > div {
+  width: 100%;
+}
+
+/* line 115, src/scss/_components/_dashboard/_metrics-per-monite.scss */
+.m-perMinute__wrapper-1 form [uk-grid] .uk-card > div > div {
+  width: 100%;
+}
+
+/* line 118, src/scss/_components/_dashboard/_metrics-per-monite.scss */
+.m-perMinute__wrapper-1 form [uk-grid] .uk-card > div > div select {
+  width: 100%;
+}
+
+/* line 122, src/scss/_components/_dashboard/_metrics-per-monite.scss */
+.m-perMinute__wrapper-1 form [uk-grid] .uk-card > div > div button {
+  width: 100%;
+  height: 49px;
+  padding: 0 20px;
+  border-radius: 10px;
+  font-size: 20px;
+}
+
+/* line 131, src/scss/_components/_dashboard/_metrics-per-monite.scss */
+.m-perMinute__wrapper-1 form [uk-grid] .uk-card > div:nth-of-type(1) {
+  max-width: 265px;
+}
+
+/* line 134, src/scss/_components/_dashboard/_metrics-per-monite.scss */
+.m-perMinute__wrapper-1 form [uk-grid] .uk-card > div:nth-of-type(2) {
+  max-width: 162px;
+}
+
+/* line 149, src/scss/_components/_dashboard/_metrics-per-monite.scss */
+.m-perMinute__row-2 p {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  font-size: 20px;
+}
+
+/* line 156, src/scss/_components/_dashboard/_metrics-per-monite.scss */
+.m-perMinute__row-3 {
+  padding-bottom: 63px;
+}
+
+/* line 164, src/scss/_components/_dashboard/_metrics-per-monite.scss */
+.m-perMinute .uk-card-footer a svg {
+  width: 23px;
+  height: 23px;
+}
+
+/* line 172, src/scss/_components/_dashboard/_metrics-per-monite.scss */
+.m-perMinute [uk-tab] {
+  border-radius: 10px;
+  border: 1px solid #dad8d8;
+}
+
+/* line 176, src/scss/_components/_dashboard/_metrics-per-monite.scss */
+.m-perMinute [uk-tab]:before {
+  display: none;
+}
+
+/* line 182, src/scss/_components/_dashboard/_metrics-per-monite.scss */
+.m-perMinute [uk-tab] li:last-child a {
+  border-right: none;
+}
+
+/* line 187, src/scss/_components/_dashboard/_metrics-per-monite.scss */
+.m-perMinute [uk-tab] li.uk-active a {
+  color: #00a6d9;
+}
+
+/* line 192, src/scss/_components/_dashboard/_metrics-per-monite.scss */
+.m-perMinute [uk-tab] li a {
   width: 82px;
   padding-top: 10px !important;
   padding-bottom: 10px !important;

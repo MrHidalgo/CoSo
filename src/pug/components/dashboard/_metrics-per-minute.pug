@@ -1,0 +1,95 @@
+// SECTION metrics per minute concurrency :: START
+
+#m-perMinute.m-perMinute
+
+  .r-virtualClass__wrapper.r-virtualClass__wrapper-0
+
+    .uk-section.uk-padding-remove-top.uk-padding-remove-bottom.uk-margin-medium-bottom
+      .uk-card.uk-card-default.uk-box-shadow-small
+        .uk-card-header.uk-flex.uk-flex-middle.uk-flex-between
+          .uk-width-1-2.uk-flex.uk-flex-middle
+            h2.uk-margin-remove-bottom.uk-card-title.uk-text-bold!= "Available Reports"
+
+          .uk-width-1-2.uk-flex.uk-flex-right.uk-flex-middle
+            a.uk-button.uk-button-link(href="#" class="" title="")
+              span.uk-text-muted(uk-icon='minus')
+            a.uk-button.uk-button-link.uk-margin-small-left(href="#" class="" title="")
+              span.uk-text-muted(uk-icon='close')
+
+        .uk-card-body
+          div.uk-grid-match(uk-grid)
+            each val, idx in [1,2,3,4]
+              .uk-width-1-4
+                a(href='#' uk-tooltip="title: Metrics Details; pos: top").uk-card.uk-flex.uk-flex-middle.uk-flex-between.uk-padding-small.uk-background-primary
+                  p.uk-margin-remove.uk-text-uppercase.uk-text-bold!= (idx === 0) ? "Peak meeting users and largest single meeting" : "Metrics NAME HERE"
+                  span.uk-flex.uk-flex-middle(uk-icon="more")
+
+          div.uk-flex.uk-flex-right.uk-margin-small-top
+            a.uk-button.uk-button-link.uk-text-lowercase.uk-text-muted(href="#" class="" title="")!= "view all reports"
+
+  .r-virtualClass__wrapper.r-virtualClass__wrapper-1
+
+    .uk-section.uk-padding-remove-top.uk-padding-remove-bottom
+      .uk-card.uk-card-default.uk-box-shadow-small
+        .uk-card-header.uk-flex.uk-flex-middle.uk-flex-between
+          .uk-width-1-2.uk-flex.uk-flex-middle
+            h2.uk-margin-remove-bottom.uk-card-title.uk-text-bold!= "Meeting Activity"
+            span.uk-margin-medium-left.uk-text-bold!= "KPMG Product - APJ"
+
+          .uk-width-1-2.uk-flex.uk-flex-right.uk-flex-middle
+            a.uk-button.uk-button-link(href="#" class="" title="")
+              span.uk-text-muted(uk-icon='minus')
+            a.uk-button.uk-button-link.uk-margin-small-left(href="#" class="" title="")
+              span.uk-text-muted(uk-icon='close')
+
+        .uk-card-body
+
+          div.r-virtualClass__row.r-virtualClass__row-0
+            form
+              fieldset.uk-fieldset
+                div.uk-flex.uk-flex-middle.uk-flex-between(uk-grid)
+                  .uk-width-expand
+                    .uk-card.uk-card-body.uk-flex.uk-padding-remove
+                      div.uk-margin-medium-right
+                        div(uk-form-custom="target: > * > span:first-child")
+                          select.uk-select
+                            option!= "Display Value"
+                            option!= "Option 01"
+                            option!= "Option 02"
+                          button.uk-text-capitalize(class="uk-button uk-button-default uk-flex uk-flex-middle uk-flex-between" type="button" tabindex="-1")
+                            span
+                            span(uk-icon="icon: chevron-down")
+                      div.uk-margin-medium-right
+                        div(uk-form-custom="target: > * > span:first-child")
+                          select.uk-select
+                            option!= "History"
+                            option!= "Option 01"
+                            option!= "Option 02"
+                          button.uk-text-capitalize(class="uk-button uk-button-default uk-flex uk-flex-middle uk-flex-between" type="button" tabindex="-1")
+                            span
+                            span(uk-icon="icon: chevron-down")
+
+                  .uk-width-auto
+                    .uk-card.uk-card-body.uk-padding-remove.uk-flex.uk-flex-middle.uk-flex-right
+                      div
+                        div(uk-form-custom="target: > * > span:first-child")
+                          select.uk-select
+                            option!= "Download Chart"
+                            option!= "Option 01"
+                            option!= "Option 02"
+                          button.uk-text-capitalize(class="uk-button uk-button-default uk-flex uk-flex-middle uk-flex-between uk-background-primary" type="button" tabindex="-1")
+                            span
+                            span(uk-icon="icon: chevron-down")
+
+          div.uk-padding-large.r-virtualClass__row.r-virtualClass__row-1
+
+        .uk-card-footer
+          div
+            h4.uk-text-bold!= "Chart Description"
+          div
+            p.uk-margin-remove-bottom!= "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit."
+          div.uk-flex.uk-flex-right.uk-padding-small
+            a.uk-button.uk-button-link(href="#" class="" title="" uk-tooltip="title: Info; pos: top;")
+              span.uk-text-muted(uk-icon='question')
+
+// SECTION metrics per minute concurrency :: END

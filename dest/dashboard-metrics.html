@@ -228,7 +228,124 @@
         </div>
       </div>
       <!-- SECTION additional information :: END-->
-      <!--include ./components/dashboard/_report-tabs-->
+      <!-- SECTION metrics tabs :: START-->
+      <div class="m-tabs" id="m-tabs">
+        <div class="uk-child-width-expand uk-margin-medium-top uk-margin-medium-bottom" uk-tab uk-switcher="animation: uk-animation-fade">
+          <li><a class="uk-text-capitalize" href="#" title="">Hourly Peak Concurrency</a></li>
+          <li class="uk-active"><a class="uk-text-capitalize" href="#" title="">Per Minute Concurrency</a></li>
+          <li><a class="uk-text-capitalize" href="#" title="">Hourly Metrics</a></li>
+          <li><a class="uk-text-capitalize" href="#" title="">Daily Metrics</a></li>
+          <li><a class="uk-text-capitalize" href="#" title="">Monthly Metrics</a></li>
+        </div>
+        <div class="uk-switcher uk-margin uk-margin-xlarge-bottom">
+          <li><span>Hourly Peak Concurrency - CONTENT</span></li>
+          <li>
+            <!-- SECTION metrics per minute concurrency :: START-->
+            <div class="m-perMinute" id="m-perMinute">
+              <div class="r-virtualClass__wrapper r-virtualClass__wrapper-0">
+                <div class="uk-section uk-padding-remove-top uk-padding-remove-bottom uk-margin-medium-bottom">
+                  <div class="uk-card uk-card-default uk-box-shadow-small">
+                    <div class="uk-card-header uk-flex uk-flex-middle uk-flex-between">
+                      <div class="uk-width-1-2 uk-flex uk-flex-middle">
+                        <h2 class="uk-margin-remove-bottom uk-card-title uk-text-bold">Available Reports</h2>
+                      </div>
+                      <div class="uk-width-1-2 uk-flex uk-flex-right uk-flex-middle"><a class="uk-button uk-button-link" href="#" title=""><span class="uk-text-muted" uk-icon="minus"></span></a><a class="uk-button uk-button-link uk-margin-small-left" href="#" title=""><span class="uk-text-muted" uk-icon="close"></span></a></div>
+                    </div>
+                    <div class="uk-card-body">
+                      <div class="uk-grid-match" uk-grid>
+                        <div class="uk-width-1-4"><a class="uk-card uk-flex uk-flex-middle uk-flex-between uk-padding-small uk-background-primary" href="#" uk-tooltip="title: Metrics Details; pos: top">
+                            <p class="uk-margin-remove uk-text-uppercase uk-text-bold">Peak meeting users and largest single meeting</p><span class="uk-flex uk-flex-middle" uk-icon="more"></span></a></div>
+                        <div class="uk-width-1-4"><a class="uk-card uk-flex uk-flex-middle uk-flex-between uk-padding-small uk-background-primary" href="#" uk-tooltip="title: Metrics Details; pos: top">
+                            <p class="uk-margin-remove uk-text-uppercase uk-text-bold">Metrics NAME HERE</p><span class="uk-flex uk-flex-middle" uk-icon="more"></span></a></div>
+                        <div class="uk-width-1-4"><a class="uk-card uk-flex uk-flex-middle uk-flex-between uk-padding-small uk-background-primary" href="#" uk-tooltip="title: Metrics Details; pos: top">
+                            <p class="uk-margin-remove uk-text-uppercase uk-text-bold">Metrics NAME HERE</p><span class="uk-flex uk-flex-middle" uk-icon="more"></span></a></div>
+                        <div class="uk-width-1-4"><a class="uk-card uk-flex uk-flex-middle uk-flex-between uk-padding-small uk-background-primary" href="#" uk-tooltip="title: Metrics Details; pos: top">
+                            <p class="uk-margin-remove uk-text-uppercase uk-text-bold">Metrics NAME HERE</p><span class="uk-flex uk-flex-middle" uk-icon="more"></span></a></div>
+                      </div>
+                      <div class="uk-flex uk-flex-right uk-margin-small-top"><a class="uk-button uk-button-link uk-text-lowercase uk-text-muted" href="#" title="">view all reports</a></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="r-virtualClass__wrapper r-virtualClass__wrapper-1">
+                <div class="uk-section uk-padding-remove-top uk-padding-remove-bottom">
+                  <div class="uk-card uk-card-default uk-box-shadow-small">
+                    <div class="uk-card-header uk-flex uk-flex-middle uk-flex-between">
+                      <div class="uk-width-1-2 uk-flex uk-flex-middle">
+                        <h2 class="uk-margin-remove-bottom uk-card-title uk-text-bold">Meeting Activity</h2><span class="uk-margin-medium-left uk-text-bold">KPMG Product - APJ</span>
+                      </div>
+                      <div class="uk-width-1-2 uk-flex uk-flex-right uk-flex-middle"><a class="uk-button uk-button-link" href="#" title=""><span class="uk-text-muted" uk-icon="minus"></span></a><a class="uk-button uk-button-link uk-margin-small-left" href="#" title=""><span class="uk-text-muted" uk-icon="close"></span></a></div>
+                    </div>
+                    <div class="uk-card-body">
+                      <div class="r-virtualClass__row r-virtualClass__row-0">
+                        <form>
+                          <fieldset class="uk-fieldset">
+                            <div class="uk-flex uk-flex-middle uk-flex-between" uk-grid>
+                              <div class="uk-width-expand">
+                                <div class="uk-card uk-card-body uk-flex uk-padding-remove">
+                                  <div class="uk-margin-medium-right">
+                                    <div uk-form-custom="target: &gt; * &gt; span:first-child">
+                                      <select class="uk-select">
+                                        <option>Display Value</option>
+                                        <option>Option 01</option>
+                                        <option>Option 02</option>
+                                      </select>
+                                      <button class="uk-text-capitalize uk-button uk-button-default uk-flex uk-flex-middle uk-flex-between" type="button" tabindex="-1"><span></span><span uk-icon="icon: chevron-down"></span></button>
+                                    </div>
+                                  </div>
+                                  <div class="uk-margin-medium-right">
+                                    <div uk-form-custom="target: &gt; * &gt; span:first-child">
+                                      <select class="uk-select">
+                                        <option>History</option>
+                                        <option>Option 01</option>
+                                        <option>Option 02</option>
+                                      </select>
+                                      <button class="uk-text-capitalize uk-button uk-button-default uk-flex uk-flex-middle uk-flex-between" type="button" tabindex="-1"><span></span><span uk-icon="icon: chevron-down"></span></button>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="uk-width-auto">
+                                <div class="uk-card uk-card-body uk-padding-remove uk-flex uk-flex-middle uk-flex-right">
+                                  <div>
+                                    <div uk-form-custom="target: &gt; * &gt; span:first-child">
+                                      <select class="uk-select">
+                                        <option>Download Chart</option>
+                                        <option>Option 01</option>
+                                        <option>Option 02</option>
+                                      </select>
+                                      <button class="uk-text-capitalize uk-button uk-button-default uk-flex uk-flex-middle uk-flex-between uk-background-primary" type="button" tabindex="-1"><span></span><span uk-icon="icon: chevron-down"></span></button>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </fieldset>
+                        </form>
+                      </div>
+                      <div class="uk-padding-large r-virtualClass__row r-virtualClass__row-1"></div>
+                    </div>
+                    <div class="uk-card-footer">
+                      <div>
+                        <h4 class="uk-text-bold">Chart Description</h4>
+                      </div>
+                      <div>
+                        <p class="uk-margin-remove-bottom">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit.</p>
+                      </div>
+                      <div class="uk-flex uk-flex-right uk-padding-small"><a class="uk-button uk-button-link" href="#" title="" uk-tooltip="title: Info; pos: top;"><span class="uk-text-muted" uk-icon="question"></span></a></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- SECTION metrics per minute concurrency :: END-->
+          </li>
+          <li><span>Hourly Metrics - CONTENT</span></li>
+          <li><span>Daily Metrics - CONTENT</span></li>
+          <li><span>Monthly Metrics - CONTENT</span></li>
+        </div>
+      </div>
+      <!-- SECTION metrics tabs :: END-->
     </div>
     <!--include ../components/_footer-->
   </body>

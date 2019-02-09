@@ -1,6 +1,6 @@
 // SECTION report tabs :: START
 
-.r-virtualClass {
+.m-perMinute {
   &__wrapper {
     &-0 {
       .uk-width-1-4 {
@@ -70,6 +70,13 @@
         p {
           line-height: line-height-convert(24, 20);
         }
+
+        a {
+          svg {
+            width: 23px;
+            height: 23px;
+          }
+        }
       }
 
       form {
@@ -126,9 +133,6 @@
               }
               &:nth-of-type(2) {
                 max-width: 162px;
-              }
-              &:nth-of-type(3) {
-                max-width: 176px;
               }
             }
           }
